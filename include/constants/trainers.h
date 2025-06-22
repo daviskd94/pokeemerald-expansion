@@ -350,8 +350,41 @@
 #define TRAINER_CLASS_FACTORY_HEAD   0x3e
 #define TRAINER_CLASS_PIKE_QUEEN     0x3f
 #define TRAINER_CLASS_PYRAMID_KING   0x40
-#define TRAINER_CLASS_RS_PROTAG      0x41
-#define TRAINER_CLASS_COUNT          0x42
+#define TRAINER_CLASS_RS_PROTAG      0x41 // Everything new beyond this point, starting with Ace Trainer
+#define TRAINER_CLASS_ACE_TRAINER    0x42
+#define TRAINER_CLASS_GENESIS        0x43
+#define TRAINER_CLASS_ARTIST         0x44
+#define TRAINER_CLASS_BIKER          0x45
+#define TRAINER_CLASS_BOARDER        0X46
+#define TRAINER_CLASS_BURGLAR        0X47
+#define TRAINER_CLASS_CAMERAMAN      0x48
+#define TRAINER_CLASS_COWGIRL        0x49
+#define TRAINER_CLASS_CYCLIST        0x4A
+#define TRAINER_CLASS_FIREBREATHER   0X4B
+#define TRAINER_CLASS_IDOL           0x4C
+#define TRAINER_CLASS_JOGGER         0x4D
+#define TRAINER_CLASS_JUGGLER        0x4E
+#define TRAINER_CLASS_MEDIUM         0x4F
+#define TRAINER_CLASS_OFFICER        0x50
+#define TRAINER_CLASS_GAMBLER        0x51
+#define TRAINER_CLASS_POKEKID        0x52
+#define TRAINER_CLASS_RANCHER        0x53
+#define TRAINER_CLASS_REPORTER       0x54
+#define TRAINER_CLASS_ROUGHNECK      0x55
+#define TRAINER_CLASS_SAGE           0x56
+#define TRAINER_CLASS_SCIENTIST      0x57
+#define TRAINER_CLASS_SKIER          0x58
+#define TRAINER_CLASS_SOCIALITE      0x59
+#define TRAINER_CLASS_SUPER_NERD     0x5A
+#define TRAINER_CLASS_TEACHER        0x5B
+#define TRAINER_CLASS_WAITER         0x5C
+#define TRAINER_CLASS_WAITRESS       0x5D
+#define TRAINER_CLASS_WORKER         0x5E
+#define TRAINER_CLASS_DOJO_MASTER    0x5F
+#define TRAINER_CLASS_GENESIS_BOSS   0x60
+#define TRAINER_CLASS_DRAGON_MASTER  0x61
+#define TRAINER_CLASS_NECROMANCER    0x62
+#define TRAINER_CLASS_COUNT          0x63
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music
