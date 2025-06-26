@@ -220,6 +220,7 @@ extern const u32 gBattleEnvironmentTilemap_TallGrass[];
 extern const u32 gBattleEnvironmentAnimTiles_TallGrass[];
 extern const u32 gBattleEnvironmentAnimTilemap_TallGrass[];
 extern const u16 gBattleEnvironmentPalette_TallGrass[];
+extern const u16 gBattleEnvironmentPalette_TallGrassNight[];
 extern const u32 gBattleEnvironmentTiles_LongGrass[];
 extern const u32 gBattleEnvironmentTilemap_LongGrass[];
 extern const u32 gBattleEnvironmentAnimTiles_LongGrass[];
