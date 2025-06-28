@@ -13,6 +13,7 @@
 #include "link.h"
 #include "main.h"
 #include "menu.h"
+#include "rtc.h"
 #include "overworld.h"
 #include "palette.h"
 #include "sound.h"
@@ -614,94 +615,129 @@ const struct BattleBackground sBattleEnvironmentTable[] =
 {
     [BATTLE_ENVIRONMENT_GRASS] =
     {
-        .tileset = gBattleEnvironmentTiles_TallGrass,
-        .tilemap = gBattleEnvironmentTilemap_TallGrass,
+        .tileset      = gBattleEnvironmentTiles_TallGrass,
+        .tilemap      = gBattleEnvironmentTilemap_TallGrass,
         .entryTileset = gBattleEnvironmentAnimTiles_TallGrass,
         .entryTilemap = gBattleEnvironmentAnimTilemap_TallGrass,
-        .palette = gBattleEnvironmentPalette_TallGrass,
+        .palette      = gBattleEnvironmentPalette_TallGrass,    // default day palette
     },
 
     [BATTLE_ENVIRONMENT_LONG_GRASS] =
     {
-        .tileset = gBattleEnvironmentTiles_LongGrass,
-        .tilemap = gBattleEnvironmentTilemap_LongGrass,
+        .tileset      = gBattleEnvironmentTiles_LongGrass,
+        .tilemap      = gBattleEnvironmentTilemap_LongGrass,
         .entryTileset = gBattleEnvironmentAnimTiles_LongGrass,
         .entryTilemap = gBattleEnvironmentAnimTilemap_LongGrass,
-        .palette = gBattleEnvironmentPalette_LongGrass,
+        .palette      = gBattleEnvironmentPalette_LongGrass,
     },
 
     [BATTLE_ENVIRONMENT_SAND] =
     {
-        .tileset = gBattleEnvironmentTiles_Sand,
-        .tilemap = gBattleEnvironmentTilemap_Sand,
+        .tileset      = gBattleEnvironmentTiles_Sand,
+        .tilemap      = gBattleEnvironmentTilemap_Sand,
         .entryTileset = gBattleEnvironmentAnimTiles_Sand,
         .entryTilemap = gBattleEnvironmentAnimTilemap_Sand,
-        .palette = gBattleEnvironmentPalette_Sand,
+        .palette      = gBattleEnvironmentPalette_Sand,
     },
 
     [BATTLE_ENVIRONMENT_UNDERWATER] =
     {
-        .tileset = gBattleEnvironmentTiles_Underwater,
-        .tilemap = gBattleEnvironmentTilemap_Underwater,
+        .tileset      = gBattleEnvironmentTiles_Underwater,
+        .tilemap      = gBattleEnvironmentTilemap_Underwater,
         .entryTileset = gBattleEnvironmentAnimTiles_Underwater,
         .entryTilemap = gBattleEnvironmentAnimTilemap_Underwater,
-        .palette = gBattleEnvironmentPalette_Underwater,
+        .palette      = gBattleEnvironmentPalette_Underwater,
     },
 
     [BATTLE_ENVIRONMENT_WATER] =
     {
-        .tileset = gBattleEnvironmentTiles_Water,
-        .tilemap = gBattleEnvironmentTilemap_Water,
+        .tileset      = gBattleEnvironmentTiles_Water,
+        .tilemap      = gBattleEnvironmentTilemap_Water,
         .entryTileset = gBattleEnvironmentAnimTiles_Water,
         .entryTilemap = gBattleEnvironmentAnimTilemap_Water,
-        .palette = gBattleEnvironmentPalette_Water,
+        .palette      = gBattleEnvironmentPalette_Water,
     },
 
     [BATTLE_ENVIRONMENT_POND] =
     {
-        .tileset = gBattleEnvironmentTiles_PondWater,
-        .tilemap = gBattleEnvironmentTilemap_PondWater,
+        .tileset      = gBattleEnvironmentTiles_PondWater,
+        .tilemap      = gBattleEnvironmentTilemap_PondWater,
         .entryTileset = gBattleEnvironmentAnimTiles_PondWater,
         .entryTilemap = gBattleEnvironmentAnimTilemap_PondWater,
-        .palette = gBattleEnvironmentPalette_PondWater,
+        .palette      = gBattleEnvironmentPalette_PondWater,
     },
 
     [BATTLE_ENVIRONMENT_MOUNTAIN] =
     {
-        .tileset = gBattleEnvironmentTiles_Rock,
-        .tilemap = gBattleEnvironmentTilemap_Rock,
+        .tileset      = gBattleEnvironmentTiles_Rock,
+        .tilemap      = gBattleEnvironmentTilemap_Rock,
         .entryTileset = gBattleEnvironmentAnimTiles_Rock,
         .entryTilemap = gBattleEnvironmentAnimTilemap_Rock,
-        .palette = gBattleEnvironmentPalette_Rock,
+        .palette      = gBattleEnvironmentPalette_Rock,
     },
 
     [BATTLE_ENVIRONMENT_CAVE] =
     {
-        .tileset = gBattleEnvironmentTiles_Cave,
-        .tilemap = gBattleEnvironmentTilemap_Cave,
+        .tileset      = gBattleEnvironmentTiles_Cave,
+        .tilemap      = gBattleEnvironmentTilemap_Cave,
         .entryTileset = gBattleEnvironmentAnimTiles_Cave,
         .entryTilemap = gBattleEnvironmentAnimTilemap_Cave,
-        .palette = gBattleEnvironmentPalette_Cave,
+        .palette      = gBattleEnvironmentPalette_Cave,
     },
 
     [BATTLE_ENVIRONMENT_BUILDING] =
     {
-        .tileset = gBattleEnvironmentTiles_Building,
-        .tilemap = gBattleEnvironmentTilemap_Building,
+        .tileset      = gBattleEnvironmentTiles_Building,
+        .tilemap      = gBattleEnvironmentTilemap_Building,
         .entryTileset = gBattleEnvironmentAnimTiles_Building,
         .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-        .palette = gBattleEnvironmentPalette_Building,
+        .palette      = gBattleEnvironmentPalette_Building,
     },
 
     [BATTLE_ENVIRONMENT_PLAIN] =
     {
-        .tileset = gBattleEnvironmentTiles_Building,
-        .tilemap = gBattleEnvironmentTilemap_Building,
+        .tileset      = gBattleEnvironmentTiles_Building,
+        .tilemap      = gBattleEnvironmentTilemap_Building,
         .entryTileset = gBattleEnvironmentAnimTiles_Building,
         .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-        .palette = gBattleEnvironmentPalette_Plain,
+        .palette      = gBattleEnvironmentPalette_Plain,
     },
 };
+
+const u16 *GetBattlePalette(u8 environment)
+{
+    if (environment == BATTLE_ENVIRONMENT_GRASS)
+    {
+        if (GetTimeOfDay() == TIME_NIGHT)
+            return gBattleEnvironmentPalette_TallGrassNight;
+        else if (GetTimeOfDay() == TIME_MORNING)
+            return gBattleEnvironmentPalette_TallGrassMorning;
+        else
+            return gBattleEnvironmentPalette_TallGrass; 
+    }
+    if (environment == BATTLE_ENVIRONMENT_SAND)
+    {
+        if (GetTimeOfDay() == TIME_NIGHT)
+            return gBattleEnvironmentPalette_SandNight;
+        else if (GetTimeOfDay() == TIME_MORNING)
+            return gBattleEnvironmentPalette_SandMorning;
+        else
+            return gBattleEnvironmentPalette_Sand;
+    }
+    return sBattleEnvironmentTable[environment].palette;
+}
+
+void LoadBattleBackground(u8 environment)
+{
+    const struct BattleBackground *bg = &sBattleEnvironmentTable[environment];
+    const u16 *palette = GetBattlePalette(environment);
+
+    LZDecompressWram(bg->tileset,      (void *)BG_VRAM);
+    LZDecompressWram(bg->tilemap,      (void *)(BG_VRAM + 0x800));
+    LZDecompressWram(bg->entryTileset, (void *)(BG_VRAM + 0x1000));
+    LZDecompressWram(bg->entryTilemap, (void *)(BG_VRAM + 0x1800));
+    LoadPalette(palette, BG_PLTT_ID(0), PLTT_SIZE_4BPP);
+}
 
 void BattleInitBgsAndWindows(void)
 {
@@ -811,7 +847,7 @@ void DrawMainBattleBackground(void)
         case MAP_BATTLE_SCENE_NORMAL:
             LZDecompressVram(sBattleEnvironmentTable[gBattleEnvironment].tileset, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(sBattleEnvironmentTable[gBattleEnvironment].tilemap, (void *)(BG_SCREEN_ADDR(26)));
-            LoadPalette(sBattleEnvironmentTable[gBattleEnvironment].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            LoadPalette(GetBattlePalette(gBattleEnvironment), BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
         case MAP_BATTLE_SCENE_GYM:
             LZDecompressVram(gBattleEnvironmentTiles_Building, (void *)(BG_CHAR_ADDR(2)));
@@ -1395,7 +1431,7 @@ bool8 LoadChosenBattleElement(u8 caseId)
             {
             default:
             case MAP_BATTLE_SCENE_NORMAL:
-                LoadPalette(sBattleEnvironmentTable[gBattleEnvironment].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                LoadPalette(GetBattlePalette(gBattleEnvironment), BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 break;
             case MAP_BATTLE_SCENE_GYM:
                 LoadPalette(gBattleEnvironmentPalette_BuildingGym, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
