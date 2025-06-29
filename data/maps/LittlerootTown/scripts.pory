@@ -1019,7 +1019,7 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 
 `
 text Maxie {
-	"Maxie"
+	"Prof. Maple"
 }
 
 script LittlerootTown_EventScript_Maxie {

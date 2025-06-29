@@ -2065,4 +2065,4 @@ LittlerootTown_EventScript_Test_Text_0:
 
 Maxie::
 # 1021 "data/maps/LittlerootTown/scripts.pory"
-	.string "Maxie$"
+	.string "Prof. Maple$"
