@@ -54,6 +54,8 @@
 #include "rtc.h"
 #include "event_object_movement.h"
 #include "gba/isagbprint.h"
+#include "map_name_popup.h"
+#include "dexnav.h"
 
 /* CALLBACKS */
 static void SpriteCB_IconPoketch(struct Sprite* sprite);
@@ -565,13 +567,13 @@ static void SpriteCB_IconFlag(struct Sprite* sprite) {
 // If you want to shorten the dates to Sat., Sun., etc., change this to 70
 #define CLOCK_WINDOW_WIDTH 100
 
-static const u8 gText_Friday[]    = _("Friday,");
-static const u8 gText_Saturday[]  = _("Saturday,");
-static const u8 gText_Sunday[]    = _("Sunday,");
-static const u8 gText_Monday[]    = _("Monday,");
-static const u8 gText_Tuesday[]   = _("Tuesday,");
-static const u8 gText_Wednesday[] = _("Wednesday,");
-static const u8 gText_Thursday[]  = _("Thursday,");
+static const u8 gText_Friday[]    = _("Fri,");
+static const u8 gText_Saturday[]  = _("Sat,");
+static const u8 gText_Sunday[]    = _("Sun,");
+static const u8 gText_Monday[]    = _("Mon,");
+static const u8 gText_Tuesday[]   = _("Tue,");
+static const u8 gText_Wednesday[] = _("Wed,");
+static const u8 gText_Thursday[]  = _("Thu,");
 
 static const u8 *const gDayNameStringsTable[] =
 {
@@ -615,6 +617,10 @@ static void ShowSafariBallsWindow(void)
 }
 
 void HeatStartMenu_Init(void) {
+    ResetDexNavSearch();
+    HideMapNamePopUpWindow();
+    while (REG_VCOUNT >= 160);
+    while (REG_VCOUNT < 160);   
   if (!IsOverworldLinkActive()) {
     FreezeObjectEvents();
     PlayerFreeze();
