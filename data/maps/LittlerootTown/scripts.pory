@@ -1022,6 +1022,14 @@ text Maxie {
 	"Prof. Maple"
 }
 
+text Unknown {
+	"???"
+}
+
+text Birch {
+	"Birch"
+}
+
 script LittlerootTown_EventScript_Maxie {
     lockall
 	speakername(Maxie)
