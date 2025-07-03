@@ -4417,7 +4417,7 @@
       "width": 70,
       "height": 70,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/SouthCampus/border.bin",
       "blockdata_filepath": "data/layouts/SouthCampus/map.bin"
     }

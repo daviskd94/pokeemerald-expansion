@@ -4449,6 +4449,9 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(PH_NURSE_BLEND) \
     X(PH_NURSE_HELD) \
     X(PH_NURSE_SOLO) \
+    X(CUS_BATTLE_WILD) \
+    X(CUS_BATTLE_TRAINER) \
+    X(CUS_BATTLE_TEAM_GENESIS) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

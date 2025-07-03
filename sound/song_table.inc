@@ -611,6 +611,9 @@ gSongTable::
 	song ph_nurse_blend, 2, 2
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
+	song cus_battle_wild, 0, 0
+	song cus_battle_trainer, 0, 0
+	song cus_battle_team_genesis, 0, 0
 
 	.align 2
 dummy_song_header:
