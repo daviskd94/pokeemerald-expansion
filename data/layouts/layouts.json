@@ -4420,6 +4420,16 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/SouthCampus/border.bin",
       "blockdata_filepath": "data/layouts/SouthCampus/map.bin"
+    },
+    {
+      "id": "LAYOUT_PLAYER_DORM",
+      "name": "PlayerDorm_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/PlayerDorm/border.bin",
+      "blockdata_filepath": "data/layouts/PlayerDorm/map.bin"
     }
   ]
 }

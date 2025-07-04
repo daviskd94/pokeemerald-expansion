@@ -158,9 +158,10 @@ static const u16 sStartMenuPalettes[MENU_PAL_COUNT][16] = {
     INCBIN_U16("graphics/heat_start_menu/bg1.gbapal"),
     INCBIN_U16("graphics/heat_start_menu/bg2.gbapal"),
     INCBIN_U16("graphics/heat_start_menu/bg3.gbapal"),
+    INCBIN_U16("graphics/heat_start_menu/bg4.gbapal"),
 
 };
-#define MENU_PAL_COUNT 4
+#define MENU_PAL_COUNT 5
 
 const u16 *GetStartMenuPalette(u8 id)
 {

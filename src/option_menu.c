@@ -817,7 +817,7 @@ static void MenuPal_DrawChoices(u8 selection)
     u8 n = selection + 1;
     u16 i;
 
-    for (i = 0; gText_MenuPalNumber[i] != EOS && i <= 5; i++)
+    for (i = 0; gText_MenuPalNumber[i] != EOS && i <= 6; i++)
         text[i] = gText_MenuPalNumber[i];
 
     // Convert a number to decimal string

@@ -1159,3 +1159,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 
 	.include "data/maps/SouthCampus/scripts.inc"
+
+	.include "data/maps/PlayerDorm/scripts.inc"
