@@ -1,5 +1,13 @@
 gText_WouldYouLikeToRestYourPkmn::
-	.string "Welcome to the Pokémon Center.\n"
+	.string "Welcome to the Pokémon Center.\p"
+	.string "Would you like to rest your Pokémon?$"
+
+gText_WouldYouLikeToRestYourPkmnMorning::
+	.string "Good morning! Welcome to the\nPokémon Center.\p"
+	.string "Would you like to rest your Pokémon?$"
+
+gText_WouldYouLikeToRestYourPkmnNight::
+	.string "Welcome to the Pokémon Center. You're\nup late!\p"
 	.string "Would you like to rest your Pokémon?$"
 
 gText_IllTakeYourPkmn::

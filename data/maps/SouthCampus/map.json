@@ -210,7 +210,7 @@
       "x": 37,
       "y": 39,
       "elevation": 0,
-      "dest_map": "MAP_SOUTH_CAMPUS",
+      "dest_map": "MAP_PLAYER_DORM",
       "dest_warp_id": "0"
     }
   ],
