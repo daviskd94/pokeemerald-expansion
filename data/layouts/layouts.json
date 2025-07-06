@@ -4430,6 +4430,26 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/PlayerDorm/border.bin",
       "blockdata_filepath": "data/layouts/PlayerDorm/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTH_CAMPUS_POKEMON_CENTER_1F",
+      "name": "SouthCampus_PokemonCenter_1F_Layout",
+      "width": 15,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/SouthCampus_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SouthCampus_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTH_CAMPUS_MART",
+      "name": "SouthCampus_Mart_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/SouthCampus_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/SouthCampus_Mart/map.bin"
     }
   ]
 }

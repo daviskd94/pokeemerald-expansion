@@ -1,4 +1,4 @@
-#define DEFAULT_POKEMON_CENTER_COORDS .x = 7, .y = 4
+#define DEFAULT_POKEMON_CENTER_COORDS .x = 7, .y = 6
 
 static const struct HealLocation sHealLocationsPokemonCenter[NUM_HEAL_LOCATIONS - 1] =
 {
@@ -140,7 +140,15 @@ static const struct HealLocation sHealLocationsPokemonCenter[NUM_HEAL_LOCATIONS 
         .mapNum = MAP_NUM(MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F),
         DEFAULT_POKEMON_CENTER_COORDS,
     },
+    [HEAL_LOCATION_SOUTH_CAMPUS - 1] =
+    {
+        .mapGroup = MAP_GROUP(MAP_SOUTH_CAMPUS_POKEMON_CENTER_1F),
+        .mapNum = MAP_NUM(MAP_SOUTH_CAMPUS_POKEMON_CENTER_1F),
+        DEFAULT_POKEMON_CENTER_COORDS,
+    },
 };
+
+
 
 #undef DEFAULT_POKEMON_CENTER_COORDS
 

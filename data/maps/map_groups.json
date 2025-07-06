@@ -624,6 +624,8 @@
     "Route124_DivingTreasureHuntersHouse"
   ],
   "gMapGroup_IndoorSouthCampus": [
-    "PlayerDorm"
+    "PlayerDorm",
+    "SouthCampus_PokemonCenter_1F",
+    "SouthCampus_Mart"
   ]
 }
