@@ -1,0 +1,4 @@
+raw `
+SouthCampus_MapScripts::
+	.byte 0
+`

@@ -1,0 +1,41 @@
+mapscripts PlayerDorm_MapScripts {   
+    MAP_SCRIPT_ON_FRAME_TABLE [
+            VAR_PLAYERDORM_STATE, 0: PlayerDorm_WakeUp 
+    ]
+}
+
+script PlayerDorm_WakeUp {
+    lockall
+    speakername(Unknown)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    delay(80)
+    call (DoorKnocking)
+    delay(40)
+    msgbox(format("Hello? {PLAYER}, are you there?"), MSGBOX_DEFAULT)
+    closemessage
+    fadescreen(FADE_FROM_BLACK)
+    delay(80)
+    call (DoorKnocking)
+    delay(20)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down, emote_exclamation_mark))
+    playse(SE_PIN)
+    waitse
+    delay(60)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(jump_right))
+    playse(SE_LEDGE)
+    waitse
+    waitmovement(0)
+    playbgm (MUS_LILYCOVE_MUSEUM, TRUE)
+    setvar(VAR_PLAYERDORM_STATE, 1)
+    releaseall
+}
+
+script DoorKnocking {
+    playse(SE_NOT_EFFECTIVE)
+    waitse
+    playse(SE_NOT_EFFECTIVE)
+    waitse
+    playse(SE_NOT_EFFECTIVE)
+    waitse
+    return
+}
