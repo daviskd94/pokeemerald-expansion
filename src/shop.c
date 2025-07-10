@@ -775,8 +775,8 @@ static void BuyMenuDrawGraphics(void)
 {
     BuyMenuDrawMapGraphics();
     BuyMenuCopyMenuBgToBg1TilemapBuffer();
-    AddMoneyLabelObject(19, 11);
-    PrintMoneyAmountInMoneyBoxWithBorder(WIN_MONEY, 1, 13, GetMoney(&gSaveBlock1Ptr->money));
+    AddMoneyLabelObject(19, 11); //this changes the MONEY png placement
+    PrintMoneyAmountInMoneyBoxWithBorder(WIN_MONEY, 1, 13, GetMoney(&gSaveBlock1Ptr->money)); //this corrupted the box the money was in when changed from 1 to 10
     ScheduleBgCopyTilemapToVram(0);
     ScheduleBgCopyTilemapToVram(1);
     ScheduleBgCopyTilemapToVram(2);

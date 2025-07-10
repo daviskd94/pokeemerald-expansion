@@ -214,7 +214,7 @@
 #define METATILE_General_Door_Contest          0x1DB
 #define METATILE_General_Door_Gym              0x1CD
 #define METATILE_General_Door_PokeCenter       0x061
-#define METATILE_General_Door_PokeMart         0x041
+#define METATILE_General_Door_PokeMart         0x062
 #define METATILE_General_Grass                 0x001
 #define METATILE_General_Grass_TreeLeft        0x1CE
 #define METATILE_General_Grass_TreeRight       0x1CF
@@ -786,5 +786,6 @@
 #define METATILE_RSMossdeepGym_RedArrow_Up     0x20D
 #define METATILE_RSMossdeepGym_Switch_Down     0x239
 #define METATILE_RSMossdeepGym_Switch_Up       0x238
+#define METATILE_South_Campus_Dorm_Door        0x2CC
 
 #endif // GUARD_METATILE_LABELS_H

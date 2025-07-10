@@ -220,6 +220,24 @@ Player_Dorm_Nickname_Eevee_2:
 	goto Player_Dorm_Nickname_Eevee_1
 
 
+Player_Dorm_EventScript_CheckPlayersPC::
+# 118 "data/maps/PlayerDorm/scripts.pory"
+	setvar VAR_0x8004, 1
+# 119 "data/maps/PlayerDorm/scripts.pory"
+	special DoPCTurnOnEffect
+# 120 "data/maps/PlayerDorm/scripts.pory"
+	playse SE_PC_ON
+# 121 "data/maps/PlayerDorm/scripts.pory"
+	msgbox Player_Dorm_EventScript_CheckPlayersPC_Text_0, MSGBOX_DEFAULT
+# 122 "data/maps/PlayerDorm/scripts.pory"
+	special BedroomPC
+# 123 "data/maps/PlayerDorm/scripts.pory"
+	waitstate
+# 124 "data/maps/PlayerDorm/scripts.pory"
+	releaseall
+	end
+
+
 # 15 "data/maps/PlayerDorm/scripts.pory"
 PlayerDorm_WakeUp_Movement_0:
 # 15 "data/maps/PlayerDorm/scripts.pory"
@@ -312,6 +330,10 @@ Player_Dorm_Take_Eevee_Text_0:
 Player_Dorm_Nickname_Eevee_Text_0:
 # 108 "data/maps/PlayerDorm/scripts.pory"
 	.string "Does Eevee have a nickname?$"
+
+Player_Dorm_EventScript_CheckPlayersPC_Text_0:
+# 121 "data/maps/PlayerDorm/scripts.pory"
+	.string "{PLAYER} booted up the laptop.$"
 
 Tracie::
 # 7 "data/maps/PlayerDorm/scripts.pory"

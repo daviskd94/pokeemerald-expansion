@@ -273,10 +273,10 @@ static const u8 gText_WirelessNotConnected[] = _("The Wireless Adapter is not\nc
 static const u8 gText_MysteryGiftCantUse[] = _("MYSTERY GIFT can't be used while\nthe Wireless Adapter is attached.");
 static const u8 gText_MysteryEventsCantUse[] = _("MYSTERY EVENTS can't be used while\nthe Wireless Adapter is attached.");
 
-static const u8 gText_ContinueMenuPlayer[] = _("PLAYER");
-static const u8 gText_ContinueMenuTime[] = _("TIME");
-static const u8 gText_ContinueMenuPokedex[] = _("POKéDEX");
-static const u8 gText_ContinueMenuBadges[] = _("BADGES");
+static const u8 gText_ContinueMenuPlayer[] = _("Player");
+static const u8 gText_ContinueMenuTime[] = _("Time Played");
+static const u8 gText_ContinueMenuPokedex[] = _("Pokédex");
+static const u8 gText_ContinueMenuBadges[] = _("Badges");
 
 
 
@@ -482,49 +482,49 @@ static const struct MenuAction sMenuActions_Gender[] = {
 };
 
 static const u8 *const sMalePresetNames[] = {
-    COMPOUND_STRING("STU"),
-    COMPOUND_STRING("MILTON"),
-    COMPOUND_STRING("TOM"),
-    COMPOUND_STRING("KENNY"),
-    COMPOUND_STRING("REID"),
-    COMPOUND_STRING("JUDE"),
-    COMPOUND_STRING("JAXSON"),
-    COMPOUND_STRING("EASTON"),
-    COMPOUND_STRING("WALKER"),
-    COMPOUND_STRING("TERU"),
-    COMPOUND_STRING("JOHNNY"),
-    COMPOUND_STRING("BRETT"),
-    COMPOUND_STRING("SETH"),
-    COMPOUND_STRING("TERRY"),
-    COMPOUND_STRING("CASEY"),
-    COMPOUND_STRING("DARREN"),
-    COMPOUND_STRING("LANDON"),
-    COMPOUND_STRING("COLLIN"),
-    COMPOUND_STRING("STANLEY"),
-    COMPOUND_STRING("QUINCY")
+    COMPOUND_STRING("Stu"),
+    COMPOUND_STRING("William"),
+    COMPOUND_STRING("Tom"),
+    COMPOUND_STRING("Kenny"),
+    COMPOUND_STRING("Aiden"),
+    COMPOUND_STRING("James"),
+    COMPOUND_STRING("Noah"),
+    COMPOUND_STRING("Oliver"),
+    COMPOUND_STRING("Henry"),
+    COMPOUND_STRING("James"),
+    COMPOUND_STRING("David"),
+    COMPOUND_STRING("Daniel"),
+    COMPOUND_STRING("Mark"),
+    COMPOUND_STRING("Steven"),
+    COMPOUND_STRING("Justin"),
+    COMPOUND_STRING("Kevin"),
+    COMPOUND_STRING("Jason"),
+    COMPOUND_STRING("Tim"),
+    COMPOUND_STRING("George"),
+    COMPOUND_STRING("Jake")
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    COMPOUND_STRING("KIMMY"),
-    COMPOUND_STRING("TIARA"),
-    COMPOUND_STRING("BELLA"),
-    COMPOUND_STRING("JAYLA"),
-    COMPOUND_STRING("ALLIE"),
-    COMPOUND_STRING("LIANNA"),
-    COMPOUND_STRING("SARA"),
-    COMPOUND_STRING("MONICA"),
-    COMPOUND_STRING("CAMILA"),
-    COMPOUND_STRING("AUBREE"),
-    COMPOUND_STRING("RUTHIE"),
-    COMPOUND_STRING("HAZEL"),
-    COMPOUND_STRING("NADINE"),
-    COMPOUND_STRING("TANJA"),
-    COMPOUND_STRING("YASMIN"),
-    COMPOUND_STRING("NICOLA"),
-    COMPOUND_STRING("LILLIE"),
-    COMPOUND_STRING("TERRA"),
-    COMPOUND_STRING("LUCY"),
-    COMPOUND_STRING("HALIE")
+    COMPOUND_STRING("Lindsey"),
+    COMPOUND_STRING("Noelle"),
+    COMPOUND_STRING("Maggie"),
+    COMPOUND_STRING("Sarah"),
+    COMPOUND_STRING("Amelia"),
+    COMPOUND_STRING("Ava"),
+    COMPOUND_STRING("Olivia"),
+    COMPOUND_STRING("Emma"),
+    COMPOUND_STRING("Sophia"),
+    COMPOUND_STRING("Faith"),
+    COMPOUND_STRING("Bella"),
+    COMPOUND_STRING("Lily"),
+    COMPOUND_STRING("Chloe"),
+    COMPOUND_STRING("Gracie"),
+    COMPOUND_STRING("Sadie"),
+    COMPOUND_STRING("Zoey"),
+    COMPOUND_STRING("Natalie"),
+    COMPOUND_STRING("Alice"),
+    COMPOUND_STRING("Sophie"),
+    COMPOUND_STRING("Leah")
 };
 
 // The number of male vs. female names is assumed to be the same.

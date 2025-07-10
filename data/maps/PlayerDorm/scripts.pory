@@ -113,3 +113,14 @@ script Player_Dorm_Nickname_Eevee {
     release
     end
 }
+
+script Player_Dorm_EventScript_CheckPlayersPC {
+    setvar (VAR_0x8004, 1)
+	special(DoPCTurnOnEffect)
+	playse(SE_PC_ON)
+	msgbox("{PLAYER} booted up the laptop.", MSGBOX_DEFAULT) 
+	special (BedroomPC)
+	waitstate
+	releaseall
+	end
+}

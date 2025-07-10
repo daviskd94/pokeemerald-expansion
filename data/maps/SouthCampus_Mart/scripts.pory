@@ -3,13 +3,9 @@ mapscripts SouthCampus_Mart_MapScripts
 
 }
 
-text Clerk {
-    "Mart Clerk"
-}
 script SouthCampus_Mart_Clerk {
     lock
     faceplayer
-    speakername(Clerk)
     msgbox("Welcome!\nHow may I serve you?")
     waitmessage
     pokemart(MyMartItems)
