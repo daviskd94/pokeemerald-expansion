@@ -238,6 +238,22 @@ Player_Dorm_EventScript_CheckPlayersPC::
 	end
 
 
+Player_Dorm_Test_Quest::
+# 129 "data/maps/PlayerDorm/scripts.pory"
+	setflag FLAG_SYS_QUEST_MENU_GET
+# 130 "data/maps/PlayerDorm/scripts.pory"
+	questmenu QUEST_MENU_SET_ACTIVE, QUEST_TEST
+# 131 "data/maps/PlayerDorm/scripts.pory"
+	playse SE_DEX_SEARCH
+# 132 "data/maps/PlayerDorm/scripts.pory"
+	msgbox Player_Dorm_Test_Quest_Text_0
+# 133 "data/maps/PlayerDorm/scripts.pory"
+	waitse
+# 134 "data/maps/PlayerDorm/scripts.pory"
+	openquestmenu
+	end
+
+
 # 15 "data/maps/PlayerDorm/scripts.pory"
 PlayerDorm_WakeUp_Movement_0:
 # 15 "data/maps/PlayerDorm/scripts.pory"
@@ -334,6 +350,10 @@ Player_Dorm_Nickname_Eevee_Text_0:
 Player_Dorm_EventScript_CheckPlayersPC_Text_0:
 # 121 "data/maps/PlayerDorm/scripts.pory"
 	.string "{PLAYER} booted up the laptop.$"
+
+Player_Dorm_Test_Quest_Text_0:
+# 132 "data/maps/PlayerDorm/scripts.pory"
+	.string "The quest, Test Quest, is now active.$"
 
 Tracie::
 # 7 "data/maps/PlayerDorm/scripts.pory"

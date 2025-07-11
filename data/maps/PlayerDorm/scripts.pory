@@ -124,3 +124,13 @@ script Player_Dorm_EventScript_CheckPlayersPC {
 	releaseall
 	end
 }
+
+script Player_Dorm_Test_Quest {
+    setflag (FLAG_SYS_QUEST_MENU_GET) 
+    questmenu(QUEST_MENU_SET_ACTIVE, QUEST_TEST)
+    playse(SE_DEX_SEARCH)
+    msgbox(format("The quest, Test Quest, is now active."))
+    waitse
+    openquestmenu
+    end
+}
