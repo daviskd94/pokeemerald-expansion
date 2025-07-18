@@ -206,12 +206,12 @@ static const u32 sQuestMenuTilemap[] = INCBIN_U32("graphics/quest_menu/menu.bin.
 
 //Strings used for the Quest Menu
 static const u8 sText_Empty[] = _("");
-static const u8 sText_AllHeader[] = _("All Missions");
-static const u8 sText_InactiveHeader[] = _("Inactive Missions");
-static const u8 sText_ActiveHeader[] = _("Active Missions");
+static const u8 sText_AllHeader[] = _("All Quests");
+static const u8 sText_InactiveHeader[] = _("Inactive Quests");
+static const u8 sText_ActiveHeader[] = _("Active Quests");
 static const u8 sText_RewardHeader[] = _("Reward Available");
 static const u8 sText_CompletedHeader[] =
-      _("Completed Missions");
+      _("Completed Quests");
 static const u8 sText_QuestNumberDisplay[] =
       _("{STR_VAR_1}/{STR_VAR_2}");
 static const u8 sText_Unk[] = _("??????");
@@ -1117,23 +1117,15 @@ static bool8 SetupGraphics(void)
 			gMain.state++;
 			break;
 		case 18:
-			if (sListMenuState.initialized == 1)
-			{
-				BlendPalettes(0xFFFFFFFF, 16, RGB_BLACK);
-			}
+            BlendPalettes(PALETTES_ALL, 16, 0);
 			gMain.state++;
 			break;
 		case 19:
-			if (sListMenuState.initialized == 1)
-			{
-				BeginNormalPaletteFade(0xFFFFFFFF, 0, 16, 0, RGB_BLACK);
-			}
-			else
-			{
+            BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
+            gPaletteFade.bufferTransferDisabled = FALSE;
 
-				BeginNormalPaletteFade(0xFFFFFFFF, 0, 16, 0, RGB_BLACK);
-				SetInitializedFlag(1);
-			}
+            if (sListMenuState.initialized != 1)
+                SetInitializedFlag(1);
 			gMain.state++;
 			break;
 		default:
@@ -1520,7 +1512,7 @@ static u8 CountNumberListRows()
 		case SORT_DONE:
 			return CountCompletedQuests() + 1;
 	}
-	
+
 	return 1;
 }
 

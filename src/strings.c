@@ -498,7 +498,7 @@ const u8 gText_Items[] = _("ITEMS");
 const u8 gText_Key_Items[] = _("KEY ITEMS");
 const u8 gText_Poke_Balls[] = _("POKé BALLS");
 const u8 gText_TMs_Hms[] = _("TMs & HMs");
-const u8 gText_Berries2[] = _("BERRIES");
+const u8 gText_Berries2[] = _("Berries");
 const u8 gText_SomeonesPC[] = _("University PC");
 const u8 gText_LanettesPC[] = _("LANETTE'S PC");
 const u8 gText_PlayersPC[] = _("{PLAYER}'s PC");
@@ -1304,8 +1304,8 @@ const u8 gText_Ok2[] = _("OK");
 const u8 gText_Quiz[] = _("QUIZ");
 const u8 gText_Answer[] = _("ANSWER");
 const u8 gText_PokeBalls[] = _("POKé BALLS");
-const u8 gText_Berry[] = _("BERRY");
-const u8 gText_Berries[] = _("BERRIES");
+const u8 gText_Berry[] = _("Berry");
+const u8 gText_Berries[] = _("Berries");
 const u8 gText_ExpShareOn[] = _("The Exp. Share has been turned on.{PAUSE_UNTIL_PRESS}");
 const u8 gText_ExpShareOff[] = _("The Exp. Share has been turned off.{PAUSE_UNTIL_PRESS}");
 const u8 gText_BasePointsResetToZero[] = _("{STR_VAR_1}'s base points\nwere all reset to zero!{PAUSE_UNTIL_PRESS}");
@@ -1322,7 +1322,7 @@ const u8 gText_QuestComplete[] =_("complete");
 const u8 gText_QuestActive[] =_("active");
 
 //names
-const u8 gText_SideQuestName_1[] = _("The Test Quest");
+const u8 gText_SideQuestName_1[] = _("Senior Year");
 const u8 gText_SideQuestName_2[] = _("Side Quest 2");
 const u8 gText_SideQuestName_3[] = _("Side Quest 3");
 const u8 gText_SideQuestName_4[] = _("Side Quest 4");
@@ -1354,7 +1354,7 @@ const u8 gText_SideQuestName_29[] = _("Side Quest 29");
 const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
-const u8 gText_SideQuestDesc_1[] = _("Testing the quests!");
+const u8 gText_SideQuestDesc_1[] = _("It's your senior year! Travel\nto North Campus and attend\norientation with Tracie.");
 const u8 gText_SideQuestDesc_2[] = _("Description 2");
 const u8 gText_SideQuestDesc_3[] = _("Description 3");
 const u8 gText_SideQuestDesc_4[] = _("Description 4");

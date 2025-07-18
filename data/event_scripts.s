@@ -1166,3 +1166,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SouthCampus_PokemonCenter_1F/scripts.inc"
 
 	.include "data/maps/SouthCampus_Mart/scripts.inc"
+
+	.include "data/maps/GrayCave_1F/scripts.inc"
+
+	.include "data/maps/DormHallway/scripts.inc"
+
+	.include "data/maps/DormReception/scripts.inc"
+
+	.include "data/maps/TracieDorm/scripts.inc"

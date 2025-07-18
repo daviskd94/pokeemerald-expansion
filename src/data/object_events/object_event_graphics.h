@@ -1,3 +1,7 @@
+const u32 gObjectEventPic_Tracie[] = INCBIN_U32("graphics/object_events/pics/people/tracie.4bpp");
+const u16 gObjectEventPal_Tracie[] = INCBIN_U16("graphics/object_events/palettes/tracie.gbapal");
+const u32 gObjectEventPic_Rotcart[] = INCBIN_U32("graphics/object_events/pics/people/rotcart.4bpp");
+const u16 gObjectEventPal_Rotcart[] = INCBIN_U16("graphics/object_events/palettes/rotcart.gbapal");
 const u32 gObjectEventPic_BrendanNormalRunning[] = INCBIN_U32("graphics/object_events/pics/people/brendan/walking.4bpp", "graphics/object_events/pics/people/brendan/running.4bpp");
 const u16 gObjectEventPal_Brendan[] = INCBIN_U16("graphics/object_events/palettes/brendan.gbapal");
 const u32 gObjectEventPic_RubySapphireBrendanNormal[] = INCBIN_U32("graphics/object_events/pics/people/ruby_sapphire_brendan/walking.4bpp");
@@ -130,6 +134,7 @@ const u32 gObjectEventPic_MauvilleOldMan1[] = INCBIN_U32("graphics/object_events
 const u32 gObjectEventPic_MauvilleOldMan2[] = INCBIN_U32("graphics/object_events/pics/people/mauville_old_man_2.4bpp");
 const u32 gObjectEventPic_MartEmployee[] = INCBIN_U32("graphics/object_events/pics/people/mart_employee.4bpp");
 const u16 gObjectEventPal_MartEmployee[] = INCBIN_U16("graphics/object_events/palettes/mart_employee.gbapal");
+const u16 gObjectEventPal_Emoji[] = INCBIN_U16("graphics/object_events/palettes/emotes.gbapal");
 const u32 gObjectEventPic_RooftopSaleWoman[] = INCBIN_U32("graphics/object_events/pics/people/rooftop_sale_woman.4bpp");
 const u32 gObjectEventPic_Teala[] = INCBIN_U32("graphics/object_events/pics/people/teala.4bpp");
 const u32 gObjectEventPic_Artist[] = INCBIN_U32("graphics/object_events/pics/people/artist.4bpp");
@@ -359,6 +364,7 @@ const u32 gObjectEventPic_Noland[] = INCBIN_U32("graphics/object_events/pics/peo
 const u32 gObjectEventPic_Lucy[] = INCBIN_U32("graphics/object_events/pics/people/frontier_brains/lucy.4bpp");
 const u32 gObjectEventPic_Brandon[] = INCBIN_U32("graphics/object_events/pics/people/frontier_brains/brandon.4bpp");
 const u32 gObjectEventPic_PokeBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_poke.4bpp");
+const u32 gObjectEventPic_ItemBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_item.4bpp");
 
 const u32 gObjectEventPic_DeoxysOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/deoxys.4bpp");
 const u32 gObjectEventPic_MewOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/mew.4bpp");

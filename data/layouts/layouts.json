@@ -4450,6 +4450,46 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/SouthCampus_Mart/border.bin",
       "blockdata_filepath": "data/layouts/SouthCampus_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRAY_CAVE_1F",
+      "name": "GrayCave_1F_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GrayCave",
+      "border_filepath": "data/layouts/GrayCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/GrayCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DORM_HALLWAY",
+      "name": "DormHallway_Layout",
+      "width": 36,
+      "height": 25,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DormHallway",
+      "border_filepath": "data/layouts/DormHallway/border.bin",
+      "blockdata_filepath": "data/layouts/DormHallway/map.bin"
+    },
+    {
+      "id": "LAYOUT_DORM_RECEPTION",
+      "name": "DormReception_Layout",
+      "width": 26,
+      "height": 18,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DormHallway",
+      "border_filepath": "data/layouts/DormReception/border.bin",
+      "blockdata_filepath": "data/layouts/DormReception/map.bin"
+    },
+    {
+      "id": "LAYOUT_TRACIE_DORM",
+      "name": "TracieDorm_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/TracieDorm/border.bin",
+      "blockdata_filepath": "data/layouts/TracieDorm/map.bin"
     }
   ]
 }

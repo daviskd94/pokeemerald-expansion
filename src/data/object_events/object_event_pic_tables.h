@@ -1117,6 +1117,10 @@ static const struct SpriteFrameImage sPicTable_PokeBall[] = {
     overworld_frame(gObjectEventPic_PokeBall, 2, 4, 0),
 };
 
+static const struct SpriteFrameImage sPicTable_ItemBall[] = {
+    overworld_frame(gObjectEventPic_ItemBall, 2, 4, 0),
+};
+
 extern const struct SpriteFrameImage gFieldEffectObjectPicTable_BallLight[];
 
 #if OW_FOLLOWERS_POKEBALLS
@@ -1355,4 +1359,12 @@ static const struct SpriteFrameImage sPicTable_KirliaOld[] = {
 
 static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
     overworld_ascending_frames(gObjectEventPic_RubySapphireMayNormal, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Tracie[] = {
+    overworld_ascending_frames(gObjectEventPic_Tracie, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Rotcart[] = {
+    overworld_ascending_frames(gObjectEventPic_Rotcart, 4, 4),
 };

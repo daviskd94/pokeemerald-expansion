@@ -837,7 +837,7 @@ static void HeatStartMenu_UpdateClockDisplay(void)
 	CopyWindowToVram(sHeatStartMenu->sStartClockWindowId, COPYWIN_GFX);
 }
 
-static const u8 gText_Poketch[] = _("  Journal");
+static const u8 gText_Poketch[] = _(" Quest Log");
 static const u8 gText_Pokedex[] = _("  Pokédex");
 static const u8 gText_Party[]   = _("    Party ");
 static const u8 gText_Bag[]     = _("      Bag  ");

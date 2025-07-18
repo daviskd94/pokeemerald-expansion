@@ -78,6 +78,7 @@ script Player_Dorm_Enter_Tracie {
     playse(SE_EXIT)
     removeobject(LOCALID_TRACIE)
     setflag(FLAG_HIDE_TRACIE)
+    setflag(FLAG_SYS_B_DASH)
     setvar(VAR_PLAYERDORM_STATE, 1)
     releaseall
     end
@@ -94,6 +95,7 @@ movement Player_Dorm_Tracie_Leaves {
 }
 
 script Player_Dorm_Take_Eevee {
+    setvar(VAR_PLAYERDORM_STATE, 2)
     givemon(SPECIES_EEVEE, 10, ITEM_ORAN_BERRY)
     removeobject(LOCALID_EEVEE)
     playfanfare(MUS_OBTAIN_ITEM)
@@ -102,6 +104,14 @@ script Player_Dorm_Take_Eevee {
     setflag(FLAG_TAKE_EEVEE)
     setflag(FLAG_SYS_POKEMON_GET)
     call(Player_Dorm_Nickname_Eevee)
+    setflag (FLAG_SYS_QUEST_MENU_GET) 
+    questmenu(QUEST_MENU_SET_ACTIVE, QUEST_ORIENTATION)
+    playse(SE_DEX_SEARCH)
+    msgbox(format("{COLOR BLUE}Senior Year{COLOR DARK_GRAY} has been added to your Quest Log."))
+    waitse
+    openquestmenu
+    release
+    end
 }
 
 script Player_Dorm_Nickname_Eevee {
@@ -110,8 +120,7 @@ script Player_Dorm_Nickname_Eevee {
         call(Common_EventScript_GetGiftMonPartySlot)
         call(Common_EventScript_NameReceivedPartyMon)
     }
-    release
-    end
+    return
 }
 
 script Player_Dorm_EventScript_CheckPlayersPC {
@@ -125,12 +134,12 @@ script Player_Dorm_EventScript_CheckPlayersPC {
 	end
 }
 
-script Player_Dorm_Test_Quest {
-    setflag (FLAG_SYS_QUEST_MENU_GET) 
-    questmenu(QUEST_MENU_SET_ACTIVE, QUEST_TEST)
-    playse(SE_DEX_SEARCH)
-    msgbox(format("The quest, Test Quest, is now active."))
-    waitse
-    openquestmenu
+script Player_Dorm_Trigger_CantLeave {
+    lock
+    msgbox("You can't leave without Eevee.")
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+    waitmovement(0)
+    release
     end
 }

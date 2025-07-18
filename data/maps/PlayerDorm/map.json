@@ -16,7 +16,7 @@
   "object_events": [
     {
       "local_id": "LOCALID_TRACIE",
-      "graphics_id": "OBJ_EVENT_GFX_LINK_RS_MAY",
+      "graphics_id": "OBJ_EVENT_GFX_TRACIE",
       "x": 7,
       "y": 11,
       "elevation": 0,
@@ -30,9 +30,9 @@
     },
     {
       "local_id": "LOCALID_EEVEE",
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 3,
-      "y": 5,
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 10,
+      "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -41,19 +41,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Player_Dorm_Take_Eevee",
       "flag": "FLAG_TAKE_EEVEE"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_PIKACHU_DOLL",
-      "x": 8,
-      "y": 4,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Player_Dorm_Test_Quest",
-      "flag": "0"
     }
   ],
   "warp_events": [
@@ -61,11 +48,21 @@
       "x": 7,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_SOUTH_CAMPUS",
-      "dest_warp_id": "3"
+      "dest_map": "MAP_DORM_HALLWAY",
+      "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_PLAYERDORM_STATE",
+      "var_value": "1",
+      "script": "Player_Dorm_Trigger_CantLeave"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",
