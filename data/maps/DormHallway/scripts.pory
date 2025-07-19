@@ -13,15 +13,15 @@ script DormHallway_LeaveDorm {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     waitmovement(0)
     speakername(Tracie)
-    msgbox(format("Ugh! Rotcart… What an asshole!\pI know he's one of the strongest Trainers in this school, but does he really have to be such a dick?\pAt least you're able to give him a run for his money…\pHe does have a point though, we should get going.\pCome meet me in my room!"))
+    msgbox(format("Ugh! Rotcart…\nWhat an asshole!\pI know he's one of the strongest Trainers in this school, but does he really have to be such a dick?\pAt least you're able to give him a run for his money…\pHe does have a point though, we need to get going!\pFollow me to my room!"))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     applymovement(LOCALID_TRACIE, moves(walk_right*9, walk_up))
     waitmovement(0)
-    hideobjectat(LOCALID_TRACIE, MAP_DORM_HALLWAY)
+    removeobject(LOCALID_TRACIE)
     playse(SE_DOOR)
     waitse
-    setflag(FLAG_HIDE_TRACEROTCART)
+    setflag(FLAG_HIDE_TRACIEROTCART)
     setvar(VAR_PLAYERDORM_STATE, 3)
     end
 }
@@ -43,9 +43,19 @@ script DormHallway_EnterRotcart {
     waitmovement(0)
     applymovement(LOCALID_ROTCART, moves(walk_right*9))
     waitmovement(0)
-    hideobjectat(LOCALID_ROTCART, MAP_DORM_HALLWAY)
+    removeobject(LOCALID_ROTCART)
     fadedefaultbgm
     return
+}
+
+script DormHallway_DontLeave {
+    lock
+    msgbox("Tracie's dorm isn't this way.")
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+    waitmovement(0)
+    release
+    end
 }
 
 

@@ -191,81 +191,71 @@ Player_Dorm_Take_Eevee::
 # 100 "data/maps/PlayerDorm/scripts.pory"
 	removeobject LOCALID_EEVEE
 # 101 "data/maps/PlayerDorm/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	updatefollowingmon
 # 102 "data/maps/PlayerDorm/scripts.pory"
-	msgbox Player_Dorm_Take_Eevee_Text_0
+	playfanfare MUS_OBTAIN_ITEM
 # 103 "data/maps/PlayerDorm/scripts.pory"
-	waitfanfare
+	msgbox Player_Dorm_Take_Eevee_Text_0
 # 104 "data/maps/PlayerDorm/scripts.pory"
-	setflag FLAG_TAKE_EEVEE
+	waitfanfare
 # 105 "data/maps/PlayerDorm/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_TAKE_EEVEE
 # 106 "data/maps/PlayerDorm/scripts.pory"
-	call Player_Dorm_Nickname_Eevee
+	setflag FLAG_SYS_POKEMON_GET
 # 107 "data/maps/PlayerDorm/scripts.pory"
-	setflag FLAG_SYS_QUEST_MENU_GET
+	call Player_Dorm_Nickname_Eevee
 # 108 "data/maps/PlayerDorm/scripts.pory"
-	questmenu QUEST_MENU_SET_ACTIVE, QUEST_ORIENTATION
-# 109 "data/maps/PlayerDorm/scripts.pory"
-	playse SE_DEX_SEARCH
-# 110 "data/maps/PlayerDorm/scripts.pory"
-	msgbox Player_Dorm_Take_Eevee_Text_1
-# 111 "data/maps/PlayerDorm/scripts.pory"
-	waitse
-# 112 "data/maps/PlayerDorm/scripts.pory"
-	openquestmenu
-# 113 "data/maps/PlayerDorm/scripts.pory"
 	release
 	end
 
 
 Player_Dorm_Nickname_Eevee::
-# 118 "data/maps/PlayerDorm/scripts.pory"
+# 113 "data/maps/PlayerDorm/scripts.pory"
 	msgbox Player_Dorm_Nickname_Eevee_Text_0, MSGBOX_YESNO
-# 119 "data/maps/PlayerDorm/scripts.pory"
+# 114 "data/maps/PlayerDorm/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Player_Dorm_Nickname_Eevee_2
 Player_Dorm_Nickname_Eevee_1:
 	return
 
 Player_Dorm_Nickname_Eevee_2:
-# 120 "data/maps/PlayerDorm/scripts.pory"
+# 115 "data/maps/PlayerDorm/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 121 "data/maps/PlayerDorm/scripts.pory"
+# 116 "data/maps/PlayerDorm/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto Player_Dorm_Nickname_Eevee_1
 
 
 Player_Dorm_EventScript_CheckPlayersPC::
-# 127 "data/maps/PlayerDorm/scripts.pory"
+# 122 "data/maps/PlayerDorm/scripts.pory"
 	setvar VAR_0x8004, 1
-# 128 "data/maps/PlayerDorm/scripts.pory"
+# 123 "data/maps/PlayerDorm/scripts.pory"
 	special DoPCTurnOnEffect
-# 129 "data/maps/PlayerDorm/scripts.pory"
+# 124 "data/maps/PlayerDorm/scripts.pory"
 	playse SE_PC_ON
-# 130 "data/maps/PlayerDorm/scripts.pory"
+# 125 "data/maps/PlayerDorm/scripts.pory"
 	msgbox Player_Dorm_EventScript_CheckPlayersPC_Text_0, MSGBOX_DEFAULT
-# 131 "data/maps/PlayerDorm/scripts.pory"
+# 126 "data/maps/PlayerDorm/scripts.pory"
 	special BedroomPC
-# 132 "data/maps/PlayerDorm/scripts.pory"
+# 127 "data/maps/PlayerDorm/scripts.pory"
 	waitstate
-# 133 "data/maps/PlayerDorm/scripts.pory"
+# 128 "data/maps/PlayerDorm/scripts.pory"
 	releaseall
 	end
 
 
 Player_Dorm_Trigger_CantLeave::
-# 138 "data/maps/PlayerDorm/scripts.pory"
+# 133 "data/maps/PlayerDorm/scripts.pory"
 	lock
-# 139 "data/maps/PlayerDorm/scripts.pory"
+# 134 "data/maps/PlayerDorm/scripts.pory"
 	msgbox Player_Dorm_Trigger_CantLeave_Text_0
-# 140 "data/maps/PlayerDorm/scripts.pory"
+# 135 "data/maps/PlayerDorm/scripts.pory"
 	closemessage
-# 141 "data/maps/PlayerDorm/scripts.pory"
+# 136 "data/maps/PlayerDorm/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Player_Dorm_Enter_Tracie_Movement_0
-# 142 "data/maps/PlayerDorm/scripts.pory"
+# 137 "data/maps/PlayerDorm/scripts.pory"
 	waitmovement 0
-# 143 "data/maps/PlayerDorm/scripts.pory"
+# 138 "data/maps/PlayerDorm/scripts.pory"
 	release
 	end
 
@@ -335,45 +325,42 @@ Player_Dorm_Enter_Tracie_Text_0:
 
 Player_Dorm_Enter_Tracie_Text_1:
 # 63 "data/maps/PlayerDorm/scripts.pory"
-	.string "You're sleeping right now? Today of all\n"
-	.string "days?\p"
-	.string "Come on! You didn't actually forget, did\n"
-	.string "you?\p"
-	.string "Our senior orientation is today! I can't\n"
-	.string "believe you!\p"
+	.string "You're sleeping right now?\n"
+	.string "Today of all days?\p"
+	.string "Come on! You didn't actually\n"
+	.string "forget, did you?\p"
+	.string "Our senior orientation is today!\n"
+	.string "I can't believe you!\p"
 	.string "We've been dreaming of this day since\n"
 	.string "we were kids!$"
 
 Player_Dorm_Enter_Tracie_Text_2:
 # 68 "data/maps/PlayerDorm/scripts.pory"
-	.string "I can’t believe it… Me… Tracie!\p"
+	.string "I can’t believe it…\n"
+	.string "Me… Tracie!\p"
 	.string "Soon to be grad and an official Pokémon\n"
 	.string "Trainer!$"
 
 Player_Dorm_Enter_Tracie_Text_3:
 # 73 "data/maps/PlayerDorm/scripts.pory"
 	.string "Well, what are we waiting for!?\p"
-	.string "Grab Eevee and let's go! I'm so excited!$"
+	.string "Grab Eevee and let's go!\n"
+	.string "I'm so excited!$"
 
 Player_Dorm_Take_Eevee_Text_0:
-# 102 "data/maps/PlayerDorm/scripts.pory"
+# 103 "data/maps/PlayerDorm/scripts.pory"
 	.string "{PLAYER} picked up their partner, Eevee!$"
 
-Player_Dorm_Take_Eevee_Text_1:
-# 110 "data/maps/PlayerDorm/scripts.pory"
-	.string "{COLOR BLUE}Senior Year{COLOR DARK_GRAY} has been added to your\n"
-	.string "Quest Log.$"
-
 Player_Dorm_Nickname_Eevee_Text_0:
-# 118 "data/maps/PlayerDorm/scripts.pory"
+# 113 "data/maps/PlayerDorm/scripts.pory"
 	.string "Does Eevee have a nickname?$"
 
 Player_Dorm_EventScript_CheckPlayersPC_Text_0:
-# 130 "data/maps/PlayerDorm/scripts.pory"
+# 125 "data/maps/PlayerDorm/scripts.pory"
 	.string "{PLAYER} booted up the laptop.$"
 
 Player_Dorm_Trigger_CantLeave_Text_0:
-# 139 "data/maps/PlayerDorm/scripts.pory"
+# 134 "data/maps/PlayerDorm/scripts.pory"
 	.string "You can't leave without Eevee.$"
 
 Tracie::

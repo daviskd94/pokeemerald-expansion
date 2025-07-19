@@ -31,3 +31,31 @@ script DormReception_TelevisionShow {
     release
     end
 }
+
+script DormReception_Fridge {
+    lock
+    msgbox(format("It's filled with lots of beer and frozen meals."))
+    release
+    end
+}
+
+script DormReception_Stove {
+    lock
+    msgbox(format("There's half eaten ramen still sitting in the pot."))
+    release
+    end
+}
+
+script DormReception_Sink {
+    lock
+    msgbox(format("Piled up high with used dishes."))
+    release
+    end
+}
+
+script DormReception_Bookcase {
+    lock
+    msgbox(format("Very dusty, clearly not used."))
+    release
+    end
+}

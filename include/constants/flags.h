@@ -46,7 +46,7 @@
 #define FLAG_HIDE_TRACIE     0x20 // Flag used to hide Tracie
 #define FLAG_TAKE_EEVEE      0x21 // Flag for taking Eevee
 #define FLAG_DORM_TRASH      0x22 // Flag for finding an Oran Berry in the trash
-#define FLAG_HIDE_TRACEROTCART    0x23 // Flag for hiding Tracie and Rotcart upon leaving your dorm
+#define FLAG_HIDE_TRACIEROTCART    0x23 // Flag for hiding Tracie and Rotcart upon leaving your dorm
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag

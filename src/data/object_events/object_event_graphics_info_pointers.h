@@ -239,6 +239,13 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lugia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tracie;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rotcart;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GenesisMale;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GenesisFemale;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AceTrainerM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AceTrainerF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AromaLady;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BattleGirl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Biker;
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBallHigher;
@@ -498,6 +505,13 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,
     [OBJ_EVENT_GFX_TRACIE] =                   &gObjectEventGraphicsInfo_Tracie,
     [OBJ_EVENT_GFX_ROTCART] =                  &gObjectEventGraphicsInfo_Rotcart,
+    [OBJ_EVENT_GFX_GENESIS_M] =                &gObjectEventGraphicsInfo_GenesisMale,
+    [OBJ_EVENT_GFX_GENESIS_F] =                &gObjectEventGraphicsInfo_GenesisFemale,
+    [OBJ_EVENT_GFX_ACE_TRAINER_M] =            &gObjectEventGraphicsInfo_AceTrainerM,
+    [OBJ_EVENT_GFX_ACE_TRAINER_F] =            &gObjectEventGraphicsInfo_AceTrainerF,
+    [OBJ_EVENT_GFX_AROMA_LADY] =               &gObjectEventGraphicsInfo_AromaLady,   
+    [OBJ_EVENT_GFX_BATTLE_GIRL] =              &gObjectEventGraphicsInfo_BattleGirl,
+    [OBJ_EVENT_GFX_BIKER] =                    &gObjectEventGraphicsInfo_Biker,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

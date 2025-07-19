@@ -37,13 +37,13 @@ DormHallway_LeaveDorm::
 # 20 "data/maps/DormHallway/scripts.pory"
 	waitmovement 0
 # 21 "data/maps/DormHallway/scripts.pory"
-	hideobjectat LOCALID_TRACIE, MAP_DORM_HALLWAY
+	removeobject LOCALID_TRACIE
 # 22 "data/maps/DormHallway/scripts.pory"
 	playse SE_DOOR
 # 23 "data/maps/DormHallway/scripts.pory"
 	waitse
 # 24 "data/maps/DormHallway/scripts.pory"
-	setflag FLAG_HIDE_TRACEROTCART
+	setflag FLAG_HIDE_TRACIEROTCART
 # 25 "data/maps/DormHallway/scripts.pory"
 	setvar VAR_PLAYERDORM_STATE, 3
 	end
@@ -83,38 +83,54 @@ DormHallway_EnterRotcart::
 # 45 "data/maps/DormHallway/scripts.pory"
 	waitmovement 0
 # 46 "data/maps/DormHallway/scripts.pory"
-	hideobjectat LOCALID_ROTCART, MAP_DORM_HALLWAY
+	removeobject LOCALID_ROTCART
 # 47 "data/maps/DormHallway/scripts.pory"
 	fadedefaultbgm
 	return
 
 
-Player_Dorm_EventScript_PlayerSign::
-# 53 "data/maps/DormHallway/scripts.pory"
+DormHallway_DontLeave::
+# 52 "data/maps/DormHallway/scripts.pory"
 	lock
+# 53 "data/maps/DormHallway/scripts.pory"
+	msgbox DormHallway_DontLeave_Text_0
 # 54 "data/maps/DormHallway/scripts.pory"
-	msgbox Player_Dorm_EventScript_PlayerSign_Text_0
+	closemessage
 # 55 "data/maps/DormHallway/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, DormHallway_DontLeave_Movement_0
+# 56 "data/maps/DormHallway/scripts.pory"
+	waitmovement 0
+# 57 "data/maps/DormHallway/scripts.pory"
+	release
+	end
+
+
+Player_Dorm_EventScript_PlayerSign::
+# 63 "data/maps/DormHallway/scripts.pory"
+	lock
+# 64 "data/maps/DormHallway/scripts.pory"
+	msgbox Player_Dorm_EventScript_PlayerSign_Text_0
+# 65 "data/maps/DormHallway/scripts.pory"
 	release
 	end
 
 
 Player_Dorm_EventScript_TracieSign::
-# 60 "data/maps/DormHallway/scripts.pory"
+# 70 "data/maps/DormHallway/scripts.pory"
 	lock
-# 61 "data/maps/DormHallway/scripts.pory"
+# 71 "data/maps/DormHallway/scripts.pory"
 	msgbox Player_Dorm_EventScript_TracieSign_Text_0
-# 62 "data/maps/DormHallway/scripts.pory"
+# 72 "data/maps/DormHallway/scripts.pory"
 	release
 	end
 
 
 Player_Dorm_EventScript_RotcartSign::
-# 67 "data/maps/DormHallway/scripts.pory"
+# 77 "data/maps/DormHallway/scripts.pory"
 	lock
-# 68 "data/maps/DormHallway/scripts.pory"
+# 78 "data/maps/DormHallway/scripts.pory"
 	msgbox Player_Dorm_EventScript_RotcartSign_Text_0
-# 69 "data/maps/DormHallway/scripts.pory"
+# 79 "data/maps/DormHallway/scripts.pory"
 	release
 	end
 
@@ -211,6 +227,12 @@ DormHallway_EnterRotcart_Movement_3:
 	walk_right
 	step_end
 
+# 55 "data/maps/DormHallway/scripts.pory"
+DormHallway_DontLeave_Movement_0:
+# 55 "data/maps/DormHallway/scripts.pory"
+	walk_down
+	step_end
+
 DormHallway_LeaveDorm_Text_0:
 # 10 "data/maps/DormHallway/scripts.pory"
 	.string "Oh! Before I forget!\p"
@@ -219,28 +241,33 @@ DormHallway_LeaveDorm_Text_0:
 
 DormHallway_LeaveDorm_Text_1:
 # 16 "data/maps/DormHallway/scripts.pory"
-	.string "Ugh! Rotcart… What an asshole!\p"
+	.string "Ugh! Rotcart…\n"
+	.string "What an asshole!\p"
 	.string "I know he's one of the strongest\n"
 	.string "Trainers in this school, but does he\l"
 	.string "really have to be such a dick?\p"
 	.string "At least you're able to give him a run\n"
 	.string "for his money…\p"
-	.string "He does have a point though, we should\n"
-	.string "get going.\p"
-	.string "Come meet me in my room!$"
+	.string "He does have a point though, we need to\n"
+	.string "get going!\p"
+	.string "Follow me to my room!$"
 
 DormHallway_EnterRotcart_Text_0:
 # 39 "data/maps/DormHallway/scripts.pory"
 	.string "… … …\p… … …\n… … …\pMove.$"
 
+DormHallway_DontLeave_Text_0:
+# 53 "data/maps/DormHallway/scripts.pory"
+	.string "Tracie's dorm isn't this way.$"
+
 Player_Dorm_EventScript_PlayerSign_Text_0:
-# 54 "data/maps/DormHallway/scripts.pory"
+# 64 "data/maps/DormHallway/scripts.pory"
 	.string "{PLAYER}'s room$"
 
 Player_Dorm_EventScript_TracieSign_Text_0:
-# 61 "data/maps/DormHallway/scripts.pory"
+# 71 "data/maps/DormHallway/scripts.pory"
 	.string "Tracie's room$"
 
 Player_Dorm_EventScript_RotcartSign_Text_0:
-# 68 "data/maps/DormHallway/scripts.pory"
+# 78 "data/maps/DormHallway/scripts.pory"
 	.string "Rotcart's room$"
