@@ -37,6 +37,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Youngster;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BugCatcher;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PsychicM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SchoolKidM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SchoolKidF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Maniac;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HexManiac;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RayquazaStill;
@@ -44,6 +45,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SwimmerM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SwimmerF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BlackBelt;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Beauty;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Boarder;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Scientist1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lass;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gentleman;
@@ -246,6 +248,63 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AceTrainerF
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AromaLady;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BattleGirl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Biker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirdKeeperM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirdKeeperF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Burglar;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Collector;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cowgirl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rancher;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DragonTamer;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FireBreather;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Maple;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Guitarist;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Idol;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Jogger;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juggler;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KimonoGirl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lady;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Medium;
+/*extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Officer;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ParasolLady;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gambler;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeKid;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeManiac;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeFanM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeFanF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BreederM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BreederF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RangerM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RangerF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PsychicF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Roughneck;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RuinManiac;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sage;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SkierM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SkierF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Socialite;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SuperNerd;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Teacher;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Waiter;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Waitress;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Worker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Johnny;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Amanda;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hannah;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Colleen;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Evan;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kyle;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Steph;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Paul;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mario;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Donald;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Richard;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nate;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Michele;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cyrus;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Guard;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Captain;*/
+
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBallHigher;
@@ -512,6 +571,62 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_AROMA_LADY] =               &gObjectEventGraphicsInfo_AromaLady,   
     [OBJ_EVENT_GFX_BATTLE_GIRL] =              &gObjectEventGraphicsInfo_BattleGirl,
     [OBJ_EVENT_GFX_BIKER] =                    &gObjectEventGraphicsInfo_Biker,
+    [OBJ_EVENT_GFX_BIRD_KEEPER_M] =            &gObjectEventGraphicsInfo_BirdKeeperM,
+    [OBJ_EVENT_GFX_BIRD_KEEPER_F] =            &gObjectEventGraphicsInfo_BirdKeeperF,
+    [OBJ_EVENT_GFX_BOARDER] =                  &gObjectEventGraphicsInfo_Boarder,
+    [OBJ_EVENT_GFX_BURGLAR] =                  &gObjectEventGraphicsInfo_Burglar,
+    [OBJ_EVENT_GFX_COLLECTOR] =                &gObjectEventGraphicsInfo_Collector,
+    [OBJ_EVENT_GFX_COWGIRL] =                  &gObjectEventGraphicsInfo_Cowgirl,
+    [OBJ_EVENT_GFX_RANCHER] =                  &gObjectEventGraphicsInfo_Rancher,
+    [OBJ_EVENT_GFX_DRAGON_TAMER] =             &gObjectEventGraphicsInfo_DragonTamer,
+    [OBJ_EVENT_GFX_FIRE_BREATHER] =            &gObjectEventGraphicsInfo_FireBreather,
+    [OBJ_EVENT_GFX_MAPLE] =                    &gObjectEventGraphicsInfo_Maple,
+    [OBJ_EVENT_GFX_GUITARIST] =                &gObjectEventGraphicsInfo_Guitarist, 
+	[OBJ_EVENT_GFX_IDOL] =  		   		   &gObjectEventGraphicsInfo_Idol,
+	[OBJ_EVENT_GFX_JOGGER] =                   &gObjectEventGraphicsInfo_Jogger,
+	[OBJ_EVENT_GFX_JUGGLER] =                  &gObjectEventGraphicsInfo_Juggler,
+	[OBJ_EVENT_GFX_KIMONO_GIRL] =              &gObjectEventGraphicsInfo_KimonoGirl,
+	[OBJ_EVENT_GFX_LADY] =                     &gObjectEventGraphicsInfo_Lady,
+	[OBJ_EVENT_GFX_MEDIUM] =                   &gObjectEventGraphicsInfo_Medium,
+	/*[OBJ_EVENT_GFX_OFFICER] =                  &gObjectEventGraphicsInfo_Officer,
+	[OBJ_EVENT_GFX_PARASOL_LADY] =             &gObjectEventGraphicsInfo_ParasolLady,
+	[OBJ_EVENT_GFX_GAMBLER] =                  &gObjectEventGraphicsInfo_Gambler,
+	[OBJ_EVENT_GFX_POKE_KID] =                 &gObjectEventGraphicsInfo_PokeKid,
+	[OBJ_EVENT_GFX_POKE_MANIAC] =              &gObjectEventGraphicsInfo_PokeManiac,
+	[OBJ_EVENT_GFX_POKE_BREEDER_M] =           &gObjectEventGraphicsInfo_BreederM,
+	[OBJ_EVENT_GFX_POKE_BREEDER_F] =           &gObjectEventGraphicsInfo_BreederF,
+	[OBJ_EVENT_GFX_POKE_RANGER_M] =            &gObjectEventGraphicsInfo_RangerM,
+	[OBJ_EVENT_GFX_POKE_RANGER_F] =            &gObjectEventGraphicsInfo_RangerF,
+	[OBJ_EVENT_GFX_PSYCHIC_F] =                &gObjectEventGraphicsInfo_PsychicF,
+	[OBJ_EVENT_GFX_ROUGHNECK] =                &gObjectEventGraphicsInfo_Roughneck,
+	[OBJ_EVENT_GFX_RUIN_MANIAC] =              &gObjectEventGraphicsInfo_RuinManiac,
+	[OBJ_EVENT_GFX_SAGE] =                     &gObjectEventGraphicsInfo_Sage,
+	[OBJ_EVENT_GFX_SCHOOL_KID_F] =             &gObjectEventGraphicsInfo_SchoolKidF,
+	[OBJ_EVENT_GFX_SKIER_M] =                  &gObjectEventGraphicsInfo_SkierM,
+	[OBJ_EVENT_GFX_SKIER_F] =                  &gObjectEventGraphicsInfo_SkierF,
+	[OBJ_EVENT_GFX_SOCIALITE] =                &gObjectEventGraphicsInfo_Socialite,
+	[OBJ_EVENT_GFX_SUPER_NERD] =               &gObjectEventGraphicsInfo_SuperNerd,
+	[OBJ_EVENT_GFX_TEACHER] =                  &gObjectEventGraphicsInfo_Teacher,
+	[OBJ_EVENT_GFX_WAITER] =                   &gObjectEventGraphicsInfo_Waiter,
+	[OBJ_EVENT_GFX_WAITRESS] =                 &gObjectEventGraphicsInfo_Waitress,
+	[OBJ_EVENT_GFX_WORKER] =                   &gObjectEventGraphicsInfo_Worker,
+	[OBJ_EVENT_GFX_JOHNNY] =                   &gObjectEventGraphicsInfo_Johnny,
+	[OBJ_EVENT_GFX_AMANDA] =                   &gObjectEventGraphicsInfo_Amanda,
+	[OBJ_EVENT_GFX_HANNAH] =                   &gObjectEventGraphicsInfo_Hannah,
+	[OBJ_EVENT_GFX_COLLEEN] =                  &gObjectEventGraphicsInfo_Colleen,
+	[OBJ_EVENT_GFX_EVAN] =                     &gObjectEventGraphicsInfo_Evan,
+	[OBJ_EVENT_GFX_MIKE] =                     &gObjectEventGraphicsInfo_Mike,
+	[OBJ_EVENT_GFX_KYLE] =                     &gObjectEventGraphicsInfo_Kyle,
+	[OBJ_EVENT_GFX_STEPH] =                    &gObjectEventGraphicsInfo_Steph,
+	[OBJ_EVENT_GFX_PAUL] =                     &gObjectEventGraphicsInfo_Paul,
+	[OBJ_EVENT_GFX_MARIO] =                    &gObjectEventGraphicsInfo_Mario,
+	[OBJ_EVENT_GFX_DONALD] =                   &gObjectEventGraphicsInfo_Donald,
+	[OBJ_EVENT_GFX_RICHARD] =                  &gObjectEventGraphicsInfo_Richard,
+	[OBJ_EVENT_GFX_NATE] =                     &gObjectEventGraphicsInfo_Nate,
+	[OBJ_EVENT_GFX_MICHELE] =                  &gObjectEventGraphicsInfo_Michele,
+	[OBJ_EVENT_GFX_CYRUS] =                    &gObjectEventGraphicsInfo_Cyrus,
+	[OBJ_EVENT_GFX_GUARD] =                    &gObjectEventGraphicsInfo_Guard,
+	[OBJ_EVENT_GFX_CAPTAIN] =                  &gObjectEventGraphicsInfo_Captain,*/
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
