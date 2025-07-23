@@ -5877,12 +5877,12 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         default:
-            return CUS_BATTLE_TRAINER;
+            return CUS_VS_TRAINER;
         }
     }
     else
     {
-        return CUS_BATTLE_WILD;
+        return CUS_VS_WILD;
     }
 }
 
