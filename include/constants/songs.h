@@ -494,8 +494,9 @@
 #define CUS_VS_TRAINER              611 // CUSTOM VS TRAINER (Tractor Trainer Battle Theme)
 #define CUS_VS_TEAM_GENESIS         612 // CUSTOM VS EVIL TEAM (Tractors Team Genesis Battle Theme)
 #define CUS_ANCIENT_PONI_PATH       613 // ANCIENT PONI PATH (Gen 3 Arrangement)
+#define CUS_KALOS_POWERPLANT        614 // ANCIENT PONI PATH (Gen 3 Arrangement)
 
-#define END_MUS                     CUS_ANCIENT_PONI_PATH
+#define END_MUS                     CUS_KALOS_POWERPLANT
 
 // These PH_* constants are phoneme sounds used by the "bard" NPC (see src/bard_music.c and src/mauville_old_man.c).
 // Each comes in a triplet of PH_*_BLEND, PH_*_HELD, and PH_*_SOLO, and the name of each triplet incorporates the English phonetic sound it represents.

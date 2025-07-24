@@ -1193,6 +1193,7 @@ SECTIONS {
         sound/songs/midi/cus_vs_trainer.o(.rodata);
         sound/songs/midi/cus_vs_team_genesis.o(.rodata);
         sound/songs/midi/cus_ancient_poni_path.o(.rodata);
+        sound/songs/midi/cus_kalos_powerplant.o(.rodata);
         sound/songs/midi/ph_trap_blend.o(.rodata);
         sound/songs/midi/ph_trap_held.o(.rodata);
         sound/songs/midi/ph_trap_solo.o(.rodata);

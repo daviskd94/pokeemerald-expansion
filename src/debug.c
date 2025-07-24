@@ -4453,6 +4453,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(CUS_VS_TRAINER) \
     X(CUS_VS_TEAM_GENESIS) \
     X(CUS_ANCIENT_PONI_PATH) \
+    X(CUS_KALOS_POWERPLANT) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

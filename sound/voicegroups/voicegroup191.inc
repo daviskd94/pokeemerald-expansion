@@ -96,8 +96,8 @@ voicegroup191::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_square_wave, 255, 1, 230, 127
-	voice_directsound 60, 0, DirectSoundWaveData_sd90_sawtooth_wave, 255, 1, 230, 127
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_square_wave, 255, 1, 210, 127
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_sawtooth_wave, 255, 1, 202, 127
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
