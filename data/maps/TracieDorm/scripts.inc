@@ -159,4 +159,5 @@ TracieDorm_Enter_Text_6:
 
 TracieDorm_TracieFollowDialogue_Text_0:
 # 48 "data/maps/TracieDorm/scripts.pory"
-	.string "Hehehe… Senior year! Let's go! Let's go!$"
+	.string "Hehehe… Senior year!\n"
+	.string "Let's go! Let's go!$"

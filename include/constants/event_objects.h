@@ -274,7 +274,7 @@
 #define OBJ_EVENT_GFX_MEDIUM                     267
 #define OBJ_EVENT_GFX_OFFICER                    268
 #define OBJ_EVENT_GFX_PARASOL_LADY               269
-#define OBJ_EVENT_GFX_GAMBLER                    270
+#define OBJ_EVENT_GFX_DETECTIVE                  270
 #define OBJ_EVENT_GFX_POKE_KID                   271
 #define OBJ_EVENT_GFX_POKE_MANIAC                272
 #define OBJ_EVENT_GFX_POKE_BREEDER_M             273
@@ -498,10 +498,10 @@
 #define OBJ_EVENT_PAL_TAG_NINJA_BOY               0x1159
 #define OBJ_EVENT_PAL_TAG_OFFICER                 0x115A
 #define OBJ_EVENT_PAL_TAG_PARASOL_LADY            0x115B
-#define OBJ_EVENT_PAL_TAG_GAMBLER                 0x115C
+#define OBJ_EVENT_PAL_TAG_DETECTIVE               0x115C
 #define OBJ_EVENT_PAL_TAG_POKE_KID                0x115D
 #define OBJ_EVENT_PAL_TAG_POKE_MANIAC             0x115E
-#define OBJ_EVENT_PAL_TAG_POKFAN                  0x115F
+#define OBJ_EVENT_PAL_TAG_POKEFAN_M               0x115F
 #define OBJ_EVENT_PAL_TAG_BREEDER                 0x1160
 #define OBJ_EVENT_PAL_TAG_RANGER                  0x1161
 #define OBJ_EVENT_PAL_TAG_PSYCHIC                 0x1162
@@ -544,6 +544,7 @@
 #define OBJ_EVENT_PAL_TAG_SCHOOL_KID_F            0x1185
 #define OBJ_EVENT_PAL_TAG_SCIENTIST_2             0x1186
 #define OBJ_EVENT_PAL_TAG_SKIER_F                 0x1187
+#define OBJ_EVENT_PAL_TAG_POKEFAN_F               0x1188
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

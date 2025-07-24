@@ -45,6 +45,6 @@ script TracieDorm_Enter {
 script TracieDorm_TracieFollowDialogue {
     faceplayer
     speakername(Tracie)
-    msgbox(format("Hehehe… Senior year! Let's go! Let's go!"))
+    msgbox(format("Hehehe… Senior year!\nLet's go! Let's go!"))
     closemessage
 }

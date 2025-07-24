@@ -490,11 +490,13 @@
 #define MUS_RG_TRAINER_TOWER        556 // MUS_RG_T_TOWER
 #define MUS_RG_SLOW_PALLET          557 // MUS_RG_SLOWMASARA
 #define MUS_RG_TEACHY_TV_MENU       558 // MUS_RG_TVNOIZE
-#define CUS_BATTLE_WILD             610 //CUSTOM WILD BATTLE
-#define CUS_BATTLE_TRAINER          611 //CUSTOM TRAINER BATTLE
-#define CUS_BATTLE_TEAM_GENESIS     612 //CUSTOM EVIL TEAM BATTLE
+#define CUS_VS_WILD                 610 //CUSTOM WILD BATTLE
+#define CUS_VS_TRAINER              611 //CUSTOM TRAINER BATTLE
+#define CUS_VS_TEAM_GENESIS         612 //CUSTOM EVIL TEAM BATTLE
+#define CUS_ANCIENT_PONI_PATH       613 // ANCIENT PONI PATH (Gen 3 Arrangement)
+#define CUS_KALOS_POWERPLANT        614 // ANCIENT PONI PATH (Gen 3 Arrangement)
 
-#define END_MUS                     CUS_BATTLE_TEAM_GENESIS
+#define END_MUS                     CUS_KALOS_POWERPLANT
 
 // These PH_* constants are phoneme sounds used by the "bard" NPC (see src/bard_music.c and src/mauville_old_man.c).
 // Each comes in a triplet of PH_*_BLEND, PH_*_HELD, and PH_*_SOLO, and the name of each triplet incorporates the English phonetic sound it represents.

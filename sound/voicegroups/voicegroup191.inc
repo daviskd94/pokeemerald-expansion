@@ -63,7 +63,7 @@ voicegroup191::
 	voice_keysplit voicegroup009, KeySplitTable5
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_low, 255, 0, 255, 127
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_low, 31, 0, 255, 210
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -85,7 +85,7 @@ voicegroup191::
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_1, 0, 3, 6, 5
 	voice_square_2_alt 60, 0, 0, 0, 2, 7, 2
 	voice_square_2_alt 60, 0, 0, 0, 3, 3, 0
-	voice_square_2 60, 0, 0, 0, 0, 15, 0
+	voice_square_2_alt 60, 0, 3, 0, 4, 4, 4
 	voice_square_2 60, 0, 0, 0, 0, 15, 0
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_5, 0, 7, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -96,8 +96,8 @@ voicegroup191::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_square_wave, 255, 1, 230, 127
-	voice_directsound 60, 0, DirectSoundWaveData_sd90_sawtooth_wave, 255, 1, 230, 127
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_square_wave, 255, 1, 210, 127
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_sawtooth_wave, 255, 1, 202, 127
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -120,11 +120,11 @@ voicegroup191::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_special_scream_drive, 255, 0, 255, 165
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_noise_alt 60, 0, 0, 0, 2, 6, 0
-	voice_noise_alt 60, 0, 0, 0, 1, 6, 1
-
+	voice_noise_alt 60, 0, 0, 0, 1, 6, 0
