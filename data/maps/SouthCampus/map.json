@@ -184,6 +184,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_YOUNGSTER",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 20,
       "y": 26,
@@ -194,9 +195,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_SOUTH_CAMPUS_TRAINERS"
     },
     {
+      "local_id": "LOCALID_MEOWTH_ALOLA",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEOWTH_ALOLA)",
       "x": 25,
       "y": 26,
@@ -207,9 +209,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MEOWTHS"
     },
     {
+      "local_id": "LOCALID_LASS",
       "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 27,
       "y": 26,
@@ -220,9 +223,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_SOUTH_CAMPUS_TRAINERS"
     },
     {
+      "local_id": "LOCALID_MEOWTH",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEOWTH)",
       "x": 22,
       "y": 26,
@@ -233,14 +237,15 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MEOWTHS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
-      "x": 35,
-      "y": 21,
+      "local_id": "LOCALID_FAT_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "x": 21,
+      "y": 29,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -249,26 +254,13 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
-      "x": 33,
-      "y": 21,
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 43,
+      "y": 22,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
-      "x": 35,
-      "y": 21,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
@@ -305,6 +297,79 @@
       "dest_warp_id": "1"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 40,
+      "elevation": 0,
+      "var": "VAR_SOUTH_CAMPUS_STATE",
+      "var_value": "0",
+      "script": "SouthCampus_MoveToBattle1"
+    },
+    {
+      "type": "trigger",
+      "x": 39,
+      "y": 42,
+      "elevation": 0,
+      "var": "VAR_SOUTH_CAMPUS_STATE",
+      "var_value": "0",
+      "script": "SouthCampus_MoveToBattle7"
+    },
+    {
+      "type": "trigger",
+      "x": 39,
+      "y": 41,
+      "elevation": 0,
+      "var": "VAR_SOUTH_CAMPUS_STATE",
+      "var_value": "0",
+      "script": "SouthCampus_MoveToBattle6"
+    },
+    {
+      "type": "trigger",
+      "x": 39,
+      "y": 40,
+      "elevation": 0,
+      "var": "VAR_SOUTH_CAMPUS_STATE",
+      "var_value": "0",
+      "script": "SouthCampus_MoveToBattle5"
+    },
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 43,
+      "elevation": 0,
+      "var": "VAR_SOUTH_CAMPUS_STATE",
+      "var_value": "0",
+      "script": "SouthCampus_MoveToBattle4"
+    },
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 42,
+      "elevation": 0,
+      "var": "VAR_SOUTH_CAMPUS_STATE",
+      "var_value": "0",
+      "script": "SouthCampus_MoveToBattle3"
+    },
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 41,
+      "elevation": 0,
+      "var": "VAR_SOUTH_CAMPUS_STATE",
+      "var_value": "0",
+      "script": "SouthCampus_MoveToBattle2"
+    },
+    {
+      "type": "trigger",
+      "x": 39,
+      "y": 43,
+      "elevation": 0,
+      "var": "VAR_SOUTH_CAMPUS_STATE",
+      "var_value": "0",
+      "script": "SouthCampus_MoveToBattle7"
+    }
+  ],
   "bg_events": []
 }

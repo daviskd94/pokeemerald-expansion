@@ -47,8 +47,8 @@
 #define FLAG_TAKE_EEVEE      0x21 // Flag for taking Eevee
 #define FLAG_DORM_TRASH      0x22 // Flag for finding an Oran Berry in the trash
 #define FLAG_HIDE_TRACIEROTCART    0x23 // Flag for hiding Tracie and Rotcart upon leaving your dorm
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
+#define FLAG_HIDE_MEOWTHS    0x24 // Unused Flag
+#define FLAG_HIDE_SOUTH_CAMPUS_TRAINERS    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
@@ -776,7 +776,7 @@
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 
-#define FLAG_UNUSED_0x2D9                                           0x2D9 // Unused Flag
+#define FLAG_WHITEOUT_CONTINUE                                          0x2D9 // Unused Flag
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
 #define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB

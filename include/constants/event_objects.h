@@ -311,12 +311,15 @@
 #define OBJ_EVENT_GFX_CYRUS                      304
 #define OBJ_EVENT_GFX_CAPTAIN                    305
 #define OBJ_EVENT_GFX_GUARD                      306
+#define OBJ_EVENT_GFX_YOUNG_COUPLE_M             307
+#define OBJ_EVENT_GFX_YOUNG_COUPLE_F             308
+#define OBJ_EVENT_GFX_CHAMPINTHEMAKING           309
 
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        307
+#define NUM_OBJ_EVENT_GFX                        310
 
 
 // These are dynamic object gfx ids.
@@ -511,40 +514,43 @@
 #define OBJ_EVENT_PAL_TAG_RUIN_MANIAC             0x1166
 #define OBJ_EVENT_PAL_TAG_SAGE                    0x1167
 #define OBJ_EVENT_PAL_TAG_SAILOR                  0x1168
-#define OBJ_EVENT_PAL_TAG_SCHOOL_KID_M            0x1167
-#define OBJ_EVENT_PAL_TAG_SCIENTIST_1             0x1168
-#define OBJ_EVENT_PAL_TAG_SKIER_M                 0x1169
-#define OBJ_EVENT_PAL_TAG_SOCIALITE               0x116A
-#define OBJ_EVENT_PAL_TAG_SUPER_NERD              0x116B
-#define OBJ_EVENT_PAL_TAG_SWIMMER_M               0x116C
-#define OBJ_EVENT_PAL_TAG_SWIMMER_F               0x116D
-#define OBJ_EVENT_PAL_TAG_TEACHER                 0x116E
-#define OBJ_EVENT_PAL_TAG_TUBER_M                 0x116F
-#define OBJ_EVENT_PAL_TAG_TUBER_F                 0x1170
-#define OBJ_EVENT_PAL_TAG_TWINS                   0x1171
-#define OBJ_EVENT_PAL_TAG_WAITER                  0x1172
-#define OBJ_EVENT_PAL_TAG_WAITRESS                0x1173
-#define OBJ_EVENT_PAL_TAG_WORKER                  0x1174
-#define OBJ_EVENT_PAL_TAG_MOM                     0x1175
-#define OBJ_EVENT_PAL_TAG_OLD_MAN_1               0x1176
-#define OBJ_EVENT_PAL_TAG_OLD_MAN_2               0x1177
-#define OBJ_EVENT_PAL_TAG_OLD_WOMAN_1             0x1178
-#define OBJ_EVENT_PAL_TAG_OLD_WOMAN_2             0x1179
-#define OBJ_EVENT_PAL_TAG_BOY_1                   0x117A
-#define OBJ_EVENT_PAL_TAG_BOY_2                   0x117B
-#define OBJ_EVENT_PAL_TAG_GIRL_1                  0x117C
-#define OBJ_EVENT_PAL_TAG_GIRL_2                  0x117D
-#define OBJ_EVENT_PAL_TAG_CAPTAIN                 0x117E
-#define OBJ_EVENT_PAL_TAG_GUARD                   0x117F
-#define OBJ_EVENT_PAL_TAG_CHAMPINTHEMAKING        0x1180
-#define OBJ_EVENT_PAL_TAG_FAT_MAN                 0x1181
-#define OBJ_EVENT_PAL_TAG_YOUNG_BOY               0x1182
-#define OBJ_EVENT_PAL_TAG_BALDING_MAN             0x1183
-#define OBJ_EVENT_PAL_TAG_CYCLIST_F               0x1184
-#define OBJ_EVENT_PAL_TAG_SCHOOL_KID_F            0x1185
-#define OBJ_EVENT_PAL_TAG_SCIENTIST_2             0x1186
-#define OBJ_EVENT_PAL_TAG_SKIER_F                 0x1187
-#define OBJ_EVENT_PAL_TAG_POKEFAN_F               0x1188
+#define OBJ_EVENT_PAL_TAG_SCHOOL_KID_M            0x1169
+#define OBJ_EVENT_PAL_TAG_SCIENTIST_1             0x116A
+#define OBJ_EVENT_PAL_TAG_SKIER_M                 0x116B
+#define OBJ_EVENT_PAL_TAG_SOCIALITE               0x116C
+#define OBJ_EVENT_PAL_TAG_SUPER_NERD              0x116D
+#define OBJ_EVENT_PAL_TAG_SWIMMER_M               0x116E
+#define OBJ_EVENT_PAL_TAG_SWIMMER_F               0x116F
+#define OBJ_EVENT_PAL_TAG_TEACHER                 0x1170
+#define OBJ_EVENT_PAL_TAG_TUBER_M                 0x1171
+#define OBJ_EVENT_PAL_TAG_TUBER_F                 0x1172
+#define OBJ_EVENT_PAL_TAG_TWINS                   0x1173
+#define OBJ_EVENT_PAL_TAG_WAITER                  0x1174
+#define OBJ_EVENT_PAL_TAG_WAITRESS                0x1175
+#define OBJ_EVENT_PAL_TAG_WORKER                  0x1176
+#define OBJ_EVENT_PAL_TAG_MOM                     0x1177
+#define OBJ_EVENT_PAL_TAG_OLD_MAN_1               0x1178
+#define OBJ_EVENT_PAL_TAG_OLD_MAN_2               0x1179
+#define OBJ_EVENT_PAL_TAG_OLD_WOMAN_1             0x117A
+#define OBJ_EVENT_PAL_TAG_OLD_WOMAN_2             0x117B
+#define OBJ_EVENT_PAL_TAG_BOY_1                   0x117C
+#define OBJ_EVENT_PAL_TAG_BOY_2                   0x117D
+#define OBJ_EVENT_PAL_TAG_GIRL_1                  0x117E
+#define OBJ_EVENT_PAL_TAG_GIRL_2                  0x117F
+#define OBJ_EVENT_PAL_TAG_CAPTAIN                 0x1180
+#define OBJ_EVENT_PAL_TAG_GUARD                   0x1181
+#define OBJ_EVENT_PAL_TAG_CHAMPINTHEMAKING        0x1182
+#define OBJ_EVENT_PAL_TAG_FAT_MAN                 0x1183
+#define OBJ_EVENT_PAL_TAG_YOUNG_BOY               0x1184
+#define OBJ_EVENT_PAL_TAG_BALDING_MAN             0x1185
+#define OBJ_EVENT_PAL_TAG_CYCLIST_F               0x1186
+#define OBJ_EVENT_PAL_TAG_SCHOOL_KID_F            0x1187
+#define OBJ_EVENT_PAL_TAG_SCIENTIST_2             0x1188
+#define OBJ_EVENT_PAL_TAG_SKIER_F                 0x1189
+#define OBJ_EVENT_PAL_TAG_POKEFAN_F               0x118A
+#define OBJ_EVENT_PAL_TAG_YOUNG_COUPLE            0x118B
+#define OBJ_EVENT_PAL_TAG_GAMEBOY_KID             0x118C
+#define OBJ_EVENT_PAL_TAG_ITEM_BALL               0x118D
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

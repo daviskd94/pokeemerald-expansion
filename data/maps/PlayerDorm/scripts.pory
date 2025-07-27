@@ -8,6 +8,7 @@ text Tracie {
     "Tracie"
 }
 
+
 script PlayerDorm_WakeUp {
     lockall
     hideobjectat(LOCALID_TRACIE, MAP_PLAYER_DORM)
@@ -100,7 +101,7 @@ script Player_Dorm_Take_Eevee {
     removeobject(LOCALID_EEVEE)
     updatefollowingmon
     playfanfare(MUS_OBTAIN_ITEM)
-    msgbox("{PLAYER} picked up their partner, Eevee!")
+    msgbox("{PLAYER} picked up their\npartner, Eevee!")
     waitfanfare
     setflag(FLAG_TAKE_EEVEE)
     setflag(FLAG_SYS_POKEMON_GET)
