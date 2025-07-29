@@ -696,8 +696,8 @@ const struct BattleBackground sBattleEnvironmentTable[] =
 
     [BATTLE_ENVIRONMENT_PLAIN] =
     {
-        .tileset      = gBattleEnvironmentTiles_Building,
-        .tilemap      = gBattleEnvironmentTilemap_Building,
+        .tileset      = gBattleEnvironmentTiles_Plain,
+        .tilemap      = gBattleEnvironmentTilemap_Plain,
         .entryTileset = gBattleEnvironmentAnimTiles_Building,
         .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
         .palette      = gBattleEnvironmentPalette_Plain,

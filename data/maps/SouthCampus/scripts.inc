@@ -520,13 +520,13 @@ SouthCampus_TraciePostBattle_2:
 
 SouthCampus_HealParty::
 # 283 "data/maps/SouthCampus/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 284 "data/maps/SouthCampus/scripts.pory"
 	playse SE_USE_ITEM
 # 285 "data/maps/SouthCampus/scripts.pory"
 	waitse
 # 286 "data/maps/SouthCampus/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 287 "data/maps/SouthCampus/scripts.pory"
 	special HealPlayerParty
 	return
