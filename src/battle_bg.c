@@ -724,6 +724,16 @@ const u16 *GetBattlePalette(u8 environment)
         else
             return gBattleEnvironmentPalette_Sand;
     }
+    if (environment == BATTLE_ENVIRONMENT_PLAIN)
+    {
+        if (GetTimeOfDay() == TIME_NIGHT)
+            return gBattleEnvironmentPalette_PlainNight;
+        else if (GetTimeOfDay() == TIME_MORNING)
+            return gBattleEnvironmentPalette_Plain;
+        else
+            return gBattleEnvironmentPalette_Plain;
+    }
+    
     return sBattleEnvironmentTable[environment].palette;
 }
 
