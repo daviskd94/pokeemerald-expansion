@@ -104,13 +104,13 @@ DormReception_TelevisionShow_Text_0:
 
 DormReception_Fridge_Text_0:
 # 37 "data/maps/DormReception/scripts.pory"
-	.string "It's filled with lots of beer and frozen\n"
-	.string "meals.$"
+	.string "It's filled with lots of beer\n"
+	.string "and frozen meals.$"
 
 DormReception_Stove_Text_0:
 # 44 "data/maps/DormReception/scripts.pory"
-	.string "There's half eaten ramen still sitting\n"
-	.string "in the pot.$"
+	.string "There's half eaten ramen still\n"
+	.string "sitting in the pot.$"
 
 DormReception_Sink_Text_0:
 # 51 "data/maps/DormReception/scripts.pory"

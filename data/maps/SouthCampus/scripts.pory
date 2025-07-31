@@ -81,6 +81,7 @@ script SouthCampus_MoveToBattle8 {
 
 script SouthCampus_HearBattle {
 	lock
+	applymovement(LOCALID_FAT_MAN, moves(face_up))
 	speakername(Unknown)
 	msgbox(format("Go, Meowth!"))
 	playmoncry(SPECIES_MEOWTH, 0)
@@ -106,6 +107,7 @@ script SouthCampus_HearBattle {
 
 script SouthCampus_HearBattle2 {
 	lock
+	applymovement(LOCALID_FAT_MAN, moves(face_up))
 	speakername(Unknown)
 	msgbox(format("Go, Meowth!"))
 	playmoncry(SPECIES_MEOWTH, 0)

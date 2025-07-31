@@ -1174,3 +1174,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DormReception/scripts.inc"
 
 	.include "data/maps/TracieDorm/scripts.inc"
+
+	.include "data/maps/Route1New/scripts.inc"

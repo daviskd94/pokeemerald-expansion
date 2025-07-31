@@ -147,387 +147,391 @@ SouthCampus_HearBattle::
 # 83 "data/maps/SouthCampus/scripts.pory"
 	lock
 # 84 "data/maps/SouthCampus/scripts.pory"
-	speakername Unknown
+	applymovement LOCALID_FAT_MAN, SouthCampus_MoveToBattle6_Movement_0
 # 85 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_HearBattle_Text_0
+	speakername Unknown
 # 86 "data/maps/SouthCampus/scripts.pory"
-	playmoncry SPECIES_MEOWTH, 0
+	msgbox SouthCampus_HearBattle_Text_0
 # 87 "data/maps/SouthCampus/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_MEOWTH, 0
 # 88 "data/maps/SouthCampus/scripts.pory"
-	delay 10
+	waitmoncry
 # 89 "data/maps/SouthCampus/scripts.pory"
-	closemessage
+	delay 10
 # 90 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle_Movement_0
+	closemessage
 # 91 "data/maps/SouthCampus/scripts.pory"
-	playse SE_PIN
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle_Movement_0
 # 92 "data/maps/SouthCampus/scripts.pory"
-	waitse
+	playse SE_PIN
 # 93 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_HearBattle_Movement_1
+	waitse
 # 94 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_HearBattle_Movement_1
 # 95 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle_Movement_2
+	waitmovement 0
 # 96 "data/maps/SouthCampus/scripts.pory"
-	playse SE_LEDGE
-# 97 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
-# 98 "data/maps/SouthCampus/scripts.pory"
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle_Movement_2
-# 99 "data/maps/SouthCampus/scripts.pory"
+# 97 "data/maps/SouthCampus/scripts.pory"
 	playse SE_LEDGE
-# 100 "data/maps/SouthCampus/scripts.pory"
+# 98 "data/maps/SouthCampus/scripts.pory"
 	waitmovement 0
+# 99 "data/maps/SouthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle_Movement_2
+# 100 "data/maps/SouthCampus/scripts.pory"
+	playse SE_LEDGE
 # 101 "data/maps/SouthCampus/scripts.pory"
-	speakername Tracie
+	waitmovement 0
 # 102 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_HearBattle_Text_1
+	speakername Tracie
 # 103 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_HearBattle_Text_1
+# 104 "data/maps/SouthCampus/scripts.pory"
 	closemessage
 	return
 
 
 SouthCampus_HearBattle2::
-# 108 "data/maps/SouthCampus/scripts.pory"
-	lock
 # 109 "data/maps/SouthCampus/scripts.pory"
-	speakername Unknown
+	lock
 # 110 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_HearBattle_Text_0
+	applymovement LOCALID_FAT_MAN, SouthCampus_MoveToBattle6_Movement_0
 # 111 "data/maps/SouthCampus/scripts.pory"
-	playmoncry SPECIES_MEOWTH, 0
+	speakername Unknown
 # 112 "data/maps/SouthCampus/scripts.pory"
-	waitmoncry
+	msgbox SouthCampus_HearBattle_Text_0
 # 113 "data/maps/SouthCampus/scripts.pory"
-	delay 10
+	playmoncry SPECIES_MEOWTH, 0
 # 114 "data/maps/SouthCampus/scripts.pory"
-	closemessage
+	waitmoncry
 # 115 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle2_Movement_0
+	delay 10
 # 116 "data/maps/SouthCampus/scripts.pory"
-	playse SE_PIN
+	closemessage
 # 117 "data/maps/SouthCampus/scripts.pory"
-	waitse
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle2_Movement_0
 # 118 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_HearBattle2_Movement_1
+	playse SE_PIN
 # 119 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
+	waitse
 # 120 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle_Movement_2
+	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_HearBattle2_Movement_1
 # 121 "data/maps/SouthCampus/scripts.pory"
-	playse SE_LEDGE
+	waitmovement 0
 # 122 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
-# 123 "data/maps/SouthCampus/scripts.pory"
 	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle_Movement_2
-# 124 "data/maps/SouthCampus/scripts.pory"
+# 123 "data/maps/SouthCampus/scripts.pory"
 	playse SE_LEDGE
-# 125 "data/maps/SouthCampus/scripts.pory"
+# 124 "data/maps/SouthCampus/scripts.pory"
 	waitmovement 0
+# 125 "data/maps/SouthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle_Movement_2
 # 126 "data/maps/SouthCampus/scripts.pory"
-	speakername Tracie
+	playse SE_LEDGE
 # 127 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_HearBattle_Text_1
+	waitmovement 0
 # 128 "data/maps/SouthCampus/scripts.pory"
+	speakername Tracie
+# 129 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_HearBattle_Text_1
+# 130 "data/maps/SouthCampus/scripts.pory"
 	closemessage
 	return
 
 
 SouthCampus_ApproachBattle::
-# 135 "data/maps/SouthCampus/scripts.pory"
-	speakername Tracie
-# 136 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_ApproachBattle_Text_0
 # 137 "data/maps/SouthCampus/scripts.pory"
-	closemessage
+	speakername Tracie
 # 138 "data/maps/SouthCampus/scripts.pory"
-	special SpawnCameraObject
+	msgbox SouthCampus_ApproachBattle_Text_0
 # 139 "data/maps/SouthCampus/scripts.pory"
-	setobjectxy LOCALID_CAMERA, 23, 29
+	closemessage
 # 140 "data/maps/SouthCampus/scripts.pory"
-	playbgm CUS_VS_TRAINER, TRUE
+	special SpawnCameraObject
 # 141 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_CAMERA, SouthCampus_ApproachBattle_Movement_0
+	setobjectxy LOCALID_CAMERA, 23, 29
 # 142 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
+	playbgm CUS_VS_TRAINER, TRUE
 # 143 "data/maps/SouthCampus/scripts.pory"
-	speakername SouthCampus_ApproachBattle_Text_1
-# 144 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_ApproachBattle_Text_2
-# 145 "data/maps/SouthCampus/scripts.pory"
-	closemessage
-# 146 "data/maps/SouthCampus/scripts.pory"
-	speakername SouthCampus_ApproachBattle_Text_3
-# 147 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_ApproachBattle_Text_4
-# 148 "data/maps/SouthCampus/scripts.pory"
-	closemessage
-# 149 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_CAMERA, SouthCampus_ApproachBattle_Movement_1
-# 150 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
-# 151 "data/maps/SouthCampus/scripts.pory"
-	speakername Tracie
-# 152 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_ApproachBattle_Text_5
-# 153 "data/maps/SouthCampus/scripts.pory"
-	closemessage
-# 154 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_HearBattle2_Movement_1
-# 155 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle2_Movement_1
-# 156 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_FAT_MAN, SouthCampus_HearBattle_Movement_1
-# 157 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
-# 158 "data/maps/SouthCampus/scripts.pory"
-	speakername SouthCampus_ApproachBattle_Text_6
-# 159 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_ApproachBattle_Text_7
-# 160 "data/maps/SouthCampus/scripts.pory"
-	closemessage
-# 161 "data/maps/SouthCampus/scripts.pory"
-	speakername Tracie
-# 162 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_ApproachBattle_Text_8
-# 163 "data/maps/SouthCampus/scripts.pory"
-	closemessage
-# 164 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_MoveToBattle6_Movement_0
-# 165 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_MoveToBattle6_Movement_0
-# 166 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_FAT_MAN, SouthCampus_MoveToBattle6_Movement_0
-# 167 "data/maps/SouthCampus/scripts.pory"
 	applymovement LOCALID_CAMERA, SouthCampus_ApproachBattle_Movement_0
-# 168 "data/maps/SouthCampus/scripts.pory"
+# 144 "data/maps/SouthCampus/scripts.pory"
 	waitmovement 0
+# 145 "data/maps/SouthCampus/scripts.pory"
+	speakername SouthCampus_ApproachBattle_Text_1
+# 146 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_ApproachBattle_Text_2
+# 147 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 148 "data/maps/SouthCampus/scripts.pory"
+	speakername SouthCampus_ApproachBattle_Text_3
+# 149 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_ApproachBattle_Text_4
+# 150 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 151 "data/maps/SouthCampus/scripts.pory"
+	applymovement LOCALID_CAMERA, SouthCampus_ApproachBattle_Movement_1
+# 152 "data/maps/SouthCampus/scripts.pory"
+	waitmovement 0
+# 153 "data/maps/SouthCampus/scripts.pory"
+	speakername Tracie
+# 154 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_ApproachBattle_Text_5
+# 155 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 156 "data/maps/SouthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_HearBattle2_Movement_1
+# 157 "data/maps/SouthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle2_Movement_1
+# 158 "data/maps/SouthCampus/scripts.pory"
+	applymovement LOCALID_FAT_MAN, SouthCampus_HearBattle_Movement_1
+# 159 "data/maps/SouthCampus/scripts.pory"
+	waitmovement 0
+# 160 "data/maps/SouthCampus/scripts.pory"
+	speakername SouthCampus_ApproachBattle_Text_6
+# 161 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_ApproachBattle_Text_7
+# 162 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 163 "data/maps/SouthCampus/scripts.pory"
+	speakername Tracie
+# 164 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_ApproachBattle_Text_8
+# 165 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 166 "data/maps/SouthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_MoveToBattle6_Movement_0
+# 167 "data/maps/SouthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_MoveToBattle6_Movement_0
+# 168 "data/maps/SouthCampus/scripts.pory"
+	applymovement LOCALID_FAT_MAN, SouthCampus_MoveToBattle6_Movement_0
 # 169 "data/maps/SouthCampus/scripts.pory"
+	applymovement LOCALID_CAMERA, SouthCampus_ApproachBattle_Movement_0
+# 170 "data/maps/SouthCampus/scripts.pory"
+	waitmovement 0
+# 171 "data/maps/SouthCampus/scripts.pory"
 	call SouthCampus_MeowthBattle
 	return
 
 
 SouthCampus_MeowthBattle::
-# 173 "data/maps/SouthCampus/scripts.pory"
-	speakername SouthCampus_ApproachBattle_Text_1
-# 174 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_MeowthBattle_Text_0
 # 175 "data/maps/SouthCampus/scripts.pory"
-	closemessage
-# 176 "data/maps/SouthCampus/scripts.pory"
-	playmoncry SPECIES_MEOWTH, 0
-# 177 "data/maps/SouthCampus/scripts.pory"
-	waitmoncry
-# 178 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_MEOWTH, SouthCampus_MeowthBattle_Movement_0
-# 179 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
-# 180 "data/maps/SouthCampus/scripts.pory"
-	playse SE_M_SCRATCH
-# 181 "data/maps/SouthCampus/scripts.pory"
-	waitse
-# 182 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_MEOWTH, SouthCampus_MeowthBattle_Movement_1
-# 183 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
-# 184 "data/maps/SouthCampus/scripts.pory"
-	speakername SouthCampus_ApproachBattle_Text_3
-# 185 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_MeowthBattle_Text_1
-# 186 "data/maps/SouthCampus/scripts.pory"
-	closemessage
-# 187 "data/maps/SouthCampus/scripts.pory"
-	playmoncry SPECIES_MEOWTH_ALOLA, 0
-# 188 "data/maps/SouthCampus/scripts.pory"
-	waitmoncry
-# 189 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_MEOWTH_ALOLA, SouthCampus_MeowthBattle_Movement_2
-# 190 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
-# 191 "data/maps/SouthCampus/scripts.pory"
-	playse SE_M_PAY_DAY
-# 192 "data/maps/SouthCampus/scripts.pory"
-	waitse
-# 193 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_MEOWTH_ALOLA, SouthCampus_MeowthBattle_Movement_3
-# 194 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
-# 195 "data/maps/SouthCampus/scripts.pory"
-	delay 40
-# 196 "data/maps/SouthCampus/scripts.pory"
-	playmoncry SPECIES_MEOWTH, CRY_MODE_FAINT
-# 197 "data/maps/SouthCampus/scripts.pory"
-	waitmoncry
-# 198 "data/maps/SouthCampus/scripts.pory"
-	playse SE_FAINT
-# 199 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_MEOWTH, SouthCampus_MeowthBattle_Movement_4
-# 200 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
-# 201 "data/maps/SouthCampus/scripts.pory"
-	hideobjectat LOCALID_MEOWTH, MAP_SOUTH_CAMPUS
-# 202 "data/maps/SouthCampus/scripts.pory"
-	removeobject LOCALID_MEOWTH
-# 203 "data/maps/SouthCampus/scripts.pory"
-	delay 40
-# 204 "data/maps/SouthCampus/scripts.pory"
-	fadedefaultbgm
-# 205 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_MEOWTH_ALOLA, SouthCampus_MeowthBattle_Movement_4
-# 206 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
-# 207 "data/maps/SouthCampus/scripts.pory"
-	hideobjectat LOCALID_MEOWTH_ALOLA, MAP_SOUTH_CAMPUS
-# 208 "data/maps/SouthCampus/scripts.pory"
-	removeobject LOCALID_MEOWTH_ALOLA
-# 209 "data/maps/SouthCampus/scripts.pory"
-	setflag FLAG_HIDE_MEOWTHS
-# 210 "data/maps/SouthCampus/scripts.pory"
 	speakername SouthCampus_ApproachBattle_Text_1
-# 211 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_MeowthBattle_Text_2
-# 212 "data/maps/SouthCampus/scripts.pory"
+# 176 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_MeowthBattle_Text_0
+# 177 "data/maps/SouthCampus/scripts.pory"
 	closemessage
-# 213 "data/maps/SouthCampus/scripts.pory"
+# 178 "data/maps/SouthCampus/scripts.pory"
+	playmoncry SPECIES_MEOWTH, 0
+# 179 "data/maps/SouthCampus/scripts.pory"
+	waitmoncry
+# 180 "data/maps/SouthCampus/scripts.pory"
+	applymovement LOCALID_MEOWTH, SouthCampus_MeowthBattle_Movement_0
+# 181 "data/maps/SouthCampus/scripts.pory"
+	waitmovement 0
+# 182 "data/maps/SouthCampus/scripts.pory"
+	playse SE_M_SCRATCH
+# 183 "data/maps/SouthCampus/scripts.pory"
+	waitse
+# 184 "data/maps/SouthCampus/scripts.pory"
+	applymovement LOCALID_MEOWTH, SouthCampus_MeowthBattle_Movement_1
+# 185 "data/maps/SouthCampus/scripts.pory"
+	waitmovement 0
+# 186 "data/maps/SouthCampus/scripts.pory"
 	speakername SouthCampus_ApproachBattle_Text_3
+# 187 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_MeowthBattle_Text_1
+# 188 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 189 "data/maps/SouthCampus/scripts.pory"
+	playmoncry SPECIES_MEOWTH_ALOLA, 0
+# 190 "data/maps/SouthCampus/scripts.pory"
+	waitmoncry
+# 191 "data/maps/SouthCampus/scripts.pory"
+	applymovement LOCALID_MEOWTH_ALOLA, SouthCampus_MeowthBattle_Movement_2
+# 192 "data/maps/SouthCampus/scripts.pory"
+	waitmovement 0
+# 193 "data/maps/SouthCampus/scripts.pory"
+	playse SE_M_PAY_DAY
+# 194 "data/maps/SouthCampus/scripts.pory"
+	waitse
+# 195 "data/maps/SouthCampus/scripts.pory"
+	applymovement LOCALID_MEOWTH_ALOLA, SouthCampus_MeowthBattle_Movement_3
+# 196 "data/maps/SouthCampus/scripts.pory"
+	waitmovement 0
+# 197 "data/maps/SouthCampus/scripts.pory"
+	delay 40
+# 198 "data/maps/SouthCampus/scripts.pory"
+	playmoncry SPECIES_MEOWTH, CRY_MODE_FAINT
+# 199 "data/maps/SouthCampus/scripts.pory"
+	waitmoncry
+# 200 "data/maps/SouthCampus/scripts.pory"
+	playse SE_FAINT
+# 201 "data/maps/SouthCampus/scripts.pory"
+	applymovement LOCALID_MEOWTH, SouthCampus_MeowthBattle_Movement_4
+# 202 "data/maps/SouthCampus/scripts.pory"
+	waitmovement 0
+# 203 "data/maps/SouthCampus/scripts.pory"
+	hideobjectat LOCALID_MEOWTH, MAP_SOUTH_CAMPUS
+# 204 "data/maps/SouthCampus/scripts.pory"
+	removeobject LOCALID_MEOWTH
+# 205 "data/maps/SouthCampus/scripts.pory"
+	delay 40
+# 206 "data/maps/SouthCampus/scripts.pory"
+	fadedefaultbgm
+# 207 "data/maps/SouthCampus/scripts.pory"
+	applymovement LOCALID_MEOWTH_ALOLA, SouthCampus_MeowthBattle_Movement_4
+# 208 "data/maps/SouthCampus/scripts.pory"
+	waitmovement 0
+# 209 "data/maps/SouthCampus/scripts.pory"
+	hideobjectat LOCALID_MEOWTH_ALOLA, MAP_SOUTH_CAMPUS
+# 210 "data/maps/SouthCampus/scripts.pory"
+	removeobject LOCALID_MEOWTH_ALOLA
+# 211 "data/maps/SouthCampus/scripts.pory"
+	setflag FLAG_HIDE_MEOWTHS
+# 212 "data/maps/SouthCampus/scripts.pory"
+	speakername SouthCampus_ApproachBattle_Text_1
+# 213 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_MeowthBattle_Text_2
 # 214 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_MeowthBattle_Text_3
+	closemessage
 # 215 "data/maps/SouthCampus/scripts.pory"
-	closemessage
+	speakername SouthCampus_ApproachBattle_Text_3
 # 216 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_LASS, SouthCampus_MeowthBattle_Movement_5
+	msgbox SouthCampus_MeowthBattle_Text_3
 # 217 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_YOUNGSTER, SouthCampus_MeowthBattle_Movement_6
+	closemessage
 # 218 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_CAMERA, SouthCampus_ApproachBattle_Movement_1
+	applymovement LOCALID_LASS, SouthCampus_MeowthBattle_Movement_5
 # 219 "data/maps/SouthCampus/scripts.pory"
-	delay 20
+	applymovement LOCALID_YOUNGSTER, SouthCampus_MeowthBattle_Movement_6
 # 220 "data/maps/SouthCampus/scripts.pory"
-	speakername Tracie
+	applymovement LOCALID_CAMERA, SouthCampus_ApproachBattle_Movement_1
 # 221 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_MeowthBattle_Text_4
+	delay 20
 # 222 "data/maps/SouthCampus/scripts.pory"
-	closemessage
+	speakername Tracie
 # 223 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_HearBattle_Movement_1
+	msgbox SouthCampus_MeowthBattle_Text_4
 # 224 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle2_Movement_1
+	closemessage
 # 225 "data/maps/SouthCampus/scripts.pory"
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_HearBattle_Movement_1
 # 226 "data/maps/SouthCampus/scripts.pory"
-	speakername Tracie
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_HearBattle2_Movement_1
 # 227 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_MeowthBattle_Text_5
+	playbgm MUS_ENCOUNTER_MAY, TRUE
 # 228 "data/maps/SouthCampus/scripts.pory"
-	closemessage
-# 229 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_MeowthBattle_Movement_7
-# 230 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_MeowthBattle_Movement_8
-# 231 "data/maps/SouthCampus/scripts.pory"
-	applymovement LOCALID_CAMERA, SouthCampus_MeowthBattle_Movement_9
-# 232 "data/maps/SouthCampus/scripts.pory"
-	delay 90
-# 233 "data/maps/SouthCampus/scripts.pory"
 	speakername Tracie
-# 234 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_MeowthBattle_Text_6
-# 235 "data/maps/SouthCampus/scripts.pory"
+# 229 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_MeowthBattle_Text_5
+# 230 "data/maps/SouthCampus/scripts.pory"
 	closemessage
+# 231 "data/maps/SouthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_MeowthBattle_Movement_7
+# 232 "data/maps/SouthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_MeowthBattle_Movement_8
+# 233 "data/maps/SouthCampus/scripts.pory"
+	applymovement LOCALID_CAMERA, SouthCampus_MeowthBattle_Movement_9
+# 234 "data/maps/SouthCampus/scripts.pory"
+	delay 90
+# 235 "data/maps/SouthCampus/scripts.pory"
+	speakername Tracie
 # 236 "data/maps/SouthCampus/scripts.pory"
-	special RemoveCameraObject
+	msgbox SouthCampus_MeowthBattle_Text_6
 # 237 "data/maps/SouthCampus/scripts.pory"
-	removeobject LOCALID_CAMERA
+	closemessage
 # 238 "data/maps/SouthCampus/scripts.pory"
-	setflag FLAG_HIDE_SOUTH_CAMPUS_TRAINERS
+	special RemoveCameraObject
 # 239 "data/maps/SouthCampus/scripts.pory"
-	setflag FLAG_WHITEOUT_CONTINUE
+	removeobject LOCALID_CAMERA
 # 240 "data/maps/SouthCampus/scripts.pory"
-	trainerbattle_no_intro TRAINER_TRACIE_SOUTH_CAMPUS, SouthCampus_MeowthBattle_Text_7
+	setflag FLAG_HIDE_SOUTH_CAMPUS_TRAINERS
 # 241 "data/maps/SouthCampus/scripts.pory"
-	clearflag FLAG_WHITEOUT_CONTINUE
+	setflag FLAG_WHITEOUT_CONTINUE
 # 242 "data/maps/SouthCampus/scripts.pory"
+	trainerbattle_no_intro TRAINER_TRACIE_SOUTH_CAMPUS, SouthCampus_MeowthBattle_Text_7
+# 243 "data/maps/SouthCampus/scripts.pory"
+	clearflag FLAG_WHITEOUT_CONTINUE
+# 244 "data/maps/SouthCampus/scripts.pory"
 	call SouthCampus_TraciePostBattle
 	return
 
 
 SouthCampus_TraciePostBattle::
-# 247 "data/maps/SouthCampus/scripts.pory"
-	special SpawnCameraObject
-# 248 "data/maps/SouthCampus/scripts.pory"
-	hideobjectat LOCALID_LASS, MAP_SOUTH_CAMPUS
 # 249 "data/maps/SouthCampus/scripts.pory"
-	removeobject LOCALID_LASS
+	special SpawnCameraObject
 # 250 "data/maps/SouthCampus/scripts.pory"
-	hideobjectat LOCALID_YOUNGSTER, MAP_SOUTH_CAMPUS
+	hideobjectat LOCALID_LASS, MAP_SOUTH_CAMPUS
 # 251 "data/maps/SouthCampus/scripts.pory"
-	removeobject LOCALID_YOUNGSTER
+	removeobject LOCALID_LASS
 # 252 "data/maps/SouthCampus/scripts.pory"
-	setobjectxyperm LOCALID_CAMERA, 23, 26
+	hideobjectat LOCALID_YOUNGSTER, MAP_SOUTH_CAMPUS
 # 253 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_TraciePostBattle_Movement_0
+	removeobject LOCALID_YOUNGSTER
 # 254 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_TraciePostBattle_Movement_1
+	setobjectxyperm LOCALID_CAMERA, 23, 26
 # 255 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, SouthCampus_TraciePostBattle_Movement_0
 # 256 "data/maps/SouthCampus/scripts.pory"
-	speakername Tracie
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_TraciePostBattle_Movement_1
 # 257 "data/maps/SouthCampus/scripts.pory"
+	waitmovement 0
+# 258 "data/maps/SouthCampus/scripts.pory"
+	speakername Tracie
+# 259 "data/maps/SouthCampus/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_LOST
 	goto_if_eq SouthCampus_TraciePostBattle_2
-# 264 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_TraciePostBattle_Text_1
-# 265 "data/maps/SouthCampus/scripts.pory"
-	closemessage
 # 266 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_TraciePostBattle_Text_1
+# 267 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 268 "data/maps/SouthCampus/scripts.pory"
 	call SouthCampus_HealParty
 SouthCampus_TraciePostBattle_1:
-# 268 "data/maps/SouthCampus/scripts.pory"
-	speakername Tracie
-# 269 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_TraciePostBattle_Text_2
 # 270 "data/maps/SouthCampus/scripts.pory"
-	closemessage
+	speakername Tracie
 # 271 "data/maps/SouthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_TraciePostBattle_Movement_2
+	msgbox SouthCampus_TraciePostBattle_Text_2
 # 272 "data/maps/SouthCampus/scripts.pory"
-	waitmovement 0
+	closemessage
 # 273 "data/maps/SouthCampus/scripts.pory"
-	special RemoveCameraObject
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, SouthCampus_TraciePostBattle_Movement_2
 # 274 "data/maps/SouthCampus/scripts.pory"
-	removeobject LOCALID_CAMERA
+	waitmovement 0
 # 275 "data/maps/SouthCampus/scripts.pory"
-	destroyfollowernpc
+	special RemoveCameraObject
 # 276 "data/maps/SouthCampus/scripts.pory"
-	setvar VAR_SOUTH_CAMPUS_STATE, 1
+	removeobject LOCALID_CAMERA
 # 277 "data/maps/SouthCampus/scripts.pory"
-	fadedefaultbgm
+	destroyfollowernpc
 # 278 "data/maps/SouthCampus/scripts.pory"
+	setvar VAR_SOUTH_CAMPUS_STATE, 1
+# 279 "data/maps/SouthCampus/scripts.pory"
+	fadedefaultbgm
+# 280 "data/maps/SouthCampus/scripts.pory"
 	release
 	end
 
 SouthCampus_TraciePostBattle_2:
-# 258 "data/maps/SouthCampus/scripts.pory"
-	msgbox SouthCampus_TraciePostBattle_Text_0
-# 259 "data/maps/SouthCampus/scripts.pory"
-	closemessage
 # 260 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_TraciePostBattle_Text_0
+# 261 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 262 "data/maps/SouthCampus/scripts.pory"
 	call SouthCampus_HealParty
 	goto SouthCampus_TraciePostBattle_1
 
 
 SouthCampus_HealParty::
-# 283 "data/maps/SouthCampus/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
-# 284 "data/maps/SouthCampus/scripts.pory"
-	playse SE_USE_ITEM
 # 285 "data/maps/SouthCampus/scripts.pory"
-	waitse
+	fadescreenswapbuffers FADE_TO_BLACK
 # 286 "data/maps/SouthCampus/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	playse SE_USE_ITEM
 # 287 "data/maps/SouthCampus/scripts.pory"
+	waitse
+# 288 "data/maps/SouthCampus/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 289 "data/maps/SouthCampus/scripts.pory"
 	special HealPlayerParty
 	return
 
@@ -1424,275 +1428,275 @@ SouthCampus_MoveToBattle8_Movement_1:
 	face_up
 	step_end
 
-# 90 "data/maps/SouthCampus/scripts.pory"
+# 91 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_HearBattle_Movement_0:
-# 90 "data/maps/SouthCampus/scripts.pory"
+# 91 "data/maps/SouthCampus/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 93 "data/maps/SouthCampus/scripts.pory"
+# 94 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_HearBattle_Movement_1:
-# 93 "data/maps/SouthCampus/scripts.pory"
+# 94 "data/maps/SouthCampus/scripts.pory"
 	face_right
 	step_end
 
-# 95 "data/maps/SouthCampus/scripts.pory"
+# 96 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_HearBattle_Movement_2:
-# 95 "data/maps/SouthCampus/scripts.pory"
+# 96 "data/maps/SouthCampus/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 115 "data/maps/SouthCampus/scripts.pory"
+# 117 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_HearBattle2_Movement_0:
-# 115 "data/maps/SouthCampus/scripts.pory"
+# 117 "data/maps/SouthCampus/scripts.pory"
 	face_left
-# 115 "data/maps/SouthCampus/scripts.pory"
+# 117 "data/maps/SouthCampus/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 118 "data/maps/SouthCampus/scripts.pory"
+# 120 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_HearBattle2_Movement_1:
-# 118 "data/maps/SouthCampus/scripts.pory"
+# 120 "data/maps/SouthCampus/scripts.pory"
 	face_left
 	step_end
 
-# 141 "data/maps/SouthCampus/scripts.pory"
+# 143 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_ApproachBattle_Movement_0:
-# 141 "data/maps/SouthCampus/scripts.pory"
+# 143 "data/maps/SouthCampus/scripts.pory"
 	walk_fast_up
-# 141 "data/maps/SouthCampus/scripts.pory"
+# 143 "data/maps/SouthCampus/scripts.pory"
 	walk_fast_up
-# 141 "data/maps/SouthCampus/scripts.pory"
+# 143 "data/maps/SouthCampus/scripts.pory"
 	walk_fast_up
 	step_end
 
-# 149 "data/maps/SouthCampus/scripts.pory"
+# 151 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_ApproachBattle_Movement_1:
-# 149 "data/maps/SouthCampus/scripts.pory"
+# 151 "data/maps/SouthCampus/scripts.pory"
 	walk_fast_down
-# 149 "data/maps/SouthCampus/scripts.pory"
+# 151 "data/maps/SouthCampus/scripts.pory"
 	walk_fast_down
-# 149 "data/maps/SouthCampus/scripts.pory"
+# 151 "data/maps/SouthCampus/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 178 "data/maps/SouthCampus/scripts.pory"
+# 180 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_MeowthBattle_Movement_0:
-# 178 "data/maps/SouthCampus/scripts.pory"
+# 180 "data/maps/SouthCampus/scripts.pory"
 	slide_right
-# 178 "data/maps/SouthCampus/scripts.pory"
+# 180 "data/maps/SouthCampus/scripts.pory"
 	slide_right
 	step_end
 
-# 182 "data/maps/SouthCampus/scripts.pory"
+# 184 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_MeowthBattle_Movement_1:
-# 182 "data/maps/SouthCampus/scripts.pory"
+# 184 "data/maps/SouthCampus/scripts.pory"
 	slide_left
-# 182 "data/maps/SouthCampus/scripts.pory"
+# 184 "data/maps/SouthCampus/scripts.pory"
 	slide_left
-# 182 "data/maps/SouthCampus/scripts.pory"
+# 184 "data/maps/SouthCampus/scripts.pory"
 	face_right
 	step_end
 
-# 189 "data/maps/SouthCampus/scripts.pory"
+# 191 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_MeowthBattle_Movement_2:
-# 189 "data/maps/SouthCampus/scripts.pory"
+# 191 "data/maps/SouthCampus/scripts.pory"
 	slide_left
-# 189 "data/maps/SouthCampus/scripts.pory"
+# 191 "data/maps/SouthCampus/scripts.pory"
 	slide_left
 	step_end
 
-# 193 "data/maps/SouthCampus/scripts.pory"
+# 195 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_MeowthBattle_Movement_3:
-# 193 "data/maps/SouthCampus/scripts.pory"
+# 195 "data/maps/SouthCampus/scripts.pory"
 	slide_right
-# 193 "data/maps/SouthCampus/scripts.pory"
+# 195 "data/maps/SouthCampus/scripts.pory"
 	slide_right
-# 193 "data/maps/SouthCampus/scripts.pory"
+# 195 "data/maps/SouthCampus/scripts.pory"
 	face_left
 	step_end
 
-# 199 "data/maps/SouthCampus/scripts.pory"
+# 201 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_MeowthBattle_Movement_4:
-# 199 "data/maps/SouthCampus/scripts.pory"
+# 201 "data/maps/SouthCampus/scripts.pory"
 	enter_pokeball
 	step_end
 
-# 216 "data/maps/SouthCampus/scripts.pory"
+# 218 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_MeowthBattle_Movement_5:
-# 216 "data/maps/SouthCampus/scripts.pory"
+# 218 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 216 "data/maps/SouthCampus/scripts.pory"
+# 218 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 216 "data/maps/SouthCampus/scripts.pory"
+# 218 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 216 "data/maps/SouthCampus/scripts.pory"
+# 218 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 216 "data/maps/SouthCampus/scripts.pory"
+# 218 "data/maps/SouthCampus/scripts.pory"
 	walk_right
 	step_end
 
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_MeowthBattle_Movement_6:
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 217 "data/maps/SouthCampus/scripts.pory"
+# 219 "data/maps/SouthCampus/scripts.pory"
 	walk_right
 	step_end
 
-# 229 "data/maps/SouthCampus/scripts.pory"
+# 231 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_MeowthBattle_Movement_7:
-# 229 "data/maps/SouthCampus/scripts.pory"
+# 231 "data/maps/SouthCampus/scripts.pory"
 	walk_up
-# 229 "data/maps/SouthCampus/scripts.pory"
+# 231 "data/maps/SouthCampus/scripts.pory"
 	walk_up
-# 229 "data/maps/SouthCampus/scripts.pory"
+# 231 "data/maps/SouthCampus/scripts.pory"
 	walk_up
-# 229 "data/maps/SouthCampus/scripts.pory"
+# 231 "data/maps/SouthCampus/scripts.pory"
 	walk_left
-# 229 "data/maps/SouthCampus/scripts.pory"
+# 231 "data/maps/SouthCampus/scripts.pory"
 	walk_left
-# 229 "data/maps/SouthCampus/scripts.pory"
+# 231 "data/maps/SouthCampus/scripts.pory"
 	walk_left
-# 229 "data/maps/SouthCampus/scripts.pory"
+# 231 "data/maps/SouthCampus/scripts.pory"
 	face_right
 	step_end
 
-# 230 "data/maps/SouthCampus/scripts.pory"
+# 232 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_MeowthBattle_Movement_8:
-# 230 "data/maps/SouthCampus/scripts.pory"
+# 232 "data/maps/SouthCampus/scripts.pory"
 	walk_up
-# 230 "data/maps/SouthCampus/scripts.pory"
+# 232 "data/maps/SouthCampus/scripts.pory"
 	walk_up
-# 230 "data/maps/SouthCampus/scripts.pory"
+# 232 "data/maps/SouthCampus/scripts.pory"
 	walk_up
-# 230 "data/maps/SouthCampus/scripts.pory"
+# 232 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 230 "data/maps/SouthCampus/scripts.pory"
+# 232 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 230 "data/maps/SouthCampus/scripts.pory"
+# 232 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 230 "data/maps/SouthCampus/scripts.pory"
+# 232 "data/maps/SouthCampus/scripts.pory"
 	face_left
 	step_end
 
-# 231 "data/maps/SouthCampus/scripts.pory"
+# 233 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_MeowthBattle_Movement_9:
-# 231 "data/maps/SouthCampus/scripts.pory"
+# 233 "data/maps/SouthCampus/scripts.pory"
 	walk_up
-# 231 "data/maps/SouthCampus/scripts.pory"
+# 233 "data/maps/SouthCampus/scripts.pory"
 	walk_up
-# 231 "data/maps/SouthCampus/scripts.pory"
+# 233 "data/maps/SouthCampus/scripts.pory"
 	walk_up
 	step_end
 
-# 253 "data/maps/SouthCampus/scripts.pory"
+# 255 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_TraciePostBattle_Movement_0:
-# 253 "data/maps/SouthCampus/scripts.pory"
+# 255 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 253 "data/maps/SouthCampus/scripts.pory"
+# 255 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 253 "data/maps/SouthCampus/scripts.pory"
+# 255 "data/maps/SouthCampus/scripts.pory"
 	walk_right
 	step_end
 
-# 254 "data/maps/SouthCampus/scripts.pory"
+# 256 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_TraciePostBattle_Movement_1:
-# 254 "data/maps/SouthCampus/scripts.pory"
+# 256 "data/maps/SouthCampus/scripts.pory"
 	walk_left
-# 254 "data/maps/SouthCampus/scripts.pory"
+# 256 "data/maps/SouthCampus/scripts.pory"
 	walk_left
-# 254 "data/maps/SouthCampus/scripts.pory"
+# 256 "data/maps/SouthCampus/scripts.pory"
 	walk_left
 	step_end
 
-# 271 "data/maps/SouthCampus/scripts.pory"
+# 273 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_TraciePostBattle_Movement_2:
-# 271 "data/maps/SouthCampus/scripts.pory"
+# 273 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 271 "data/maps/SouthCampus/scripts.pory"
+# 273 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 271 "data/maps/SouthCampus/scripts.pory"
+# 273 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 271 "data/maps/SouthCampus/scripts.pory"
+# 273 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 271 "data/maps/SouthCampus/scripts.pory"
+# 273 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 271 "data/maps/SouthCampus/scripts.pory"
+# 273 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 271 "data/maps/SouthCampus/scripts.pory"
+# 273 "data/maps/SouthCampus/scripts.pory"
 	walk_right
-# 271 "data/maps/SouthCampus/scripts.pory"
+# 273 "data/maps/SouthCampus/scripts.pory"
 	walk_right
 	step_end
 
 SouthCampus_HearBattle_Text_0:
-# 85 "data/maps/SouthCampus/scripts.pory"
+# 86 "data/maps/SouthCampus/scripts.pory"
 	.string "Go, Meowth!$"
 
 SouthCampus_HearBattle_Text_1:
-# 102 "data/maps/SouthCampus/scripts.pory"
+# 103 "data/maps/SouthCampus/scripts.pory"
 	.string "{PLAYER}, did you hear that?\p"
 	.string "It sounds like a Pokémon battle\n"
 	.string "just started!\p"
 	.string "Let's check it out!$"
 
 SouthCampus_ApproachBattle_Text_0:
-# 136 "data/maps/SouthCampus/scripts.pory"
+# 138 "data/maps/SouthCampus/scripts.pory"
 	.string "I knew it!\n"
 	.string "They're having a battle!$"
 
 SouthCampus_ApproachBattle_Text_1:
-# 143 "data/maps/SouthCampus/scripts.pory"
+# 145 "data/maps/SouthCampus/scripts.pory"
 	.string "Youngster$"
 
 SouthCampus_ApproachBattle_Text_2:
-# 144 "data/maps/SouthCampus/scripts.pory"
+# 146 "data/maps/SouthCampus/scripts.pory"
 	.string "My Meowth is way stronger!\n"
 	.string "He's going to win for sure!$"
 
 SouthCampus_ApproachBattle_Text_3:
-# 146 "data/maps/SouthCampus/scripts.pory"
+# 148 "data/maps/SouthCampus/scripts.pory"
 	.string "Lass$"
 
 SouthCampus_ApproachBattle_Text_4:
-# 147 "data/maps/SouthCampus/scripts.pory"
+# 149 "data/maps/SouthCampus/scripts.pory"
 	.string "Don't get overconfident.\p"
 	.string "I'll bet you've never seen a\n"
 	.string "Meowth like mine before!$"
 
 SouthCampus_ApproachBattle_Text_5:
-# 152 "data/maps/SouthCampus/scripts.pory"
+# 154 "data/maps/SouthCampus/scripts.pory"
 	.string "I've never seen a Meowth like her's\n"
 	.string "before, either.\p"
 	.string "I wonder why it looks so different…$"
 
 SouthCampus_ApproachBattle_Text_6:
-# 158 "data/maps/SouthCampus/scripts.pory"
+# 160 "data/maps/SouthCampus/scripts.pory"
 	.string "Man$"
 
 SouthCampus_ApproachBattle_Text_7:
-# 159 "data/maps/SouthCampus/scripts.pory"
+# 161 "data/maps/SouthCampus/scripts.pory"
 	.string "Some Pokémon come in different\n"
 	.string "varieties depending on their habitat.\p"
 	.string "Her Meowth is a Dark-type and his is a\n"
@@ -1702,38 +1706,38 @@ SouthCampus_ApproachBattle_Text_7:
 	.string "battle so far!$"
 
 SouthCampus_ApproachBattle_Text_8:
-# 162 "data/maps/SouthCampus/scripts.pory"
+# 164 "data/maps/SouthCampus/scripts.pory"
 	.string "Oh, that makes sense!\p"
 	.string "It's so neat that Pokémon of the same\n"
 	.string "species can be different types!$"
 
 SouthCampus_MeowthBattle_Text_0:
-# 174 "data/maps/SouthCampus/scripts.pory"
+# 176 "data/maps/SouthCampus/scripts.pory"
 	.string "Meowth, use Scratch!$"
 
 SouthCampus_MeowthBattle_Text_1:
-# 185 "data/maps/SouthCampus/scripts.pory"
+# 187 "data/maps/SouthCampus/scripts.pory"
 	.string "Meowth, use Pay Day!$"
 
 SouthCampus_MeowthBattle_Text_2:
-# 211 "data/maps/SouthCampus/scripts.pory"
+# 213 "data/maps/SouthCampus/scripts.pory"
 	.string "Aww, darn!\n"
 	.string "Oh well.\p"
 	.string "Can't win them all.\n"
 	.string "Thanks for the battle!$"
 
 SouthCampus_MeowthBattle_Text_3:
-# 214 "data/maps/SouthCampus/scripts.pory"
+# 216 "data/maps/SouthCampus/scripts.pory"
 	.string "Same to you!\n"
 	.string "It was fun!$"
 
 SouthCampus_MeowthBattle_Text_4:
-# 221 "data/maps/SouthCampus/scripts.pory"
+# 223 "data/maps/SouthCampus/scripts.pory"
 	.string "That was such a great battle!\n"
 	.string "I'm all fired up!$"
 
 SouthCampus_MeowthBattle_Text_5:
-# 227 "data/maps/SouthCampus/scripts.pory"
+# 229 "data/maps/SouthCampus/scripts.pory"
 	.string "Hey!\n"
 	.string "Let's have a battle!\p"
 	.string "It'll be the first battle of our final\n"
@@ -1741,17 +1745,17 @@ SouthCampus_MeowthBattle_Text_5:
 	.string "anyone better to have it with!$"
 
 SouthCampus_MeowthBattle_Text_6:
-# 234 "data/maps/SouthCampus/scripts.pory"
+# 236 "data/maps/SouthCampus/scripts.pory"
 	.string "Alright, here we go.\n"
 	.string "No holding back!$"
 
 SouthCampus_MeowthBattle_Text_7:
-# 240 "data/maps/SouthCampus/scripts.pory"
+# 242 "data/maps/SouthCampus/scripts.pory"
 	.string "Looks like I still have some\n"
 	.string "catching up to do!$"
 
 SouthCampus_TraciePostBattle_Text_0:
-# 258 "data/maps/SouthCampus/scripts.pory"
+# 260 "data/maps/SouthCampus/scripts.pory"
 	.string "Thanks for the battle!\p"
 	.string "But, I could tell you were\n"
 	.string "holding back!\p"
@@ -1761,14 +1765,14 @@ SouthCampus_TraciePostBattle_Text_0:
 	.string "Let me heal your Pokémon quick!$"
 
 SouthCampus_TraciePostBattle_Text_1:
-# 264 "data/maps/SouthCampus/scripts.pory"
+# 266 "data/maps/SouthCampus/scripts.pory"
 	.string "That was so much fun!\p"
 	.string "I can't wait to battle again once our\n"
 	.string "journeys start!\p"
 	.string "Let me heal your Pokémon quick!$"
 
 SouthCampus_TraciePostBattle_Text_2:
-# 269 "data/maps/SouthCampus/scripts.pory"
+# 271 "data/maps/SouthCampus/scripts.pory"
 	.string "I'm going to go on ahead to North\n"
 	.string "Campus for orientation.\p"
 	.string "Try not to take too long getting there.\n"

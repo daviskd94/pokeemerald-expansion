@@ -34,14 +34,14 @@ script DormReception_TelevisionShow {
 
 script DormReception_Fridge {
     lock
-    msgbox(format("It's filled with lots of beer and frozen meals."))
+    msgbox(format("It's filled with lots of beer\nand frozen meals."))
     release
     end
 }
 
 script DormReception_Stove {
     lock
-    msgbox(format("There's half eaten ramen still sitting in the pot."))
+    msgbox(format("There's half eaten ramen still\nsitting in the pot."))
     release
     end
 }
