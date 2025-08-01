@@ -73,6 +73,7 @@ static void QueueAnimTiles_MauvilleGym_ElectricGates(u16);
 static void QueueAnimTiles_SootopolisGym_Waterfalls(u16);
 static void QueueAnimTiles_EliteFour_GroundLights(u16);
 static void QueueAnimTiles_EliteFour_WallLights(u16);
+static void QueueAnimTiles_Campus_Fountain(u16);
 
 const u16 gTilesetAnims_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/1.4bpp");
 const u16 gTilesetAnims_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/0.4bpp");
@@ -104,6 +105,18 @@ const u16 *const gTilesetAnims_General_Water[] = {
     gTilesetAnims_General_Water_Frame5,
     gTilesetAnims_General_Water_Frame6,
     gTilesetAnims_General_Water_Frame7
+};
+
+const u16 gTilesetAnims_Campus_Fountain_Frame1[] = INCBIN_U16("data/tilesets/secondary/dewford/anim/fountain/Fountain1.4bpp");
+const u16 gTilesetAnims_Campus_Fountain_Frame2[] = INCBIN_U16("data/tilesets/secondary/dewford/anim/fountain/Fountain2.4bpp");
+const u16 gTilesetAnims_Campus_Fountain_Frame3[] = INCBIN_U16("data/tilesets/secondary/dewford/anim/fountain/Fountain3.4bpp");
+const u16 gTilesetAnims_Campus_Fountain_Frame4[] = INCBIN_U16("data/tilesets/secondary/dewford/anim/fountain/Fountain4.4bpp");
+
+const u16 *const gTilesetAnims_Campus_Fountain[] = {
+    gTilesetAnims_Campus_Fountain_Frame1,
+    gTilesetAnims_Campus_Fountain_Frame2,
+    gTilesetAnims_Campus_Fountain_Frame3,
+    gTilesetAnims_Campus_Fountain_Frame4
 };
 
 const u16 gTilesetAnims_General_SandWaterEdge_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/sand_water_edge/0.4bpp");
@@ -215,6 +228,7 @@ const u16 gTilesetAnims_Mauville_Flower2_Frame2[] = INCBIN_U16("data/tilesets/se
 const u16 gTilesetAnims_Mauville_Flower2_Frame3[] = INCBIN_U16("data/tilesets/secondary/mauville/anim/flower_2/3.4bpp");
 const u16 gTilesetAnims_Mauville_Flower2_Frame4[] = INCBIN_U16("data/tilesets/secondary/mauville/anim/flower_2/4.4bpp");
 const u16 tileset_anims_space_1[16] = {};
+
 
 u16 *const gTilesetAnims_Mauville_Flower1_VDests[] = {
     (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 96)),
@@ -673,6 +687,12 @@ static void QueueAnimTiles_General_Waterfall(u16 timer)
     //AppendTilesetAnimToBuffer(gTilesetAnims_General_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(496)), 6 * TILE_SIZE_4BPP);
 }
 
+static void QueueAnimTiles_Campus_Fountain(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Campus_Fountain);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Campus_Fountain[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(745)), 30 * TILE_SIZE_4BPP);
+}
+
 void InitTilesetAnim_Petalburg(void)
 {
     sSecondaryTilesetAnimCounter = 0;
@@ -861,6 +881,8 @@ static void TilesetAnim_Dewford(u16 timer)
 {
     if (timer % 8 == 0)
         QueueAnimTiles_Dewford_Flag(timer / 8);
+    if (timer % 8 == 1)
+        QueueAnimTiles_Campus_Fountain(timer / 8);
 }
 
 static void TilesetAnim_Slateport(u16 timer)
