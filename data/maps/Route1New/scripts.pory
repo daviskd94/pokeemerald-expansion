@@ -1,1 +1,5 @@
 mapscripts Route1New_MapScripts {}
+
+script SignScript_Route1 {
+    msgbox("North Campus {UP_ARROW}\nSouth Campus {DOWN_ARROW}")
+}
