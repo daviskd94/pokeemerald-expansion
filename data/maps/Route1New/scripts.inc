@@ -10,4 +10,4 @@ SignScript_Route1::
 
 SignScript_Route1_Text_0:
 # 4 "data/maps/Route1New/scripts.pory"
-	.string "North Campus {UP_ARROW}\nSouth Campus {DOWN_ARROW}$"
+	.string "Tractor University\nNorth Campus {UP_ARROW} South Campus {DOWN_ARROW}$"

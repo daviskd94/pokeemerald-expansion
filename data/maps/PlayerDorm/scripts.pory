@@ -66,7 +66,7 @@ script Player_Dorm_Enter_Tracie {
     applymovement(LOCALID_TRACIE, moves(walk_right*2))
     waitmovement(0)
     speakername(Tracie)
-    msgbox(format("I can’t believe it…\nMe… Tracie!\pSoon to be grad and an official Pokémon Trainer!"))
+    msgbox(format("I can’t believe it…\nMe… Tracie!\pSoon to be grad and official Pokémon Trainer!"))
     closemessage
     applymovement(LOCALID_TRACIE, moves(walk_fast_left*2))
     waitmovement(0)
@@ -136,6 +136,24 @@ script Player_Dorm_Trigger_CantLeave {
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
     waitmovement(0)
+    release
+    end
+}
+
+script Player_Dorm_NintendoSwitch {
+    msgbox(format("It's a Nintendo Switch 2.\pIt's got two JoyCons attached to the sides."))
+    release
+    end
+}
+
+script Player_Dorm_Drawers {
+    msgbox(format("The drawers are filled with clothes and school supplies."))
+    release
+    end
+}
+
+script Player_Dorm_TV {
+    msgbox(format("Mom would like this show.\n… … …\pTime to go!"))
     release
     end
 }

@@ -260,6 +260,30 @@ Player_Dorm_Trigger_CantLeave::
 	end
 
 
+Player_Dorm_NintendoSwitch::
+# 144 "data/maps/PlayerDorm/scripts.pory"
+	msgbox Player_Dorm_NintendoSwitch_Text_0
+# 145 "data/maps/PlayerDorm/scripts.pory"
+	release
+	end
+
+
+Player_Dorm_Drawers::
+# 150 "data/maps/PlayerDorm/scripts.pory"
+	msgbox Player_Dorm_Drawers_Text_0
+# 151 "data/maps/PlayerDorm/scripts.pory"
+	release
+	end
+
+
+Player_Dorm_TV::
+# 156 "data/maps/PlayerDorm/scripts.pory"
+	msgbox Player_Dorm_TV_Text_0
+# 157 "data/maps/PlayerDorm/scripts.pory"
+	release
+	end
+
+
 # 16 "data/maps/PlayerDorm/scripts.pory"
 PlayerDorm_WakeUp_Movement_0:
 # 16 "data/maps/PlayerDorm/scripts.pory"
@@ -338,7 +362,7 @@ Player_Dorm_Enter_Tracie_Text_2:
 # 69 "data/maps/PlayerDorm/scripts.pory"
 	.string "I can’t believe it…\n"
 	.string "Me… Tracie!\p"
-	.string "Soon to be grad and an official Pokémon\n"
+	.string "Soon to be grad and official Pokémon\n"
 	.string "Trainer!$"
 
 Player_Dorm_Enter_Tracie_Text_3:
@@ -362,6 +386,23 @@ Player_Dorm_EventScript_CheckPlayersPC_Text_0:
 Player_Dorm_Trigger_CantLeave_Text_0:
 # 135 "data/maps/PlayerDorm/scripts.pory"
 	.string "You can't leave without Eevee.$"
+
+Player_Dorm_NintendoSwitch_Text_0:
+# 144 "data/maps/PlayerDorm/scripts.pory"
+	.string "It's a Nintendo Switch 2.\p"
+	.string "It's got two JoyCons attached to the\n"
+	.string "sides.$"
+
+Player_Dorm_Drawers_Text_0:
+# 150 "data/maps/PlayerDorm/scripts.pory"
+	.string "The drawers are filled with clothes and\n"
+	.string "school supplies.$"
+
+Player_Dorm_TV_Text_0:
+# 156 "data/maps/PlayerDorm/scripts.pory"
+	.string "Mom would like this show.\n"
+	.string "… … …\p"
+	.string "Time to go!$"
 
 Tracie::
 # 7 "data/maps/PlayerDorm/scripts.pory"
