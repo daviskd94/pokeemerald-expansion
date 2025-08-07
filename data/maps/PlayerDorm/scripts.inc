@@ -390,7 +390,7 @@ Player_Dorm_Trigger_CantLeave_Text_0:
 Player_Dorm_NintendoSwitch_Text_0:
 # 144 "data/maps/PlayerDorm/scripts.pory"
 	.string "It's a Nintendo Switch 2.\p"
-	.string "It's got two JoyCons attached to the\n"
+	.string "There are two JoyCons attached to the\n"
 	.string "sides.$"
 
 Player_Dorm_Drawers_Text_0:
@@ -400,7 +400,7 @@ Player_Dorm_Drawers_Text_0:
 
 Player_Dorm_TV_Text_0:
 # 156 "data/maps/PlayerDorm/scripts.pory"
-	.string "Mom would like this show.\n"
+	.string "Mom would like this show…\n"
 	.string "… … …\p"
 	.string "Time to go!$"
 

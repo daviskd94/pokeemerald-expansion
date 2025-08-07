@@ -2,4 +2,5 @@ mapscripts Route1New_MapScripts {}
 
 script SignScript_Route1 {
     msgbox("Tractor University\nNorth Campus {UP_ARROW} South Campus {DOWN_ARROW}")
+    closemessage
 }

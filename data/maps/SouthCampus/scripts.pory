@@ -1,6 +1,13 @@
 mapscripts SouthCampus_MapScripts {   
-    MAP_SCRIPT_ON_FRAME_TABLE [
-    ]
+}
+
+script SouthCampus_LockedCafeteria {
+	lock
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+	msgbox(format("The cafeteria isn't open."))
+	closemessage
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+	waitmovement(0)
 }
 
 script SouthCampus_MoveToBattle1 {
@@ -139,7 +146,7 @@ script SouthCampus_ApproachBattle {
 	closemessage
 	special (SpawnCameraObject)
 	setobjectxy(LOCALID_CAMERA, 23, 29)
-	playbgm(CUS_VS_TRAINER, TRUE)
+	playbgm(CUS_VS_TRAINER, FALSE)
 	applymovement(LOCALID_CAMERA, moves(walk_fast_up*3))
 	waitmovement(0)
 	speakername("Youngster")
@@ -224,7 +231,7 @@ script SouthCampus_MeowthBattle {
 	closemessage
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(face_left))
-	playbgm(MUS_ENCOUNTER_MAY, TRUE)	
+	playbgm(MUS_ENCOUNTER_MAY, FALSE)	
 	speakername(Tracie)
 	msgbox(format("Hey!\nLet's have a battle!\pIt'll be the first battle of our final year of school, and I can't think of anyone better to have it with!"))
 	closemessage
@@ -276,6 +283,7 @@ script SouthCampus_TraciePostBattle {
 	removeobject(LOCALID_CAMERA)
 	destroyfollowernpc
 	setvar(VAR_SOUTH_CAMPUS_STATE, 1)
+	setrespawn(HEAL_LOCATION_SOUTH_CAMPUS)
 	fadedefaultbgm
 	release
 	end

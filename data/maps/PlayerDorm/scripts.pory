@@ -141,7 +141,7 @@ script Player_Dorm_Trigger_CantLeave {
 }
 
 script Player_Dorm_NintendoSwitch {
-    msgbox(format("It's a Nintendo Switch 2.\pIt's got two JoyCons attached to the sides."))
+    msgbox(format("It's a Nintendo Switch 2.\pThere are two JoyCons attached to the sides."))
     release
     end
 }
@@ -153,7 +153,7 @@ script Player_Dorm_Drawers {
 }
 
 script Player_Dorm_TV {
-    msgbox(format("Mom would like this show.\n… … …\pTime to go!"))
+    msgbox(format("Mom would like this show…\n… … …\pTime to go!"))
     release
     end
 }

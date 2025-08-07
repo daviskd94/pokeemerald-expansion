@@ -414,6 +414,15 @@
       "var": "VAR_SOUTH_CAMPUS_STATE",
       "var_value": "0",
       "script": "SouthCampus_MoveToBattle7"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 40,
+      "elevation": 0,
+      "var": "VAR_SOUTH_CAMPUS_STATE",
+      "var_value": "1",
+      "script": "SouthCampus_LockedCafeteria"
     }
   ],
   "bg_events": []

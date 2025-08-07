@@ -5,6 +5,8 @@ Route1New_MapScripts::
 SignScript_Route1::
 # 4 "data/maps/Route1New/scripts.pory"
 	msgbox SignScript_Route1_Text_0
+# 5 "data/maps/Route1New/scripts.pory"
+	closemessage
 	return
 
 
