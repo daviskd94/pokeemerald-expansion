@@ -4500,6 +4500,16 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/Route1/border.bin",
       "blockdata_filepath": "data/layouts/Route1/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_CAMPUS",
+      "name": "NorthCampus_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/NorthCampus/border.bin",
+      "blockdata_filepath": "data/layouts/NorthCampus/map.bin"
     }
   ]
 }

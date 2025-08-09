@@ -132,6 +132,7 @@ static const u16 sDoorNullPalette48[16] = {};
 static const u8 sDoorAnimTiles_TrainerHillRoofElevator[] = INCBIN_U8("graphics/door_anims/trainer_hill_roof_elevator.4bpp");
 static const u16 sDoorNullPalette49[16] = {};
 static const u8 sDoorAnimTiles_South_Campus_Dorm[] = INCBIN_U8("graphics/door_anims/south_campus_dorm.4bpp");
+static const u8 sDoorAnimTiles_DormHallway_Door[] = INCBIN_U8("graphics/door_anims/dormhallway_door.4bpp");
 
 static const struct DoorAnimFrame sDoorOpenAnimFrames[] =
 {
@@ -221,6 +222,7 @@ static const u8 sDoorAnimPalettes_BattleTentInterior[] = {9, 9, 9, 9, 9, 9, 9, 9
 static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_SouthCampusDorm[] = {2, 2, 2, 2, 2, 2, 2, 2};
+static const u8 sDoorAnimPalettes_DormHallwayDoor[] = {8, 8, 10, 10, 10, 10, 10, 10};
 
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
@@ -280,6 +282,7 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_TrainerHill_Door_Elevator_Lobby,              DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillLobbyElevator, sDoorAnimPalettes_TrainerHillLobbyElevator},
     {METATILE_TrainerHill_Door_Elevator_Roof,               DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillRoofElevator, sDoorAnimPalettes_TrainerHillRoofElevator},
     {METATILE_South_Campus_Dorm_Door,                       DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_South_Campus_Dorm, sDoorAnimPalettes_SouthCampusDorm},
+    {METATILE_DormHallway_SouthCampus_Door,                 DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_DormHallway_Door, sDoorAnimPalettes_DormHallwayDoor},
     {},
 };
 

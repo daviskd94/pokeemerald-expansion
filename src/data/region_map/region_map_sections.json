@@ -1710,6 +1710,12 @@
       "y": 0,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_NORTH"
+    },
+    {
+      "id": "MAPSEC_NORTH_CAMPUS"
     }
   ]
 }
