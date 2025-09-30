@@ -93,6 +93,14 @@ TracieDorm_TracieFollowDialogue::
 	return
 
 
+TracieDorm_PichuDoll::
+# 53 "data/maps/TracieDorm/scripts.pory"
+	msgbox TracieDorm_PichuDoll_Text_0
+# 54 "data/maps/TracieDorm/scripts.pory"
+	closemessage
+	return
+
+
 # 10 "data/maps/TracieDorm/scripts.pory"
 TracieDorm_Enter_Movement_0:
 # 10 "data/maps/TracieDorm/scripts.pory"
@@ -161,3 +169,7 @@ TracieDorm_TracieFollowDialogue_Text_0:
 # 48 "data/maps/TracieDorm/scripts.pory"
 	.string "Hehehe… Senior year!\n"
 	.string "Let's go! Let's go!$"
+
+TracieDorm_PichuDoll_Text_0:
+# 53 "data/maps/TracieDorm/scripts.pory"
+	.string "It's a life sized Pichu doll.$"

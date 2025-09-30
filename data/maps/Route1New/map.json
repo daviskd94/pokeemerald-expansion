@@ -17,6 +17,11 @@
       "map": "MAP_SOUTH_CAMPUS",
       "offset": -18,
       "direction": "down"
+    },
+    {
+      "map": "MAP_NORTH_CAMPUS",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [

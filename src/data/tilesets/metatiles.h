@@ -213,3 +213,9 @@ const u16 gMetatileAttributes_GrayCave[] = INCBIN_U16("data/tilesets/secondary/g
 
 const u16 gMetatiles_DormHallway[] = INCBIN_U16("data/tilesets/secondary/dorm_hallway/metatiles.bin");
 const u16 gMetatileAttributes_DormHallway[] = INCBIN_U16("data/tilesets/secondary/dorm_hallway/metatile_attributes.bin");
+
+const u16 gMetatiles_SouthCampusCafeteria[] = INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/metatiles.bin");
+const u16 gMetatileAttributes_SouthCampusCafeteria[] = INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/metatile_attributes.bin");
+
+const u16 gMetatiles_TractorUniversity[] = INCBIN_U16("data/tilesets/secondary/tractor_university/metatiles.bin");
+const u16 gMetatileAttributes_TractorUniversity[] = INCBIN_U16("data/tilesets/secondary/tractor_university/metatile_attributes.bin");

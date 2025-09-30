@@ -276,9 +276,9 @@ Player_Dorm_Drawers::
 	end
 
 
-Player_Dorm_TV::
+EventScript_New_TV::
 # 156 "data/maps/PlayerDorm/scripts.pory"
-	msgbox Player_Dorm_TV_Text_0
+	msgbox EventScript_New_TV_Text_0
 # 157 "data/maps/PlayerDorm/scripts.pory"
 	release
 	end
@@ -398,7 +398,7 @@ Player_Dorm_Drawers_Text_0:
 	.string "The drawers are filled with clothes and\n"
 	.string "school supplies.$"
 
-Player_Dorm_TV_Text_0:
+EventScript_New_TV_Text_0:
 # 156 "data/maps/PlayerDorm/scripts.pory"
 	.string "Mom would like this show…\n"
 	.string "… … …\p"

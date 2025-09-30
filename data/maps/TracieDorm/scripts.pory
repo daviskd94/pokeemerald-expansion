@@ -48,3 +48,8 @@ script TracieDorm_TracieFollowDialogue {
     msgbox(format("Hehehe… Senior year!\nLet's go! Let's go!"))
     closemessage
 }
+
+script TracieDorm_PichuDoll {
+    msgbox("It's a life sized Pichu doll.")
+    closemessage
+}

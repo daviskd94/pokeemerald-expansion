@@ -152,7 +152,7 @@ script Player_Dorm_Drawers {
     end
 }
 
-script Player_Dorm_TV {
+script EventScript_New_TV {
     msgbox(format("Mom would like this show…\n… … …\pTime to go!"))
     release
     end

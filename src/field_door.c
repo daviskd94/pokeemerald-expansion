@@ -133,6 +133,9 @@ static const u8 sDoorAnimTiles_TrainerHillRoofElevator[] = INCBIN_U8("graphics/d
 static const u16 sDoorNullPalette49[16] = {};
 static const u8 sDoorAnimTiles_South_Campus_Dorm[] = INCBIN_U8("graphics/door_anims/south_campus_dorm.4bpp");
 static const u8 sDoorAnimTiles_DormHallway_Door[] = INCBIN_U8("graphics/door_anims/dormhallway_door.4bpp");
+static const u8 sDoorAnimTiles_Cafeteria_Door[] = INCBIN_U8("graphics/door_anims/south_campus_cafeteria.4bpp");
+static const u8 sDoorAnimTiles_NorthCampus_MainHall[] = INCBIN_U8("graphics/door_anims/north_campus_main_hall.4bpp");
+static const u8 sDoorAnimTiles_NorthCampus_MainHall_2[] = INCBIN_U8("graphics/door_anims/north_campus_main_hall_2.4bpp");
 
 static const struct DoorAnimFrame sDoorOpenAnimFrames[] =
 {
@@ -223,6 +226,9 @@ static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_SouthCampusDorm[] = {2, 2, 2, 2, 2, 2, 2, 2};
 static const u8 sDoorAnimPalettes_DormHallwayDoor[] = {8, 8, 10, 10, 10, 10, 10, 10};
+static const u8 sDoorAnimPalettes_SouthCampusCafeteria[] = {2, 2, 2, 2, 2, 2, 2, 2};
+static const u8 sDoorAnimPalettes_NorthCampus_MainHall[] = {10, 10, 10, 10, 10, 10, 10, 10};
+static const u8 sDoorAnimPalettes_NorthCampus_MainHall_2[] = {10, 10, 10, 10, 10, 10, 10, 10};
 
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
@@ -283,6 +289,9 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_TrainerHill_Door_Elevator_Roof,               DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillRoofElevator, sDoorAnimPalettes_TrainerHillRoofElevator},
     {METATILE_South_Campus_Dorm_Door,                       DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_South_Campus_Dorm, sDoorAnimPalettes_SouthCampusDorm},
     {METATILE_DormHallway_SouthCampus_Door,                 DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_DormHallway_Door, sDoorAnimPalettes_DormHallwayDoor},
+    {METATILE_Dewford_SouthCampus_Cafeteria,                DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_Cafeteria_Door, sDoorAnimPalettes_SouthCampusCafeteria},
+    {METATILE_TractorUniversity_Door_Main_Hall,             DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_NorthCampus_MainHall, sDoorAnimPalettes_NorthCampus_MainHall},
+    {METATILE_TractorUniversity_Door_Main_Hall_2,           DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_NorthCampus_MainHall_2, sDoorAnimPalettes_NorthCampus_MainHall_2},
     {},
 };
 

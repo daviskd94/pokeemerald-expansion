@@ -331,7 +331,7 @@
       "x": 25,
       "y": 39,
       "elevation": 0,
-      "dest_map": "MAP_SOUTH_CAMPUS",
+      "dest_map": "MAP_SOUTH_CAMPUS_CAFETERIA",
       "dest_warp_id": "0"
     },
     {
@@ -417,8 +417,8 @@
     },
     {
       "type": "trigger",
-      "x": 25,
-      "y": 40,
+      "x": 23,
+      "y": 39,
       "elevation": 0,
       "var": "VAR_SOUTH_CAMPUS_STATE",
       "var_value": "1",

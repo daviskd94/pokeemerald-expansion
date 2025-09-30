@@ -136,7 +136,7 @@ const struct FollowerMsgInfo gFollowerUpsetMessages[] = {
 static const u8 sAngryMsg00[] = _("{STR_VAR_1} let out a roar!");
 static const u8 sAngryMsg01[] = _("{STR_VAR_1} is making a face like\nit's angry!");
 static const u8 sAngryMsg02[] = _("{STR_VAR_1} seems to be angry for\nsome reason.");
-static const u8 sAngryMsg03[] = _("{STR_VAR_1} turned to face the\nother way, showing a defiant face.");
+static const u8 sAngryMsg03[] = _("{STR_VAR_1} turned the other way,\n showing a defiant face.");
 static const u8 sAngryMsg04[] = _("{STR_VAR_1} cried out.");
 
 const struct FollowerMsgInfo gFollowerAngryMessages[] = {

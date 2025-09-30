@@ -1672,3 +1672,41 @@ const u16 gTilesetPalettes_DormHallway[][16] =
 };
 
 const u32 gTilesetTiles_DormHallway[] = INCBIN_U32("data/tilesets/secondary/dorm_hallway/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_SouthCampusCafeteria[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/south_campus_cafeteria/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_SouthCampusCafeteria[] = INCBIN_U32("data/tilesets/secondary/south_campus_cafeteria/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_TractorUniversity[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tractor_university/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_TractorUniversity[] = INCBIN_U32("data/tilesets/secondary/tractor_university/tiles.4bpp.lz");

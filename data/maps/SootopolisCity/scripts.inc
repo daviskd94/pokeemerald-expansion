@@ -2803,7 +2803,7 @@ SootopolisCity_Text_CitySign:
 # 1402 "data/maps/SootopolisCity/scripts.pory"
 SootopolisCity_Text_DoorIsClosed:
 # 1403 "data/maps/SootopolisCity/scripts.pory"
-	.string "The door is closed.$"
+	.string "The drawers are locked.$"
 # 1404 "data/maps/SootopolisCity/scripts.pory"
 
 # 1405 "data/maps/SootopolisCity/scripts.pory"

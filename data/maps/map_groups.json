@@ -34,7 +34,8 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
-    "gMapGroup_IndoorSouthCampus"
+    "gMapGroup_IndoorSouthCampus",
+    "gMapGroup_IndoorNorthCampus"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -632,6 +633,12 @@
     "SouthCampus_Mart",
     "DormHallway",
     "DormReception",
-    "TracieDorm"
+    "TracieDorm",
+    "RotcartDorm",
+    "SouthCampus_Cafeteria"
+  ],
+  "gMapGroup_IndoorNorthCampus": [
+    "PokemonCenter_1F",
+    "NorthCampus_PokemonMart"
   ]
 }

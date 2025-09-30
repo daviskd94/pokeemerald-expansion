@@ -1235,8 +1235,9 @@ static void ShowSaveInfoWindow(void) {
     yOffset += 16;
     AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gText_SavingPlayer, 0, yOffset, TEXT_SKIP_DRAW, NULL);
     BufferSaveMenuText(SAVE_MENU_NAME, gStringVar4, color);
-    xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x70);
+    xOffset = GetStringRightAlignXOffset(FONT_SMALL, gStringVar4, 0x6C);
     PrintPlayerNameOnWindow(sSaveInfoWindowId, gStringVar4, xOffset, yOffset);
+    MgbaPrintf(MGBA_LOG_WARN, "Offset", xOffset);
 
     // Print badge count
     yOffset += 16;

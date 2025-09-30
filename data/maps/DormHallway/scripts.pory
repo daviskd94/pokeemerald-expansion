@@ -75,7 +75,7 @@ script Player_Dorm_EventScript_TracieSign {
 
 script Player_Dorm_EventScript_RotcartSign {
     lock
-    msgbox("Rotcart's room" MSGBOX_SIGN)
+    msgbox("Rotcart's room" MSGBOX_SIGN) 
     release
     end
 }

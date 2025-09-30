@@ -140,8 +140,9 @@
 #define METATILE_Contest_WallShadow          0x221
 
 // gTileset_Dewford
-#define METATILE_Dewford_Door              0x225
-#define METATILE_Dewford_Door_BattleTower  0x25D
+#define METATILE_Dewford_Door                   0x225
+#define METATILE_Dewford_Door_BattleTower       0x25D
+#define METATILE_Dewford_SouthCampus_Cafeteria  0x373
 
 // gTileset_DormHallway
 #define METATILE_DormHallway_SouthCampus_Door  0x2EA
@@ -732,6 +733,10 @@
 #define METATILE_SootopolisGym_Ice_Broken   0x206
 #define METATILE_SootopolisGym_Ice_Cracked  0x20E
 #define METATILE_SootopolisGym_Stairs       0x207
+
+// gTileset_TractorUniversity
+#define METATILE_TractorUniversity_Door_Main_Hall    0x2E5
+#define METATILE_TractorUniversity_Door_Main_Hall_2  0x2E4
 
 // gTileset_TrainerHill
 #define METATILE_TrainerHill_CounterDoor          0x334
