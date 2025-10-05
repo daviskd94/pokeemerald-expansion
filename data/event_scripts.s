@@ -1186,3 +1186,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PokemonCenter_1F/scripts.inc"
 
 	.include "data/maps/NorthCampus_PokemonMart/scripts.inc"
+
+	.include "data/maps/NorthCampus_MainHall/scripts.inc"

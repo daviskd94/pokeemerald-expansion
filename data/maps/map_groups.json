@@ -639,6 +639,7 @@
   ],
   "gMapGroup_IndoorNorthCampus": [
     "PokemonCenter_1F",
-    "NorthCampus_PokemonMart"
+    "NorthCampus_PokemonMart",
+    "NorthCampus_MainHall"
   ]
 }

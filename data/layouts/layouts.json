@@ -4540,6 +4540,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/NorthCampus_PokemonMart/border.bin",
       "blockdata_filepath": "data/layouts/NorthCampus_PokemonMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_CAMPUS_MAIN_HALL",
+      "name": "NorthCampus_MainHall_Layout",
+      "width": 100,
+      "height": 60,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DormHallway",
+      "border_filepath": "data/layouts/NorthCampus_MainHall/border.bin",
+      "blockdata_filepath": "data/layouts/NorthCampus_MainHall/map.bin"
     }
   ]
 }
