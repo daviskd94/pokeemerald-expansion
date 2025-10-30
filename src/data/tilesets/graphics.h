@@ -1710,3 +1710,22 @@ const u16 gTilesetPalettes_TractorUniversity[][16] =
 };
 
 const u32 gTilesetTiles_TractorUniversity[] = INCBIN_U32("data/tilesets/secondary/tractor_university/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Classroom[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/classroom/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Classroom[] = INCBIN_U32("data/tilesets/secondary/classroom/tiles.4bpp.lz");

@@ -307,7 +307,7 @@
       "x": 41,
       "y": 16,
       "elevation": 0,
-      "dest_map": "MAP_NORTH_CAMPUS",
+      "dest_map": "MAP_NORTH_CAMPUS_CLASSROOM1",
       "dest_warp_id": "0"
     }
   ],

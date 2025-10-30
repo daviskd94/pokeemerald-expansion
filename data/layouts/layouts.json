@@ -4547,9 +4547,19 @@
       "width": 100,
       "height": 60,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_DormHallway",
+      "secondary_tileset": "gTileset_Classroom",
       "border_filepath": "data/layouts/NorthCampus_MainHall/border.bin",
       "blockdata_filepath": "data/layouts/NorthCampus_MainHall/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_CAMPUS_CLASSROOM1",
+      "name": "NorthCampus_Classroom1_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Classroom",
+      "border_filepath": "data/layouts/NorthCampus_Classroom1/border.bin",
+      "blockdata_filepath": "data/layouts/NorthCampus_Classroom1/map.bin"
     }
   ]
 }

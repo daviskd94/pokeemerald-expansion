@@ -874,3 +874,14 @@ const struct Tileset gTileset_TractorUniversity =
     .metatileAttributes = gMetatileAttributes_TractorUniversity,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Classroom =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Classroom,
+    .palettes = gTilesetPalettes_Classroom,
+    .metatiles = gMetatiles_Classroom,
+    .metatileAttributes = gMetatileAttributes_Classroom,
+    .callback = NULL,
+};
