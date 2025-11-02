@@ -11,15 +11,21 @@ text Tracie {
 
 script PlayerDorm_WakeUp {
     lockall
-    hideobjectat(LOCALID_TRACIE, MAP_PLAYER_DORM)
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+
+    //applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     delay(80)
     call (Player_Dorm_Door_Knocking)
     delay(40)
     setspeaker(SP_NAME_UNKNOWN)
     msgbox(format("Hello…? {PLAYER}?\p{PLAYER}, are you there?"), MSGBOX_DEFAULT)
     closemessage
+    fadescreen(FADE_TO_BLACK)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(slide_right*17, face_left))
+    waitmovement
+    hideobjectat(LOCALID_TRACIE, MAP_PLAYER_DORM) 
+    showobjectat(OBJ_EVENT_ID_PLAYER, MAP_PLAYER_DORM)
     fadescreen(FADE_FROM_BLACK)
+    setflag(FLAG_SPAWN_INVISIBLE)
     delay(80)
     call (Player_Dorm_Door_Knocking)
     delay(20)

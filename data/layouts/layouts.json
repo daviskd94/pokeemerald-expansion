@@ -4424,7 +4424,7 @@
     {
       "id": "LAYOUT_PLAYER_DORM",
       "name": "PlayerDorm_Layout",
-      "width": 12,
+      "width": 29,
       "height": 12,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BrendansMaysHouse",

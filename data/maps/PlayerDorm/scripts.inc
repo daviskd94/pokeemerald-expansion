@@ -12,10 +12,6 @@ PlayerDorm_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 PlayerDorm_WakeUp::
 # 13 "data/maps/PlayerDorm/scripts.pory"
 	lockall
-# 14 "data/maps/PlayerDorm/scripts.pory"
-	hideobjectat LOCALID_TRACIE, MAP_PLAYER_DORM
-# 15 "data/maps/PlayerDorm/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerDorm_WakeUp_Movement_0
 # 16 "data/maps/PlayerDorm/scripts.pory"
 	delay 80
 # 17 "data/maps/PlayerDorm/scripts.pory"
@@ -29,312 +25,358 @@ PlayerDorm_WakeUp::
 # 21 "data/maps/PlayerDorm/scripts.pory"
 	closemessage
 # 22 "data/maps/PlayerDorm/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreen FADE_TO_BLACK
 # 23 "data/maps/PlayerDorm/scripts.pory"
-	delay 80
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerDorm_WakeUp_Movement_0
 # 24 "data/maps/PlayerDorm/scripts.pory"
-	call Player_Dorm_Door_Knocking
+	waitmovement
 # 25 "data/maps/PlayerDorm/scripts.pory"
-	delay 20
+	hideobjectat LOCALID_TRACIE, MAP_PLAYER_DORM
 # 26 "data/maps/PlayerDorm/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerDorm_WakeUp_Movement_1
+	showobjectat OBJ_EVENT_ID_PLAYER, MAP_PLAYER_DORM
 # 27 "data/maps/PlayerDorm/scripts.pory"
-	playse SE_PIN
+	fadescreen FADE_FROM_BLACK
 # 28 "data/maps/PlayerDorm/scripts.pory"
-	waitse
+	setflag FLAG_SPAWN_INVISIBLE
 # 29 "data/maps/PlayerDorm/scripts.pory"
-	delay 60
+	delay 80
 # 30 "data/maps/PlayerDorm/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerDorm_WakeUp_Movement_2
+	call Player_Dorm_Door_Knocking
 # 31 "data/maps/PlayerDorm/scripts.pory"
-	playse SE_LEDGE
+	delay 20
 # 32 "data/maps/PlayerDorm/scripts.pory"
-	waitse
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerDorm_WakeUp_Movement_1
 # 33 "data/maps/PlayerDorm/scripts.pory"
-	waitmovement 0
+	playse SE_PIN
 # 34 "data/maps/PlayerDorm/scripts.pory"
+	waitse
+# 35 "data/maps/PlayerDorm/scripts.pory"
+	delay 60
+# 36 "data/maps/PlayerDorm/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerDorm_WakeUp_Movement_2
+# 37 "data/maps/PlayerDorm/scripts.pory"
+	playse SE_LEDGE
+# 38 "data/maps/PlayerDorm/scripts.pory"
+	waitse
+# 39 "data/maps/PlayerDorm/scripts.pory"
+	waitmovement 0
+# 40 "data/maps/PlayerDorm/scripts.pory"
 	call Player_Dorm_Enter_Tracie
 	return
 
 
 Player_Dorm_Door_Knocking::
-# 38 "data/maps/PlayerDorm/scripts.pory"
+# 44 "data/maps/PlayerDorm/scripts.pory"
 	playse SE_NOT_EFFECTIVE
-# 39 "data/maps/PlayerDorm/scripts.pory"
+# 45 "data/maps/PlayerDorm/scripts.pory"
 	waitse
-# 40 "data/maps/PlayerDorm/scripts.pory"
+# 46 "data/maps/PlayerDorm/scripts.pory"
 	playse SE_NOT_EFFECTIVE
-# 41 "data/maps/PlayerDorm/scripts.pory"
+# 47 "data/maps/PlayerDorm/scripts.pory"
 	waitse
-# 42 "data/maps/PlayerDorm/scripts.pory"
+# 48 "data/maps/PlayerDorm/scripts.pory"
 	playse SE_NOT_EFFECTIVE
-# 43 "data/maps/PlayerDorm/scripts.pory"
+# 49 "data/maps/PlayerDorm/scripts.pory"
 	waitse
 	return
 
 
 Player_Dorm_Enter_Tracie::
-# 48 "data/maps/PlayerDorm/scripts.pory"
-	playse SE_DOOR
-# 49 "data/maps/PlayerDorm/scripts.pory"
-	showobjectat LOCALID_TRACIE, MAP_PLAYER_DORM
-# 50 "data/maps/PlayerDorm/scripts.pory"
-	applymovement LOCALID_TRACIE, Player_Dorm_Enter_Tracie_Movement_0
-# 51 "data/maps/PlayerDorm/scripts.pory"
-	waitmovement 0
-# 52 "data/maps/PlayerDorm/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Player_Dorm_Enter_Tracie_Movement_1
-# 53 "data/maps/PlayerDorm/scripts.pory"
-	waitmovement 0
 # 54 "data/maps/PlayerDorm/scripts.pory"
-	playbgm MUS_LILYCOVE_MUSEUM, TRUE
+	playse SE_DOOR
 # 55 "data/maps/PlayerDorm/scripts.pory"
-	delay 40
+	showobjectat LOCALID_TRACIE, MAP_PLAYER_DORM
 # 56 "data/maps/PlayerDorm/scripts.pory"
-	setspeaker SP_NAME_TRACIE
+	applymovement LOCALID_TRACIE, Player_Dorm_Enter_Tracie_Movement_0
 # 57 "data/maps/PlayerDorm/scripts.pory"
-	msgbox Player_Dorm_Enter_Tracie_Text_0
+	waitmovement 0
 # 58 "data/maps/PlayerDorm/scripts.pory"
-	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Player_Dorm_Enter_Tracie_Movement_1
 # 59 "data/maps/PlayerDorm/scripts.pory"
-	applymovement LOCALID_TRACIE, Player_Dorm_Tracie_Approach
+	waitmovement 0
 # 60 "data/maps/PlayerDorm/scripts.pory"
-	waitmovement 0
+	playbgm MUS_LILYCOVE_MUSEUM, TRUE
 # 61 "data/maps/PlayerDorm/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Player_Dorm_Enter_Tracie_Movement_2
+	delay 40
 # 62 "data/maps/PlayerDorm/scripts.pory"
-	waitmovement 0
+	setspeaker SP_NAME_TRACIE
 # 63 "data/maps/PlayerDorm/scripts.pory"
-	setspeaker SP_NAME_TRACIE
+	msgbox Player_Dorm_Enter_Tracie_Text_0
 # 64 "data/maps/PlayerDorm/scripts.pory"
-	msgbox Player_Dorm_Enter_Tracie_Text_1
+	closemessage
 # 65 "data/maps/PlayerDorm/scripts.pory"
-	closemessage
+	applymovement LOCALID_TRACIE, Player_Dorm_Tracie_Approach
 # 66 "data/maps/PlayerDorm/scripts.pory"
-	applymovement LOCALID_TRACIE, Player_Dorm_Enter_Tracie_Movement_3
+	waitmovement 0
 # 67 "data/maps/PlayerDorm/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Player_Dorm_Enter_Tracie_Movement_2
 # 68 "data/maps/PlayerDorm/scripts.pory"
-	setspeaker SP_NAME_TRACIE
+	waitmovement 0
 # 69 "data/maps/PlayerDorm/scripts.pory"
-	msgbox Player_Dorm_Enter_Tracie_Text_2
-# 70 "data/maps/PlayerDorm/scripts.pory"
-	closemessage
-# 71 "data/maps/PlayerDorm/scripts.pory"
-	applymovement LOCALID_TRACIE, Player_Dorm_Enter_Tracie_Movement_4
-# 72 "data/maps/PlayerDorm/scripts.pory"
-	waitmovement 0
-# 73 "data/maps/PlayerDorm/scripts.pory"
 	setspeaker SP_NAME_TRACIE
-# 74 "data/maps/PlayerDorm/scripts.pory"
-	msgbox Player_Dorm_Enter_Tracie_Text_3
-# 75 "data/maps/PlayerDorm/scripts.pory"
+# 70 "data/maps/PlayerDorm/scripts.pory"
+	msgbox Player_Dorm_Enter_Tracie_Text_1
+# 71 "data/maps/PlayerDorm/scripts.pory"
 	closemessage
-# 76 "data/maps/PlayerDorm/scripts.pory"
-	applymovement LOCALID_TRACIE, Player_Dorm_Tracie_Leaves
-# 77 "data/maps/PlayerDorm/scripts.pory"
+# 72 "data/maps/PlayerDorm/scripts.pory"
+	applymovement LOCALID_TRACIE, Player_Dorm_Enter_Tracie_Movement_3
+# 73 "data/maps/PlayerDorm/scripts.pory"
 	waitmovement 0
+# 74 "data/maps/PlayerDorm/scripts.pory"
+	setspeaker SP_NAME_TRACIE
+# 75 "data/maps/PlayerDorm/scripts.pory"
+	msgbox Player_Dorm_Enter_Tracie_Text_2
+# 76 "data/maps/PlayerDorm/scripts.pory"
+	closemessage
+# 77 "data/maps/PlayerDorm/scripts.pory"
+	applymovement LOCALID_TRACIE, Player_Dorm_Enter_Tracie_Movement_4
 # 78 "data/maps/PlayerDorm/scripts.pory"
-	hideobjectat LOCALID_TRACIE, MAP_PLAYER_DORM
+	waitmovement 0
 # 79 "data/maps/PlayerDorm/scripts.pory"
-	playse SE_EXIT
+	setspeaker SP_NAME_TRACIE
 # 80 "data/maps/PlayerDorm/scripts.pory"
-	removeobject LOCALID_TRACIE
+	msgbox Player_Dorm_Enter_Tracie_Text_3
 # 81 "data/maps/PlayerDorm/scripts.pory"
-	setflag FLAG_HIDE_TRACIE
+	closemessage
 # 82 "data/maps/PlayerDorm/scripts.pory"
-	setflag FLAG_SYS_B_DASH
+	applymovement LOCALID_TRACIE, Player_Dorm_Tracie_Leaves
 # 83 "data/maps/PlayerDorm/scripts.pory"
-	setvar VAR_PLAYERDORM_STATE, 1
+	waitmovement 0
 # 84 "data/maps/PlayerDorm/scripts.pory"
+	hideobjectat LOCALID_TRACIE, MAP_PLAYER_DORM
+# 85 "data/maps/PlayerDorm/scripts.pory"
+	playse SE_EXIT
+# 86 "data/maps/PlayerDorm/scripts.pory"
+	removeobject LOCALID_TRACIE
+# 87 "data/maps/PlayerDorm/scripts.pory"
+	setflag FLAG_HIDE_TRACIE
+# 88 "data/maps/PlayerDorm/scripts.pory"
+	setflag FLAG_SYS_B_DASH
+# 89 "data/maps/PlayerDorm/scripts.pory"
+	setvar VAR_PLAYERDORM_STATE, 1
+# 90 "data/maps/PlayerDorm/scripts.pory"
 	releaseall
 	end
 
 
-# 88 "data/maps/PlayerDorm/scripts.pory"
+# 94 "data/maps/PlayerDorm/scripts.pory"
 Player_Dorm_Tracie_Approach:
-# 89 "data/maps/PlayerDorm/scripts.pory"
+# 95 "data/maps/PlayerDorm/scripts.pory"
 	walk_up
-# 89 "data/maps/PlayerDorm/scripts.pory"
+# 95 "data/maps/PlayerDorm/scripts.pory"
 	walk_up
-# 89 "data/maps/PlayerDorm/scripts.pory"
+# 95 "data/maps/PlayerDorm/scripts.pory"
 	walk_up
-# 90 "data/maps/PlayerDorm/scripts.pory"
+# 96 "data/maps/PlayerDorm/scripts.pory"
 	walk_left
-# 90 "data/maps/PlayerDorm/scripts.pory"
+# 96 "data/maps/PlayerDorm/scripts.pory"
 	walk_left
-# 90 "data/maps/PlayerDorm/scripts.pory"
+# 96 "data/maps/PlayerDorm/scripts.pory"
 	walk_left
 	step_end
 
-# 93 "data/maps/PlayerDorm/scripts.pory"
+# 99 "data/maps/PlayerDorm/scripts.pory"
 Player_Dorm_Tracie_Leaves:
-# 94 "data/maps/PlayerDorm/scripts.pory"
+# 100 "data/maps/PlayerDorm/scripts.pory"
 	walk_fast_right
-# 94 "data/maps/PlayerDorm/scripts.pory"
+# 100 "data/maps/PlayerDorm/scripts.pory"
 	walk_fast_right
-# 94 "data/maps/PlayerDorm/scripts.pory"
+# 100 "data/maps/PlayerDorm/scripts.pory"
 	walk_fast_right
-# 95 "data/maps/PlayerDorm/scripts.pory"
+# 101 "data/maps/PlayerDorm/scripts.pory"
 	walk_fast_down
-# 95 "data/maps/PlayerDorm/scripts.pory"
+# 101 "data/maps/PlayerDorm/scripts.pory"
 	walk_fast_down
-# 95 "data/maps/PlayerDorm/scripts.pory"
+# 101 "data/maps/PlayerDorm/scripts.pory"
 	walk_fast_down
 	step_end
 
 Player_Dorm_Take_Eevee::
-# 99 "data/maps/PlayerDorm/scripts.pory"
-	setvar VAR_PLAYERDORM_STATE, 2
-# 100 "data/maps/PlayerDorm/scripts.pory"
-	givemon SPECIES_EEVEE, 10, ITEM_ORAN_BERRY
-# 101 "data/maps/PlayerDorm/scripts.pory"
-	removeobject LOCALID_EEVEE
-# 102 "data/maps/PlayerDorm/scripts.pory"
-	updatefollowingmon
-# 103 "data/maps/PlayerDorm/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 104 "data/maps/PlayerDorm/scripts.pory"
-	msgbox Player_Dorm_Take_Eevee_Text_0
 # 105 "data/maps/PlayerDorm/scripts.pory"
-	waitfanfare
+	setvar VAR_PLAYERDORM_STATE, 2
 # 106 "data/maps/PlayerDorm/scripts.pory"
-	setflag FLAG_TAKE_EEVEE
+	givemon SPECIES_EEVEE, 10, ITEM_ORAN_BERRY
 # 107 "data/maps/PlayerDorm/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
+	removeobject LOCALID_EEVEE
 # 108 "data/maps/PlayerDorm/scripts.pory"
-	call Player_Dorm_Nickname_Eevee
+	updatefollowingmon
 # 109 "data/maps/PlayerDorm/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 110 "data/maps/PlayerDorm/scripts.pory"
+	msgbox Player_Dorm_Take_Eevee_Text_0
+# 111 "data/maps/PlayerDorm/scripts.pory"
+	waitfanfare
+# 112 "data/maps/PlayerDorm/scripts.pory"
+	setflag FLAG_TAKE_EEVEE
+# 113 "data/maps/PlayerDorm/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 114 "data/maps/PlayerDorm/scripts.pory"
+	call Player_Dorm_Nickname_Eevee
+# 115 "data/maps/PlayerDorm/scripts.pory"
 	release
 	end
 
 
 Player_Dorm_Nickname_Eevee::
-# 114 "data/maps/PlayerDorm/scripts.pory"
+# 120 "data/maps/PlayerDorm/scripts.pory"
 	msgbox Player_Dorm_Nickname_Eevee_Text_0, MSGBOX_YESNO
-# 115 "data/maps/PlayerDorm/scripts.pory"
+# 121 "data/maps/PlayerDorm/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Player_Dorm_Nickname_Eevee_2
 Player_Dorm_Nickname_Eevee_1:
 	return
 
 Player_Dorm_Nickname_Eevee_2:
-# 116 "data/maps/PlayerDorm/scripts.pory"
+# 122 "data/maps/PlayerDorm/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 117 "data/maps/PlayerDorm/scripts.pory"
+# 123 "data/maps/PlayerDorm/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto Player_Dorm_Nickname_Eevee_1
 
 
 Player_Dorm_EventScript_CheckPlayersPC::
-# 123 "data/maps/PlayerDorm/scripts.pory"
-	setvar VAR_0x8004, 1
-# 124 "data/maps/PlayerDorm/scripts.pory"
-	special DoPCTurnOnEffect
-# 125 "data/maps/PlayerDorm/scripts.pory"
-	playse SE_PC_ON
-# 126 "data/maps/PlayerDorm/scripts.pory"
-	msgbox Player_Dorm_EventScript_CheckPlayersPC_Text_0, MSGBOX_DEFAULT
-# 127 "data/maps/PlayerDorm/scripts.pory"
-	special BedroomPC
-# 128 "data/maps/PlayerDorm/scripts.pory"
-	waitstate
 # 129 "data/maps/PlayerDorm/scripts.pory"
+	setvar VAR_0x8004, 1
+# 130 "data/maps/PlayerDorm/scripts.pory"
+	special DoPCTurnOnEffect
+# 131 "data/maps/PlayerDorm/scripts.pory"
+	playse SE_PC_ON
+# 132 "data/maps/PlayerDorm/scripts.pory"
+	msgbox Player_Dorm_EventScript_CheckPlayersPC_Text_0, MSGBOX_DEFAULT
+# 133 "data/maps/PlayerDorm/scripts.pory"
+	special BedroomPC
+# 134 "data/maps/PlayerDorm/scripts.pory"
+	waitstate
+# 135 "data/maps/PlayerDorm/scripts.pory"
 	releaseall
 	end
 
 
 Player_Dorm_Trigger_CantLeave::
-# 134 "data/maps/PlayerDorm/scripts.pory"
+# 140 "data/maps/PlayerDorm/scripts.pory"
 	lock
-# 135 "data/maps/PlayerDorm/scripts.pory"
+# 141 "data/maps/PlayerDorm/scripts.pory"
 	msgbox Player_Dorm_Trigger_CantLeave_Text_0
-# 136 "data/maps/PlayerDorm/scripts.pory"
+# 142 "data/maps/PlayerDorm/scripts.pory"
 	closemessage
-# 137 "data/maps/PlayerDorm/scripts.pory"
+# 143 "data/maps/PlayerDorm/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Player_Dorm_Enter_Tracie_Movement_0
-# 138 "data/maps/PlayerDorm/scripts.pory"
-	waitmovement 0
-# 139 "data/maps/PlayerDorm/scripts.pory"
-	release
-	end
-
-
-Player_Dorm_NintendoSwitch::
 # 144 "data/maps/PlayerDorm/scripts.pory"
-	msgbox Player_Dorm_NintendoSwitch_Text_0
+	waitmovement 0
 # 145 "data/maps/PlayerDorm/scripts.pory"
 	release
 	end
 
 
-Player_Dorm_Drawers::
+Player_Dorm_NintendoSwitch::
 # 150 "data/maps/PlayerDorm/scripts.pory"
-	msgbox Player_Dorm_Drawers_Text_0
+	msgbox Player_Dorm_NintendoSwitch_Text_0
 # 151 "data/maps/PlayerDorm/scripts.pory"
 	release
 	end
 
 
-EventScript_New_TV::
+Player_Dorm_Drawers::
 # 156 "data/maps/PlayerDorm/scripts.pory"
-	msgbox EventScript_New_TV_Text_0
+	msgbox Player_Dorm_Drawers_Text_0
 # 157 "data/maps/PlayerDorm/scripts.pory"
 	release
 	end
 
 
-# 15 "data/maps/PlayerDorm/scripts.pory"
+EventScript_New_TV::
+# 162 "data/maps/PlayerDorm/scripts.pory"
+	msgbox EventScript_New_TV_Text_0
+# 163 "data/maps/PlayerDorm/scripts.pory"
+	release
+	end
+
+
+# 23 "data/maps/PlayerDorm/scripts.pory"
 PlayerDorm_WakeUp_Movement_0:
-# 15 "data/maps/PlayerDorm/scripts.pory"
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
+	slide_right
+# 23 "data/maps/PlayerDorm/scripts.pory"
 	face_left
 	step_end
 
-# 26 "data/maps/PlayerDorm/scripts.pory"
+# 32 "data/maps/PlayerDorm/scripts.pory"
 PlayerDorm_WakeUp_Movement_1:
-# 26 "data/maps/PlayerDorm/scripts.pory"
+# 32 "data/maps/PlayerDorm/scripts.pory"
 	face_down
-# 26 "data/maps/PlayerDorm/scripts.pory"
+# 32 "data/maps/PlayerDorm/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 30 "data/maps/PlayerDorm/scripts.pory"
+# 36 "data/maps/PlayerDorm/scripts.pory"
 PlayerDorm_WakeUp_Movement_2:
-# 30 "data/maps/PlayerDorm/scripts.pory"
+# 36 "data/maps/PlayerDorm/scripts.pory"
 	jump_right
 	step_end
 
-# 50 "data/maps/PlayerDorm/scripts.pory"
+# 56 "data/maps/PlayerDorm/scripts.pory"
 Player_Dorm_Enter_Tracie_Movement_0:
-# 50 "data/maps/PlayerDorm/scripts.pory"
+# 56 "data/maps/PlayerDorm/scripts.pory"
 	walk_up
 	step_end
 
-# 52 "data/maps/PlayerDorm/scripts.pory"
+# 58 "data/maps/PlayerDorm/scripts.pory"
 Player_Dorm_Enter_Tracie_Movement_1:
-# 52 "data/maps/PlayerDorm/scripts.pory"
+# 58 "data/maps/PlayerDorm/scripts.pory"
 	face_down
 	step_end
 
-# 61 "data/maps/PlayerDorm/scripts.pory"
+# 67 "data/maps/PlayerDorm/scripts.pory"
 Player_Dorm_Enter_Tracie_Movement_2:
-# 61 "data/maps/PlayerDorm/scripts.pory"
+# 67 "data/maps/PlayerDorm/scripts.pory"
 	face_right
 	step_end
 
-# 66 "data/maps/PlayerDorm/scripts.pory"
+# 72 "data/maps/PlayerDorm/scripts.pory"
 Player_Dorm_Enter_Tracie_Movement_3:
-# 66 "data/maps/PlayerDorm/scripts.pory"
+# 72 "data/maps/PlayerDorm/scripts.pory"
 	walk_right
-# 66 "data/maps/PlayerDorm/scripts.pory"
+# 72 "data/maps/PlayerDorm/scripts.pory"
 	walk_right
 	step_end
 
-# 71 "data/maps/PlayerDorm/scripts.pory"
+# 77 "data/maps/PlayerDorm/scripts.pory"
 Player_Dorm_Enter_Tracie_Movement_4:
-# 71 "data/maps/PlayerDorm/scripts.pory"
+# 77 "data/maps/PlayerDorm/scripts.pory"
 	walk_fast_left
-# 71 "data/maps/PlayerDorm/scripts.pory"
+# 77 "data/maps/PlayerDorm/scripts.pory"
 	walk_fast_left
 	step_end
 
@@ -344,11 +386,11 @@ PlayerDorm_WakeUp_Text_0:
 	.string "{PLAYER}, are you there?$"
 
 Player_Dorm_Enter_Tracie_Text_0:
-# 57 "data/maps/PlayerDorm/scripts.pory"
+# 63 "data/maps/PlayerDorm/scripts.pory"
 	.string "Ugh! Seriously?$"
 
 Player_Dorm_Enter_Tracie_Text_1:
-# 64 "data/maps/PlayerDorm/scripts.pory"
+# 70 "data/maps/PlayerDorm/scripts.pory"
 	.string "You're sleeping right now?\n"
 	.string "Today of all days?\p"
 	.string "Come on! You didn't actually\n"
@@ -359,47 +401,47 @@ Player_Dorm_Enter_Tracie_Text_1:
 	.string "we were kids!$"
 
 Player_Dorm_Enter_Tracie_Text_2:
-# 69 "data/maps/PlayerDorm/scripts.pory"
+# 75 "data/maps/PlayerDorm/scripts.pory"
 	.string "I can’t believe it…\n"
 	.string "Me… Tracie!\p"
 	.string "Soon to be grad and official Pokémon\n"
 	.string "Trainer!$"
 
 Player_Dorm_Enter_Tracie_Text_3:
-# 74 "data/maps/PlayerDorm/scripts.pory"
+# 80 "data/maps/PlayerDorm/scripts.pory"
 	.string "Well, what are we waiting for!?\p"
 	.string "Grab Eevee and let's go!\n"
 	.string "I'm so excited!$"
 
 Player_Dorm_Take_Eevee_Text_0:
-# 104 "data/maps/PlayerDorm/scripts.pory"
+# 110 "data/maps/PlayerDorm/scripts.pory"
 	.string "{PLAYER} picked up their\npartner, Eevee!$"
 
 Player_Dorm_Nickname_Eevee_Text_0:
-# 114 "data/maps/PlayerDorm/scripts.pory"
+# 120 "data/maps/PlayerDorm/scripts.pory"
 	.string "Does Eevee have a nickname?$"
 
 Player_Dorm_EventScript_CheckPlayersPC_Text_0:
-# 126 "data/maps/PlayerDorm/scripts.pory"
+# 132 "data/maps/PlayerDorm/scripts.pory"
 	.string "{PLAYER} booted up the laptop.$"
 
 Player_Dorm_Trigger_CantLeave_Text_0:
-# 135 "data/maps/PlayerDorm/scripts.pory"
+# 141 "data/maps/PlayerDorm/scripts.pory"
 	.string "You can't leave without Eevee.$"
 
 Player_Dorm_NintendoSwitch_Text_0:
-# 144 "data/maps/PlayerDorm/scripts.pory"
+# 150 "data/maps/PlayerDorm/scripts.pory"
 	.string "It's a Nintendo Switch 2.\p"
 	.string "There are two JoyCons attached to the\n"
 	.string "sides.$"
 
 Player_Dorm_Drawers_Text_0:
-# 150 "data/maps/PlayerDorm/scripts.pory"
+# 156 "data/maps/PlayerDorm/scripts.pory"
 	.string "The drawers are filled with clothes and\n"
 	.string "school supplies.$"
 
 EventScript_New_TV_Text_0:
-# 156 "data/maps/PlayerDorm/scripts.pory"
+# 162 "data/maps/PlayerDorm/scripts.pory"
 	.string "Mom would like this show…\n"
 	.string "… … …\p"
 	.string "Time to go!$"
