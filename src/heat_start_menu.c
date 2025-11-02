@@ -755,9 +755,9 @@ static void HeatStartMenu_LoadBgGfx(void) {
     LoadBgTilemap(0, 0, 0, 0);
     DecompressAndCopyTileDataToVram(0, sStartMenuTiles, 0, 0, 0); // Keep as sStartMenuTiles (u32)
     if (GetSafariZoneFlag() == FALSE) {
-        LZDecompressWram(sStartMenuTilemap, buf);
+        DecompressDataWithHeaderVram(sStartMenuTilemap, buf);
     } else {
-        LZDecompressWram(sStartMenuTilemapSafari, buf);
+        DecompressDataWithHeaderVram(sStartMenuTilemapSafari, buf);
     }
 
     // Load the standard menu palette
@@ -1271,7 +1271,7 @@ static u8 SaveConfirmSaveCallback(void) {
   //RemoveStartMenuWindow();
   ShowSaveInfoWindow();
 
-  if (InBattlePyramid()) {
+  if (InBattlePyramid_()) {
     ShowSaveMessage(gText_BattlePyramidConfirmRest, SaveYesNoCallback);
   } else {
     ShowSaveMessage(gText_ConfirmSave, SaveYesNoCallback);
