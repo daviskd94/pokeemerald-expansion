@@ -9,6 +9,9 @@ enum SpeakerNames {
     SP_NAME_TRACIE,
     SP_NAME_ROTCART,
     SP_NAME_MAPLE,
+    SP_NAME_MAN,
+    SP_NAME_LASS,
+    SP_NAME_YOUNGSTER,
     SP_NAME_COUNT
 };
 

@@ -19,74 +19,84 @@ TracieDorm_Enter::
 # 11 "data/maps/TracieDorm/scripts.pory"
 	waitmovement 0
 # 12 "data/maps/TracieDorm/scripts.pory"
-	msgbox TracieDorm_Enter_Text_0
+	setspeaker SP_NAME_TRACIE
 # 13 "data/maps/TracieDorm/scripts.pory"
-	closemessage
+	msgbox TracieDorm_Enter_Text_0
 # 14 "data/maps/TracieDorm/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	closemessage
 # 15 "data/maps/TracieDorm/scripts.pory"
-	msgbox TracieDorm_Enter_Text_1
-# 16 "data/maps/TracieDorm/scripts.pory"
-	waitfanfare
-# 17 "data/maps/TracieDorm/scripts.pory"
-	closemessage
-# 18 "data/maps/TracieDorm/scripts.pory"
-	applymovement LOCALID_TRACIE, TracieDorm_Enter_Movement_1
-# 19 "data/maps/TracieDorm/scripts.pory"
-	waitmovement 0
-# 20 "data/maps/TracieDorm/scripts.pory"
-	msgbox TracieDorm_Enter_Text_2
-# 21 "data/maps/TracieDorm/scripts.pory"
-	closemessage
-# 22 "data/maps/TracieDorm/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 23 "data/maps/TracieDorm/scripts.pory"
-	msgbox TracieDorm_Enter_Text_3
-# 24 "data/maps/TracieDorm/scripts.pory"
+# 16 "data/maps/TracieDorm/scripts.pory"
+	msgbox TracieDorm_Enter_Text_1
+# 17 "data/maps/TracieDorm/scripts.pory"
 	waitfanfare
+# 18 "data/maps/TracieDorm/scripts.pory"
+	closemessage
+# 19 "data/maps/TracieDorm/scripts.pory"
+	applymovement LOCALID_TRACIE, TracieDorm_Enter_Movement_1
+# 20 "data/maps/TracieDorm/scripts.pory"
+	waitmovement 0
+# 21 "data/maps/TracieDorm/scripts.pory"
+	setspeaker SP_NAME_TRACIE
+# 22 "data/maps/TracieDorm/scripts.pory"
+	msgbox TracieDorm_Enter_Text_2
+# 23 "data/maps/TracieDorm/scripts.pory"
+	closemessage
+# 24 "data/maps/TracieDorm/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
 # 25 "data/maps/TracieDorm/scripts.pory"
-	msgbox TracieDorm_Enter_Text_4
+	msgbox TracieDorm_Enter_Text_3
 # 26 "data/maps/TracieDorm/scripts.pory"
-	closemessage
+	waitfanfare
 # 27 "data/maps/TracieDorm/scripts.pory"
-	setflag FLAG_SYS_QUEST_MENU_GET
+	setspeaker SP_NAME_TRACIE
 # 28 "data/maps/TracieDorm/scripts.pory"
-	questmenu QUEST_MENU_SET_ACTIVE, QUEST_ORIENTATION
+	msgbox TracieDorm_Enter_Text_4
 # 29 "data/maps/TracieDorm/scripts.pory"
-	playse SE_DEX_SEARCH
-# 30 "data/maps/TracieDorm/scripts.pory"
-	msgbox TracieDorm_Enter_Text_5
-# 31 "data/maps/TracieDorm/scripts.pory"
-	waitse
-# 32 "data/maps/TracieDorm/scripts.pory"
-	openquestmenu
-# 33 "data/maps/TracieDorm/scripts.pory"
-	msgbox TracieDorm_Enter_Text_6
-# 34 "data/maps/TracieDorm/scripts.pory"
 	closemessage
+# 30 "data/maps/TracieDorm/scripts.pory"
+	setflag FLAG_SYS_QUEST_MENU_GET
+# 31 "data/maps/TracieDorm/scripts.pory"
+	questmenu QUEST_MENU_SET_ACTIVE, QUEST_ORIENTATION
+# 32 "data/maps/TracieDorm/scripts.pory"
+	playse SE_DEX_SEARCH
+# 33 "data/maps/TracieDorm/scripts.pory"
+	msgbox TracieDorm_Enter_Text_5
+# 34 "data/maps/TracieDorm/scripts.pory"
+	waitse
 # 35 "data/maps/TracieDorm/scripts.pory"
-	setfollowernpc LOCALID_TRACIE, FNPC_ALL, TracieDorm_TracieFollowDialogue, 0
+	openquestmenu
 # 36 "data/maps/TracieDorm/scripts.pory"
-	setflag FLAG_HIDE_TRACIE
+	setspeaker SP_NAME_TRACIE
 # 37 "data/maps/TracieDorm/scripts.pory"
+	msgbox TracieDorm_Enter_Text_6
+# 38 "data/maps/TracieDorm/scripts.pory"
+	closemessage
+# 39 "data/maps/TracieDorm/scripts.pory"
+	setfollowernpc LOCALID_TRACIE, FNPC_ALL, TracieDorm_TracieFollowDialogue, 0
+# 40 "data/maps/TracieDorm/scripts.pory"
+	setflag FLAG_HIDE_TRACIE
+# 41 "data/maps/TracieDorm/scripts.pory"
 	setvar VAR_PLAYERDORM_STATE, 4
 	end
 
 
 TracieDorm_TracieFollowDialogue::
-# 42 "data/maps/TracieDorm/scripts.pory"
+# 46 "data/maps/TracieDorm/scripts.pory"
 	faceplayer
-# 43 "data/maps/TracieDorm/scripts.pory"
+# 47 "data/maps/TracieDorm/scripts.pory"
+	setspeaker SP_NAME_TRACIE
+# 48 "data/maps/TracieDorm/scripts.pory"
 	msgbox TracieDorm_TracieFollowDialogue_Text_0
-# 44 "data/maps/TracieDorm/scripts.pory"
+# 49 "data/maps/TracieDorm/scripts.pory"
 	closemessage
 	return
 
 
 TracieDorm_PichuDoll::
-# 48 "data/maps/TracieDorm/scripts.pory"
+# 53 "data/maps/TracieDorm/scripts.pory"
 	msgbox TracieDorm_PichuDoll_Text_0
-# 49 "data/maps/TracieDorm/scripts.pory"
+# 54 "data/maps/TracieDorm/scripts.pory"
 	closemessage
 	return
 
@@ -101,38 +111,38 @@ TracieDorm_Enter_Movement_0:
 	walk_up
 	step_end
 
-# 18 "data/maps/TracieDorm/scripts.pory"
+# 19 "data/maps/TracieDorm/scripts.pory"
 TracieDorm_Enter_Movement_1:
-# 18 "data/maps/TracieDorm/scripts.pory"
+# 19 "data/maps/TracieDorm/scripts.pory"
 	walk_left
-# 18 "data/maps/TracieDorm/scripts.pory"
+# 19 "data/maps/TracieDorm/scripts.pory"
 	walk_down
 	step_end
 
 TracieDorm_Enter_Text_0:
-# 12 "data/maps/TracieDorm/scripts.pory"
+# 13 "data/maps/TracieDorm/scripts.pory"
 	.string "Hmm… Where did I put it…?\n"
 	.string "Let's see…\p"
 	.string "Oh! Found it!\n"
 	.string "My {COLOR BLUE}Quest Log{COLOR DARK_GRAY}!$"
 
 TracieDorm_Enter_Text_1:
-# 15 "data/maps/TracieDorm/scripts.pory"
+# 16 "data/maps/TracieDorm/scripts.pory"
 	.string "Tracie found her {COLOR BLUE}Quest Log{COLOR DARK_GRAY}!$"
 
 TracieDorm_Enter_Text_2:
-# 20 "data/maps/TracieDorm/scripts.pory"
+# 22 "data/maps/TracieDorm/scripts.pory"
 	.string "Here {PLAYER}, I actually have a\n"
 	.string "second one.\p"
 	.string "I'd like you to have it!$"
 
 TracieDorm_Enter_Text_3:
-# 23 "data/maps/TracieDorm/scripts.pory"
+# 25 "data/maps/TracieDorm/scripts.pory"
 	.string "{PLAYER} obtained a {COLOR BLUE}Quest Log{COLOR DARK_GRAY} from\n"
 	.string "Tracie!$"
 
 TracieDorm_Enter_Text_4:
-# 25 "data/maps/TracieDorm/scripts.pory"
+# 28 "data/maps/TracieDorm/scripts.pory"
 	.string "You can keep track of anything you've\n"
 	.string "been asked to do!\p"
 	.string "Just press {START_BUTTON} and select {COLOR BLUE}Quest Log {COLOR DARK_GRAY}\n"
@@ -142,12 +152,12 @@ TracieDorm_Enter_Text_4:
 	.string "orientation!$"
 
 TracieDorm_Enter_Text_5:
-# 30 "data/maps/TracieDorm/scripts.pory"
+# 33 "data/maps/TracieDorm/scripts.pory"
 	.string "{COLOR BLUE}Senior Year{COLOR DARK_GRAY} has been added to your\n"
 	.string "{COLOR BLUE}Quest Log{COLOR DARK_GRAY}.$"
 
 TracieDorm_Enter_Text_6:
-# 33 "data/maps/TracieDorm/scripts.pory"
+# 37 "data/maps/TracieDorm/scripts.pory"
 	.string "Easy! Right?\p"
 	.string "Anyways, we can't lag too far behind\n"
 	.string "Rotcart.\p"
@@ -156,10 +166,10 @@ TracieDorm_Enter_Text_6:
 	.string "I'll follow.$"
 
 TracieDorm_TracieFollowDialogue_Text_0:
-# 43 "data/maps/TracieDorm/scripts.pory"
+# 48 "data/maps/TracieDorm/scripts.pory"
 	.string "Hehehe… Senior year!\n"
 	.string "Let's go! Let's go!$"
 
 TracieDorm_PichuDoll_Text_0:
-# 48 "data/maps/TracieDorm/scripts.pory"
+# 53 "data/maps/TracieDorm/scripts.pory"
 	.string "It's a life sized Pichu doll.$"

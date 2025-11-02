@@ -90,6 +90,7 @@ script SouthCampus_MoveToBattle8 {
 script SouthCampus_HearBattle {
 	lock
 	applymovement(LOCALID_FAT_MAN, moves(face_up))
+	setspeaker(SP_NAME_UNKNOWN)
 	msgbox(format("Go, Meowth!"))
 	playmoncry(SPECIES_MEOWTH, 0)
 	waitmoncry
@@ -106,6 +107,7 @@ script SouthCampus_HearBattle {
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(jump_in_place_left))
 	playse(SE_LEDGE)
 	waitmovement(0)
+	setspeaker(SP_NAME_TRACIE)
 	msgbox(format("{PLAYER}, did you hear that?\pIt sounds like a Pokémon battle\njust started!\pLet's check it out!"))
 	closemessage
 	return
@@ -114,6 +116,7 @@ script SouthCampus_HearBattle {
 script SouthCampus_HearBattle2 {
 	lock
 	applymovement(LOCALID_FAT_MAN, moves(face_up))
+	setspeaker(SP_NAME_UNKNOWN)
 	msgbox(format("Go, Meowth!"))
 	playmoncry(SPECIES_MEOWTH, 0)
 	waitmoncry
@@ -130,6 +133,7 @@ script SouthCampus_HearBattle2 {
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(jump_in_place_left))
 	playse(SE_LEDGE)
 	waitmovement(0)
+	setspeaker(SP_NAME_TRACIE)
 	msgbox(format("{PLAYER}, did you hear that?\pIt sounds like a Pokémon battle\njust started!\pLet's check it out!"))
 	closemessage
 	return
@@ -138,6 +142,7 @@ script SouthCampus_HearBattle2 {
 
 
 script SouthCampus_ApproachBattle {
+	setspeaker(SP_NAME_TRACIE)
 	msgbox(format("I knew it!\nThey're having a battle!"))
 	closemessage
 	special (SpawnCameraObject)
@@ -145,20 +150,25 @@ script SouthCampus_ApproachBattle {
 	playbgm(CUS_VS_TRAINER, FALSE)
 	applymovement(LOCALID_CAMERA, moves(walk_fast_up*3))
 	waitmovement(0)
+	setspeaker(SP_NAME_YOUNGSTER)
 	msgbox(format("My Meowth is way stronger!\nHe's going to win for sure!"))
 	closemessage
+	setspeaker(SP_NAME_LASS)
 	msgbox(format("Don't get overconfident.\pI'll bet you've never seen a\nMeowth like mine before!"))
 	closemessage
 	applymovement(LOCALID_CAMERA, moves(walk_fast_down*3))
 	waitmovement(0)
+	setspeaker(SP_NAME_TRACIE)
 	msgbox(format("I've never seen a Meowth like her's before, either.\pI wonder why it looks so different…"))
 	closemessage
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(face_left))
 	applymovement(LOCALID_FAT_MAN, moves(face_right))
 	waitmovement(0)
-	msgbox(format("Some Pokémon come in different varieties depending on their habitat.\pHer Meowth is a Dark-type and his is a Normal-type.\pNeither Meowth has a type advantage against the other, so it's been a good battle so far!"))
-	closemessage	
+	setspeaker(SP_NAME_MAN)
+	msgbox(format("Some Pokémon come in different varieties depending on their habitat.\pHer Meowth is a {COLOR RED}Dark-type {COLOR DARK_GRAY}and his is a {COLOR RED}Normal-type.\p{COLOR DARK_GRAY}Neither Meowth has a type advantage against the other, so it's been a good battle so far!"))
+	closemessage
+	setspeaker(SP_NAME_TRACIE)	
 	msgbox(format("Oh, that makes sense!\pIt's so neat that Pokémon of the same species can be different types!"))
 	closemessage
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
@@ -170,6 +180,7 @@ script SouthCampus_ApproachBattle {
 }
 
 script SouthCampus_MeowthBattle {
+	setspeaker(SP_NAME_YOUNGSTER)
 	msgbox(format("Meowth, use Scratch!"))
 	closemessage
 	playmoncry(SPECIES_MEOWTH, 0)
@@ -180,6 +191,7 @@ script SouthCampus_MeowthBattle {
 	waitse
 	applymovement(LOCALID_MEOWTH, moves(slide_left*2, face_right))
 	waitmovement(0)
+	setspeaker(SP_NAME_LASS)
 	msgbox(format("Meowth, use Pay Day!"))
 	closemessage
 	playmoncry(SPECIES_MEOWTH_ALOLA, 0)
@@ -205,25 +217,30 @@ script SouthCampus_MeowthBattle {
 	hideobjectat(LOCALID_MEOWTH_ALOLA, MAP_SOUTH_CAMPUS)
 	removeobject(LOCALID_MEOWTH_ALOLA)
     setflag(FLAG_HIDE_MEOWTHS)
+	setspeaker(SP_NAME_YOUNGSTER)
 	msgbox(format("Aww, darn!\nOh well.\pCan't win them all.\nThanks for the battle!"))
 	closemessage
+	setspeaker(SP_NAME_LASS)
 	msgbox(format("Same to you!\nIt was fun!"))
 	closemessage
 	applymovement(LOCALID_LASS, moves(walk_right*5))
 	applymovement(LOCALID_YOUNGSTER, moves(walk_right*12))
 	applymovement(LOCALID_CAMERA, moves(walk_fast_down*3))
 	delay(20)
+	setspeaker(SP_NAME_TRACIE)
 	msgbox(format("That was such a great battle!\nI'm all fired up!"))
 	closemessage
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(face_left))
-	playbgm(MUS_ENCOUNTER_MAY, FALSE)	
+	playbgm(MUS_ENCOUNTER_MAY, FALSE)
+	setspeaker(SP_NAME_TRACIE)
 	msgbox(format("Hey!\nLet's have a battle!\pIt'll be the first battle of our final year of school, and I can't think of anyone better to have it with!"))
 	closemessage
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*3, walk_left*3, face_right))
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(walk_up*3, walk_right*3, face_left))	
 	applymovement(LOCALID_CAMERA, moves(walk_up*3))
 	delay(90)
+	setspeaker(SP_NAME_TRACIE)
 	msgbox(format("Alright, here we go.\nNo holding back!"))
 	closemessage
 	special(RemoveCameraObject)
@@ -247,16 +264,18 @@ script SouthCampus_TraciePostBattle {
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(walk_left*3))
 	waitmovement(0)
 	if (var(VAR_RESULT) == B_OUTCOME_LOST) {
+		setspeaker(SP_NAME_TRACIE)
 		msgbox(format("Thanks for the battle!\pBut, I could tell you were\nholding back!\pYou better not do that again!\pI can't wait to battle again once our journeys start!\pLet me heal your Pokémon quick!"))
 		closemessage
 		call(SouthCampus_HealParty)
 	}
 	else {
-		
+		setspeaker(SP_NAME_TRACIE)
 		msgbox(format("That was so much fun!\pI can't wait to battle again once our journeys start!\pLet me heal your Pokémon quick!"))
 		closemessage
 		call(SouthCampus_HealParty)
 	}
+	setspeaker(SP_NAME_TRACIE)
 	msgbox(format("I'm going to go on ahead to North Campus for orientation.\pTry not to take too long getting there. You don't want to be late!\pSee you soon!"))
 	closemessage
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(walk_right*8))
