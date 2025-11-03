@@ -1009,9 +1009,6 @@ void SetMapVarsToTrainerA(void)
         gSpecialVar_LastTalked = TRAINER_BATTLE_PARAM.objEventLocalIdA;
         gSelectedObjectEvent = GetObjectEventIdByLocalIdAndMap(TRAINER_BATTLE_PARAM.objEventLocalIdA, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
     }
-    if (TRAINER_BATTLE_PARAM.opponentA != 0) {
-        gSpeakerName = gTrainers[DIFFICULTY_NORMAL][TRAINER_BATTLE_PARAM.opponentA].trainerName;
-    }
 }
 
 void SetMapVarsToTrainerB(void)
@@ -1020,9 +1017,6 @@ void SetMapVarsToTrainerB(void)
     {
         gSpecialVar_LastTalked = TRAINER_BATTLE_PARAM.objEventLocalIdB;
         gSelectedObjectEvent = GetObjectEventIdByLocalIdAndMap(TRAINER_BATTLE_PARAM.objEventLocalIdB, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
-    }
-    if (TRAINER_BATTLE_PARAM.opponentB != 0) {
-        gSpeakerName = gTrainers[DIFFICULTY_NORMAL][TRAINER_BATTLE_PARAM.opponentB].trainerName;
     }
 }
 

@@ -12,6 +12,7 @@ enum SpeakerNames {
     SP_NAME_MAN,
     SP_NAME_LASS,
     SP_NAME_YOUNGSTER,
+    SP_NAME_NURSE_JOY,
     SP_NAME_COUNT
 };
 
