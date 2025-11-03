@@ -2,6 +2,7 @@
 #include "malloc.h"
 #include "bg.h"
 #include "data.h"
+#include "swsh_summary_screen.h"
 #include "decompress.h"
 #include "dma3.h"
 #include "dynamic_placeholder_text_util.h"
@@ -3745,9 +3746,19 @@ static void Task_ChangeScreen(u8 taskId)
         mode = sStorage->summaryScreenMode;
         FreePokeStorageData();
         if (mode == SUMMARY_MODE_NORMAL && boxMons == &sSavedMovingMon.box)
-            ShowPokemonSummaryScreenHandleDeoxys(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
+            {
+            if (SWSH_SUMMARY_SCREEN)
+                ShowPokemonSummaryScreenHandleDeoxys_SwSh(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
+            else
+                ShowPokemonSummaryScreenHandleDeoxys(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
+            }   
         else
-            ShowPokemonSummaryScreen(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
+            {            
+            if (SWSH_SUMMARY_SCREEN)
+                ShowPokemonSummaryScreen_SwSh(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
+            else
+                ShowPokemonSummaryScreen(mode, boxMons, monIndex, maxMonIndex, CB2_ReturnToPokeStorage);
+            }
         break;
     case SCREEN_CHANGE_NAME_BOX:
         FreePokeStorageData();
