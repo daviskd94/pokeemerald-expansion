@@ -49,7 +49,7 @@
 #define FLAG_HIDE_TRACIEROTCART    0x23 // Flag for hiding Tracie and Rotcart upon leaving your dorm
 #define FLAG_HIDE_MEOWTHS    0x24 // Unused Flag
 #define FLAG_HIDE_SOUTH_CAMPUS_TRAINERS    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
+#define FLAG_SPAWN_INVISIBLE    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag

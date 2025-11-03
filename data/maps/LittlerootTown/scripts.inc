@@ -2037,29 +2037,28 @@ LittlerootTown_EventScript_Maxie::
 # 1034 "data/maps/LittlerootTown/scripts.pory"
 	lockall
 # 1035 "data/maps/LittlerootTown/scripts.pory"
-# 1036 "data/maps/LittlerootTown/scripts.pory"
 	msgbox LittlerootTown_EventScript_Maxie_Text_0
-# 1037 "data/maps/LittlerootTown/scripts.pory"
+# 1036 "data/maps/LittlerootTown/scripts.pory"
 	releaseall
 	return
 
 
 LittlerootTown_EventScript_Test::
-# 1043 "data/maps/LittlerootTown/scripts.pory"
+# 1042 "data/maps/LittlerootTown/scripts.pory"
 	lockall
-# 1044 "data/maps/LittlerootTown/scripts.pory"
+# 1043 "data/maps/LittlerootTown/scripts.pory"
 	msgbox LittlerootTown_EventScript_Test_Text_0
-# 1045 "data/maps/LittlerootTown/scripts.pory"
+# 1044 "data/maps/LittlerootTown/scripts.pory"
 	releaseall
 	return
 
 
 LittlerootTown_EventScript_Maxie_Text_0:
-# 1036 "data/maps/LittlerootTown/scripts.pory"
+# 1035 "data/maps/LittlerootTown/scripts.pory"
 	.string "Testing the speaker box.$"
 
 LittlerootTown_EventScript_Test_Text_0:
-# 1044 "data/maps/LittlerootTown/scripts.pory"
+# 1043 "data/maps/LittlerootTown/scripts.pory"
 	.string "Test$"
 
 Maxie::
