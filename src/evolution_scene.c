@@ -974,7 +974,7 @@ static void Task_EvolutionScene(u8 taskId)
             if (!gPaletteFade.active)
             {
                 FreeAllWindowBuffers();
-                 if (SWSH_SUMMARY_SCREEN)
+                if (SWSH_SUMMARY_SCREEN)
                 {
                     ShowSelectMovePokemonSummaryScreen_SwSh(gPlayerParty, gTasks[taskId].tPartyId,
                                 gPlayerPartyCount - 1, CB2_EvolutionSceneLoadGraphics,

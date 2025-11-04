@@ -685,6 +685,7 @@ static void DoMoveRelearnerMain(void)
                 ShowSelectMovePokemonSummaryScreen_SwSh(gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, CB2_InitLearnMoveReturnFromSelectMove, GetCurrentSelectedMove());
             else
                 ShowSelectMovePokemonSummaryScreen(gPlayerParty, sMoveRelearnerStruct->partyMon, gPlayerPartyCount - 1, CB2_InitLearnMoveReturnFromSelectMove, GetCurrentSelectedMove());
+            
             FreeMoveRelearnerResources();
         }
         break;

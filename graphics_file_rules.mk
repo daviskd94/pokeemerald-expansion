@@ -408,10 +408,10 @@ $(TYPESSWSHGFXDIR)/move_types_sv.gbapal: $(TYPESSWSHGFXDIR)/move_types_sv_1.gbap
                                   $(TYPESSWSHGFXDIR)/move_types_sv_2.gbapal \
                                   $(TYPESSWSHGFXDIR)/move_types_sv_3.gbapal
 	@cat $^ >$@
-
+	
 $(TYPESSWSHTERAGFXDIR)/tera_types_swsh.4bpp: $(types:%=$(TYPESSWSHTERAGFXDIR)/%.4bpp)
 	@cat $^ >$@
-	
+
 graphics/bag/menu.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 53 -Wnum_tiles
 

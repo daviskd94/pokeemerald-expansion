@@ -8165,6 +8165,7 @@ static void Cmd_yesnoboxlearnmove(void)
                 ShowSelectMovePokemonSummaryScreen_SwSh(gPlayerParty, gBattleStruct->expGetterMonId, gPlayerPartyCount - 1, ReshowBattleScreenAfterMenu, gMoveToLearn);
             else
                 ShowSelectMovePokemonSummaryScreen(gPlayerParty, gBattleStruct->expGetterMonId, gPlayerPartyCount - 1, ReshowBattleScreenAfterMenu, gMoveToLearn);
+            
             gBattleScripting.learnMoveState++;
         }
         break;
