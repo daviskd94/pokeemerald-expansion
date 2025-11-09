@@ -222,3 +222,6 @@ const u16 gMetatileAttributes_TractorUniversity[] = INCBIN_U16("data/tilesets/se
 
 const u16 gMetatiles_Classroom[] = INCBIN_U16("data/tilesets/secondary/classroom/metatiles.bin");
 const u16 gMetatileAttributes_Classroom[] = INCBIN_U16("data/tilesets/secondary/classroom/metatile_attributes.bin");
+
+const u16 gMetatiles_MainHall[] = INCBIN_U16("data/tilesets/secondary/main_hall/metatiles.bin");
+const u16 gMetatileAttributes_MainHall[] = INCBIN_U16("data/tilesets/secondary/main_hall/metatile_attributes.bin");

@@ -1729,3 +1729,22 @@ const u16 gTilesetPalettes_Classroom[][16] =
 };
 
 const u32 gTilesetTiles_Classroom[] = INCBIN_U32("data/tilesets/secondary/classroom/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_MainHall[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/main_hall/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_MainHall[] = INCBIN_U32("data/tilesets/secondary/main_hall/tiles.4bpp.lz");
