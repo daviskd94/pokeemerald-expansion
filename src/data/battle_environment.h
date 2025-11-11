@@ -1,3 +1,12 @@
+#ifndef GUARD_DATA_BATTLE_ENVIRONMENT_H
+#define GUARD_DATA_BATTLE_ENVIRONMENT_H
+
+#include "global.h"
+#include "battle_bg.h"
+#include "config/overworld.h"
+#include "constants/rtc.h"
+#include "constants/battle.h"
+
 const u32 gBattleEnvironmentTiles_TallGrass[] = INCBIN_U32("graphics/battle_environment/tall_grass/tiles.4bpp.smol");
 const u16 gBattleEnvironmentPalette_TallGrass[] = INCBIN_U16("graphics/battle_environment/tall_grass/palette.gbapal");
 const u32 gBattleEnvironmentTilemap_TallGrass[] = INCBIN_U32("graphics/battle_environment/tall_grass/map.bin.smolTM");
@@ -36,12 +45,14 @@ const u32 gBattleEnvironmentTilemap_Cave[] = INCBIN_U32("graphics/battle_environ
 
 const u32 gBattleEnvironmentTiles_Plain[] = INCBIN_U32("graphics/battle_environment/plain/tiles.4bpp.smol");
 const u16 gBattleEnvironmentPalette_Plain[] = INCBIN_U16("graphics/battle_environment/plain/palette.gbapal");
-//const u16 gBattleEnvironmentPalette_PlainNight[] = INCBIN_U16("graphics/battle_environment/plain/palette_night.gbapal");
+const u16 gBattleEnvironmentPalette_PlainNight[] = INCBIN_U16("graphics/battle_environment/plain/palette_night.gbapal");
 const u32 gBattleEnvironmentTilemap_Plain[] = INCBIN_U32("graphics/battle_environment/plain/map.bin.smolTM");
 
 const u32 gBattleEnvironmentTiles_Building[] = INCBIN_U32("graphics/battle_environment/building/tiles.4bpp.smol");
 const u16 gBattleEnvironmentPalette_Frontier[] = INCBIN_U16("graphics/battle_environment/stadium/battle_frontier.gbapal"); // this is also used for link battles
 const u32 gBattleEnvironmentTilemap_Building[] = INCBIN_U32("graphics/battle_environment/building/map.bin.smolTM");
+
+#include "battle_environment_palettes.h"
 
 #define ENVIRONMENT_BACKGROUND(background)                      \
 {                                                               \
@@ -52,9 +63,30 @@ const u32 gBattleEnvironmentTilemap_Building[] = INCBIN_U32("graphics/battle_env
     .palette = gBattleEnvironmentPalette_##background,          \
 }
 
+#define ENVIRONMENT_BACKGROUND_TIME_FULL(background)                  \
+{                                                               \
+    .tileset = gBattleEnvironmentTiles_##background,            \
+    .tilemap = gBattleEnvironmentTilemap_##background,          \
+    .entryTileset = gBattleEnvironmentAnimTiles_##background,   \
+    .entryTilemap = gBattleEnvironmentAnimTilemap_##background, \
+    .palette = gBattleEnvironmentPalette_##background,          \
+    .palette_morning = gBattleEnvironmentPalette_##background##Morning, \
+    .palette_night = gBattleEnvironmentPalette_##background##Night     \
+}
+
+#define ENVIRONMENT_BACKGROUND_NIGHT_ONLY(background, entryBg)   \
+{                                                               \
+    .tileset = gBattleEnvironmentTiles_##background,            \
+    .tilemap = gBattleEnvironmentTilemap_##background,          \
+    .entryTileset = gBattleEnvironmentAnimTiles_##entryBg,     \
+    .entryTilemap = gBattleEnvironmentAnimTilemap_##entryBg,   \
+    .palette = gBattleEnvironmentPalette_##background,          \
+    .palette_night = gBattleEnvironmentPalette_##background##Night     \
+}
+
 const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] =
 {
-    [BATTLE_ENVIRONMENT_GRASS] =
+[BATTLE_ENVIRONMENT_GRASS] =
     {
     #if B_NATURE_POWER_MOVES >= GEN_6
         .naturePower = MOVE_ENERGY_BALL,
@@ -65,7 +97,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     #endif
         .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_4 ? MOVE_EFFECT_SLEEP : MOVE_EFFECT_POISON,
         .camouflageType = TYPE_GRASS,
-        .background = ENVIRONMENT_BACKGROUND(TallGrass),
+        .background = ENVIRONMENT_BACKGROUND_TIME_FULL(TallGrass),
     },
 
     [BATTLE_ENVIRONMENT_LONG_GRASS] =
@@ -87,7 +119,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .naturePower = B_NATURE_POWER_MOVES >= GEN_6 ? MOVE_EARTH_POWER : MOVE_EARTHQUAKE,
         .secretPowerEffect = MOVE_EFFECT_ACC_MINUS_1,
         .camouflageType = TYPE_GROUND,
-        .background = ENVIRONMENT_BACKGROUND(Sand),
+        .background = ENVIRONMENT_BACKGROUND_TIME_FULL(Sand),
     },
 
     [BATTLE_ENVIRONMENT_UNDERWATER] =
@@ -158,7 +190,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .background = ENVIRONMENT_BACKGROUND(Building),
     },
 
-    [BATTLE_ENVIRONMENT_PLAIN] =
+[BATTLE_ENVIRONMENT_PLAIN] =
     {
     #if B_NATURE_POWER_MOVES >= GEN_6
         .naturePower = MOVE_TRI_ATTACK,
@@ -169,14 +201,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     #endif
         .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
         .camouflageType = B_CAMOUFLAGE_TYPES >= GEN_4 ? TYPE_GROUND : TYPE_NORMAL,
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Plain,
-            .tilemap = gBattleEnvironmentTilemap_Plain,
-            .entryTileset = gBattleEnvironmentAnimTiles_Building,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_Plain,
-        },
+        .background = ENVIRONMENT_BACKGROUND_NIGHT_ONLY(Plain, Building),
     },
 
     [BATTLE_ENVIRONMENT_FRONTIER] =
@@ -439,3 +464,5 @@ static const struct {
     {MAP_BATTLE_SCENE_DRAKE,    BATTLE_ENVIRONMENT_DRAKE},
     {MAP_BATTLE_SCENE_FRONTIER, BATTLE_ENVIRONMENT_FRONTIER}
 };
+
+#endif // GUARD_DATA_BATTLE_ENVIRONMENT_H

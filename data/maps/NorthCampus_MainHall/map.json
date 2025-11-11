@@ -34,11 +34,11 @@
       "y": 34,
       "elevation": 0,
       "dest_map": "MAP_NORTH_CAMPUS",
-      "dest_warp_id": "2"
+      "dest_warp_id": "3"
     },
     {
       "x": 9,
-      "y": 9,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_NORTH_CAMPUS_MAIN_HALL",
       "dest_warp_id": "0"

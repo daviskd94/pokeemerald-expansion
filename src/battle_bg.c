@@ -633,7 +633,13 @@ static void LoadBattleEnvironmentGfx(u16 terrain)
     // Copy to bg3
     DecompressDataWithHeaderVram(gBattleEnvironmentInfo[terrain].background.tileset, (void *)(BG_CHAR_ADDR(2)));
     DecompressDataWithHeaderVram(gBattleEnvironmentInfo[terrain].background.tilemap, (void *)(BG_SCREEN_ADDR(26)));
-    LoadPalette((gBattleEnvironmentInfo[terrain].background.palette), BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+    // Load the appropriate time-based palette
+    const u16 *palette = GetTimeBasedPalette(
+        gBattleEnvironmentInfo[terrain].background.palette,
+        gBattleEnvironmentInfo[terrain].background.palette_night,
+        gBattleEnvironmentInfo[terrain].background.palette_morning
+    );
+    LoadPalette(palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
 }
 
 // Loads the entry associated with the battle terrain.
