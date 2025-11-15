@@ -1,1 +1,92 @@
-mapscripts NorthCampus_MapScripts {}
+mapscripts NorthCampus_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+    ]
+}
+
+script NorthCampus_WalkNextToTracie1 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down, walk_right*2, walk_up))
+    waitmovement(0)
+    call(NorthCampus_TalkToTracie)
+}
+
+script NorthCampus_WalkNextToTracie2 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*2, walk_up))
+    waitmovement(0)
+    call(NorthCampus_TalkToTracie)
+}
+
+script NorthCampus_WalkNextToTracie3 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right*2, walk_up))
+    waitmovement(0)
+    call(NorthCampus_TalkToTracie)
+}
+
+script NorthCampus_WalkNextToTracie4 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left*1, face_up))
+    waitmovement(0)
+    call(NorthCampus_TalkToTracie)
+}
+
+script NorthCampus_WalkNextToTracie5 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left, walk_up))
+    waitmovement(0)
+    call(NorthCampus_TalkToTracie)
+}
+
+script NorthCampus_WalkNextToTracie6 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left, walk_up*2))
+    waitmovement(0)
+    call(NorthCampus_TalkToTracie)
+}
+
+script NorthCampus_TalkToTracie {
+    fadeoutbgm(1)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("…\pTake a good look, {PLAYER}…\pMain Hall sure does hit different when you know it's your final year.\p We've had a lot of great memories in here.\pAnd… okay, maybe a few\ncatastrophes too.\pWe never did find out what happened to the guy with the Mareep and the lotion…"))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    applymovement(26, moves(face_right))
+    waitmovement(0)
+    
+    msgbox(format("But, enough about that.\nC'mon, {PLAYER}.\pLet's head inside before I start getting all mushy."))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+    applymovement(26, moves(walk_right))
+    opendoor(42, 16)
+    waitdooranim
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+    applymovement(26, moves(walk_up))
+    waitmovement(0)
+    hideobjectat(OBJ_EVENT_ID_PLAYER, MAP_NORTH_CAMPUS)
+    applymovement(26, moves(walk_up))
+    waitmovement(0)
+    hideobjectat(26, MAP_NORTH_CAMPUS)
+    closedoor(42, 16)
+    waitdooranim
+    special(SpawnCameraObject)
+    setobjectxyperm(LOCALID_CAMERA, 42, 16)
+    delay(60)
+    applymovement(LOCALID_CAMERA, moves(walk_slow_up*6))
+    waitmovement(0)
+    delay(120)
+
+    // Restore BGM now if you like
+    //fadedefaultbgm
+    setvar(VAR_NORTH_CAMPUS_STATE, 1)
+    setflag(FLAG_NORTH_CAMPUS_TRACIE_1)
+    //special(RemoveCameraObject)
+    playbgm (MUS_OCEANIC_MUSEUM, TRUE)
+    warp(MAP_NORTH_CAMPUS_MAIN_HALL, 37, 34)
+    waitstate
+    releaseall
+    end
+}
+
+script NorthCampus_TestWarp {
+    warp(MAP_NORTH_CAMPUS_MAIN_HALL, 37, 34)
+}

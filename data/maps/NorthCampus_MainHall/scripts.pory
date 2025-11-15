@@ -1,1 +1,86 @@
-mapscripts NorthCampus_MainHall_MapScripts {}
+mapscripts NorthCampus_MainHall_MapScripts {
+        MAP_SCRIPT_ON_FRAME_TABLE [
+            VAR_NORTH_CAMPUS_STATE, 1: NorthCampus_MainHall_Registration
+        ]
+        MAP_SCRIPT_ON_LOAD {
+            hideobjectat(3, MAP_NORTH_CAMPUS_MAIN_HALL) //hiding Tracie
+        }
+}
+
+script NorthCampus_MainHall_Registration {
+    lockall
+    addobject(2) //showing Rotcart
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+    waitmovement(0)
+    addobject(3) //showing Tracie
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+    applymovement(3, moves(walk_up*2, walk_right, walk_up))
+    waitmovement(0)
+    delay(20)
+    applymovement(3, moves(emote_exclamation_mark)) 
+    setspeaker(SP_NAME_TRACIE)
+    playse(SE_PIN)
+    waitse
+    delay(60)
+    msgbox(format("Oh! It's… Rotcart…"))
+    closemessage
+    special(SpawnCameraObject)
+    setobjectxyperm(LOCALID_CAMERA, 37, 32)
+    applymovement(LOCALID_CAMERA, moves(walk_up*5))
+    waitmovement(0)
+    delay(10)
+    setspeaker(SP_NAME_RECEPTIONIST)
+    msgbox(format("Alright, Rotcart.\nYou're all checked in for orientation!"))
+    applymovement(2, moves(walk_right*6, walk_up*3)) // Rotcart leaving
+    message("We'll be starting in…\nRotcart?{PAUSE 50}")
+    waitmessage
+    applymovement(1, moves(face_right)) // Receptionist facing Rotcart
+    waitmovement(0)
+    delay(55)
+    hideobjectat(2, MAP_NORTH_CAMPUS_MAIN_HALL)
+    playse(SE_EXIT)
+    waitse
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*5))
+    applymovement(3, moves(walk_up*5)) // Tracie walking with player
+    waitmovement(0)
+    applymovement(1, moves(face_down)) // Receptionist facing towards player and Tracie
+    waitmovement(0)
+    setspeaker(SP_NAME_RECEPTIONIST)
+    msgbox(format("Hello, {PLAYER} and Tracie!\nHappy to see you both here.\pAre you both here for\norientation as well?"))
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Yep! We're both super\nexcited to get started!\pIs there anything we need\nto do for check in?"))
+    setspeaker(SP_NAME_RECEPTIONIST)
+    msgbox(format("Yes, there is!\pI'll need to see your student IDs."))
+    closemessage
+    msgbox(format("{PLAYER} and Tracie both hand over their student IDs."))
+    closemessage
+    playse(SE_PC_LOGIN)
+    waitse
+    setspeaker(SP_NAME_RECEPTIONIST)
+    msgbox(format("Name: {PLAYER}\nAge: 21\pProgram: Pokémon Trainer Studies\nYear: Senior"))
+    setspeaker(SP_NAME_RECEPTIONIST)
+    msgbox(format("Name: Tracie\nAge: 21\pProgram: Pokémon Trainer Studies\nYear: Senior"))
+    closemessage
+    msgbox(format("{PLAYER} and Tracie both receive\ntheir student IDs back."))
+    setspeaker(SP_NAME_RECEPTIONIST)
+    msgbox(format("Okay, thanks for waiting!\pYou're both all checked in.\pOrientation starts in the lecture hall behind me.\pJust head through either of these doors.\nWe're starting soon!"))
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Thank you so much!"))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(3, moves(face_left))
+    waitmovement(0)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("C'mon, {PLAYER}.\nLet's get inside!\pWe don't want to keep Professor Maple waiting!"))
+    closemessage
+    applymovement(3, moves(walk_right*5, walk_up*3))
+    waitmovement(0)
+    removeobject(3)
+    playse(SE_EXIT)
+    waitse
+    special(RemoveCameraObject)
+	removeobject(LOCALID_CAMERA)
+
+
+    setvar(VAR_NORTH_CAMPUS_STATE, 2)
+}
