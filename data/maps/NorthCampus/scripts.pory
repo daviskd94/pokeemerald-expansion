@@ -1,6 +1,8 @@
 mapscripts NorthCampus_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
+
     ]
+
 }
 
 script NorthCampus_WalkNextToTracie1 {

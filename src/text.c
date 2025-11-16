@@ -1216,19 +1216,12 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 textPrinter->japanese = FALSE;
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_SPEAKER:
-            {
-                enum SpeakerNames name = *textPrinter->printerTemplate.currentChar++;
-                gSpeakerName = gSpeakerNamesTable[name];
-                TrySpawnNamebox();
+                {
+                    enum SpeakerNames name = *textPrinter->printerTemplate.currentChar++;
+                    TrySpawnAndShowNamebox(gSpeakerNamesTable[name]);
 
-                u32 nameboxWinId = GetNameboxWindowId();
-                if (nameboxWinId != WINDOW_NONE)
-                    DrawNamebox(nameboxWinId, TRUE);
-                else // redraw dialogue box as it is affected by SP_NAME_NONE
-                    RedrawDialogueFrame(0, TRUE);
-
-                return RENDER_REPEAT;
-            }
+                    return RENDER_REPEAT;
+                }
             }
             break;
         case CHAR_PROMPT_CLEAR:

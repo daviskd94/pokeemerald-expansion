@@ -75,6 +75,9 @@ const u16 gTrainerPalette_Beauty[] = INCBIN_U16("graphics/trainers/front_pics/be
 const u32 gTrainerFrontPic_RichBoy[] = INCBIN_U32("graphics/trainers/front_pics/rich_boy.4bpp.smol");
 const u16 gTrainerPalette_RichBoy[] = INCBIN_U16("graphics/trainers/front_pics/rich_boy.gbapal");
 
+const u32 gTrainerFrontPic_Rancher[] = INCBIN_U32("graphics/trainers/front_pics/rancher.4bpp.smol");
+const u16 gTrainerPalette_Rancher[] = INCBIN_U16("graphics/trainers/front_pics/rancher.gbapal");
+
 const u32 gTrainerFrontPic_ExpertF[] = INCBIN_U32("graphics/trainers/front_pics/expert_f.4bpp.smol");
 const u16 gTrainerPalette_ExpertF[] = INCBIN_U16("graphics/trainers/front_pics/expert_f.gbapal");
 
@@ -338,6 +341,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_LADY, gTrainerFrontPic_Lady, gTrainerPalette_Lady),
     TRAINER_SPRITE(TRAINER_PIC_BEAUTY, gTrainerFrontPic_Beauty, gTrainerPalette_Beauty),
     TRAINER_SPRITE(TRAINER_PIC_RICH_BOY, gTrainerFrontPic_RichBoy, gTrainerPalette_RichBoy),
+    TRAINER_SPRITE(TRAINER_PIC_RANCHER, gTrainerFrontPic_Rancher, gTrainerPalette_Rancher),
     TRAINER_SPRITE(TRAINER_PIC_EXPERT_F, gTrainerFrontPic_ExpertF, gTrainerPalette_ExpertF),
     TRAINER_SPRITE(TRAINER_PIC_POKEMANIAC, gTrainerFrontPic_Pokemaniac, gTrainerPalette_Pokemaniac),
     TRAINER_SPRITE(TRAINER_PIC_MAGMA_GRUNT_F, gTrainerFrontPic_MagmaGruntF, gTrainerPalette_MagmaGruntF),

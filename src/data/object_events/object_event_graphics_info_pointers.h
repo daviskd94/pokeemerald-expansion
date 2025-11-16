@@ -302,8 +302,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mario;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Donald;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Richard;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nate;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Michele;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cyrus;*/
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Michele;*/
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cyrus;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Guard;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Captain;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ChampInTheMaking;
@@ -628,8 +628,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 	[OBJ_EVENT_GFX_DONALD] =                   &gObjectEventGraphicsInfo_Donald,
 	[OBJ_EVENT_GFX_RICHARD] =                  &gObjectEventGraphicsInfo_Richard,
 	[OBJ_EVENT_GFX_NATE] =                     &gObjectEventGraphicsInfo_Nate,
-	[OBJ_EVENT_GFX_MICHELE] =                  &gObjectEventGraphicsInfo_Michele,
-	[OBJ_EVENT_GFX_CYRUS] =                    &gObjectEventGraphicsInfo_Cyrus,*/
+	[OBJ_EVENT_GFX_MICHELE] =                  &gObjectEventGraphicsInfo_Michele,*/
+	[OBJ_EVENT_GFX_CYRUS] =                    &gObjectEventGraphicsInfo_Cyrus,
 	[OBJ_EVENT_GFX_GUARD] =                    &gObjectEventGraphicsInfo_Guard,
 	[OBJ_EVENT_GFX_CAPTAIN] =                  &gObjectEventGraphicsInfo_Captain,
     [OBJ_EVENT_GFX_CHAMPINTHEMAKING] =         &gObjectEventGraphicsInfo_ChampInTheMaking,

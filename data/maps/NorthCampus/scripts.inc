@@ -8,255 +8,255 @@ NorthCampus_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 
 
 NorthCampus_WalkNextToTracie1::
-# 7 "data/maps/NorthCampus/scripts.pory"
-	lockall
-# 8 "data/maps/NorthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_WalkNextToTracie1_Movement_0
 # 9 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
+	lockall
 # 10 "data/maps/NorthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_WalkNextToTracie1_Movement_0
+# 11 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
+# 12 "data/maps/NorthCampus/scripts.pory"
 	call NorthCampus_TalkToTracie
 	return
 
 
 NorthCampus_WalkNextToTracie2::
-# 14 "data/maps/NorthCampus/scripts.pory"
-	lockall
-# 15 "data/maps/NorthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_WalkNextToTracie2_Movement_0
 # 16 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
+	lockall
 # 17 "data/maps/NorthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_WalkNextToTracie2_Movement_0
+# 18 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
+# 19 "data/maps/NorthCampus/scripts.pory"
 	call NorthCampus_TalkToTracie
 	return
 
 
 NorthCampus_WalkNextToTracie3::
-# 21 "data/maps/NorthCampus/scripts.pory"
-	lockall
-# 22 "data/maps/NorthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_WalkNextToTracie3_Movement_0
 # 23 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
+	lockall
 # 24 "data/maps/NorthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_WalkNextToTracie3_Movement_0
+# 25 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
+# 26 "data/maps/NorthCampus/scripts.pory"
 	call NorthCampus_TalkToTracie
 	return
 
 
 NorthCampus_WalkNextToTracie4::
-# 28 "data/maps/NorthCampus/scripts.pory"
-	lockall
-# 29 "data/maps/NorthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_WalkNextToTracie4_Movement_0
 # 30 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
+	lockall
 # 31 "data/maps/NorthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_WalkNextToTracie4_Movement_0
+# 32 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
+# 33 "data/maps/NorthCampus/scripts.pory"
 	call NorthCampus_TalkToTracie
 	return
 
 
 NorthCampus_WalkNextToTracie5::
-# 35 "data/maps/NorthCampus/scripts.pory"
-	lockall
-# 36 "data/maps/NorthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_WalkNextToTracie5_Movement_0
 # 37 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
+	lockall
 # 38 "data/maps/NorthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_WalkNextToTracie5_Movement_0
+# 39 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
+# 40 "data/maps/NorthCampus/scripts.pory"
 	call NorthCampus_TalkToTracie
 	return
 
 
 NorthCampus_WalkNextToTracie6::
-# 42 "data/maps/NorthCampus/scripts.pory"
-	lockall
-# 43 "data/maps/NorthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_WalkNextToTracie6_Movement_0
 # 44 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
+	lockall
 # 45 "data/maps/NorthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_WalkNextToTracie6_Movement_0
+# 46 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
+# 47 "data/maps/NorthCampus/scripts.pory"
 	call NorthCampus_TalkToTracie
 	return
 
 
 NorthCampus_TalkToTracie::
-# 49 "data/maps/NorthCampus/scripts.pory"
-	fadeoutbgm 1
-# 50 "data/maps/NorthCampus/scripts.pory"
-	setspeaker SP_NAME_TRACIE
 # 51 "data/maps/NorthCampus/scripts.pory"
-	msgbox NorthCampus_TalkToTracie_Text_0
+	fadeoutbgm 1
 # 52 "data/maps/NorthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_TalkToTracie_Movement_0
+	setspeaker SP_NAME_TRACIE
 # 53 "data/maps/NorthCampus/scripts.pory"
-	applymovement 26, NorthCampus_TalkToTracie_Movement_1
+	msgbox NorthCampus_TalkToTracie_Text_0
 # 54 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_TalkToTracie_Movement_0
+# 55 "data/maps/NorthCampus/scripts.pory"
+	applymovement 26, NorthCampus_TalkToTracie_Movement_1
 # 56 "data/maps/NorthCampus/scripts.pory"
-	msgbox NorthCampus_TalkToTracie_Text_1
-# 57 "data/maps/NorthCampus/scripts.pory"
-	closemessage
+	waitmovement 0
 # 58 "data/maps/NorthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_TalkToTracie_Movement_2
+	msgbox NorthCampus_TalkToTracie_Text_1
 # 59 "data/maps/NorthCampus/scripts.pory"
-	applymovement 26, NorthCampus_TalkToTracie_Movement_3
+	closemessage
 # 60 "data/maps/NorthCampus/scripts.pory"
-	opendoor 42, 16
-# 61 "data/maps/NorthCampus/scripts.pory"
-	waitdooranim
-# 62 "data/maps/NorthCampus/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_TalkToTracie_Movement_2
+# 61 "data/maps/NorthCampus/scripts.pory"
+	applymovement 26, NorthCampus_TalkToTracie_Movement_3
+# 62 "data/maps/NorthCampus/scripts.pory"
+	opendoor 42, 16
 # 63 "data/maps/NorthCampus/scripts.pory"
-	applymovement 26, NorthCampus_TalkToTracie_Movement_2
-# 64 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
-# 65 "data/maps/NorthCampus/scripts.pory"
-	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_NORTH_CAMPUS
-# 66 "data/maps/NorthCampus/scripts.pory"
-	applymovement 26, NorthCampus_TalkToTracie_Movement_2
-# 67 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
-# 68 "data/maps/NorthCampus/scripts.pory"
-	hideobjectat 26, MAP_NORTH_CAMPUS
-# 69 "data/maps/NorthCampus/scripts.pory"
-	closedoor 42, 16
-# 70 "data/maps/NorthCampus/scripts.pory"
 	waitdooranim
-# 71 "data/maps/NorthCampus/scripts.pory"
-	special SpawnCameraObject
-# 72 "data/maps/NorthCampus/scripts.pory"
-	setobjectxyperm LOCALID_CAMERA, 42, 16
-# 73 "data/maps/NorthCampus/scripts.pory"
-	delay 60
-# 74 "data/maps/NorthCampus/scripts.pory"
-	applymovement LOCALID_CAMERA, NorthCampus_TalkToTracie_Movement_4
-# 75 "data/maps/NorthCampus/scripts.pory"
+# 64 "data/maps/NorthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_TalkToTracie_Movement_2
+# 65 "data/maps/NorthCampus/scripts.pory"
+	applymovement 26, NorthCampus_TalkToTracie_Movement_2
+# 66 "data/maps/NorthCampus/scripts.pory"
 	waitmovement 0
+# 67 "data/maps/NorthCampus/scripts.pory"
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_NORTH_CAMPUS
+# 68 "data/maps/NorthCampus/scripts.pory"
+	applymovement 26, NorthCampus_TalkToTracie_Movement_2
+# 69 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
+# 70 "data/maps/NorthCampus/scripts.pory"
+	hideobjectat 26, MAP_NORTH_CAMPUS
+# 71 "data/maps/NorthCampus/scripts.pory"
+	closedoor 42, 16
+# 72 "data/maps/NorthCampus/scripts.pory"
+	waitdooranim
+# 73 "data/maps/NorthCampus/scripts.pory"
+	special SpawnCameraObject
+# 74 "data/maps/NorthCampus/scripts.pory"
+	setobjectxyperm LOCALID_CAMERA, 42, 16
+# 75 "data/maps/NorthCampus/scripts.pory"
+	delay 60
 # 76 "data/maps/NorthCampus/scripts.pory"
+	applymovement LOCALID_CAMERA, NorthCampus_TalkToTracie_Movement_4
+# 77 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
+# 78 "data/maps/NorthCampus/scripts.pory"
 	delay 120
-# 80 "data/maps/NorthCampus/scripts.pory"
+# 82 "data/maps/NorthCampus/scripts.pory"
 	setvar VAR_NORTH_CAMPUS_STATE, 1
-# 81 "data/maps/NorthCampus/scripts.pory"
-	setflag FLAG_NORTH_CAMPUS_TRACIE_1
 # 83 "data/maps/NorthCampus/scripts.pory"
-	playbgm MUS_OCEANIC_MUSEUM, TRUE
-# 84 "data/maps/NorthCampus/scripts.pory"
-	warp MAP_NORTH_CAMPUS_MAIN_HALL, 37, 34
+	setflag FLAG_NORTH_CAMPUS_TRACIE_1
 # 85 "data/maps/NorthCampus/scripts.pory"
-	waitstate
+	playbgm MUS_OCEANIC_MUSEUM, TRUE
 # 86 "data/maps/NorthCampus/scripts.pory"
+	warp MAP_NORTH_CAMPUS_MAIN_HALL, 37, 34
+# 87 "data/maps/NorthCampus/scripts.pory"
+	waitstate
+# 88 "data/maps/NorthCampus/scripts.pory"
 	releaseall
 	end
 
 
 NorthCampus_TestWarp::
-# 91 "data/maps/NorthCampus/scripts.pory"
+# 93 "data/maps/NorthCampus/scripts.pory"
 	warp MAP_NORTH_CAMPUS_MAIN_HALL, 37, 34
 	return
 
 
-# 8 "data/maps/NorthCampus/scripts.pory"
+# 10 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_WalkNextToTracie1_Movement_0:
-# 8 "data/maps/NorthCampus/scripts.pory"
+# 10 "data/maps/NorthCampus/scripts.pory"
 	walk_down
-# 8 "data/maps/NorthCampus/scripts.pory"
+# 10 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 8 "data/maps/NorthCampus/scripts.pory"
+# 10 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 8 "data/maps/NorthCampus/scripts.pory"
+# 10 "data/maps/NorthCampus/scripts.pory"
 	walk_up
 	step_end
 
-# 15 "data/maps/NorthCampus/scripts.pory"
+# 17 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_WalkNextToTracie2_Movement_0:
-# 15 "data/maps/NorthCampus/scripts.pory"
+# 17 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 15 "data/maps/NorthCampus/scripts.pory"
+# 17 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 15 "data/maps/NorthCampus/scripts.pory"
+# 17 "data/maps/NorthCampus/scripts.pory"
 	walk_up
 	step_end
 
-# 22 "data/maps/NorthCampus/scripts.pory"
+# 24 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_WalkNextToTracie3_Movement_0:
-# 22 "data/maps/NorthCampus/scripts.pory"
+# 24 "data/maps/NorthCampus/scripts.pory"
 	walk_up
-# 22 "data/maps/NorthCampus/scripts.pory"
+# 24 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 22 "data/maps/NorthCampus/scripts.pory"
+# 24 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 22 "data/maps/NorthCampus/scripts.pory"
+# 24 "data/maps/NorthCampus/scripts.pory"
 	walk_up
 	step_end
 
-# 29 "data/maps/NorthCampus/scripts.pory"
+# 31 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_WalkNextToTracie4_Movement_0:
-# 29 "data/maps/NorthCampus/scripts.pory"
+# 31 "data/maps/NorthCampus/scripts.pory"
 	walk_left
-# 29 "data/maps/NorthCampus/scripts.pory"
+# 31 "data/maps/NorthCampus/scripts.pory"
 	face_up
 	step_end
 
-# 36 "data/maps/NorthCampus/scripts.pory"
+# 38 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_WalkNextToTracie5_Movement_0:
-# 36 "data/maps/NorthCampus/scripts.pory"
+# 38 "data/maps/NorthCampus/scripts.pory"
 	walk_left
-# 36 "data/maps/NorthCampus/scripts.pory"
+# 38 "data/maps/NorthCampus/scripts.pory"
 	walk_up
 	step_end
 
-# 43 "data/maps/NorthCampus/scripts.pory"
+# 45 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_WalkNextToTracie6_Movement_0:
-# 43 "data/maps/NorthCampus/scripts.pory"
+# 45 "data/maps/NorthCampus/scripts.pory"
 	walk_left
-# 43 "data/maps/NorthCampus/scripts.pory"
+# 45 "data/maps/NorthCampus/scripts.pory"
 	walk_up
-# 43 "data/maps/NorthCampus/scripts.pory"
+# 45 "data/maps/NorthCampus/scripts.pory"
 	walk_up
 	step_end
 
-# 52 "data/maps/NorthCampus/scripts.pory"
+# 54 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_TalkToTracie_Movement_0:
-# 52 "data/maps/NorthCampus/scripts.pory"
+# 54 "data/maps/NorthCampus/scripts.pory"
 	face_left
 	step_end
 
-# 53 "data/maps/NorthCampus/scripts.pory"
+# 55 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_TalkToTracie_Movement_1:
-# 53 "data/maps/NorthCampus/scripts.pory"
+# 55 "data/maps/NorthCampus/scripts.pory"
 	face_right
 	step_end
 
-# 58 "data/maps/NorthCampus/scripts.pory"
+# 60 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_TalkToTracie_Movement_2:
-# 58 "data/maps/NorthCampus/scripts.pory"
+# 60 "data/maps/NorthCampus/scripts.pory"
 	walk_up
 	step_end
 
-# 59 "data/maps/NorthCampus/scripts.pory"
+# 61 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_TalkToTracie_Movement_3:
-# 59 "data/maps/NorthCampus/scripts.pory"
+# 61 "data/maps/NorthCampus/scripts.pory"
 	walk_right
 	step_end
 
-# 74 "data/maps/NorthCampus/scripts.pory"
+# 76 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_TalkToTracie_Movement_4:
-# 74 "data/maps/NorthCampus/scripts.pory"
+# 76 "data/maps/NorthCampus/scripts.pory"
 	walk_slow_up
-# 74 "data/maps/NorthCampus/scripts.pory"
+# 76 "data/maps/NorthCampus/scripts.pory"
 	walk_slow_up
-# 74 "data/maps/NorthCampus/scripts.pory"
+# 76 "data/maps/NorthCampus/scripts.pory"
 	walk_slow_up
-# 74 "data/maps/NorthCampus/scripts.pory"
+# 76 "data/maps/NorthCampus/scripts.pory"
 	walk_slow_up
-# 74 "data/maps/NorthCampus/scripts.pory"
+# 76 "data/maps/NorthCampus/scripts.pory"
 	walk_slow_up
-# 74 "data/maps/NorthCampus/scripts.pory"
+# 76 "data/maps/NorthCampus/scripts.pory"
 	walk_slow_up
 	step_end
 
 NorthCampus_TalkToTracie_Text_0:
-# 51 "data/maps/NorthCampus/scripts.pory"
+# 53 "data/maps/NorthCampus/scripts.pory"
 	.string "…\p"
 	.string "Take a good look, {PLAYER}…\p"
 	.string "Main Hall sure does hit different when\n"
@@ -269,7 +269,7 @@ NorthCampus_TalkToTracie_Text_0:
 	.string "the guy with the Mareep and the lotion…$"
 
 NorthCampus_TalkToTracie_Text_1:
-# 56 "data/maps/NorthCampus/scripts.pory"
+# 58 "data/maps/NorthCampus/scripts.pory"
 	.string "But, enough about that.\n"
 	.string "C'mon, {PLAYER}.\p"
 	.string "Let's head inside before I start\n"

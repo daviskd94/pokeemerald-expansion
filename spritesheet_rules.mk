@@ -510,6 +510,9 @@ $(OBJEVENTGFXDIR)/people/acetrainermale.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/acetrainerfemale.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(OBJEVENTGFXDIR)/people/cyrus.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4	
+
 $(OBJEVENTGFXDIR)/people/aromalady.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 

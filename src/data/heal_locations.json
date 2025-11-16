@@ -188,6 +188,12 @@
       "map": "MAP_SOUTH_CAMPUS",
       "x": 36,
       "y": 19
+    },
+    {
+      "id": "HEAL_LOCATION_NORTH_CAMPUS",
+      "map": "MAP_NORTH_CAMPUS",
+      "x": 31,
+      "y": 42
     }
   ]
 }

@@ -1549,6 +1549,10 @@ static const struct SpriteFrameImage sPicTable_RangerF[] = {
     overworld_ascending_frames(gObjectEventPic_RangerF, 4, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Cyrus[] = {
+    overworld_ascending_frames(gObjectEventPic_Cyrus, 4, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Roughneck[] = {
     overworld_ascending_frames(gObjectEventPic_Roughneck, 4, 4),
 };

@@ -1192,3 +1192,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NorthCampus_MainHall/scripts.inc"
 
 	.include "data/maps/NorthCampus_Classroom1/scripts.inc"
+
+	.include "data/maps/Fieldstone_Cavern/scripts.inc"

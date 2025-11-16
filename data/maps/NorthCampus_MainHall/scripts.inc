@@ -74,7 +74,7 @@ NorthCampus_MainHall_Registration::
 # 38 "data/maps/NorthCampus_MainHall/scripts.pory"
 	waitmovement 0
 # 39 "data/maps/NorthCampus_MainHall/scripts.pory"
-	delay 50
+	delay 55
 # 40 "data/maps/NorthCampus_MainHall/scripts.pory"
 	hideobjectat 2, MAP_NORTH_CAMPUS_MAIN_HALL
 # 41 "data/maps/NorthCampus_MainHall/scripts.pory"

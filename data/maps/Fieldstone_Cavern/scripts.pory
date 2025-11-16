@@ -1,0 +1,85 @@
+mapscripts Fieldstone_Cavern_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+    ]
+
+}
+
+script FieldstoneCavern_EventScript_PokemonBreederCeleste {
+    trainerbattle_single(TRAINER_CELESTE, Celeste_Intro, Celeste_Outro)
+    setspeaker(SP_NAME_CELESTE)
+    msgbox(format("My brother is somewhere deeper in the cave.\pHe will probably want to battle you too."))
+    closemessage
+    end
+}
+
+text Celeste_Intro {
+    "It's so boring in this cave.\pWill you battle me to pass the time?"
+}
+
+text Celeste_Outro {
+    "Aww.\nThat didn't take as long as I hoped."
+}
+
+script FieldstoneCavern_EventScript_PokemonBreederGabe {
+    trainerbattle_single(TRAINER_GABE, Gabe_Intro, Gabe_Outro)
+    setspeaker(SP_NAME_GABE)
+    msgbox(format("You battled my sister earlier?\nWhat did she say about me?\pNothing good I'm certain…"))
+    closemessage
+    end
+}
+
+text Gabe_Intro {
+    "Pip, pip, cheerio, and all that!\pWould you do me the honour\nof a battle?"
+}
+
+text Gabe_Outro {
+    "My goodness, it seems I was\nthoroughly thashed!"
+}
+
+script FieldstoneCavern_EventScript_Bertie {
+    trainerbattle_single(TRAINER_BERTIE, Bertie_Intro, Bertie_Outro)
+    setspeaker(SP_NAME_BERTIE)
+    msgbox(format("Congratulations on your win!\nI hope we can battle again!"))
+    closemessage
+    end
+}
+
+text Bertie_Intro {
+    "Hi! Wanna battle?\nLet's make it a good one!"
+}
+
+text Bertie_Outro {
+    "Wow!\nThat was amazing!"
+}
+
+script FieldstoneCavern_EventScript_Colton {
+    trainerbattle_single(TRAINER_COLTON, Colton_Intro, Colton_Outro)
+    setspeaker(SP_NAME_COLTON)
+    msgbox(format("Thanks for the battle.\nWe should do it again sometime!"))
+    closemessage
+    end
+}
+
+text Colton_Intro {
+    "Ahh!\nDon't sneak up on me like that!\p…Oh, a battle?\nSure, I guess that's okay."
+}
+
+text Colton_Outro {
+    "I need to study more…"
+}
+
+script FieldstoneCavern_EventScript_Buck {
+    trainerbattle_single(TRAINER_BUCK, Buck_Intro, Buck_Outro)
+    setspeaker(SP_NAME_BUCK)
+    msgbox(format("Hey! You're pretty good!"))
+    closemessage
+    end
+}
+
+text Buck_Intro {
+    "Hey there!\nAre you looking for the rope too?\pYou'll have to battle me for it!"
+}
+
+text Buck_Outro {
+    "Go ahead and take the Escape Rope.\nYou earned it!"
+}

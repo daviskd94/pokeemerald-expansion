@@ -135,6 +135,6 @@ u8 AddSecondaryPopUpWindow(void);
 u8 GetSecondaryPopUpWindowId(void);
 void RemoveSecondaryPopUpWindow(void);
 void HBlankCB_DoublePopupWindow(void);
-void RedrawDialogueFrame(u8 windowId, bool8 copyToVram);
+void RedrawDialogueFrame(void);
 
 #endif // GUARD_MENU_H
