@@ -51,8 +51,8 @@
 #define FLAG_HIDE_SOUTH_CAMPUS_TRAINERS    0x25 // Unused Flag
 #define FLAG_SPAWN_INVISIBLE    0x26 // Unused Flag
 #define FLAG_NORTH_CAMPUS_TRACIE_1    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
+#define FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR    0x28 // Unused Flag
+#define FLAG_HIDE_TRACIE_CYRUS    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
@@ -657,7 +657,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
 #define FLAG_GEN6_EXP_SHARE  0x264 // Generation 6 EXP Share
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
+#define FLAG_FORCE_SHINY  0x265 // Forces all Pokemon after flag is set to be shiny
 #define FLAG_UNUSED_0x266  0x266 // Unused Flag
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag

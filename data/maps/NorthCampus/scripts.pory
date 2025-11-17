@@ -48,7 +48,7 @@ script NorthCampus_WalkNextToTracie6 {
 }
 
 script NorthCampus_TalkToTracie {
-    fadeoutbgm(1)
+    fadeoutbgm(0)
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("…\pTake a good look, {PLAYER}…\pMain Hall sure does hit different when you know it's your final year.\p We've had a lot of great memories in here.\pAnd… okay, maybe a few\ncatastrophes too.\pWe never did find out what happened to the guy with the Mareep and the lotion…"))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
@@ -91,4 +91,239 @@ script NorthCampus_TalkToTracie {
 
 script NorthCampus_TestWarp {
     warp(MAP_NORTH_CAMPUS_MAIN_HALL, 37, 34)
+}
+
+script NorthCampus_EnterWildArea {
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left*4, face_up))
+    fadeoutbgm(0)
+    waitmovement(0)
+    delay(20)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("I'm… not sure I've met this man.\nIs he a new professor here?\pI didn't hear anything about new staff.\pSomething's off…"))
+    closemessage
+    delay(40)
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(face_down))
+    delay(30)
+    playbgm(MUS_ENCOUNTER_SUSPICIOUS, TRUE)
+    setspeaker(SP_NAME_CYRUS)
+    msgbox(format("Greetings, students!\nMy name is Cyrus."))
+    closemessage
+    setspeaker(SP_NAME_CYRUS_1) 
+    msgbox(format("But you may call me Professor Cyrus."))
+    closemessage
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Nice to meet you, Professor Cyrus!"))
+    closemessage
+    setspeaker(SP_NAME_CYRUS_2) 
+    msgbox(format("That's DOCTOR Professor Cyrus, actually."))
+    closemessage
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Oh! Uhh… I'm sorry, Doctor Professor Cyru-"))
+    closemessage
+    setspeaker(SP_NAME_CYRUS_3) 
+    msgbox(format("MISTER DOCTOR PROFESSOR CYRUS!"))
+    closemessage
+    applymovement(LOCALID_TRACIE_CATCHING_TUTORIAL, moves(emote_exclamation_mark))
+    playse(SE_PIN)
+    waitse
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Eek!"))
+    closemessage
+    setspeaker(SP_NAME_CYRUS_3) 
+    msgbox(format("Splendid!\nPleasure to meet you all!\pI'm here to teach you all about catching Pokémon.\pFirst, to catch a Pokémon, you use what's called a Poké Ball.\pOnce you find a wild Pokémon, you throw the Poké Ball at it to capture it!\pIt's really quite simple!"))
+    closemessage
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("But um… Mister Doctor Professor Cyrus…"))
+    closemessage
+    setspeaker(SP_NAME_CYRUS)
+    msgbox(format("No need to be so formal,\ncall me Cyrus!"))
+    closemessage
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("…\pRight… Cyrus.\pYou have to weaken a Pokémon first\nbefore you can catch it.\pYou can't just throw a Poké Ball at a wild Pokémon out of nowhere!\pThat's… not how it works."))
+    closemessage
+    setspeaker(SP_NAME_CYRUS)
+    msgbox(format("That's a great point!\nI like your style.\pWhat's your name?"))
+    closemessage
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Oh, umm… Thank you?\nI'm Tracie."))
+    closemessage
+    setspeaker(SP_NAME_CYRUS)
+    msgbox(format("A pleasure to meet you, Trucie.\nHere's ¥5!"))
+    closemessage
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_left, walk_down*2))
+    waitmovement(0)
+    playfanfare(MUS_LEVEL_UP)
+    msgbox(format("Trucie received ¥5 from Cyrus!"))
+    waitfanfare
+    closemessage
+    setspeaker(SP_NAME_TRACIE)
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_up*2, walk_right, face_down))
+    msgbox(format("Thank… you?"))
+    closemessage
+    waitmovement(0)
+    setspeaker(SP_NAME_CYRUS)
+    msgbox(format("Now, I believe it's time for\na demonstration!\pWatch carefuly, Trucie!"))
+    closemessage
+    special(SavePlayerParty)
+	special(LoadWallyZigzagoon)
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(face_left))
+    delay(50)
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(face_left))
+    delay(50)
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(face_right))
+    delay(50)
+    setspeaker(SP_NAME_CYRUS)
+    msgbox(format("Woah!"))
+    closemessage
+    special(StartWallyTutorialBattle)
+	waitstate
+    setspeaker(SP_NAME_CYRUS)
+    msgbox(format("Not another one…\pThese poor miscolored Pokémon…\nThey're so sick."))
+    closemessage
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(face_down))
+    waitmovement(0)
+    delay(20)
+    setspeaker(SP_NAME_CYRUS)
+    msgbox(format("It rests upon my shoulders\nto save them all!"))
+    closemessage
+    delay(20)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Umm…\nCyrus?\pThat Pokémon isn't sick, it's…"))
+    closemessage
+    clearflag(FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR)
+    addobject(LOCALID_PROFESSOR_ASPEN) // Show professor
+    setspeaker(SP_NAME_UNKNOWN)
+    msgbox(format("Sorry I'm late!"))
+    closemessage
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(face_down, emote_exclamation_mark))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right, emote_exclamation_mark))
+    applymovement(LOCALID_TRACIE_CATCHING_TUTORIAL, moves(face_right, emote_exclamation_mark))
+    playse(SE_PIN)
+    waitse
+    applymovement(LOCALID_PROFESSOR_ASPEN, moves(walk_left*8, face_up))
+    waitmovement(0)
+    delay(20)
+    applymovement(LOCALID_PROFESSOR_ASPEN, moves(emote_exclamation_mark))
+    playse(SE_PIN)
+    waitse
+    setspeaker(SP_NAME_UNKNOWN) 
+    msgbox(format("Hey!\nWho the hell are you!?"))
+    closemessage
+    playbgm(MUS_HELP, TRUE)
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_fast_right*3))
+    waitmovement(0)
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(jump_2_right))
+    playse(SE_LEDGE)
+    waitmovement(0)
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_fast_right*3))
+    waitmovement(0)
+    delay(40)
+    fadedefaultbgm
+    setspeaker(SP_NAME_UNKNOWN)
+    msgbox(format("Sigh… guess I'm calling security."))
+    closemessage
+    applymovement(LOCALID_PROFESSOR_ASPEN, moves(face_left))
+    waitmovement(0)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Professor Aspen!\pWere you supposed to be giving this lesson?"))
+    closemessage
+    setspeaker(SP_NAME_ASPEN)
+    msgbox(format("Hey there, Tracie.\nYes, I was.\pApologies for my tardiness.\pThough, it looks like whoever you had\nalready covered the basics?"))
+    closemessage
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Uhh… yeah.\nI think I got the gist of it.\pCyrus was… interesting."))
+    closemessage
+    setspeaker(SP_NAME_ASPEN)
+    msgbox(format("Cyrus was his name?\pI think I've heard that name before.\pWell, in any case, I'm glad you\nwere able to learn something today.\pI've brought some Poké Balls for the two of you to use.\pThe PokéMart is also now fully stocked, so feel free to buy more if you'd like."))
+    closemessage
+    giveitem(ITEM_POKE_BALL, 10)
+    waitfanfare
+    closemessage
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Thank you, Professor Aspen!\pI'll be sure to put these to good use!"))
+    closemessage
+    setspeaker(SP_NAME_ASPEN)
+    msgbox(format("You're welcome, Tracie.\pNow, if you'll excuse me, I have to go file a police report."))
+    closemessage
+    applymovement(LOCALID_PROFESSOR_ASPEN, moves(walk_right*8))
+    waitmovement(0)
+    removeobject(LOCALID_PROFESSOR_ASPEN) // Hide professor
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovement(0)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Well, that was… something."))
+    closemessage
+    playse(SE_DING_DONG)
+    waitse
+    delay(40)
+    setspeaker(SP_NAME_INTERCOM)
+    msgbox(format("Attention all seniors.\pPlease report to Mahindra Library for your next assignment."))
+    closemessage
+    playbgm(MUS_ENCOUNTER_MAY, FALSE)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("There's our cue!\pI'll meet up with your later, {PLAYER}.\pI've got Pokémon to catch!"))
+    closemessage
+    applymovement(LOCALID_TRACIE_CATCHING_TUTORIAL, moves(walk_up, walk_right*2, walk_down, walk_right*8))
+    waitmovement(0)
+    removeobject(LOCALID_CYRUS_NORTH_CAMPUS)
+    removeobject(LOCALID_TRACIE_CATCHING_TUTORIAL) // Hide Tracie
+    setflag(FLAG_HIDE_TRACIE_CYRUS)
+    setflag(FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR)
+    setvar(VAR_NORTH_CAMPUS_STATE, 3)
+    fadedefaultbgm
+    special(LoadPlayerParty)
+}
+
+script NorthCampus_NPC1 {
+    lock
+	faceplayer
+	msgbox(format("I love Dunsparce!\nThough, I wish it had an evolution…"))
+	closemessage
+	release
+	end
+}
+
+script NorthCampus_NPC2 {
+    lock
+	faceplayer
+	msgbox(format("My dad carved the tractor statue here.\pWhat an incredible display of both\narchitecture and agriculture!"))
+	closemessage
+	release
+	end
+}
+
+script NorthCampus_NPC3 {
+    lock
+	faceplayer
+	msgbox(format("Hey, {PLAYER}.\nRotcart came through not that long ago.\pIs it me, or is he even more of an intolerable asshole this year?"))
+	closemessage
+	release
+	end
+}
+
+script NorthCampus_NPC4 {
+    lock
+	faceplayer
+	msgbox(format("Your Eevee is soooo cute!\pHave you decided which evolution you'll choose?\pMy favorite Eeveelution is Espeon!"))
+	closemessage
+	release
+	end
+}
+
+script NorthCampus_NPC5 {
+    lock
+	faceplayer
+	msgbox(format("I read that Main Hall was built almost a century ago!\pIt's amazing that it's still standing strong.\pI hope it lasts for another hundred years!"))
+	closemessage
+	release
+	end
+}
+
+script NorthCampus_NPC6 {
+    lock
+	faceplayer
+	msgbox(format("Watch out for the Pidgey that hangs out by the statue.\pThey've gotten bold.\nLike, 'steal your lunch' bold."))
+	closemessage
+	release
+	end
 }

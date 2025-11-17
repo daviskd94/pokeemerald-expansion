@@ -553,6 +553,76 @@ SouthCampus_HealParty::
 	return
 
 
+SouthCampus_NPC1::
+# 302 "data/maps/SouthCampus/scripts.pory"
+	lock
+# 303 "data/maps/SouthCampus/scripts.pory"
+	faceplayer
+# 304 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_NPC1_Text_0
+# 305 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 306 "data/maps/SouthCampus/scripts.pory"
+	release
+	end
+
+
+SouthCampus_NPC2::
+# 311 "data/maps/SouthCampus/scripts.pory"
+	lock
+# 312 "data/maps/SouthCampus/scripts.pory"
+	faceplayer
+# 313 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_NPC2_Text_0
+# 314 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 315 "data/maps/SouthCampus/scripts.pory"
+	release
+	end
+
+
+SouthCampus_NPC3::
+# 320 "data/maps/SouthCampus/scripts.pory"
+	lock
+# 321 "data/maps/SouthCampus/scripts.pory"
+	faceplayer
+# 322 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_NPC3_Text_0
+# 323 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 324 "data/maps/SouthCampus/scripts.pory"
+	release
+	end
+
+
+SouthCampus_NPC4::
+# 329 "data/maps/SouthCampus/scripts.pory"
+	lock
+# 330 "data/maps/SouthCampus/scripts.pory"
+	faceplayer
+# 331 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_NPC4_Text_0
+# 332 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 333 "data/maps/SouthCampus/scripts.pory"
+	release
+	end
+
+
+SouthCampus_NPC5::
+# 338 "data/maps/SouthCampus/scripts.pory"
+	lock
+# 339 "data/maps/SouthCampus/scripts.pory"
+	faceplayer
+# 340 "data/maps/SouthCampus/scripts.pory"
+	msgbox SouthCampus_NPC5_Text_0
+# 341 "data/maps/SouthCampus/scripts.pory"
+	closemessage
+# 342 "data/maps/SouthCampus/scripts.pory"
+	release
+	end
+
+
 # 6 "data/maps/SouthCampus/scripts.pory"
 SouthCampus_LockedCafeteria_Movement_0:
 # 6 "data/maps/SouthCampus/scripts.pory"
@@ -1793,3 +1863,35 @@ SouthCampus_TraciePostBattle_Text_2:
 	.string "Try not to take too long getting there.\n"
 	.string "You don't want to be late!\p"
 	.string "See you soon!$"
+
+SouthCampus_NPC1_Text_0:
+# 304 "data/maps/SouthCampus/scripts.pory"
+	.string "Hi, {PLAYER}! Hard to believe it's\n"
+	.string "senior year.\p"
+	.string "Good luck on your journey ahead!$"
+
+SouthCampus_NPC2_Text_0:
+# 313 "data/maps/SouthCampus/scripts.pory"
+	.string "Hey! Have you heard about 'trsfu'?\p"
+	.string "It's the new thing!\n"
+	.string "It means, 'I'm ready to go!'$"
+
+SouthCampus_NPC3_Text_0:
+# 322 "data/maps/SouthCampus/scripts.pory"
+	.string "That was a great battle you had back\n"
+	.string "there!\p"
+	.string "I hope I can be as good as you one day.$"
+
+SouthCampus_NPC4_Text_0:
+# 331 "data/maps/SouthCampus/scripts.pory"
+	.string "Not now, {PLAYER}!\n"
+	.string "I'm busy studying for my exams!$"
+
+SouthCampus_NPC5_Text_0:
+# 340 "data/maps/SouthCampus/scripts.pory"
+	.string "I used to hang out here all the time as\n"
+	.string "a freshman.\p"
+	.string "My friends and I would race alongside\n"
+	.string "the shoreline.\p"
+	.string "Feels weird knowing this is my last year\n"
+	.string "here.$"

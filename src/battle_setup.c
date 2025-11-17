@@ -429,7 +429,12 @@ static void DoBattlePyramidTrainerHillBattle(void)
 // Initiates battle where Wally catches Ralts
 void StartWallyTutorialBattle(void)
 {
-    CreateMaleMon(&gEnemyParty[0], SPECIES_RALTS, 5);
+    CreateMaleMon(&gEnemyParty[0], SPECIES_BELLSPROUT, 7);
+    // Make the Bellsprout shiny for the Wally tutorial
+    {
+        u8 isShiny = TRUE;
+        SetMonData(&gEnemyParty[0], MON_DATA_IS_SHINY, &isShiny);
+    }
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_ReturnToFieldContinueScriptPlayMapMusic;
     gBattleTypeFlags = BATTLE_TYPE_WALLY_TUTORIAL;

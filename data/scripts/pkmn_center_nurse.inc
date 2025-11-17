@@ -26,11 +26,12 @@ EventScript_NurseJoy_Morning::
 	goto_if_eq VAR_RESULT, NO, EventScript_PkmnCenterNurse_Goodbye
 
 EventScript_PkmnCenterNurse_Goodbye::
+	setspeaker SP_NAME_NURSE_JOY
 	message gText_WeHopeToSeeYouAgain
 	return
 
 @ VAR_0x8004 is 1 when player has Gold Card; jumps are identical
-EventScript_PkmnCenterNurse_HealPkmn::
+	EventScript_PkmnCenterNurse_HealPkmn::
 	incrementgamestat GAME_STAT_USED_POKECENTER
 	call_if_eq VAR_0x8004, 0, EventScript_PkmnCenterNurse_IllTakeYourPkmn
 	call_if_eq VAR_0x8004, 1, EventScript_PkmnCenterNurse_IllTakeYourPkmn2
@@ -41,10 +42,12 @@ EventScript_PkmnCenterNurse_HealPkmn::
 	end
 
 EventScript_PkmnCenterNurse_IllTakeYourPkmn::
+	setspeaker SP_NAME_NURSE_JOY
 	message gText_IllTakeYourPkmn
 	return
 
 EventScript_PkmnCenterNurse_IllTakeYourPkmn2::
+	setspeaker SP_NAME_NURSE_JOY
 	message gText_IllTakeYourPkmn2
 	return
 
@@ -85,10 +88,12 @@ EventScript_PkmnCenterNurse_ReturnPkmn::
 	return
 
 EventScript_PkmnCenterNurse_ReturnPkmn2::
+	setspeaker SP_NAME_NURSE_JOY
 	message gText_ThankYouForWaiting
 	waitmessage
 	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
+	setspeaker SP_NAME_NURSE_JOY
 	message gText_WeHopeToSeeYouAgain2
 	return
 

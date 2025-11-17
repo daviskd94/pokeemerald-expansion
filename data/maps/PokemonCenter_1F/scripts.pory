@@ -1,1 +1,8 @@
-mapscripts PokemonCenter_1F_MapScripts {}
+mapscripts PokemonCenter_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: NorthCampus_PokemonCenter_OnTransition
+}
+
+script NorthCampus_PokemonCenter_OnTransition {
+    setrespawn(HEAL_LOCATION_NORTH_CAMPUS)
+    end
+}

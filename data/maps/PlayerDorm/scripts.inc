@@ -12,6 +12,8 @@ PlayerDorm_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 PlayerDorm_WakeUp::
 # 13 "data/maps/PlayerDorm/scripts.pory"
 	lockall
+# 14 "data/maps/PlayerDorm/scripts.pory"
+	setflag FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR
 # 16 "data/maps/PlayerDorm/scripts.pory"
 	delay 80
 # 17 "data/maps/PlayerDorm/scripts.pory"

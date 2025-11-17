@@ -187,13 +187,19 @@
       "id": "HEAL_LOCATION_SOUTH_CAMPUS",
       "map": "MAP_SOUTH_CAMPUS",
       "x": 36,
-      "y": 19
+      "y": 19,
+      "respawn_map": "MAP_SOUTH_CAMPUS",
+      "respawn_x": 36,
+      "respawn_y": 19
     },
     {
       "id": "HEAL_LOCATION_NORTH_CAMPUS",
       "map": "MAP_NORTH_CAMPUS",
       "x": 31,
-      "y": 42
+      "y": 42,
+      "respawn_map": "MAP_NORTH_CAMPUS",
+      "respawn_x": 31,
+      "respawn_y": 42
     }
   ]
 }

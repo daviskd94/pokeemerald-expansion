@@ -298,3 +298,47 @@ script SouthCampus_HealParty {
 		special(HealPlayerParty)
 }
 
+script SouthCampus_NPC1 {
+	lock
+	faceplayer
+	msgbox(format("Hi, {PLAYER}! Hard to believe it's senior year.\pGood luck on your journey ahead!"))
+	closemessage
+	release
+	end
+}
+
+script SouthCampus_NPC2 {
+	lock
+	faceplayer
+	msgbox(format("Hey! Have you heard about 'trsfu'?\pIt's the new thing!\nIt means, 'I'm ready to go!'"))
+	closemessage
+	release
+	end
+}
+
+script SouthCampus_NPC3 {
+	lock
+	faceplayer
+	msgbox(format("That was a great battle you had back there!\pI hope I can be as good as you one day."))
+	closemessage
+	release
+	end
+}
+
+script SouthCampus_NPC4 {
+	lock
+	faceplayer
+	msgbox(format("Not now, {PLAYER}!\nI'm busy studying for my exams!"))
+	closemessage
+	release
+	end
+}
+
+script SouthCampus_NPC5 {
+	lock
+	faceplayer
+	msgbox(format("I used to hang out here all the time as a freshman.\pMy friends and I would race alongside the shoreline.\pFeels weird knowing this is my last year here."))
+	closemessage
+	release
+	end
+}
