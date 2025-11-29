@@ -5,10 +5,10 @@
 
 #define TRAINER_NONE                          0
 #define TRAINER_CELESTE                       1
-#define TRAINER_GABE          2
-#define TRAINER_BERTIE          3
-#define TRAINER_BUCK          4
-#define TRAINER_GRUNT_AQUA_HIDEOUT_4          5
+#define TRAINER_GABE                          2
+#define TRAINER_BERTIE                        3
+#define TRAINER_BUCK                          4
+#define TRAINER_ROTCART_1                     5
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_2       7
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_3       8

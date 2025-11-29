@@ -1,0 +1,300 @@
+mapscripts NorthCampus_LectureHall_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if (var(VAR_NORTH_CAMPUS_STATE) == 3 || var(VAR_NORTH_CAMPUS_STATE) == 4 || var(VAR_NORTH_CAMPUS_STATE) == 5) {
+            setobjectxyperm(LOCALID_MAPLE_LECTURE_HALL, 16, 5)
+            setobjectxyperm(LOCALID_MARIO_LECTURE_HALL, 15, 5)        
+        }
+    }
+        
+}
+
+script NorthCampus_LectureHall_WalkNextToTracie1 {
+    hideobjectat(LOCALID_ROTCART_LECTURE_HALL_2, MAP_NORTH_CAMPUS_LECTURE_HALL)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*8, walk_right*7, walk_down, face_left))
+    waitmovement(0)
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_right))
+    call(NorthCampus_LectureHall_TalkToTracie)
+}
+
+script NorthCampus_LectureHall_WalkNextToTracie2 {
+    hideobjectat(LOCALID_ROTCART_LECTURE_HALL_2, MAP_NORTH_CAMPUS_LECTURE_HALL)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*8, walk_right*8, walk_down, face_left))
+    waitmovement(0)
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_right))
+    call(NorthCampus_LectureHall_TalkToTracie)
+}
+
+script NorthCampus_LectureHall_WalkNextToTracie3 {
+    hideobjectat(LOCALID_ROTCART_LECTURE_HALL_2, MAP_NORTH_CAMPUS_LECTURE_HALL)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*8, walk_right*6, walk_down, face_left))
+    waitmovement(0)
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_right))
+    call(NorthCampus_LectureHall_TalkToTracie)
+}
+
+script NorthCampus_LectureHall_WalkNextToTracie4 {
+    hideobjectat(LOCALID_ROTCART_LECTURE_HALL_2, MAP_NORTH_CAMPUS_LECTURE_HALL)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*8, walk_right*6, walk_down, face_left))
+    waitmovement(0)
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_right))
+    call(NorthCampus_LectureHall_TalkToTracie)
+}
+
+script NorthCampus_LectureHall_WalkNextToTracie5 {
+    hideobjectat(LOCALID_ROTCART_LECTURE_HALL_2, MAP_NORTH_CAMPUS_LECTURE_HALL)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*8, walk_left*7, walk_down, face_left))
+    waitmovement(0)
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_right))
+    call(NorthCampus_LectureHall_TalkToTracie)
+}
+
+script NorthCampus_LectureHall_WalkNextToTracie6 {
+    hideobjectat(LOCALID_ROTCART_LECTURE_HALL_2, MAP_NORTH_CAMPUS_LECTURE_HALL)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*8, walk_left*8, walk_down, face_left))
+    waitmovement(0)
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_right))
+    call(NorthCampus_LectureHall_TalkToTracie)
+}
+
+script NorthCampus_LectureHall_TalkToTracie {
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Looks like we got here just in time!\pProfessor Maple is getting ready to speak."))
+    closemessage
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_up, emote_exclamation_mark)) 
+    playse(SE_PIN)
+    waitse
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    setspeaker(SP_NAME_TRACIE)
+    applymovement(4, moves(face_up))
+    delay(5)
+    applymovement(5, moves(face_up))
+    applymovement(6, moves(face_up))
+    delay(5)
+    applymovement(7, moves(face_up))
+    msgbox(format("Oh! It's starting!"))
+    closemessage
+    fadeoutbgm(0)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    lockall
+    setvar(VAR_0x8004, 15)
+    setvar(VAR_0x8005, 6)
+    special(TeleportCamera)
+    delay(90)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    playbgm(CUS_ANCIENT_PONI_PATH, TRUE)
+    delay(30)
+    setspeaker(SP_NAME_MAPLE)
+    msgbox(format("Welcome back, students.\nAnd of course, congratulations!\pYou’ve all made it to your fourth and final year here at Tractor University.\pYou’ve all earned it,\nevery one of you!\pThose sleepless nights, boring lectures for Rock-type Appreciation 101…\pAll of it has led up to this final year where everything comes together!\pYou’ve all grown in not only skill,\nbut character as well.\pAs head of the Pokémon Research department, I’m very proud of you all.\pWith that being said, it’s time to go over your final, big assignment.\pTo provide details, I’m happy to introduce to you our own President and Elite Four member, President Mario!"))
+    closemessage
+    applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(walk_right, face_left))
+    waitmovement
+    applymovement(LOCALID_MARIO_LECTURE_HALL, moves(walk_right*9, face_down))
+    playse(SE_APPLAUSE)
+    setspeaker(SP_NAME_CROWD)
+    msgbox(format("Wait, what!?\nPresident Mario is here!?"))
+    closemessage
+    delay(5)
+    setspeaker(SP_NAME_CROWD)
+    msgbox(format("Nobody told me the President was coming!"))
+    closemessage
+    delay(5)
+    setspeaker(SP_NAME_CROWD)
+    msgbox(format("Wow!\nThis is such an honor!"))
+    closemessage
+    delay(5)
+    setobjectxyperm(LOCALID_MAPLE_LECTURE_HALL, 16, 5)
+    setobjectxyperm(LOCALID_MARIO_LECTURE_HALL, 15, 5)
+    applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(face_down))
+    setspeaker(SP_NAME_MARIO)
+    msgbox(format("Hi, everybody!\pThank you all for joining us\non this wonderful day!\pAnd of course, thank you to Professor Maple for arranging everything today!\pI am so happy to be here and be a part of your final year.\pTo kick things off, this year is going to be an exciting one for you seniors.\pIt’s time for you to take everything you’ve learned your first three years and put it to the test!"))
+    closemessage
+    fadeoutbgm(0)
+    delay(30)
+    setspeaker(SP_NAME_MARIO)
+    playbgm(MUS_GYM, FALSE)
+    msgbox(format("The Tractoria Pokemon League!\pYou will travel the region, challenging the eight Gym Leaders, Elite Four, and Champion to show us just how much you've learned."))
+    closemessage
+    special(SpawnCameraObject)
+    setobjectxyperm(LOCALID_CAMERA, 15, 5)
+    applymovement(LOCALID_CAMERA, moves(walk_fast_down*7))
+    waitmovement(0)
+    special(RemoveCameraObject)
+	removeobject(LOCALID_CAMERA)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_right))
+    waitmovement(0)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("The Pokémon League Challenge!?\nReally?\pOh gosh…\nI hope I’m ready."))
+    closemessage
+    setspeaker(SP_NAME_UNKNOWN)
+    msgbox(format("Pft!"))
+    fadeoutbgm(0) 
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right, emote_exclamation_mark))
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(emote_exclamation_mark))
+    applymovement(4, moves(face_right))
+    applymovement(5, moves(face_right))
+    applymovement(6, moves(face_right))
+    applymovement(7, moves(face_right))
+    playse(SE_PIN)
+    waitse
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    setvar(VAR_0x8004, 25)
+    setvar(VAR_0x8005, 16)
+    special(TeleportCamera)
+    delay(20)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    setspeaker(SP_NAME_ROTCART)
+    msgbox(format("That hardly sounds like a challenge.\pIf they’re anything like this overrated loser up on stage, it’ll be a breeze."))
+    closemessage
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    setvar(VAR_0x8004, 15)
+    setvar(VAR_0x8005, 6)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_up))
+    special(TeleportCamera)
+    delay(20)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(20)
+    setspeaker(SP_NAME_MARIO)
+    msgbox(format("… … …\pAhem!"))
+    closemessage
+    applymovement(4, moves(face_up))
+    applymovement(5, moves(face_up))
+    applymovement(6, moves(face_up))
+    applymovement(7, moves(face_up))
+    setspeaker(SP_NAME_MARIO)
+    playbgm(MUS_OCEANIC_MUSEUM, TRUE)
+    msgbox(format("Some of you may think that this challenge will be a walk in the park.\pBut, I can assure you that this challenge will test the limits of what you can do as a Pokémon Trainer.\pTo help prepare, we’ve arranged three review sessions for you to complete.\pThese sessions will cover everything you’ve learned so far and help you get ready for what’s to come.\pBut before we begin, please meet with Professor Maple to receive your very own PokéDex!"))
+    closemessage
+    applymovement(LOCALID_MARIO_LECTURE_HALL, moves(face_right))
+    applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(face_left))
+    setspeaker(SP_NAME_MARIO)
+    msgbox(format("Anything you'd like to add, Professor Maple?"))
+    closemessage
+    setspeaker(SP_NAME_MAPLE)
+    msgbox(format("Thank you so much, Mario!\nI think that covers it!"))
+    closemessage
+    applymovement(LOCALID_MARIO_LECTURE_HALL, moves(face_down))
+    applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(face_down))
+    setspeaker(SP_NAME_MAPLE)
+    msgbox(format("Good luck, everybody!\nI’m sure you’ll all excel!\pCome see me to pick up your PokeDexes!"))
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    setvar(VAR_0x8004, 15)
+    setvar(VAR_0x8005, 13)
+    special(TeleportCamera)
+    delay(10)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_right))
+    applymovement(4, moves(walk_up, walk_right*5, walk_up*3, walk_right*3, walk_up*3 walk_left*5))
+    applymovement(5, moves(walk_up, walk_right*4, walk_up*3, walk_right*3, walk_up*3 walk_left*4))
+    applymovement(6, moves(walk_up, walk_left*6, walk_up*4, walk_right*6))
+    applymovement(7, moves(walk_up, walk_right*5, walk_up*6, walk_right*2, walk_up*4, walk_left*5))
+    setobjectxyperm(6, 12, 5)
+    setobjectmovementtype(6, MOVEMENT_TYPE_FACE_RIGHT)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Wow… That was… a lot to take in.\pBut also kinda exciting, right?\pWe get to challenge the Pokémon League!\pThis is what we came to Tractor University for!\pC'mon, let's go see Professor Maple\nand get our PokéDexes!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right*7, walk_up*3, walk_right*3, walk_up*4, walk_left, walk_down*2, walk_left*9, walk_up))
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(walk_up, walk_right*8, walk_up*3, walk_right*3, walk_up*4, walk_left, walk_down*2, walk_left*8, walk_up))
+    waitmovement(0)
+    addobject(LOCALID_ROTCART_LECTURE_HALL_2)
+    setspeaker(SP_NAME_MAPLE)
+    msgbox("Ah, {PLAYER} and Tracie!\nHere you are!\pYou'll be needing these!")
+    closemessage
+    playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+    msgbox("{PLAYER} and Tracie recieved the\n{COLOR GREEN}PokéDex {COLOR DARK_GRAY}from Professor Maple!")
+    waitfanfare
+    closemessage
+    applymovement(6, moves(walk_left*7))
+    applymovement(7, moves(walk_right*7))
+    delay(20)
+    applymovement(4, moves(walk_right*7))
+    applymovement(5, moves(walk_right*7))
+    setflag(FLAG_SYS_POKEDEX_GET)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox("Wow!\nThanks, Professor Maple!")
+    closemessage
+    setspeaker(SP_NAME_MAPLE)
+    msgbox(format("Of course, Tracie!\pThis PokéDex is a special edition,\ncrafted here at the University.\pThey'll help record data from every Pokémon you will encounter on your journey.\pBut, remember, it's not just\nabout filling it with information.\pIt's about learning and understanding the bond between you and your Pokémon."))
+    closemessage
+    setspeaker(SP_NAME_TRACIE)
+    msgbox("Eeee!\nIt feels so official now!")
+    closemessage
+    fadeoutbgm(0)
+    setspeaker(SP_NAME_UNKNOWN)
+    msgbox("Don't get your hopes up.")
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right, emote_exclamation_mark))
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_right, emote_exclamation_mark))
+    playse(SE_PIN)
+    waitse
+    playbgm (MUS_RG_ENCOUNTER_RIVAL, FALSE)
+    showobjectat(LOCALID_ROTCART_LECTURE_HALL_2, MAP_NORTH_CAMPUS_LECTURE_HALL)
+    applymovement(LOCALID_ROTCART_LECTURE_HALL_2, moves(walk_left*8))
+    waitmovement(0)
+    setspeaker(SP_NAME_ROTCART)
+    msgbox(format("You don’t stand a chance out there.\pYou won’t even make it to the first Gym."))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_up))
+    applymovement(LOCALID_ROTCART_LECTURE_HALL_2, moves(face_up))
+    setspeaker(SP_NAME_MARIO)
+    msgbox(format("Now, now, Rotcart.\pCompetition is nice, but there's\nno need to belittle others.\pI think Tracie will do quite well!"))
+    closemessage
+    setspeaker(SP_NAME_ROTCART)
+    msgbox(format("Pfft!\nYeah, yeah.\pJust give me my PokéDex so I can leave."))
+    closemessage
+    playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+    msgbox("Rotcart recieved the {COLOR GREEN}PokéDex\n{COLOR DARK_GRAY}from Professor Maple!")
+    waitfanfare
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_right))
+    applymovement(LOCALID_ROTCART_LECTURE_HALL_2, moves(walk_right*10))
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_up))
+    setspeaker(SP_NAME_MAPLE)
+    fadedefaultbgm
+    msgbox(format("Don’t listen to him, Tracie.\pEverybody has the potential to complete this challenge.\pI know you well enough to know\nyou’ll do great!"))
+    closemessage
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("I…\pThank you, Professor Maple…"))
+    closemessage
+    playse(SE_DING_DONG)
+    waitse
+    delay(40)
+    setspeaker(SP_NAME_INTERCOM)
+    msgbox(format("Attention seniors.\pPlease report to the Gymnasium for\Nyour review on Pokémon battles."))
+    closemessage
+    setspeaker(SP_NAME_MAPLE)
+    msgbox(format("Hear that?\nTime for the first review!\pThe Gymnasium is upstairs in case you forgot. Good luck!"))
+    closemessage
+    setspeaker(SP_NAME_MARIO)
+    msgbox(format("Come back once you're all\ndone with your reviews!"))
+    closemessage
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Will do!\nThank you!"))
+    closemessage
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    waitmovement(0)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Alright, {PLAYER}.\nI'll meet you at the Gymnasium!"))
+    closemessage
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(walk_right*8))
+    waitmovement(0)
+    setflag(FLAG_HIDE_LECTURE_HALL_STUDENTS)
+    setvar(VAR_NORTH_CAMPUS_STATE, 3)
+    removeobject(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL)
+    removeobject(LOCALID_ROTCART_LECTURE_HALL)
+    removeobject(LOCALID_ROTCART_LECTURE_HALL_2)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
+    releaseall
+    end
+}

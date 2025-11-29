@@ -55,7 +55,7 @@ DormHallway_EnterRotcart::
 # 31 "data/maps/DormHallway/scripts.pory"
 	waitse
 # 32 "data/maps/DormHallway/scripts.pory"
-	playbgm MUS_RG_ENCOUNTER_RIVAL, TRUE
+	playbgm MUS_RG_ENCOUNTER_RIVAL, FALSE
 # 33 "data/maps/DormHallway/scripts.pory"
 	applymovement LOCALID_ROTCART, DormHallway_EnterRotcart_Movement_0
 # 34 "data/maps/DormHallway/scripts.pory"

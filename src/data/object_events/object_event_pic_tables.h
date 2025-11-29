@@ -1405,6 +1405,14 @@ static const struct SpriteFrameImage sPicTable_Rotcart[] = {
     overworld_ascending_frames(gObjectEventPic_Rotcart, 4, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Coach[] = {
+    overworld_ascending_frames(gObjectEventPic_Coach, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Mario[] = {
+    overworld_ascending_frames(gObjectEventPic_Mario, 4, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_GenesisMale[] = {
     overworld_ascending_frames(gObjectEventPic_GenesisMale, 4, 4),
 };

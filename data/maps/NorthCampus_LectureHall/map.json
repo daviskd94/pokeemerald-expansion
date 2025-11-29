@@ -1,0 +1,213 @@
+{
+  "id": "MAP_NORTH_CAMPUS_LECTURE_HALL",
+  "name": "NorthCampus_LectureHall",
+  "layout": "LAYOUT_NORTH_CAMPUS_LECTURE_HALL",
+  "music": "MUS_OCEANIC_MUSEUM",
+  "region_map_section": "MAPSEC_NORTH_CAMPUS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "LOCALID_MAPLE_LECTURE_HALL",
+      "graphics_id": "OBJ_EVENT_GFX_MAPLE",
+      "x": 15,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL",
+      "graphics_id": "OBJ_EVENT_GFX_TRACIE",
+      "x": 14,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_LECTURE_HALL_STUDENTS"
+    },
+    {
+      "local_id": "LOCALID_ROTCART_LECTURE_HALL",
+      "graphics_id": "OBJ_EVENT_GFX_ROTCART",
+      "x": 25,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_LECTURE_HALL_STUDENTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BREEDER_M",
+      "x": 17,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_LECTURE_HALL_STUDENTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BREEDER_F",
+      "x": 18,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_LECTURE_HALL_STUDENTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 12,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_LECTURE_HALL_STUDENTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_F",
+      "x": 17,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_LECTURE_HALL_STUDENTS"
+    },
+    {
+      "local_id": "LOCALID_MARIO_LECTURE_HALL",
+      "graphics_id": "OBJ_EVENT_GFX_MARIO",
+      "x": 6,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_ROTCART_LECTURE_HALL_2",
+      "graphics_id": "OBJ_EVENT_GFX_ROTCART",
+      "x": 25,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TRACIEROTCART"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 22,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_NORTH_CAMPUS_MAIN_HALL",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 8,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_NORTH_CAMPUS_MAIN_HALL",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_NORTH_CAMPUS_STATE",
+      "var_value": "2",
+      "script": "NorthCampus_LectureHall_WalkNextToTracie6"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_NORTH_CAMPUS_STATE",
+      "var_value": "2",
+      "script": "NorthCampus_LectureHall_WalkNextToTracie5"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_NORTH_CAMPUS_STATE",
+      "var_value": "2",
+      "script": "NorthCampus_LectureHall_WalkNextToTracie4"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_NORTH_CAMPUS_STATE",
+      "var_value": "2",
+      "script": "NorthCampus_LectureHall_WalkNextToTracie3"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_NORTH_CAMPUS_STATE",
+      "var_value": "2",
+      "script": "NorthCampus_LectureHall_WalkNextToTracie1"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_NORTH_CAMPUS_STATE",
+      "var_value": "2",
+      "script": "NorthCampus_LectureHall_WalkNextToTracie2"
+    }
+  ],
+  "bg_events": []
+}

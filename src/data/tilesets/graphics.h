@@ -1767,3 +1767,41 @@ const u16 gTilesetPalettes_New_Cave[][16] =
 };
 
 const u32 gTilesetTiles_New_Cave[] = INCBIN_U32("data/tilesets/secondary/new_cave/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_LectureHall[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/lecture_hall/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_LectureHall[] = INCBIN_U32("data/tilesets/secondary/lecture_hall/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_NorthCampusGymnasium[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/north_campus_gymnasium/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_NorthCampusGymnasium[] = INCBIN_U32("data/tilesets/secondary/north_campus_gymnasium/tiles.4bpp.lz");

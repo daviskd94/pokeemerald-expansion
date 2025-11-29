@@ -43,19 +43,19 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_HIDE_TRACIE     0x20 // Flag used to hide Tracie
-#define FLAG_TAKE_EEVEE      0x21 // Flag for taking Eevee
-#define FLAG_DORM_TRASH      0x22 // Flag for finding an Oran Berry in the trash
-#define FLAG_HIDE_TRACIEROTCART    0x23 // Flag for hiding Tracie and Rotcart upon leaving your dorm
-#define FLAG_HIDE_MEOWTHS    0x24 // Unused Flag
-#define FLAG_HIDE_SOUTH_CAMPUS_TRAINERS    0x25 // Unused Flag
-#define FLAG_SPAWN_INVISIBLE    0x26 // Unused Flag
-#define FLAG_NORTH_CAMPUS_TRACIE_1    0x27 // Unused Flag
+#define FLAG_HIDE_TRACIE                        0x20 // Flag used to hide Tracie
+#define FLAG_TAKE_EEVEE                         0x21 // Flag for taking Eevee
+#define FLAG_DORM_TRASH                         0x22 // Flag for finding an Oran Berry in the trash
+#define FLAG_HIDE_TRACIEROTCART                 0x23 // Flag for hiding Tracie and Rotcart upon leaving your dorm
+#define FLAG_HIDE_MEOWTHS                       0x24 // Unused Flag
+#define FLAG_HIDE_SOUTH_CAMPUS_TRAINERS         0x25 // Unused Flag
+#define FLAG_SPAWN_INVISIBLE                    0x26 // Unused Flag
+#define FLAG_NORTH_CAMPUS_TRACIE_1              0x27 // Unused Flag
 #define FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR    0x28 // Unused Flag
-#define FLAG_HIDE_TRACIE_CYRUS    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
+#define FLAG_HIDE_TRACIE_CYRUS                  0x29 // Unused Flag
+#define FLAG_POKEBALLS_UNLOCKED                 0x2A // Unused Flag
+#define FLAG_HIDE_LECTURE_HALL_STUDENTS         0x2B // Unused Flag
+#define FLAG_HIDE_GYMNASIUM_TRACIE_COLTON    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag

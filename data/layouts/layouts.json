@@ -4504,7 +4504,7 @@
     {
       "id": "LAYOUT_NORTH_CAMPUS",
       "name": "NorthCampus_Layout",
-      "width": 100,
+      "width": 104,
       "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_TractorUniversity",
@@ -4570,6 +4570,36 @@
       "secondary_tileset": "gTileset_New_Cave",
       "border_filepath": "data/layouts/Fieldstone_Cavern/border.bin",
       "blockdata_filepath": "data/layouts/Fieldstone_Cavern/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_CAMPUS_LECTURE_HALL",
+      "name": "NorthCampus_LectureHall_Layout",
+      "width": 31,
+      "height": 24,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LectureHall",
+      "border_filepath": "data/layouts/NorthCampus_LectureHall/border.bin",
+      "blockdata_filepath": "data/layouts/NorthCampus_LectureHall/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_CAMPUS_MAIN_HALL_2F",
+      "name": "NorthCampus_MainHall_2F_Layout",
+      "width": 82,
+      "height": 36,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MainHall",
+      "border_filepath": "data/layouts/NorthCampus_MainHall_2F/border.bin",
+      "blockdata_filepath": "data/layouts/NorthCampus_MainHall_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_CAMPUS_GYMNASIUM",
+      "name": "NorthCampus_Gymnasium_Layout",
+      "width": 39,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_NorthCampusGymnasium",
+      "border_filepath": "data/layouts/NorthCampus_Gymnasium/border.bin",
+      "blockdata_filepath": "data/layouts/NorthCampus_Gymnasium/map.bin"
     }
   ]
 }

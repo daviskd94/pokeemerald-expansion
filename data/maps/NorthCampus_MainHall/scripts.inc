@@ -98,68 +98,72 @@ NorthCampus_MainHall_Registration::
 # 50 "data/maps/NorthCampus_MainHall/scripts.pory"
 	msgbox NorthCampus_MainHall_Registration_Text_3
 # 51 "data/maps/NorthCampus_MainHall/scripts.pory"
-	setspeaker SP_NAME_TRACIE
-# 52 "data/maps/NorthCampus_MainHall/scripts.pory"
-	msgbox NorthCampus_MainHall_Registration_Text_4
-# 53 "data/maps/NorthCampus_MainHall/scripts.pory"
-	setspeaker SP_NAME_RECEPTIONIST
-# 54 "data/maps/NorthCampus_MainHall/scripts.pory"
-	msgbox NorthCampus_MainHall_Registration_Text_5
-# 55 "data/maps/NorthCampus_MainHall/scripts.pory"
 	closemessage
+# 52 "data/maps/NorthCampus_MainHall/scripts.pory"
+	setspeaker SP_NAME_TRACIE
+# 53 "data/maps/NorthCampus_MainHall/scripts.pory"
+	msgbox NorthCampus_MainHall_Registration_Text_4
+# 54 "data/maps/NorthCampus_MainHall/scripts.pory"
+	closemessage
+# 55 "data/maps/NorthCampus_MainHall/scripts.pory"
+	setspeaker SP_NAME_RECEPTIONIST
 # 56 "data/maps/NorthCampus_MainHall/scripts.pory"
-	msgbox NorthCampus_MainHall_Registration_Text_6
+	msgbox NorthCampus_MainHall_Registration_Text_5
 # 57 "data/maps/NorthCampus_MainHall/scripts.pory"
 	closemessage
 # 58 "data/maps/NorthCampus_MainHall/scripts.pory"
-	playse SE_PC_LOGIN
+	msgbox NorthCampus_MainHall_Registration_Text_6
 # 59 "data/maps/NorthCampus_MainHall/scripts.pory"
-	waitse
+	closemessage
 # 60 "data/maps/NorthCampus_MainHall/scripts.pory"
-	setspeaker SP_NAME_RECEPTIONIST
+	playse SE_PC_LOGIN
 # 61 "data/maps/NorthCampus_MainHall/scripts.pory"
-	msgbox NorthCampus_MainHall_Registration_Text_7
+	waitse
 # 62 "data/maps/NorthCampus_MainHall/scripts.pory"
 	setspeaker SP_NAME_RECEPTIONIST
 # 63 "data/maps/NorthCampus_MainHall/scripts.pory"
-	msgbox NorthCampus_MainHall_Registration_Text_8
+	msgbox NorthCampus_MainHall_Registration_Text_7
 # 64 "data/maps/NorthCampus_MainHall/scripts.pory"
 	closemessage
 # 65 "data/maps/NorthCampus_MainHall/scripts.pory"
-	msgbox NorthCampus_MainHall_Registration_Text_9
+	msgbox NorthCampus_MainHall_Registration_Text_8
 # 66 "data/maps/NorthCampus_MainHall/scripts.pory"
-	setspeaker SP_NAME_RECEPTIONIST
-# 67 "data/maps/NorthCampus_MainHall/scripts.pory"
-	msgbox NorthCampus_MainHall_Registration_Text_10
-# 68 "data/maps/NorthCampus_MainHall/scripts.pory"
-	setspeaker SP_NAME_TRACIE
-# 69 "data/maps/NorthCampus_MainHall/scripts.pory"
-	msgbox NorthCampus_MainHall_Registration_Text_11
-# 70 "data/maps/NorthCampus_MainHall/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_MainHall_Registration_Movement_5
-# 71 "data/maps/NorthCampus_MainHall/scripts.pory"
-	applymovement 3, NorthCampus_MainHall_Registration_Movement_7
-# 72 "data/maps/NorthCampus_MainHall/scripts.pory"
-	waitmovement 0
-# 73 "data/maps/NorthCampus_MainHall/scripts.pory"
-	setspeaker SP_NAME_TRACIE
-# 74 "data/maps/NorthCampus_MainHall/scripts.pory"
-	msgbox NorthCampus_MainHall_Registration_Text_12
-# 75 "data/maps/NorthCampus_MainHall/scripts.pory"
 	closemessage
-# 76 "data/maps/NorthCampus_MainHall/scripts.pory"
-	applymovement 3, NorthCampus_MainHall_Registration_Movement_8
-# 77 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 67 "data/maps/NorthCampus_MainHall/scripts.pory"
+	setspeaker SP_NAME_RECEPTIONIST
+# 68 "data/maps/NorthCampus_MainHall/scripts.pory"
+	msgbox NorthCampus_MainHall_Registration_Text_9
+# 69 "data/maps/NorthCampus_MainHall/scripts.pory"
+	closemessage
+# 70 "data/maps/NorthCampus_MainHall/scripts.pory"
+	setspeaker SP_NAME_TRACIE
+# 71 "data/maps/NorthCampus_MainHall/scripts.pory"
+	msgbox NorthCampus_MainHall_Registration_Text_10
+# 72 "data/maps/NorthCampus_MainHall/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_MainHall_Registration_Movement_5
+# 73 "data/maps/NorthCampus_MainHall/scripts.pory"
+	applymovement 3, NorthCampus_MainHall_Registration_Movement_7
+# 74 "data/maps/NorthCampus_MainHall/scripts.pory"
 	waitmovement 0
+# 75 "data/maps/NorthCampus_MainHall/scripts.pory"
+	setspeaker SP_NAME_TRACIE
+# 76 "data/maps/NorthCampus_MainHall/scripts.pory"
+	msgbox NorthCampus_MainHall_Registration_Text_11
+# 77 "data/maps/NorthCampus_MainHall/scripts.pory"
+	closemessage
 # 78 "data/maps/NorthCampus_MainHall/scripts.pory"
-	removeobject 3
+	applymovement 3, NorthCampus_MainHall_Registration_Movement_8
 # 79 "data/maps/NorthCampus_MainHall/scripts.pory"
-	playse SE_EXIT
+	waitmovement 0
 # 80 "data/maps/NorthCampus_MainHall/scripts.pory"
-	waitse
+	removeobject 3
 # 81 "data/maps/NorthCampus_MainHall/scripts.pory"
-	special RemoveCameraObject
+	playse SE_EXIT
 # 82 "data/maps/NorthCampus_MainHall/scripts.pory"
+	waitse
+# 83 "data/maps/NorthCampus_MainHall/scripts.pory"
+	special RemoveCameraObject
+# 84 "data/maps/NorthCampus_MainHall/scripts.pory"
 	removeobject LOCALID_CAMERA
 # 85 "data/maps/NorthCampus_MainHall/scripts.pory"
 	setvar VAR_NORTH_CAMPUS_STATE, 2
@@ -238,29 +242,29 @@ NorthCampus_MainHall_Registration_Movement_6:
 	face_down
 	step_end
 
-# 71 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 73 "data/maps/NorthCampus_MainHall/scripts.pory"
 NorthCampus_MainHall_Registration_Movement_7:
-# 71 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 73 "data/maps/NorthCampus_MainHall/scripts.pory"
 	face_left
 	step_end
 
-# 76 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 78 "data/maps/NorthCampus_MainHall/scripts.pory"
 NorthCampus_MainHall_Registration_Movement_8:
-# 76 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 78 "data/maps/NorthCampus_MainHall/scripts.pory"
 	walk_right
-# 76 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 78 "data/maps/NorthCampus_MainHall/scripts.pory"
 	walk_right
-# 76 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 78 "data/maps/NorthCampus_MainHall/scripts.pory"
 	walk_right
-# 76 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 78 "data/maps/NorthCampus_MainHall/scripts.pory"
 	walk_right
-# 76 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 78 "data/maps/NorthCampus_MainHall/scripts.pory"
 	walk_right
-# 76 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 78 "data/maps/NorthCampus_MainHall/scripts.pory"
 	walk_up
-# 76 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 78 "data/maps/NorthCampus_MainHall/scripts.pory"
 	walk_up
-# 76 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 78 "data/maps/NorthCampus_MainHall/scripts.pory"
 	walk_up
 	step_end
 
@@ -279,49 +283,46 @@ NorthCampus_MainHall_Registration_Text_2:
 
 NorthCampus_MainHall_Registration_Text_3:
 # 50 "data/maps/NorthCampus_MainHall/scripts.pory"
-	.string "Hello, {PLAYER} and Tracie!\n"
+	.string "Hi, {PLAYER} and Tracie!\n"
 	.string "Happy to see you both here.\p"
 	.string "Are you both here for\n"
 	.string "orientation as well?$"
 
 NorthCampus_MainHall_Registration_Text_4:
-# 52 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 53 "data/maps/NorthCampus_MainHall/scripts.pory"
 	.string "Yep! We're both super\n"
 	.string "excited to get started!\p"
 	.string "Is there anything we need\n"
 	.string "to do for check in?$"
 
 NorthCampus_MainHall_Registration_Text_5:
-# 54 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 56 "data/maps/NorthCampus_MainHall/scripts.pory"
 	.string "Yes, there is!\p"
 	.string "I'll need to see your student IDs.$"
 
 NorthCampus_MainHall_Registration_Text_6:
-# 56 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 58 "data/maps/NorthCampus_MainHall/scripts.pory"
 	.string "{PLAYER} and Tracie both hand over\n"
 	.string "their student IDs.$"
 
 NorthCampus_MainHall_Registration_Text_7:
-# 61 "data/maps/NorthCampus_MainHall/scripts.pory"
+# 63 "data/maps/NorthCampus_MainHall/scripts.pory"
 	.string "Name: {PLAYER}\n"
 	.string "Age: 21\p"
 	.string "Program: Pokémon Trainer Studies\n"
-	.string "Year: Senior$"
-
-NorthCampus_MainHall_Registration_Text_8:
-# 63 "data/maps/NorthCampus_MainHall/scripts.pory"
+	.string "Year: Senior\p"
 	.string "Name: Tracie\n"
 	.string "Age: 21\p"
 	.string "Program: Pokémon Trainer Studies\n"
 	.string "Year: Senior$"
 
-NorthCampus_MainHall_Registration_Text_9:
+NorthCampus_MainHall_Registration_Text_8:
 # 65 "data/maps/NorthCampus_MainHall/scripts.pory"
 	.string "{PLAYER} and Tracie both receive\n"
 	.string "their student IDs back.$"
 
-NorthCampus_MainHall_Registration_Text_10:
-# 67 "data/maps/NorthCampus_MainHall/scripts.pory"
+NorthCampus_MainHall_Registration_Text_9:
+# 68 "data/maps/NorthCampus_MainHall/scripts.pory"
 	.string "Okay, thanks for waiting!\p"
 	.string "You're both all checked in.\p"
 	.string "Orientation starts in the lecture hall\n"
@@ -330,12 +331,12 @@ NorthCampus_MainHall_Registration_Text_10:
 	.string "doors.\n"
 	.string "We're starting soon!$"
 
-NorthCampus_MainHall_Registration_Text_11:
-# 69 "data/maps/NorthCampus_MainHall/scripts.pory"
+NorthCampus_MainHall_Registration_Text_10:
+# 71 "data/maps/NorthCampus_MainHall/scripts.pory"
 	.string "Thank you so much!$"
 
-NorthCampus_MainHall_Registration_Text_12:
-# 74 "data/maps/NorthCampus_MainHall/scripts.pory"
+NorthCampus_MainHall_Registration_Text_11:
+# 76 "data/maps/NorthCampus_MainHall/scripts.pory"
 	.string "C'mon, {PLAYER}.\n"
 	.string "Let's get inside!\p"
 	.string "We don't want to keep Professor Maple\n"

@@ -1,0 +1,138 @@
+mapscripts NorthCampus_Gymnasium_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NORTH_CAMPUS_STATE, 3: NorthCampus_Gymnasium_Enter
+    ]
+}
+
+script NorthCampus_Gymnasium_Enter {
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*4, walk_right))
+    waitmovement(0)
+    applymovement(LOCALID_GYMNASIUM_TRACIE, moves(face_left))
+    waitmovement(0)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Hey, {PLAYER}.\nI heard some rumors.\pWe'll be randomly paired up to battle someone else in our class for review.\pThe implications of that make me nervous…"))
+    closemessage
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("Alright, everyone!\nGather up!"))
+    closemessage
+    special(SpawnCameraObject)
+    setobjectxyperm(LOCALID_CAMERA, 20, 16)
+    applymovement(LOCALID_CAMERA, moves(walk_left, walk_up*2))
+    applymovement(LOCALID_GYMNASIUM_COACH_CEDAR, moves(walk_down*4))
+    waitmovement(0)
+    delay(10)
+    applymovement(LOCALID_GYMNASIUM_ACE_TRAINER_F, moves(face_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    delay(5)
+    applymovement(LOCALID_GYMNASIUM_TRACIE, moves(face_up))
+    delay(5)
+    applymovement(LOCALID_GYMNASIUM_COLTON, moves(face_up))
+    applymovement(LOCALID_GYMNASIUM_BREEDER_F, moves(face_up))
+    delay(4)
+    applymovement(LOCALID_GYMNASIUM_BLACK_BELT, moves(face_up))
+    waitmovement(0)
+    lockall
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("Welcome back, seniors!\nI hope you're all ready for today's review.\pAs you all know, battling is a crucial\npart of being a Pokémon Trainer.\pWhether you end up doing research, athletics, engineering, or competitive battling, you've gotta remember the basics."))
+    closemessage
+    applymovement(LOCALID_GYMNASIUM_COACH_CEDAR, moves(walk_left))
+    waitmovement(0)
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("A Pokémon battle is about more than just throwing out attacks.\pYou need to read your opponent, remember type matchups, and use your environemnt.\pBut, most importantly…"))
+    closemessage
+    applymovement(LOCALID_GYMNASIUM_COACH_CEDAR, moves(walk_right*2))
+    waitmovement(0)
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("You need to have a strong bond with your Pokémon!\pIf you and your Pokémon trust each\nother, you'll be able to pull through\lany situation together.\pYou'll be facing plenty of Trainers on your journey.\pSome friendly, some competitive,\nsome who think they're hot shit.\pBut, a good Trainer keeps their cool,\nno matter what."))
+    closemessage
+    applymovement(LOCALID_GYMNASIUM_COACH_CEDAR, moves(walk_left, face_down))
+    waitmovement(0)
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("With that being said,\nlet's start the review!\pYou will be randomly paired up with a classmate to have a 1v1 battle.\pTracie, you're up first!"))
+    closemessage
+    applymovement(LOCALID_GYMNASIUM_TRACIE, moves(emote_exclamation_mark))
+    playse(SE_PIN)
+    waitse
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Oh!"))
+    closemessage
+    applymovement(LOCALID_GYMNASIUM_TRACIE, moves(walk_up))
+    waitmovement(0)
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("You'll be going up against…\nColton!"))
+    closemessage
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Whew…\nIt's not Rotcart…"))
+    closemessage
+    applymovement(LOCALID_GYMNASIUM_TRACIE, moves(walk_up*2, walk_right*2, walk_up*6, slide_right*3, slide_up*2, face_left))
+    applymovement(LOCALID_GYMNASIUM_COLTON, moves(walk_up*3, walk_right*5, walk_up*8))
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("On to the next pair!"))
+    closemessage
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("We have {PLAYER}!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+    waitmovement(0)
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("{PLAYER}, you'll be battling…\nRotcart!"))
+    closemessage
+    clearflag(FLAG_HIDE_TRACIEROTCART)
+    addobject(LOCALID_GYMNASIUM_ROTCART) //show Rotcart
+    fadeoutbgm(0)
+    setspeaker(SP_NAME_UNKNOWN)
+    msgbox(format("Exactly what I wanted."))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down, emote_exclamation_mark))
+    playse(SE_PIN)
+    waitse
+    playbgm(MUS_RG_ENCOUNTER_RIVAL, FALSE)
+    applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_up*6))
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    waitmovement(0)
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("Ahh, there you are, Rotcart!\nReady to battle {PLAYER}?"))
+    closemessage
+    checkplayergender()
+    if (var(VAR_RESULT) == MALE)
+    {
+        setspeaker(SP_NAME_ROTCART)
+        msgbox(format("Won't matter, his ass is mine."))
+        closemessage
+    }
+    else
+    {
+        setspeaker(SP_NAME_ROTCART)
+        msgbox(format("Won't matter, her ass is mine."))
+        closemessage
+    }
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("Very well.\p{PLAYER}, Rotcart,\ntake your positions."))
+    closemessage
+    applymovement(LOCALID_CAMERA, moves(walk_down, walk_right))
+    applymovement(LOCALID_GYMNASIUM_ROTCART, moves(face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovement(0)
+    delay(40)
+    setspeaker(SP_NAME_ROTCART)
+    msgbox(format("Just because this is a practice match, don't expect me to go easy on the weak.\pFollow me."))
+    closemessage
+    applymovement(LOCALID_CAMERA, moves(walk_left, walk_up, walk_left*4, walk_up*7, walk_left*7))
+    applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_up, walk_left*4, walk_up*7, walk_left*11, face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left, walk_up, walk_left*4, walk_up*7, walk_left*3))
+    waitmovement(0)
+    waitmovement(LOCALID_GYMNASIUM_ROTCART)
+    setspeaker(SP_NAME_ROTCART)
+    msgbox(format("Kicking your ass will be a nice warm up before I fight those other weaklings.\pTry not to lose too fast.\nI want this to look like a real fight."))
+    closemessage
+    setflag(FLAG_WHITEOUT_CONTINUE)
+    trainerbattle_no_intro(TRAINER_ROTCART_1, format("Tch…\nEnjoy that while you still can."))
+    clearflag(FLAG_WHITEOUT_CONTINUE)
+   // applymovement(LOCALID_CAMERA, moves(walk_right*4)
+    special(RemoveCameraObject)
+	removeobject(LOCALID_CAMERA)
+    setvar(VAR_NORTH_CAMPUS_STATE, 4)
+    release
+    end
+}

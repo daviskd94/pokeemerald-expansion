@@ -1,7 +1,12 @@
+#include "global.h"
 #include "constants/trainers.h"
 #include "data.h"
+
 const u32 gTrainerFrontPic_Tracie[] = INCBIN_U32("graphics/trainers/front_pics/tracie.4bpp.lz");
 const u16 gTrainerPalette_Tracie[] = INCBIN_U16("graphics/trainers/front_pics/tracie.gbapal");
+
+const u32 gTrainerFrontPic_Rotcart[] = INCBIN_U32("graphics/trainers/front_pics/rotcart.4bpp.lz");
+const u16 gTrainerPalette_Rotcart[] = INCBIN_U16("graphics/trainers/front_pics/rotcart.gbapal");
 
 const u32 gTrainerFrontPic_Hiker[] = INCBIN_U32("graphics/trainers/front_pics/hiker.4bpp.smol");
 const u16 gTrainerPalette_Hiker[] = INCBIN_U16("graphics/trainers/front_pics/hiker.gbapal");
@@ -318,6 +323,7 @@ const struct TrainerSprite gTrainerSprites[] =
 {
     TRAINER_SPRITE(TRAINER_PIC_HIKER, gTrainerFrontPic_Hiker, gTrainerPalette_Hiker),
     TRAINER_SPRITE(TRAINER_PIC_TRACIE, gTrainerFrontPic_Tracie, gTrainerPalette_Tracie),
+    TRAINER_SPRITE(TRAINER_PIC_ROTCART, gTrainerFrontPic_Rotcart, gTrainerPalette_Rotcart),
     TRAINER_SPRITE(TRAINER_PIC_AQUA_GRUNT_M, gTrainerFrontPic_AquaGruntM, gTrainerPalette_AquaGruntM),
     TRAINER_SPRITE(TRAINER_PIC_POKEMON_BREEDER_F, gTrainerFrontPic_PokemonBreederF, gTrainerPalette_PokemonBreederF),
     TRAINER_SPRITE(TRAINER_PIC_COOLTRAINER_M, gTrainerFrontPic_CoolTrainerM, gTrainerPalette_CoolTrainerM),

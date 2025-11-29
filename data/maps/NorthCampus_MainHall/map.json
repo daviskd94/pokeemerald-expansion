@@ -69,8 +69,22 @@
       "x": 9,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_NORTH_CAMPUS_MAIN_HALL",
+      "dest_map": "MAP_NORTH_CAMPUS_MAIN_HALL_2F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 43,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_NORTH_CAMPUS_LECTURE_HALL",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_NORTH_CAMPUS_LECTURE_HALL",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

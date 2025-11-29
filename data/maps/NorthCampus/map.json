@@ -15,14 +15,14 @@
   "connections": [
     {
       "map": "MAP_ROUTE1NEW",
-      "offset": 0,
+      "offset": 4,
       "direction": "down"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 45,
+      "x": 49,
       "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -35,7 +35,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 17,
+      "x": 21,
       "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -48,7 +48,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 20,
+      "x": 24,
       "y": 30,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -61,7 +61,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 20,
+      "x": 24,
       "y": 40,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -74,8 +74,112 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 30,
+      "x": 34,
       "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 49,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 59,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 63,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 59,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 63,
+      "y": 40,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 59,
+      "y": 40,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 38,
+      "y": 40,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
+      "x": 38,
+      "y": 36,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -88,97 +192,6 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
       "x": 45,
-      "y": 33,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 55,
-      "y": 25,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 59,
-      "y": 30,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 55,
-      "y": 30,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 59,
-      "y": 40,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 55,
-      "y": 40,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 34,
-      "y": 40,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 34,
       "y": 36,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -191,8 +204,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 41,
-      "y": 36,
+      "x": 45,
+      "y": 40,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -204,8 +217,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 41,
-      "y": 40,
+      "x": 36,
+      "y": 49,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -230,20 +243,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 28,
-      "y": 49,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "LIGHT_TYPE_BALL",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 30,
+      "x": 34,
       "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -256,7 +256,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUITARIST",
-      "x": 45,
+      "x": 49,
       "y": 24,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -269,7 +269,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
-      "x": 57,
+      "x": 61,
       "y": 42,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -282,7 +282,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_F",
-      "x": 54,
+      "x": 58,
       "y": 28,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -295,7 +295,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 33,
+      "x": 37,
       "y": 30,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -308,7 +308,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AROMA_LADY",
-      "x": 33,
+      "x": 37,
       "y": 19,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -321,7 +321,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M",
-      "x": 20,
+      "x": 24,
       "y": 45,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -333,9 +333,9 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_TRACIE",
+      "local_id": "LOCALID_TRACIE_ENTERING_MAIN_HALL",
       "graphics_id": "OBJ_EVENT_GFX_TRACIE",
-      "x": 41,
+      "x": 45,
       "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -349,7 +349,7 @@
     {
       "local_id": "LOCALID_CYRUS_NORTH_CAMPUS",
       "graphics_id": "OBJ_EVENT_GFX_CYRUS",
-      "x": 10,
+      "x": 14,
       "y": 39,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -363,7 +363,7 @@
     {
       "local_id": "LOCALID_TRACIE_CATCHING_TUTORIAL",
       "graphics_id": "OBJ_EVENT_GFX_TRACIE",
-      "x": 9,
+      "x": 13,
       "y": 42,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -377,7 +377,7 @@
     {
       "local_id": "LOCALID_PROFESSOR_ASPEN",
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
-      "x": 19,
+      "x": 23,
       "y": 42,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -391,35 +391,35 @@
   ],
   "warp_events": [
     {
-      "x": 31,
+      "x": 35,
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_NORTHCAMPUS_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 43,
+      "x": 47,
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_NORTH_CAMPUS_POKEMON_MART",
       "dest_warp_id": "0"
     },
     {
-      "x": 42,
+      "x": 46,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_NORTH_CAMPUS_MAIN_HALL",
       "dest_warp_id": "0"
     },
     {
-      "x": 41,
+      "x": 45,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_NORTH_CAMPUS_MAIN_HALL",
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
+      "x": 22,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_FIELDSTONE_CAVERN",
@@ -429,7 +429,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 40,
+      "x": 44,
       "y": 18,
       "elevation": 0,
       "var": "VAR_NORTH_CAMPUS_STATE",
@@ -438,7 +438,7 @@
     },
     {
       "type": "trigger",
-      "x": 40,
+      "x": 44,
       "y": 19,
       "elevation": 0,
       "var": "VAR_NORTH_CAMPUS_STATE",
@@ -447,7 +447,7 @@
     },
     {
       "type": "trigger",
-      "x": 40,
+      "x": 44,
       "y": 20,
       "elevation": 0,
       "var": "VAR_NORTH_CAMPUS_STATE",
@@ -456,7 +456,7 @@
     },
     {
       "type": "trigger",
-      "x": 43,
+      "x": 47,
       "y": 18,
       "elevation": 0,
       "var": "VAR_NORTH_CAMPUS_STATE",
@@ -465,7 +465,7 @@
     },
     {
       "type": "trigger",
-      "x": 43,
+      "x": 47,
       "y": 19,
       "elevation": 0,
       "var": "VAR_NORTH_CAMPUS_STATE",
@@ -474,7 +474,7 @@
     },
     {
       "type": "trigger",
-      "x": 43,
+      "x": 47,
       "y": 20,
       "elevation": 0,
       "var": "VAR_NORTH_CAMPUS_STATE",
@@ -483,7 +483,7 @@
     },
     {
       "type": "trigger",
-      "x": 14,
+      "x": 18,
       "y": 42,
       "elevation": 0,
       "var": "VAR_NORTH_CAMPUS_STATE",

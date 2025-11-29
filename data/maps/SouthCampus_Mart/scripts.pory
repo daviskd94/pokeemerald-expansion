@@ -8,6 +8,9 @@ script SouthCampus_Mart_Clerk {
     faceplayer
     msgbox("Welcome!\nHow may I serve you?")
     waitmessage
+    if (flag(FLAG_POKEBALLS_UNLOCKED)) {
+        pokemart(MyMartItems2)
+    }
     pokemart(MyMartItems)
     msgbox("Please come again.")
     release
@@ -15,6 +18,13 @@ script SouthCampus_Mart_Clerk {
 }
 
 mart MyMartItems {
+    ITEM_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+}
+
+mart MyMartItems2 {
+    ITEM_POKE_BALL
     ITEM_POTION
     ITEM_ANTIDOTE
     ITEM_PARALYZE_HEAL

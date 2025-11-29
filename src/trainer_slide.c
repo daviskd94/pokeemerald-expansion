@@ -60,6 +60,11 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Okay, Buneary!\nLet's show off our training!{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("Hang in there, Buneary!\nStay strong!{PAUSE_UNTIL_PRESS}"), 
+        },
+        [TRAINER_ROTCART_1] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Fuck 'em up, Gible.{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("Get your shit together, Gible!{PAUSE_UNTIL_PRESS}"), 
         }
     },
 };

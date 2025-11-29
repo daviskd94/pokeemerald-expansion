@@ -1,16 +1,6 @@
 mapscripts SouthCampus_MapScripts {   
 }
 
-script SouthCampus_LockedCafeteria {
-	lock
-	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
-	msgbox(format("The cafeteria isn't open."))
-	closemessage
-	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
-	waitmovement(0)
-	release
-}
-
 script SouthCampus_MoveToBattle1 {
 	call(SouthCampus_HearBattle)
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_fast_left*5, walk_fast_up*11, walk_fast_left*7, face_up))
@@ -243,12 +233,12 @@ script SouthCampus_MeowthBattle {
 	setspeaker(SP_NAME_TRACIE)
 	msgbox(format("Alright, here we go.\nNo holding back!"))
 	closemessage
-	special(RemoveCameraObject)
-	removeobject(LOCALID_CAMERA)
 	setflag(FLAG_HIDE_SOUTH_CAMPUS_TRAINERS)
 	setflag(FLAG_WHITEOUT_CONTINUE)
 	trainerbattle_no_intro(TRAINER_TRACIE_SOUTH_CAMPUS, format("Looks like I still have some\ncatching up to do!"))
 	clearflag(FLAG_WHITEOUT_CONTINUE)
+	special(RemoveCameraObject)
+	removeobject(LOCALID_CAMERA)
 	call(SouthCampus_TraciePostBattle)
 
 }

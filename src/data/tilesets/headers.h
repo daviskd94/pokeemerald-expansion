@@ -907,3 +907,25 @@ const struct Tileset gTileset_New_Cave =
     .metatileAttributes = gMetatileAttributes_New_Cave,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_LectureHall =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LectureHall,
+    .palettes = gTilesetPalettes_LectureHall,
+    .metatiles = gMetatiles_LectureHall,
+    .metatileAttributes = gMetatileAttributes_LectureHall,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_NorthCampusGymnasium =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_NorthCampusGymnasium,
+    .palettes = gTilesetPalettes_NorthCampusGymnasium,
+    .metatiles = gMetatiles_NorthCampusGymnasium,
+    .metatileAttributes = gMetatileAttributes_NorthCampusGymnasium,
+    .callback = NULL,
+};

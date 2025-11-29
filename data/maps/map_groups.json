@@ -642,6 +642,9 @@
     "PokemonCenter_1F",
     "NorthCampus_PokemonMart",
     "NorthCampus_MainHall",
-    "NorthCampus_Classroom1"
+    "NorthCampus_Classroom1",
+    "NorthCampus_LectureHall",
+    "NorthCampus_MainHall_2F",
+    "NorthCampus_Gymnasium"
   ]
 }

@@ -297,9 +297,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Evan;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mike;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kyle;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Steph;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Paul;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Paul;*/
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mario;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Donald;
+/*extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Donald;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Richard;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nate;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Michele;*/
@@ -307,6 +307,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cyrus;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Guard;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Captain;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ChampInTheMaking;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Coach;
 
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
@@ -623,9 +624,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 	[OBJ_EVENT_GFX_MIKE] =                     &gObjectEventGraphicsInfo_Mike,
 	[OBJ_EVENT_GFX_KYLE] =                     &gObjectEventGraphicsInfo_Kyle,
 	[OBJ_EVENT_GFX_STEPH] =                    &gObjectEventGraphicsInfo_Steph,
-	[OBJ_EVENT_GFX_PAUL] =                     &gObjectEventGraphicsInfo_Paul,
+	[OBJ_EVENT_GFX_PAUL] =                     &gObjectEventGraphicsInfo_Paul,*/
 	[OBJ_EVENT_GFX_MARIO] =                    &gObjectEventGraphicsInfo_Mario,
-	[OBJ_EVENT_GFX_DONALD] =                   &gObjectEventGraphicsInfo_Donald,
+	/*[OBJ_EVENT_GFX_DONALD] =                   &gObjectEventGraphicsInfo_Donald,
 	[OBJ_EVENT_GFX_RICHARD] =                  &gObjectEventGraphicsInfo_Richard,
 	[OBJ_EVENT_GFX_NATE] =                     &gObjectEventGraphicsInfo_Nate,
 	[OBJ_EVENT_GFX_MICHELE] =                  &gObjectEventGraphicsInfo_Michele,*/
@@ -633,6 +634,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 	[OBJ_EVENT_GFX_GUARD] =                    &gObjectEventGraphicsInfo_Guard,
 	[OBJ_EVENT_GFX_CAPTAIN] =                  &gObjectEventGraphicsInfo_Captain,
     [OBJ_EVENT_GFX_CHAMPINTHEMAKING] =         &gObjectEventGraphicsInfo_ChampInTheMaking,
+    [OBJ_EVENT_GFX_COACH] =                    &gObjectEventGraphicsInfo_Coach,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

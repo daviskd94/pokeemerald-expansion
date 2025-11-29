@@ -47,9 +47,11 @@ script NorthCampus_MainHall_Registration {
     applymovement(1, moves(face_down)) // Receptionist facing towards player and Tracie
     waitmovement(0)
     setspeaker(SP_NAME_RECEPTIONIST)
-    msgbox(format("Hello, {PLAYER} and Tracie!\nHappy to see you both here.\pAre you both here for\norientation as well?"))
+    msgbox(format("Hi, {PLAYER} and Tracie!\nHappy to see you both here.\pAre you both here for\norientation as well?"))
+    closemessage
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("Yep! We're both super\nexcited to get started!\pIs there anything we need\nto do for check in?"))
+    closemessage
     setspeaker(SP_NAME_RECEPTIONIST)
     msgbox(format("Yes, there is!\pI'll need to see your student IDs."))
     closemessage
@@ -58,13 +60,13 @@ script NorthCampus_MainHall_Registration {
     playse(SE_PC_LOGIN)
     waitse
     setspeaker(SP_NAME_RECEPTIONIST)
-    msgbox(format("Name: {PLAYER}\nAge: 21\pProgram: Pokémon Trainer Studies\nYear: Senior"))
-    setspeaker(SP_NAME_RECEPTIONIST)
-    msgbox(format("Name: Tracie\nAge: 21\pProgram: Pokémon Trainer Studies\nYear: Senior"))
+    msgbox(format("Name: {PLAYER}\nAge: 21\pProgram: Pokémon Trainer Studies\nYear: Senior\pName: Tracie\nAge: 21\pProgram: Pokémon Trainer Studies\nYear: Senior"))
     closemessage
     msgbox(format("{PLAYER} and Tracie both receive\ntheir student IDs back."))
+    closemessage
     setspeaker(SP_NAME_RECEPTIONIST)
     msgbox(format("Okay, thanks for waiting!\pYou're both all checked in.\pOrientation starts in the lecture hall behind me.\pJust head through either of these doors.\nWe're starting soon!"))
+    closemessage
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("Thank you so much!"))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
@@ -80,7 +82,5 @@ script NorthCampus_MainHall_Registration {
     waitse
     special(RemoveCameraObject)
 	removeobject(LOCALID_CAMERA)
-
-
     setvar(VAR_NORTH_CAMPUS_STATE, 2)
 }

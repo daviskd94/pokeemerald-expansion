@@ -139,7 +139,7 @@ AquaHideout_B2F_Movement_SumbarineDepartRight:
 # 70 "data/maps/AquaHideout_B2F/scripts.pory"
 AquaHideout_B2F_EventScript_Grunt4::
 # 71 "data/maps/AquaHideout_B2F/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_4, AquaHideout_B2F_Text_Grunt4Intro, AquaHideout_B2F_Text_Grunt4Defeat, AquaHideout_B2F_EventScript_Grunt4Defeated
+	trainerbattle_single TRAINER_ROTCART_1, AquaHideout_B2F_Text_Grunt4Intro, AquaHideout_B2F_Text_Grunt4Defeat, AquaHideout_B2F_EventScript_Grunt4Defeated
 # 72 "data/maps/AquaHideout_B2F/scripts.pory"
 	msgbox AquaHideout_B2F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 # 73 "data/maps/AquaHideout_B2F/scripts.pory"

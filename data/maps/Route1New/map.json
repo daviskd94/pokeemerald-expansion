@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_NORTH_CAMPUS",
-      "offset": 0,
+      "offset": -4,
       "direction": "up"
     }
   ],

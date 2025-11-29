@@ -5866,6 +5866,10 @@ u16 GetBattleBGM(void)
             return MUS_VS_ELITE_FOUR;
         case TRAINER_CLASS_TRACIE:
             return MUS_VS_RIVAL;
+        case TRAINER_CLASS_ROTCART:
+            return CUS_VS_TRAINER;
+        case TRAINER_CLASS_GENESIS:
+            return CUS_VS_TEAM_GENESIS;
         case TRAINER_CLASS_SALON_MAIDEN:
         case TRAINER_CLASS_DOME_ACE:
         case TRAINER_CLASS_PALACE_MAVEN:

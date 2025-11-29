@@ -354,6 +354,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_MAGMA_ADMIN] = { _("Magma Admin"), 10 },
     [TRAINER_CLASS_RIVAL] = { _("Rival"), 15 },
     [TRAINER_CLASS_TRACIE] = { _("Rival"), 15 },
+    [TRAINER_CLASS_ROTCART] = { _("Rival"), 15 },
     [TRAINER_CLASS_BUG_CATCHER] = { _("Bug Catcher"), 4 },
     [TRAINER_CLASS_PKMN_RANGER] = { _("{PKMN} Ranger"), 12 },
     [TRAINER_CLASS_MAGMA_LEADER] = { _("Magma Leader"), 20, BALL_MASTER },
