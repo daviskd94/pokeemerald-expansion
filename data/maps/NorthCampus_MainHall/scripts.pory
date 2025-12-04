@@ -31,6 +31,7 @@ script NorthCampus_MainHall_Registration {
     delay(10)
     setspeaker(SP_NAME_RECEPTIONIST)
     msgbox(format("Alright, Rotcart.\nYou're all checked in for orientation!"))
+    closemessage
     applymovement(2, moves(walk_right*6, walk_up*3)) // Rotcart leaving
     message("We'll be starting in…\nRotcart?{PAUSE 50}")
     waitmessage
@@ -38,6 +39,7 @@ script NorthCampus_MainHall_Registration {
     waitmovement(0)
     delay(55)
     hideobjectat(2, MAP_NORTH_CAMPUS_MAIN_HALL)
+    removeobject(2)
     playse(SE_EXIT)
     waitse
     closemessage
@@ -69,6 +71,7 @@ script NorthCampus_MainHall_Registration {
     closemessage
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("Thank you so much!"))
+    closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     applymovement(3, moves(face_left))
     waitmovement(0)
@@ -83,4 +86,7 @@ script NorthCampus_MainHall_Registration {
     special(RemoveCameraObject)
 	removeobject(LOCALID_CAMERA)
     setvar(VAR_NORTH_CAMPUS_STATE, 2)
+    callnative(UpdateFollowingPokemon)
+    releaseall
+    end
 }

@@ -91,7 +91,8 @@ FieldstoneCavern_EventScript_Colton_Text_0:
 
 FieldstoneCavern_EventScript_Buck_Text_0:
 # 74 "data/maps/Fieldstone_Cavern/scripts.pory"
-	.string "Hey! You're pretty good!$"
+	.string "Go ahead and take the Escape Rope.\n"
+	.string "You earned it!$"
 
 Celeste_Intro::
 # 15 "data/maps/Fieldstone_Cavern/scripts.pory"
@@ -131,4 +132,4 @@ Buck_Intro::
 
 Buck_Outro::
 # 83 "data/maps/Fieldstone_Cavern/scripts.pory"
-	.string "Go ahead and take the Escape Rope.\nYou earned it!$"
+	.string "Hey!\nYou're pretty good!$"

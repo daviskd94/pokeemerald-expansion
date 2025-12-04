@@ -41,6 +41,7 @@ enum SpeakerNames {
     SP_NAME_KYLE,
     SP_NAME_STEPH,
     SP_NAME_CEDAR,
+    SP_NAME_HANZNEESTOZ,
     SP_NAME_COUNT
     
 };

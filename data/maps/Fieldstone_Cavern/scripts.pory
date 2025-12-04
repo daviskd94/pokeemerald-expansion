@@ -71,7 +71,7 @@ text Colton_Outro {
 script FieldstoneCavern_EventScript_Buck {
     trainerbattle_single(TRAINER_BUCK, Buck_Intro, Buck_Outro)
     setspeaker(SP_NAME_BUCK)
-    msgbox(format("Hey! You're pretty good!"))
+    msgbox(format("Go ahead and take the Escape Rope.\nYou earned it!"))
     closemessage
     end
 }
@@ -81,5 +81,5 @@ text Buck_Intro {
 }
 
 text Buck_Outro {
-    "Go ahead and take the Escape Rope.\nYou earned it!"
+    "Hey!\nYou're pretty good!"
 }

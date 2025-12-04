@@ -51,17 +51,17 @@
 #define FLAG_HIDE_SOUTH_CAMPUS_TRAINERS         0x25 // Unused Flag
 #define FLAG_SPAWN_INVISIBLE                    0x26 // Unused Flag
 #define FLAG_NORTH_CAMPUS_TRACIE_1              0x27 // Unused Flag
-#define FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR    0x28 // Unused Flag
-#define FLAG_HIDE_TRACIE_CYRUS                  0x29 // Unused Flag
-#define FLAG_POKEBALLS_UNLOCKED                 0x2A // Unused Flag
-#define FLAG_HIDE_LECTURE_HALL_STUDENTS         0x2B // Unused Flag
-#define FLAG_HIDE_GYMNASIUM_TRACIE_COLTON    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
+#define FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR    0x28 // Flag used to control Professor Aspen's visibility
+#define FLAG_HIDE_TRACIE_CYRUS                  0x29 // Flag used to hide Tracie and Cyrus before and after their cutscene in North Campus
+#define FLAG_POKEBALLS_UNLOCKED                 0x2A // Flag used to control the availability of Pokeballs in the Pokemart
+#define FLAG_HIDE_LECTURE_HALL_STUDENTS         0x2B // Flag used to hide the students after the first Lecture Hall cutscene
+#define FLAG_HIDE_GYMNASIUM_TRACIE_COLTON       0x2C // Flag used to hide Tracie and Colton when they walk to their battle
+#define FLAG_HIDE_GYMNASIUM_STUDENTS            0x2D // Flag to control the visibility of Gymnasium students
+#define FLAG_HIDE_COACH_CEDAR                   0x2E // Flag to hide Coach Cedar from blocking the Gym entrance
+#define FLAG_FIELDSTONE_CAVERN_ENTER            0x2F // Flag that gets set to allow you to enter the Fieldstone Cavern
+#define FLAG_HIDE_PROFESSOR_HANZNEESTOZ         0x30 // Unused Flag
+#define FLAG_POST_PROFESSOR_HANZNEESTOZ         0x31 // Unused Flag
+#define FLAG_HIDE_TRACIE_LECTURE_HALL    0x32 // Unused Flag
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag

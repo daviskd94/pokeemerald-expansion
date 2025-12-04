@@ -9,7 +9,7 @@
 #define TRAINER_BERTIE                        3
 #define TRAINER_BUCK                          4
 #define TRAINER_ROTCART_1                     5
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6
+#define TRAINER_MARIO_1       6
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_2       7
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_3       8
 #define TRAINER_GABRIELLE_1                   9

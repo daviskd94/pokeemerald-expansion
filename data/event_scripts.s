@@ -1200,3 +1200,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NorthCampus_MainHall_2F/scripts.inc"
 
 	.include "data/maps/NorthCampus_Gymnasium/scripts.inc"
+
+	.include "data/maps/NorthCampus_Library/scripts.inc"

@@ -183,17 +183,23 @@ Gible
 Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
 
-Poochyena
-Level: 36
+=== TRAINER_MARIO_1 ===
+Name: Mario
+Class: President
+Pic: Mario
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Mario
+
+Zubat
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastly
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===

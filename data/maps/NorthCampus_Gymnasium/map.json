@@ -25,7 +25,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NorthCampus_Gymnasium_Coach_Cedar",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_GYMNASIUM_STUDENTS"
     },
     {
       "local_id": "LOCALID_GYMNASIUM_BREEDER_F",
@@ -68,7 +68,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_GYMNASIUM_STUDENTS"
     },
     {
       "local_id": "LOCALID_GYMNASIUM_COLTON",
@@ -96,13 +96,13 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_GYMNASIUM_STUDENTS"
     },
     {
       "local_id": "LOCALID_GYMNASIUM_TRACIE_2",
       "graphics_id": "OBJ_EVENT_GFX_TRACIE",
-      "x": 34,
-      "y": 7,
+      "x": 21,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -110,21 +110,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "local_id": "LOCALID_GYMNASIUM_COLTON_2",
-      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
-      "x": 26,
-      "y": 7,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_TRACIE"
     },
     {
       "local_id": "LOCALID_GYMNASIUM_ROTCART",

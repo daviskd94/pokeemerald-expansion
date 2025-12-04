@@ -1,0 +1,198 @@
+mapscripts NorthCampus_Library_MapScripts {}
+
+script NorthCampus_Library_Book1 {
+    msgbox(format("‘The History of Tractor University:\pFounded in 1910, Tractor University has a long and proud tradition of academic excellence, research, and farm handling.’"))
+    closemessage
+}
+
+script NorthCampus_Library_Book2 {
+    msgbox(format("The Fault in our Tractors"))
+    closemessage
+}
+
+script NorthCampus_Library_Book3 {
+    msgbox(format("A Tale of Two Tractors"))
+    closemessage
+}
+
+script NorthCampus_Library_Book4 {
+    msgbox(format("Charlotte's Tractor"))
+    closemessage
+}
+
+script NorthCampus_Library_Book5 {
+    msgbox(format("The Tractor in the Rye"))
+    closemessage
+}
+
+script NorthCampus_Library_Book6 {
+    msgbox(format("Gone with the Exhaust"))
+    closemessage
+}
+
+script NorthCampus_Library_Book7 {
+    msgbox(format("The Diary of John Deere"))
+    closemessage
+}
+
+script NorthCampus_Library_Book8 {
+    msgbox(format("And Then There Were Tractors"))
+    closemessage
+}
+
+script NorthCampus_Library_Book9 {
+    msgbox(format("Dream of the Red Tractor"))
+    closemessage
+}
+
+script NorthCampus_Library_Book10 {
+    msgbox(format("Much Ado About Tractors"))
+    closemessage
+}
+
+script NorthCampus_Library_Book11 {
+    msgbox(format("A Song of Oil and Gears"))
+    closemessage
+}
+
+script NorthCampus_Library_Book12 {
+    msgbox(format("So Long and Thanks for all the Tractors"))
+    closemessage
+}
+
+script NorthCampus_Library_Book13 {
+    msgbox(format("Tractors for Idiots"))
+    closemessage
+}
+
+script NorthCampus_Library_Book14 {
+    msgbox(format("Saying Your Tractors Backwards"))
+    closemessage
+}
+
+script NorthCampus_Library_Book15 {
+    msgbox(format("Eat, Pray, Farm"))
+    closemessage
+}
+
+script NorthCampus_Library_Book16 {
+    msgbox(format("The Girl on the Tractor"))
+    closemessage
+}
+
+script NorthCampus_Library_Librarian {
+    msgbox(format("Welcome to Mahindra Library!\pFeel free to browse our extensive collection of books while you study."))
+    closemessage
+}
+
+script NorthCampus_Library_NPC1 {
+    faceplayer
+    msgbox(format("I love studying here at\nMahindra Library.\pIt's so quiet and peaceful!"))
+    release
+    closemessage
+}
+
+script NorthCampus_Library_NPC2 {
+    msgbox(format("Uh oh…\nI think they don't have my textbook…"))
+    closemessage
+}
+
+script NorthCampus_Library_NPC3 {
+    lock
+    faceplayer
+    msgbox("Would you like to hear about\nthe book I'm reading?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        msgbox(format("It's called 'Twilight Tractors'.\pIt's about these two tractors who fall in love…\pExcept, one of them is a vampire tractor who wants to drink the other's oil!\pThey spend all this time trying to figure out how to make their relationship work.\pThere's also all these other evil vampire tractors who want to keep them apart.\pAll they want is to plow fields together forever!\pAlso, the vampire tractor is afraid to turn the other tractor into a vampire because she might regret becoming a super-powered undead tractor who wil never rust.\pAt the end, she nearly dies giving birth to his baby tractor, and he has to turn into into a vampire tractor to save her life…\pIt's really quite the love story!"))
+    } else {
+        msgbox(format("Oh, okay. Maybe next time!"))
+    }
+    release
+    closemessage
+}
+
+script NorthCampus_Library_NPC4 {
+    lock
+    faceplayer
+    msgbox(format("I've finished Chapter 1 of\nTractors for Idiots.\pIt's really helping me understand how to operate my tractor better!"))
+    release
+    closemessage
+}
+
+script NorthCampus_Library_NPC5 {
+    lock
+    faceplayer
+    msgbox(format("Did you know that the first gasoline tractor was invented in 1892 by John Froelich?\pPreviously, they were steam powered but were prone to exploding!\pTractors became so revolutionary that just a couple decades later, we have a school named after them!"))
+    release
+    closemessage
+}
+
+script NorthCampus_Library_ProfessorHanzneestoz {
+    lock
+    faceplayer
+    setspeaker(SP_NAME_HANZNEESTOZ)
+    if(flag(FLAG_POST_PROFESSOR_HANZNEESTOZ) == TRUE) {
+        checkplayergender()
+        if (var(VAR_RESULT) == MALE) {
+            msgbox(format("Ah, Herr {PLAYER}!\pI trust your explorations are going vell, ja?\pRemember, science is all about curiosity und discovery!\pVunderbar!"))
+        } else {
+            msgbox(format("Ah, Frau {PLAYER}!\pI trust your explorations are going vell, ja?\pRemember, science is all about curiosity und discovery!\pVunderbar!"))
+        }
+        closemessage
+        release
+        end
+    }
+    checkitem(ITEM_ESCAPE_ROPE)
+    if(var(VAR_RESULT) == TRUE) {
+        checkplayergender()
+        if (var(VAR_RESULT) == MALE) {
+            msgbox(format("Ah, Herr {PLAYER}!\pI see you found the {COLOR GREEN}Escape Rope!\p{COLOR DARK_GRAY}Vunderbar!\nExcellent work!\pThat rope ist very essential for cave exploration und research.\pThat ist yours to keep now!\nUse it visely!"))
+        } else {
+            msgbox(format("Ah, Frau {PLAYER}!\pI see you found the {COLOR GREEN}Escape Rope!\p{COLOR DARK_GRAY}Vunderbar!\nExcellent work!\pThat rope ist very essential for cave exploration und research.\pThat ist yours to keep now!\nUse it visely!"))
+        }
+        closemessage
+        call (NorthCampus_Library_Intercom)
+        setspeaker(SP_NAME_HANZNEESTOZ)
+        checkplayergender()
+        if (var(VAR_RESULT) == MALE) {
+            msgbox(format("Now, off you go, Herr {PLAYER}!\pI vill see you around, ja?\nGood luck on your journey!"))
+        } else {
+            msgbox(format("Now, off you go, Frau {PLAYER}!\pI vill see you around, ja?\nGood luck on your journey!"))
+        }
+        closemessage
+        setflag(FLAG_POST_PROFESSOR_HANZNEESTOZ)
+        setvar(VAR_NORTH_CAMPUS_STATE, 6)
+        release
+        end
+    }
+    elif(flag(FLAG_FIELDSTONE_CAVERN_ENTER) == TRUE) {
+        checkplayergender()
+        if (var(VAR_RESULT) == MALE) {
+            msgbox(format("Herr {PLAYER}, have you found ze item I asked for?\pNein!?\pYou must go to Fieldstone Cavern und retrieve it, vith haste!"))
+        } else {
+            msgbox(format("Frau {PLAYER}, have you found ze item I asked for?\pNein!?\pYou must go to Fieldstone Cavern und retrieve it, vith haste!"))
+        }
+        closemessage
+        release
+        end
+    }
+    else {
+    setspeaker(SP_NAME_HANZNEESTOZ)
+    checkplayergender()
+    if (var(VAR_RESULT) == MALE) {
+        msgbox(format("Ahh, guten tag, Herr {PLAYER}!\pYou are here for the review, ja?\pVunderbar!\pNow, as you know, I am Professor Hanzneestoz.\pI am specialist in subterranenan studies, expert in fossil research, and part-time enthusiast of yelling 'AH-HAH!' vhen I make a discovery!\pZis ist completely normal scientific behavior, ja?\pNow, today's review ist simple.\pYou vill be exploring der little cave to the vest of Main Hall.\pInside, you vill retrieve an item I have hidden!\pNow, be very, very careful, Herr {PLAYER}, as falling into holes ist NOT on ze syllabus!\pVe had an incident last year zat resulted in a student losing his eyebrows!\pYour mission ist to retrieve ze item and show me here in ze Library!\pGot it?\nVunderbar!\pNow, off you go!"))
+    } else {
+        msgbox(format("Ahh, guten tag, Frau {PLAYER}!\pYou are here for the review, ja?\pVunderbar!\pNow, as you know, I am Professor Hanzneestoz.\pI am specialist in subterranenan studies, expert in fossil research, and part-time enthusiast of yelling 'AH-HAH!' vhen I make a discovery!\pZis ist completely normal scientific behavior, ja?\pNow, today's review ist simple.\pYou vill be exploring der little cave to the vest of Main Hall.\pInside, you vill retrieve an item I have hidden!\pNow, be very, very careful, Frau {PLAYER}, as falling into holes ist NOT on ze syllabus!\pVe had an incident last year zat resulted in a student losing his eyebrows!\pYour mission ist to retrieve ze item and show me here in ze Library!\pGot it?\nVunderbar!\pNow, off you go!"))
+    }
+    setflag(FLAG_FIELDSTONE_CAVERN_ENTER)
+    release
+    closemessage
+    }
+}
+
+script NorthCampus_Library_Intercom {
+        playse(SE_DING_DONG)
+        waitse
+        setspeaker(SP_NAME_INTERCOM)
+        msgbox(format("Attention seniors.\pPlease report back to Main Hall to complete your review."))
+        closemessage
+}

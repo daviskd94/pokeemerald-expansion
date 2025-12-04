@@ -4,14 +4,18 @@ mapscripts PlayerDorm_MapScripts {
     ]
 }
 
-text Tracie {
-    "Tracie"
+script SettingUniversalFlags  {
+    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
+    setflag(FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR)
+    setflag(FLAG_HIDE_TRACIE_CYRUS)
+    setflag(FLAG_HIDE_PROFESSOR_HANZNEESTOZ)
+    setflag(FLAG_HIDE_TRACIE_LECTURE_HALL)
 }
 
 
 script PlayerDorm_WakeUp {
     lockall
-    setflag(FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR)
+    call (SettingUniversalFlags)
     //applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     delay(80)
     call (Player_Dorm_Door_Knocking)
@@ -67,7 +71,7 @@ script Player_Dorm_Enter_Tracie {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     setspeaker(SP_NAME_TRACIE)
-    msgbox(format("You're sleeping right now?\nToday of all days?\pCome on! You didn't actually\nforget, did you?\pOur senior orientation is today!\nI can't believe you!\pWe've been dreaming of this day since we were kids!"))
+    msgbox(format("You're sleeping right now?\nToday of all days?\pCome on! You didn't actually forget,\ndid you?\pOur senior orientation is today!\nI can't believe you!\pWe've been dreaming of this day since we were kids!"))
     closemessage
     applymovement(LOCALID_TRACIE, moves(walk_right*2))
     waitmovement(0)

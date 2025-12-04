@@ -111,7 +111,8 @@
 #define TRAINER_PIC_TRACIE                93
 #define TRAINER_PIC_RANCHER               94
 #define TRAINER_PIC_ROTCART               95
-#define TRAINER_PIC_COUNT                 96
+#define TRAINER_PIC_MARIO                 96
+#define TRAINER_PIC_COUNT                 97
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -391,6 +392,7 @@ enum TrainerClassID
     TRAINER_CLASS_NECROMANCER,
     TRAINER_CLASS_TRACIE,
     TRAINER_CLASS_ROTCART,
+    TRAINER_CLASS_PRESIDENT,
     TRAINER_CLASS_COUNT,
 };
 

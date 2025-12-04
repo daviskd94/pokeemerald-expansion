@@ -4584,8 +4584,8 @@
     {
       "id": "LAYOUT_NORTH_CAMPUS_MAIN_HALL_2F",
       "name": "NorthCampus_MainHall_2F_Layout",
-      "width": 82,
-      "height": 36,
+      "width": 54,
+      "height": 24,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_MainHall",
       "border_filepath": "data/layouts/NorthCampus_MainHall_2F/border.bin",
@@ -4600,6 +4600,16 @@
       "secondary_tileset": "gTileset_NorthCampusGymnasium",
       "border_filepath": "data/layouts/NorthCampus_Gymnasium/border.bin",
       "blockdata_filepath": "data/layouts/NorthCampus_Gymnasium/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_CAMPUS_LIBRARY",
+      "name": "NorthCampus_Library_Layout",
+      "width": 33,
+      "height": 26,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Library",
+      "border_filepath": "data/layouts/NorthCampus_Library/border.bin",
+      "blockdata_filepath": "data/layouts/NorthCampus_Library/map.bin"
     }
   ]
 }

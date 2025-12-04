@@ -99,6 +99,8 @@ script NorthCampus_EnterWildArea {
     delay(40)
     applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(face_down))
     delay(30)
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_down))
+    waitmovement(0)
     playbgm(MUS_ENCOUNTER_SUSPICIOUS, FALSE)
     setspeaker(SP_NAME_CYRUS)
     msgbox(format("Greetings, students!\nMy name is Cyrus."))
@@ -145,14 +147,14 @@ script NorthCampus_EnterWildArea {
     setspeaker(SP_NAME_CYRUS)
     msgbox(format("A pleasure to meet you, Trucie.\nHere's ¥5!"))
     closemessage
-    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_left, walk_down*2))
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_left, walk_down))
     waitmovement(0)
     playfanfare(MUS_LEVEL_UP)
     msgbox(format("Trucie received ¥5 from Cyrus!"))
     waitfanfare
     closemessage
     setspeaker(SP_NAME_TRACIE)
-    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_up*2, walk_right, face_down))
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_up, walk_right, face_down))
     msgbox(format("I'm so… confused."))
     closemessage
     waitmovement(0)
@@ -161,7 +163,7 @@ script NorthCampus_EnterWildArea {
     closemessage
     special(SavePlayerParty)
 	special(LoadWallyZigzagoon)
-    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(face_left))
+    applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_up, face_left))
     delay(50)
     applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(face_left))
     delay(50)
@@ -260,19 +262,31 @@ script NorthCampus_EnterWildArea {
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("There's our cue!\pI'll meet up with your later, {PLAYER}.\pI've got Pokémon to catch!"))
     closemessage
-    applymovement(LOCALID_TRACIE_CATCHING_TUTORIAL, moves(walk_up, walk_right*2, walk_down, walk_right*8))
+    applymovement(LOCALID_TRACIE_CATCHING_TUTORIAL, moves(walk_up, walk_right*2, walk_down))
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(LOCALID_TRACIE_CATCHING_TUTORIAL, moves(walk_right*8))
     waitmovement(0)
     removeobject(LOCALID_CYRUS_NORTH_CAMPUS)
     removeobject(LOCALID_TRACIE_CATCHING_TUTORIAL) // Hide Tracie
     setflag(FLAG_HIDE_TRACIE_CYRUS)
     setflag(FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR)
     setflag(FLAG_POKEBALLS_UNLOCKED)
-    setvar(VAR_NORTH_CAMPUS_STATE, 3)
+    clearflag(FLAG_HIDE_PROFESSOR_HANZNEESTOZ)
+    setvar(VAR_NORTH_CAMPUS_STATE, 5)
     fadedefaultbgm
     special(LoadPlayerParty)
     callnative(UpdateFollowingPokemon)
 }
 
+script NorthCampus_Cave_Guard {
+    lock
+    faceplayer
+    msgbox(format("Fieldstone Cavern is currently off limits during orientation.\pPlease come back later."))
+    closemessage
+    release
+    end
+}
 script NorthCampus_NPC1 {
     lock
 	faceplayer
@@ -325,4 +339,9 @@ script NorthCampus_NPC6 {
 	closemessage
 	release
 	end
+}
+
+script NorthCampus_MahindraLibrarySign {
+    msgbox("Mahindra Library" MSGBOX_SIGN)
+    closemessage
 }

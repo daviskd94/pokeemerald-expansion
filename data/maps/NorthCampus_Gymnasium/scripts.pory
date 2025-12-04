@@ -91,6 +91,9 @@ script NorthCampus_Gymnasium_Enter {
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     waitmovement(0)
+    setflag(FLAG_HIDE_GYMNASIUM_TRACIE_COLTON)
+    removeobject(LOCALID_GYMNASIUM_TRACIE) //hide Tracie
+    removeobject(LOCALID_GYMNASIUM_COLTON) //hide Colton
     setspeaker(SP_NAME_CEDAR)
     msgbox(format("Ahh, there you are, Rotcart!\nReady to battle {PLAYER}?"))
     closemessage
@@ -123,16 +126,109 @@ script NorthCampus_Gymnasium_Enter {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left, walk_up, walk_left*4, walk_up*7, walk_left*3))
     waitmovement(0)
     waitmovement(LOCALID_GYMNASIUM_ROTCART)
+    delay(15)
+    clearflag(FLAG_HIDE_TRACIE)
+    addobject(LOCALID_GYMNASIUM_TRACIE_2) //show Tracie
     setspeaker(SP_NAME_ROTCART)
     msgbox(format("Kicking your ass will be a nice warm up before I fight those other weaklings.\pTry not to lose too fast.\nI want this to look like a real fight."))
     closemessage
+    special(HealPlayerParty)
     setflag(FLAG_WHITEOUT_CONTINUE)
+    setobjectxyperm(LOCALID_GYMNASIUM_COACH_CEDAR, 21, 7)
     trainerbattle_no_intro(TRAINER_ROTCART_1, format("Tch…\nEnjoy that while you still can."))
+    playbgm(MUS_RG_ENCOUNTER_RIVAL, FALSE) 
     clearflag(FLAG_WHITEOUT_CONTINUE)
-   // applymovement(LOCALID_CAMERA, moves(walk_right*4)
+	special(RemoveCameraObject)
+	removeobject(LOCALID_CAMERA)
+    special (SpawnCameraObject)
+    setobjectxyperm(LOCALID_CAMERA, 8, 7)  
+    applymovement(LOCALID_CAMERA, moves(walk_right*4))
+    applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_right*7))
+    waitmovement(0)
+    special(HealPlayerParty)
+    if (var(VAR_RESULT) == B_OUTCOME_LOST) {
+        setspeaker(SP_NAME_ROTCART)
+        msgbox(format("That's what I thought.\pYou're a loser, and you'll never be anything more.\pGet lost."))
+        closemessage
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_down, walk_right*4, walk_down*6))
+        waitmovement(0)
+        fadedefaultbgm
+        applymovement(LOCALID_GYMNASIUM_COACH_CEDAR, moves(walk_left*8))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+        setspeaker(SP_NAME_CEDAR)
+        msgbox(format("Well done, {PLAYER}!\pDon't worry about losing,\nyou showed great skill.\pRotcart still has a lot to learn."))
+        closemessage
+        applymovement(LOCALID_GYMNASIUM_TRACIE_2, moves(walk_left*9, face_down))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+        setspeaker(SP_NAME_TRACIE)
+        msgbox(format("You okay, {PLAYER}?\nThat was tough!\pRotcart is really strong…\pI won my fight,\nat least!"))
+        closemessage
+    }
+    else {
+        setspeaker(SP_NAME_ROTCART)
+        msgbox(format("You just got lucky.\pI'm still the best Trainer this school has seen.\pKindly, piss off."))
+        closemessage
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_down, walk_right*4, walk_down*6))
+        waitmovement(0)
+        fadedefaultbgm
+        applymovement(LOCALID_GYMNASIUM_COACH_CEDAR, moves(walk_left*8))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+        setspeaker(SP_NAME_CEDAR)
+        msgbox(format("Well done, {PLAYER}!\pYou showed great skill and composure in that battle.\pRotcart still has a lot to learn,\nit seems."))
+        closemessage
+        applymovement(LOCALID_GYMNASIUM_TRACIE_2, moves(walk_left*9, face_down))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+        setspeaker(SP_NAME_TRACIE)
+        msgbox(format("{PLAYER}!\nThat was amazing!\pYou really showed up Rotcart!\pI won my fight too!\pLooks like we both have a lot to be proud of."))
+        closemessage
+    }
+    playse(SE_DING_DONG)
+    waitse
+    setspeaker(SP_NAME_INTERCOM)
+    msgbox(format("Attention seniors.\pPlease report to the Wild Area for a review on catching Pokémon.\pThank you."))
+    closemessage
+    playbgm(MUS_ENCOUNTER_MAY, FALSE)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Time for the next review!\pC'mon, {PLAYER},\nI'll meet you there!"))
+    closemessage
+    applymovement(LOCALID_GYMNASIUM_TRACIE_2, moves(walk_right*3, walk_down*7))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    delay(80)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    delay(130)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    waitmovement(0)
+    fadedefaultbgm
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("You and Tracie will do great!\pRemember to trust your Pokémon.\pThe Wild Area is outside on the west side of North Campus.\pGood luck, {PLAYER}!"))
+    closemessage
+    setflag(FLAG_HIDE_GYMNASIUM_STUDENTS)
+    setflag(FLAG_HIDE_TRACIE)
+    clearflag(FLAG_HIDE_TRACIE_CYRUS)
+    removeobject(LOCALID_GYMNASIUM_BLACK_BELT)
+    removeobject(LOCALID_GYMNASIUM_BREEDER_F)
+    removeobject(LOCALID_GYMNASIUM_TRACIE_2)
+    removeobject(LOCALID_GYMNASIUM_ROTCART)
+    removeobject(LOCALID_GYMNASIUM_ACE_TRAINER_F)
+    setobjectxyperm(LOCALID_GYMNASIUM_COACH_CEDAR, 13, 7)
     special(RemoveCameraObject)
 	removeobject(LOCALID_CAMERA)
     setvar(VAR_NORTH_CAMPUS_STATE, 4)
+    callnative(UpdateFollowingPokemon)
     release
     end
 }
+
+script NorthCampus_Gymnasium_Coach_Cedar {
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("Remember, Pokémon battles are not about who can bark the loudest.\pA true Trainer knows how to stay calm and collected in any situation.\pTrust in your Pokémon, and they will trust in you."))
+    closemessage
+    end
+}
+

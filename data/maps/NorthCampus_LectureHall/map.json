@@ -119,7 +119,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NorthCampus_LectureHall_Mario",
       "flag": "0"
     },
     {
@@ -135,6 +135,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_TRACIEROTCART"
+    },
+    {
+      "local_id": "LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2",
+      "graphics_id": "OBJ_EVENT_GFX_TRACIE",
+      "x": 15,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthCampus_LectureHall_Tracie",
+      "flag": "FLAG_HIDE_TRACIE_LECTURE_HALL"
     }
   ],
   "warp_events": [
@@ -207,6 +221,60 @@
       "var": "VAR_NORTH_CAMPUS_STATE",
       "var_value": "2",
       "script": "NorthCampus_LectureHall_WalkNextToTracie2"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_NORTH_CAMPUS_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_NORTH_CAMPUS_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_NORTH_CAMPUS_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_NORTH_CAMPUS_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_NORTH_CAMPUS_STATE",
+      "var_value": "6",
+      "script": "NorthCampus_LectureHall_WalkNextToTracieBeforeBattle1"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_NORTH_CAMPUS_STATE",
+      "var_value": "6",
+      "script": "NULL"
     }
   ],
   "bg_events": []

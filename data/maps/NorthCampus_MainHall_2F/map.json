@@ -13,18 +13,32 @@
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_COACH",
+      "x": 19,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthCampus_MainHall_2F_Coach_Cedar",
+      "flag": "FLAG_HIDE_LECTURE_HALL_STUDENTS"
+    }
+  ],
   "warp_events": [
     {
-      "x": 24,
-      "y": 24,
+      "x": 19,
+      "y": 17,
       "elevation": 0,
       "dest_map": "MAP_NORTH_CAMPUS_GYMNASIUM",
       "dest_warp_id": "0"
     },
     {
-      "x": 9,
-      "y": 8,
+      "x": 3,
+      "y": 4,
       "elevation": 0,
       "dest_map": "MAP_NORTH_CAMPUS_MAIN_HALL",
       "dest_warp_id": "1"

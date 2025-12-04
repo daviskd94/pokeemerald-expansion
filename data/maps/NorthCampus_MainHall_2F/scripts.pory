@@ -1,1 +1,11 @@
 mapscripts NorthCampus_MainHall_2F_MapScripts {}
+
+script NorthCampus_MainHall_2F_Coach_Cedar {
+    lock
+    faceplayer
+    setspeaker(SP_NAME_CEDAR)
+    msgbox(format("Hey there, {PLAYER}!\nGymnasium's not open yet.\pCome back later when I've finished setting up."))
+    closemessage
+    release
+    end
+}

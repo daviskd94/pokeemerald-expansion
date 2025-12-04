@@ -789,7 +789,7 @@ static void HeatStartMenu_ShowTimeWindow(void)
 	    ConvertIntToDecimalStringN(gStringVar1, analogHour, STR_CONV_MODE_LEADING_ZEROS, 2);
     
 	StringExpandPlaceholders(gStringVar4, gText_CurrentTime);
-        if (gLocalTime.hours >= 13 && gLocalTime.hours <= 24)
+        if (gLocalTime.hours >= 12 && gLocalTime.hours <= 24)
             StringExpandPlaceholders(gStringVar4, gText_CurrentTimePM); 
         else
             StringExpandPlaceholders(gStringVar4, gText_CurrentTimeAM);  
@@ -1229,13 +1229,13 @@ static void ShowSaveInfoWindow(void) {
     // Print region name
     yOffset = 1;
     BufferSaveMenuText(SAVE_MENU_LOCATION, gStringVar4, TEXT_COLOR_GREEN);
-    AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, 0, yOffset, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(sSaveInfoWindowId, FONT_SHORT, gStringVar4, 0, yOffset, TEXT_SKIP_DRAW, NULL);
 
     // Print player name
     yOffset += 16;
-    AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gText_SavingPlayer, 0, yOffset, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(sSaveInfoWindowId, FONT_SHORT, gText_SavingPlayer, 0, yOffset, TEXT_SKIP_DRAW, NULL);
     BufferSaveMenuText(SAVE_MENU_NAME, gStringVar4, color);
-    xOffset = GetStringRightAlignXOffset(FONT_SMALL, gStringVar4, 0x6C);
+    xOffset = GetStringRightAlignXOffset(FONT_SHORT, gStringVar4, 0x6E);
     PrintPlayerNameOnWindow(sSaveInfoWindowId, gStringVar4, xOffset, yOffset);
     MgbaPrintf(MGBA_LOG_WARN, "Offset", xOffset);
 
@@ -1243,25 +1243,25 @@ static void ShowSaveInfoWindow(void) {
     yOffset += 16;
     AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gText_SavingBadges, 0, yOffset, TEXT_SKIP_DRAW, NULL);
     BufferSaveMenuText(SAVE_MENU_BADGES, gStringVar4, color);
-    xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x70);
-    AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, xOffset, yOffset, TEXT_SKIP_DRAW, NULL);
+    xOffset = GetStringRightAlignXOffset(FONT_SHORT, gStringVar4, 0x6E);
+    AddTextPrinterParameterized(sSaveInfoWindowId, FONT_SHORT, gStringVar4, xOffset, yOffset, TEXT_SKIP_DRAW, NULL);
 
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
     {
         // Print pokedex count
         yOffset += 16;
-        AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gText_SavingPokedex, 0, yOffset, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(sSaveInfoWindowId, FONT_SHORT, gText_SavingPokedex, 0, yOffset, TEXT_SKIP_DRAW, NULL);
         BufferSaveMenuText(SAVE_MENU_CAUGHT, gStringVar4, color);
-        xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x70);
-        AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, xOffset, yOffset, TEXT_SKIP_DRAW, NULL);
+        xOffset = GetStringRightAlignXOffset(FONT_SHORT, gStringVar4, 0x6E);
+        AddTextPrinterParameterized(sSaveInfoWindowId, FONT_SHORT, gStringVar4, xOffset, yOffset, TEXT_SKIP_DRAW, NULL);
     }
 
     // Print play time
     yOffset += 16;
-    AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gText_SavingTime, 0, yOffset, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(sSaveInfoWindowId, FONT_SHORT, gText_SavingTime, 0, yOffset, TEXT_SKIP_DRAW, NULL);
     BufferSaveMenuText(SAVE_MENU_PLAY_TIME, gStringVar4, color);
-    xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x6E);
-    AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, xOffset, yOffset, TEXT_SKIP_DRAW, NULL);
+    xOffset = GetStringRightAlignXOffset(FONT_SHORT, gStringVar4, 0x6E);
+    AddTextPrinterParameterized(sSaveInfoWindowId, FONT_SHORT, gStringVar4, xOffset, yOffset, TEXT_SKIP_DRAW, NULL);
 
     CopyWindowToVram(sSaveInfoWindowId, COPYWIN_GFX);
 }

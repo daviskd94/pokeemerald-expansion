@@ -929,3 +929,14 @@ const struct Tileset gTileset_NorthCampusGymnasium =
     .metatileAttributes = gMetatileAttributes_NorthCampusGymnasium,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Library =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Library,
+    .palettes = gTilesetPalettes_Library,
+    .metatiles = gMetatiles_Library,
+    .metatileAttributes = gMetatileAttributes_Library,
+    .callback = NULL,
+};
