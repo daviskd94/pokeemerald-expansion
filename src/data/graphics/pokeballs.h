@@ -1,5 +1,5 @@
-const u32 gBallGfx_Strange[] = INCBIN_U32("graphics/balls/strange.4bpp.smol");
-const u16 gBallPal_Strange[] = INCBIN_U16("graphics/balls/strange.gbapal");
+const u32 gBallGfx_Strange[] = INCBIN_U32("graphics/balls/poke.4bpp.smol");
+const u16 gBallPal_Strange[] = INCBIN_U16("graphics/balls/poke.gbapal");
 
 const u32 gBallGfx_Poke[] = INCBIN_U32("graphics/balls/poke.4bpp.smol");
 const u16 gBallPal_Poke[] = INCBIN_U16("graphics/balls/poke.gbapal");

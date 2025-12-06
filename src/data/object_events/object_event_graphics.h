@@ -298,6 +298,9 @@ const u32 gObjectEventPic_Archie[] = INCBIN_U32("graphics/object_events/pics/peo
 const u32 gObjectEventPic_Maxie[] = INCBIN_U32("graphics/object_events/pics/people/team_magma/maxie.4bpp");
 const u32 gObjectEventPic_Regi[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/regi.4bpp");
 const u32 gObjectEventPic_RayquazaStill[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/rayquaza_still.4bpp");
+const u32 gObjectEventPic_TractorBoatBack[] = INCBIN_U32("graphics/object_events/pics/misc/tractor_boat_back.4bpp");
+const u32 gObjectEventPic_TractorBoatFront[] = INCBIN_U32("graphics/object_events/pics/misc/tractor_boat_front.4bpp");
+const u16 gObjectEventPal_TractorBoat[] = INCBIN_U16("graphics/object_events/palettes/tractor_boat.gbapal");
 const u32 gObjectEventPic_TuberMSwimming[] = INCBIN_U32("graphics/object_events/pics/people/tuber_m_swimming.4bpp");
 const u32 gObjectEventPic_Mom[] = INCBIN_U32("graphics/object_events/pics/people/mom.4bpp");
 const u16 gObjectEventPal_Mom[] = INCBIN_U16("graphics/object_events/palettes/mom.gbapal");
@@ -569,7 +572,7 @@ const u32 gObjectEventPic_SportBall[] = INCBIN_U32("graphics/object_events/pics/
 const u32 gObjectEventPic_DreamBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_dream.4bpp");
 const u32 gObjectEventPic_BeastBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_beast.4bpp");
 #ifdef ITEM_STRANGE_BALL
-const u32 gObjectEventPic_StrangeBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_strange.4bpp");
+const u32 gObjectEventPic_StrangeBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_poke.4bpp");
 #endif //ITEM_STRANGE_BALL
 #endif //OW_FOLLOWERS_POKEBALLS
 
@@ -608,7 +611,7 @@ const u16 gObjectEventPal_DreamBall[] = INCBIN_U16("graphics/object_events/pics/
 const u16 gObjectEventPal_BeastBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_beast.gbapal");
 // Gen VIII
 #ifdef ITEM_STRANGE_BALL
-const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_strange.gbapal");
+const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_poke.gbapal");
 #endif //ITEM_STRANGE_BALL
 #endif //OW_FOLLOWERS_POKEBALLS
 

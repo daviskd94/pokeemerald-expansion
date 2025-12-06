@@ -1051,7 +1051,7 @@ static void PCTurnOnEffect(struct Task *task)
         {
         case DIR_NORTH:
             dx = 0;
-            dy = -1;
+            dy = -2;
             break;
         case DIR_WEST:
             dx = -1;
@@ -1123,7 +1123,7 @@ static void PCTurnOffEffect(void)
     {
     case DIR_NORTH:
         dx = 0;
-        dy = -1;
+        dy = -2;
         break;
     case DIR_WEST:
         dx = -1;

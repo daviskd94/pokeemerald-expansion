@@ -61,13 +61,13 @@
 #define FLAG_FIELDSTONE_CAVERN_ENTER            0x2F // Flag that gets set to allow you to enter the Fieldstone Cavern
 #define FLAG_HIDE_PROFESSOR_HANZNEESTOZ         0x30 // Unused Flag
 #define FLAG_POST_PROFESSOR_HANZNEESTOZ         0x31 // Unused Flag
-#define FLAG_HIDE_TRACIE_LECTURE_HALL    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
+#define FLAG_HIDE_TRACIE_LECTURE_HALL           0x32 // Unused Flag
+#define FLAG_HIDE_MARIO_MAPLE_LECTURE_HALL      0x33 // Unused Flag
+#define FLAG_HIDE_ROUTE_1_BOAT                  0x34 // Unused Flag
+#define FLAG_HIDE_ROUTE_1_NPCS                  0x35 // Unused Flag
+#define FLAG_HIDE_ROUTE_1_GRUNT_AND_CYRUS       0x36 // Unused Flag
+#define FLAG_HIDE_ROUTE_1_MARIO_AND_MAPLE       0x37 // Unused Flag
+#define FLAG_HIDE_ROUTE_1_ROTCART               0x38 // Unused Flag
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag

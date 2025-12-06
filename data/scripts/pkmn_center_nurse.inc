@@ -9,26 +9,33 @@ Common_EventScript_PkmnCenterNurse::
 	goto_if_eq EventScript_NurseJoy_Night
 	compare VAR_0x8000, TIME_MORNING
 	goto_if_eq EventScript_NurseJoy_Morning
+	setspeaker(SP_NAME_NURSE_JOY)
 	msgbox gText_WouldYouLikeToRestYourPkmn, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_PkmnCenterNurse_HealPkmn
 	goto_if_eq VAR_RESULT, NO, EventScript_PkmnCenterNurse_Goodbye
 	end
 
 EventScript_NurseJoy_Night::
+	setspeaker(SP_NAME_NURSE_JOY)
 	msgbox gText_WouldYouLikeToRestYourPkmnNight, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_PkmnCenterNurse_HealPkmn
 	goto_if_eq VAR_RESULT, NO, EventScript_PkmnCenterNurse_Goodbye
 
 EventScript_NurseJoy_Morning::
+	closemessage
+	setspeaker(SP_NAME_NURSE_JOY)
 	msgbox gText_WouldYouLikeToRestYourPkmnMorning, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_PkmnCenterNurse_HealPkmn
 	goto_if_eq VAR_RESULT, NO, EventScript_PkmnCenterNurse_Goodbye
 
 EventScript_PkmnCenterNurse_Goodbye::
+	closemessage
+	setspeaker(SP_NAME_NURSE_JOY)
 	message gText_WeHopeToSeeYouAgain
 	return
 
 @ VAR_0x8004 is 1 when player has Gold Card; jumps are identical
+	closemessage
 	EventScript_PkmnCenterNurse_HealPkmn::
 	incrementgamestat GAME_STAT_USED_POKECENTER
 	call_if_eq VAR_0x8004, 0, EventScript_PkmnCenterNurse_IllTakeYourPkmn
@@ -40,10 +47,14 @@ EventScript_PkmnCenterNurse_Goodbye::
 	end
 
 EventScript_PkmnCenterNurse_IllTakeYourPkmn::
+	closemessage
+	setspeaker(SP_NAME_NURSE_JOY)
 	message gText_IllTakeYourPkmn
 	return
 
 EventScript_PkmnCenterNurse_IllTakeYourPkmn2::
+	closemessage
+	setspeaker(SP_NAME_NURSE_JOY)
 	message gText_IllTakeYourPkmn2
 	return
 
@@ -76,18 +87,26 @@ EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom::
 @ VAR_0x8004 is 1 when player has Gold Card
 EventScript_PkmnCenterNurse_ReturnPkmn::
 	goto_if_eq VAR_0x8004, 1, EventScript_PkmnCenterNurse_ReturnPkmn2
+	closemessage
+	setspeaker(SP_NAME_NURSE_JOY)
 	message gText_RestoredPkmnToFullHealth
 	waitmessage
 	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
+	closemessage
+	setspeaker(SP_NAME_NURSE_JOY)
 	message gText_WeHopeToSeeYouAgain
 	return
 
 EventScript_PkmnCenterNurse_ReturnPkmn2::
+	closemessage
+	setspeaker(SP_NAME_NURSE_JOY)
 	message gText_ThankYouForWaiting
 	waitmessage
 	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
+	closemessage
+	setspeaker(SP_NAME_NURSE_JOY)
 	message gText_WeHopeToSeeYouAgain2
 	return
 

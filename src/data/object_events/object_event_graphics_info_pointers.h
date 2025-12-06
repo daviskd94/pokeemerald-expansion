@@ -204,6 +204,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regirock;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regice;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Registeel;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Skitty;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TractorBoatBack;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TractorBoatFront;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kecleon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KyogreAsleep;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GroudonAsleep;
@@ -635,6 +637,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 	[OBJ_EVENT_GFX_CAPTAIN] =                  &gObjectEventGraphicsInfo_Captain,
     [OBJ_EVENT_GFX_CHAMPINTHEMAKING] =         &gObjectEventGraphicsInfo_ChampInTheMaking,
     [OBJ_EVENT_GFX_COACH] =                    &gObjectEventGraphicsInfo_Coach,
+    [OBJ_EVENT_GFX_TRACTOR_BOAT_BACK_HALF] =   &gObjectEventGraphicsInfo_TractorBoatBack,
+    [OBJ_EVENT_GFX_TRACTOR_BOAT_FRONT_HALF] =  &gObjectEventGraphicsInfo_TractorBoatFront,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

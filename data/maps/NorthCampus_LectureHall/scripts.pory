@@ -1,9 +1,10 @@
 mapscripts NorthCampus_LectureHall_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         if (var(VAR_NORTH_CAMPUS_STATE) == 7) {
+            clearflag(FLAG_HIDE_TRACIE_LECTURE_HALL)
             setobjectxyperm(LOCALID_MAPLE_LECTURE_HALL, 11, 6)
             setobjectxyperm(LOCALID_MARIO_LECTURE_HALL, 12, 5)
-            setobjectxyperm(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, 16, 5)
+            setobjectxyperm(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, 15, 6)
             setobjectmovementtype(LOCALID_MAPLE_LECTURE_HALL, MOVEMENT_TYPE_FACE_RIGHT)
             setobjectmovementtype(LOCALID_MARIO_LECTURE_HALL, MOVEMENT_TYPE_FACE_RIGHT)
             setobjectmovementtype(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, MOVEMENT_TYPE_FACE_LEFT)
@@ -25,11 +26,13 @@ mapscripts NorthCampus_LectureHall_MapScripts {
 }
 script NorthCampus_LectureHall_Maple {
     if (flag(FLAG_POST_PROFESSOR_HANZNEESTOZ)) {
-        lockall
+        lock
         faceplayer
         setspeaker(SP_NAME_MAPLE)
         msgbox(format("Don't underestimate President Mario!\nHe's an Elite Four member for a reason!\pGive it your all in the battle!"))
         closemessage
+        release
+        end
     }
     else {
         lock
@@ -44,7 +47,7 @@ script NorthCampus_LectureHall_Maple {
 }
 script NorthCampus_LectureHall_Mario {
     if (flag(FLAG_POST_PROFESSOR_HANZNEESTOZ)) {
-        lockall
+        lock
         faceplayer
         setspeaker(SP_NAME_MARIO)
         msgbox("Are you ready for our battle?", MSGBOX_YESNO)
@@ -55,6 +58,7 @@ script NorthCampus_LectureHall_Mario {
             closemessage
             call (Mario_Facing_Direction)
             applymovement(LOCALID_MARIO_LECTURE_HALL, moves(face_right))
+            applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(face_right))
             applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(walk_right*5, face_left))
             waitmovement(0)
             special(SpawnCameraObject)
@@ -62,10 +66,125 @@ script NorthCampus_LectureHall_Mario {
             applymovement(LOCALID_CAMERA, moves(walk_slow_left*3))
             waitmovement(0)
             setspeaker(SP_NAME_MARIO)
-            msgbox(format("Show me what a top student at Tractor University can do!"))
+            msgbox(format("Show me what a top student at\nTractor University can do!"))
             closemessage
+            special(RemoveCameraObject)
+            removeobject(LOCALID_CAMERA)
 	        trainerbattle_no_intro(TRAINER_MARIO_1, format("Well done!\nYou truly are a remarkable Trainer!"))
-
+            
+            special(SpawnCameraObject)
+            setobjectxyperm(LOCALID_CAMERA, 15, 5)
+            applymovement(LOCALID_CAMERA, moves(walk_right*3))
+            applymovement(LOCALID_MARIO_LECTURE_HALL, moves(walk_right*5))
+            waitmovement(0)
+            setspeaker(SP_NAME_MARIO)
+            msgbox(format("Very impressive, {PLAYER}!\pYou've proven to be more than\nready for the League challenge!"))
+            closemessage
+            applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(walk_fast_left*2, face_up))
+            waitmovement(0)
+            applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(jump_in_place_up))
+            playse(SE_LEDGE)
+            waitmovement(0)
+            applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(jump_in_place_up))
+            playse(SE_LEDGE)
+            waitmovement(0)
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+            setspeaker(SP_NAME_TRACIE)
+            msgbox(format("Wow!\nThat was amazing, {PLAYER}!\pYou actually beat President Mario!\nNot even Rotcart could do that!\pI can't wait for the\nLeague challenge now!"))
+            closemessage
+            applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(walk_right*6))
+            waitmovement(0)
+            applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(face_left))
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+            waitmovement(0)
+            setspeaker(SP_NAME_MAPLE)
+            msgbox(format("Now, now, Tracie.\nLet's not get ahead of ourselves.\p{PLAYER} was very impressive,\nbut President Mario was taking it easy.\pThe real challenge lies ahead\nat the League."))
+            closemessage
+            setspeaker(SP_NAME_MARIO)
+            msgbox(format("I wouldn't say I was taking it that easy.\p{PLAYER} really put me through the wringer!\pYou really personify what it means to be a Trainer from Tractor University.\pHere, I'd like to give you this."))
+            closemessage
+            giveitem(ITEM_EXP_SHARE)
+            setspeaker(SP_NAME_MARIO)
+            msgbox(format("This Exp. Share will equally divide up experience among all your Pokémon.\pI think it'll be very useful on your journey ahead!\pJust don't forget to turn it on!"))
+            closemessage
+            playse(SE_DING_DONG)
+            waitse
+            delay(40)
+            setspeaker(SP_NAME_INTERCOM)
+            msgbox(format("Attention seniors.\pThe boat has arrived at the\nRoute 1 dock.\pPlease make your way there for boarding."))
+            closemessage
+            setspeaker(SP_NAME_MAPLE)
+            msgbox(format("Oh, there's our ride!"))
+            closemessage
+            applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(emote_exclamation_mark))
+            playse(SE_PIN)
+            waitse
+            setspeaker(SP_NAME_TRACIE)
+            msgbox(format("Wait!\nWe're taking a boat!?"))
+            closemessage
+            setspeaker(SP_NAME_MARIO)
+            msgbox(format("Yes!\nIt's a boat the University owns.\nThe S.S. Tractoria!\pIt'll take you directly across the sea to Route 2 and back."))
+            closemessage
+            applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(jump_in_place_left))
+            playse(SE_LEDGE)
+            waitmovement(0)
+            applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(jump_in_place_left))
+            playse(SE_LEDGE)
+            waitmovement(0)
+            setspeaker(SP_NAME_TRACIE)
+            msgbox(format("Wow!\nI've never been on a boat before!"))
+            closemessage
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+            applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(face_up))
+            waitmovement(0)
+            setspeaker(SP_NAME_TRACIE)
+            msgbox(format("{PLAYER}, what are we waiting for!?\nLet's go!"))
+            closemessage
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+            applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(walk_fast_right*5, walk_fast_up, walk_fast_right*2, walk_fast_down*4))
+            waitmovement(0)
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+            applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(face_down))
+            applymovement(LOCALID_MARIO_LECTURE_HALL, moves(face_down))
+            applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(walk_fast_left*3, walk_fast_down*5))
+            waitmovement(0)
+            setspeaker(SP_NAME_MAPLE)
+            msgbox(format("Well, someone certainly seems excited!"))
+            closemessage
+            applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(face_up))
+            setspeaker(SP_NAME_MAPLE)
+            msgbox(format("Best not to keep her waiting.\pShall we, President Mario?"))
+            closemessage
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+            setspeaker(SP_NAME_MARIO)
+            msgbox(format("Of course, Professor Maple.\nAfter you."))
+            closemessage
+            applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(face_right))
+            applymovement(LOCALID_MARIO_LECTURE_HALL, moves(face_right))
+            setspeaker(SP_NAME_MARIO)
+            msgbox(format("We'll meet you there, {PLAYER}!"))
+            closemessage
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+            applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(walk_right*6, walk_up, walk_right*2, walk_down))
+            applymovement(LOCALID_MARIO_LECTURE_HALL, moves(walk_down, walk_right*6, walk_up, walk_right*2))
+            waitmovement(0)
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+            applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(walk_down*3, walk_left*3, walk_down*5))
+            applymovement(LOCALID_MARIO_LECTURE_HALL, moves(walk_down*4, walk_left*3, walk_down*5))
+            waitmovement(0)
+            setflag(FLAG_HIDE_TRACIE_LECTURE_HALL)
+            clearflag(FLAG_HIDE_ROUTE_1_BOAT)
+            clearflag(FLAG_HIDE_ROUTE_1_NPCS)
+            removeobject(LOCALID_CAMERA)
+            special(RemoveCameraObject)
+            removeobject(LOCALID_MAPLE_LECTURE_HALL)
+            removeobject(LOCALID_MARIO_LECTURE_HALL)
+            removeobject(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2)
+            setvar(VAR_NORTH_CAMPUS_STATE, 7)
+            setvar(VAR_ROUTE1_STATE, 1)
+            callnative(UpdateFollowingPokemon)
+            releaseall
+            end
         }
         else {
             closemessage
@@ -94,13 +213,18 @@ script Mario_Facing_Direction {
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*2, walk_up, walk_right))
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*3, face_left))
-        
     case DIR_SOUTH:
-        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*6, walk_down, face_left))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*2, walk_down, walk_right))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*3, face_left))
     case DIR_EAST:
-        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right*7, walk_down, face_left))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right*2, walk_down, walk_right*2))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*3, face_left))
     case DIR_WEST:
-        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*5, face_left))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*2))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*3, face_left))
     }
 }
 
@@ -163,17 +287,41 @@ script NorthCampus_LectureHall_WalkNextToTracie6 {
 }
 
 script NorthCampus_LectureHall_WalkNextToTracieBeforeBattle1 {
-    lockall
-    addobject(LOCALID_ROTCART_LECTURE_HALL_2)
-    clearflag(FLAG_HIDE_TRACIEROTCART)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2, walk_right*7, face_up))
-    waitmovement(0)
-    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(face_down))
-    waitmovement(0)
+    call(NorthCampus_LectureHall_MarioVSRotcart)
+}
+
+script NorthCampus_LectureHall_WalkNextToTracieBeforeBattle2 {
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2, walk_right*8, face_up))
+    call(NorthCampus_LectureHall_MarioVSRotcart)
+}
+
+script NorthCampus_LectureHall_WalkNextToTracieBeforeBattle3 {
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2, walk_right*6, face_up))
+    call(NorthCampus_LectureHall_MarioVSRotcart)
+}
+
+script NorthCampus_LectureHall_WalkNextToTracieBeforeBattle4 {
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2, walk_left*6, face_up))
+    call(NorthCampus_LectureHall_MarioVSRotcart)
+}
+
+script NorthCampus_LectureHall_WalkNextToTracieBeforeBattle5 {
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2, walk_left*7, face_up))
+    call(NorthCampus_LectureHall_MarioVSRotcart)
+}
+
+script NorthCampus_LectureHall_WalkNextToTracieBeforeBattle6 {
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2, walk_left*8, face_up))
     call(NorthCampus_LectureHall_MarioVSRotcart)
 }
 
 script NorthCampus_LectureHall_MarioVSRotcart {
+    addobject(LOCALID_ROTCART_LECTURE_HALL_2)
+    clearflag(FLAG_HIDE_TRACIEROTCART)
+    waitmovement(0)
+    applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(face_down))
+    waitmovement(0)
     fadeoutbgm(0)
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("{PLAYER}…\nIt's Rotcart…\pHe challenged President Mario\nto a battle, and…\pHe lost.\pBadly…"))
@@ -181,7 +329,7 @@ script NorthCampus_LectureHall_MarioVSRotcart {
     delay(20)
     fadescreenswapbuffers(FADE_TO_BLACK)
     setvar(VAR_0x8004, 15)
-    setvar(VAR_0x8005, 5)
+    setvar(VAR_0x8005, 6)
     special(TeleportCamera)
     delay(10)
     fadescreenswapbuffers(FADE_FROM_BLACK)
@@ -240,7 +388,7 @@ script NorthCampus_LectureHall_MarioVSRotcart {
     applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(slide_right*9, slide_up*12))
     waitmovement(0)
     setvar(VAR_0x8004, 15)
-    setvar(VAR_0x8005, 5)
+    setvar(VAR_0x8005, 6)
     special(TeleportCamera)
     fadescreenswapbuffers(FADE_FROM_BLACK)
     delay(20)

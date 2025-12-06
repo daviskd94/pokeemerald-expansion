@@ -222,7 +222,7 @@ static const u8 sText_EVO_RECOIL_DAMAGE_FEMALE[] = _("{LV}{UP_ARROW} with {STR_V
 static const u8 sText_EVO_DEFEAT_THREE_WITH_ITEM[] = _("{LV}{UP_ARROW} defeating 3 {STR_VAR_3} holding {STR_VAR_2}");
 static const u8 sText_EVO_NONE[] = _("{STR_VAR_1} has no evolution.");
 
-static const u8 sText_FORMS_Buttons_PE[] = _("{A_BUTTON}FORM MODE  EVOs");
+static const u8 sText_FORMS_Buttons_PE[] = _("{A_BUTTON}FORM MODE  {START_BUTTON}EVOs");
 static const u8 sText_FORMS_Buttons_Decapped_PE[] = _("{START_BUTTON}Evos");
 static const u8 sText_FORMS_Buttons_Submenu_PE[] = _("{DPAD_NONE}FORMs {A_BUTTON}CHECK {START_BUTTON}EVOs");
 static const u8 sText_FORMS_Buttons_Submenu_Decapped_PE[] = _("{START_BUTTON}Evos");
@@ -4088,6 +4088,12 @@ static void UNUSED HighlightScreenSelectBarItem(u8 selectedScreen, u16 unused)
 #define tPersonalityLo data[14]
 #define tPersonalityHi data[15]
 
+// Types palettes need to be loaded at a different slot than anticipated by gTypesInfo
+// to avoid overlapping with caught mon sprite palette slot
+// Normal type info palette slots: 13, 14 and 15
+// Caught mon palette slot: 15
+#define TYPE_INFO_PALETTE_NUM_OFFSET -1
+
 void Task_DisplayCaughtMonDexPageHGSS(u8 taskId)
 {
     u8 spriteId;
@@ -4349,9 +4355,9 @@ static void SetTypeIconPosAndPal(u8 typeId, u8 x, u8 y, u8 spriteArrayId)
     sprite = &gSprites[sPokedexView->typeIconSpriteIds[spriteArrayId]];
     StartSpriteAnim(sprite, typeId);
     if (typeId < NUMBER_OF_MON_TYPES)
-        sprite->oam.paletteNum = gTypesInfo[typeId].palette;
+        sprite->oam.paletteNum = gTypesInfo[typeId].palette + TYPE_INFO_PALETTE_NUM_OFFSET;
     else
-        sprite->oam.paletteNum = sContestCategoryToOamPaletteNum[typeId - NUMBER_OF_MON_TYPES];
+        sprite->oam.paletteNum = sContestCategoryToOamPaletteNum[typeId - NUMBER_OF_MON_TYPES] + TYPE_INFO_PALETTE_NUM_OFFSET;
     sprite->x = x + 16;
     sprite->y = y + 8;
     SetSpriteInvisibility(spriteArrayId, FALSE);
@@ -4392,7 +4398,8 @@ static void CreateTypeIconSprites(void)
     u8 i;
 
     LoadCompressedSpriteSheet(&gSpriteSheet_MoveTypes);
-    LoadPalette(gMoveTypes_Pal, 0x1D0, 0x60);
+    u32 paletteNum = gTypesInfo[TYPE_NORMAL].palette + TYPE_INFO_PALETTE_NUM_OFFSET;
+    LoadPalette(gMoveTypes_Pal, OBJ_PLTT_ID(paletteNum), 3 * PLTT_SIZE_4BPP);
     for (i = 0; i < 2; i++)
     {
         if (sPokedexView->typeIconSpriteIds[i] == 0xFF)
@@ -4572,6 +4579,7 @@ static u16 CreateSizeScreenTrainerPic(u16 species, s16 x, s16 y, s8 paletteSlot)
     return CreateTrainerPicSprite(species, TRUE, x, y, paletteSlot, TAG_NONE);
 }
 
+#undef TYPE_INFO_PALETTE_NUM_OFFSET
 
 //************************************
 //*                                  *

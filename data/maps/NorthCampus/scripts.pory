@@ -277,6 +277,8 @@ script NorthCampus_EnterWildArea {
     fadedefaultbgm
     special(LoadPlayerParty)
     callnative(UpdateFollowingPokemon)
+    releaseall
+    end
 }
 
 script NorthCampus_Cave_Guard {
@@ -299,7 +301,7 @@ script NorthCampus_NPC1 {
 script NorthCampus_NPC2 {
     lock
 	faceplayer
-	msgbox(format("My dad carved the tractor statue here.\pWhat an incredible display of both\narchitecture and agriculture!"))
+	msgbox(format("My dad carved the tractor statue.\pWhat an incredible display of both\narchitecture and agriculture!"))
 	closemessage
 	release
 	end
@@ -317,7 +319,7 @@ script NorthCampus_NPC3 {
 script NorthCampus_NPC4 {
     lock
 	faceplayer
-	msgbox(format("Your Eevee is soooo cute!\pHave you decided which evolution you'll choose?\pMy favorite Eeveelution is Espeon!"))
+	msgbox(format("Your Eevee is soooo cute!\pHave you decided which evolution\nyou'll choose?\pMy favorite Eeveelution is Espeon!"))
 	closemessage
 	release
 	end

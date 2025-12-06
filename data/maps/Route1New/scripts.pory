@@ -4,3 +4,112 @@ script SignScript_Route1 {
     msgbox("Tractor University\nNorth Campus {UP_ARROW} South Campus {DOWN_ARROW}" MSGBOX_SIGN)
     closemessage
 }
+
+script Route1_ArriveAtBoat {
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down*3))
+    waitmovement(0)
+    fadeoutbgm(0)
+    applymovement(LOCALID_ROUTE_1_TRACIE, moves(face_up))
+    waitmovement(0)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("There you are, {PLAYER}!\nYou're such a Slowpoke!"))
+    closemessage
+    applymovement(LOCALID_ROUTE_1_TRACIE, moves(face_down))
+    waitmovement(0)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Now we're just waiting on Rotcart…\nThink he's going to show up?"))
+    closemessage
+    delay(20)
+    addobject(LOCALID_ROUTE_1_ROTCART)
+    applymovement(LOCALID_ROUTE_1_ROTCART, moves(walk_down*5, walk_left, walk_down))
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    applymovement(LOCALID_ROUTE_1_TRACIE, moves(face_left, emote_exclamation_mark))
+    playse(SE_PIN)
+    applymovement(LOCALID_ROUTE_1_ROTCART, moves(walk_down*2, walk_left*2, face_right))
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Oh…!\nNever mind!"))
+    closemessage
+    setspeaker(SP_NAME_ROTCART)
+    msgbox("… … …")
+    closemessage
+    delay(20)
+    applymovement(LOCALID_ROUTE_1_TRACIE, moves(face_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    waitmovement(0)
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("I guess that's everybody then!"))
+    closemessage
+    setspeaker(SP_NAME_MAPLE)
+    msgbox("Alright, everybody!\nListen up!")
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(LOCALID_ROUTE_1_TRACIE, moves(face_right))
+    delay(5)
+    applymovement(LOCALID_ROUTE_1_BLACK_BELT, moves(face_right))
+    delay(10)
+    applymovement(LOCALID_ROUTE_1_SCHOOL_KID_M, moves(face_right))
+    applymovement(LOCALID_ROUTE_1_BREEDER_M, moves(face_right))
+    applymovement(LOCALID_ROUTE_1_BREEDER_F, moves(face_right))
+    delay(5)
+    applymovement(LOCALID_ROUTE_1_RANCHER, moves(face_right))
+    special(SpawnCameraObject)
+    setobjectxyperm(LOCALID_CAMERA, 28, 30)        
+    applymovement(LOCALID_CAMERA, moves(walk_right*2, walk_down, walk_right))
+    waitmovement(0)
+    playbgm(MUS_B_TOWER, TRUE)
+    setspeaker(SP_NAME_MARIO)
+    msgbox(format("Hi, everybody!\nThank you all for making it down here!\pBefore we get started, I just want to say how proud we are to have you all as students.\pYou are the future of Tractoria, and we know you'll do great things!\pUpon boarding, you'll each have\nyour own cabin to settle into.\pFeel free to explore the boat and\nmake yourselves at home!\pIt will be a long journey,\nafter all!\pProfessor Maple and I will be accompanying you to make sure everything goes smoothly.\pIf you need anything, don't hesitate\nto ask one of us!\pOnce you're ready,\nspeak with the Captain to board!"))
+    closemessage
+    applymovement(LOCALID_CAMERA, moves(walk_left*2, walk_up, walk_left))
+    waitmovement(0)
+    removeobject(LOCALID_CAMERA)
+    special(RemoveCameraObject)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(LOCALID_ROUTE_1_TRACIE, moves(face_up))
+    applymovement(LOCALID_ROUTE_1_MARIO, moves(walk_down, walk_right*7))
+    applymovement(LOCALID_ROUTE_1_MAPLE, moves(walk_down*2, walk_right*7))
+    //delay(20)
+    applymovement(LOCALID_ROUTE_1_ROTCART, moves(walk_right*5, walk_up, walk_right*8))
+    applymovement(LOCALID_ROUTE_1_BLACK_BELT, moves(walk_down*2, walk_right*12))
+    applymovement(LOCALID_ROUTE_1_SCHOOL_KID_M, moves(walk_up, walk_right*2, walk_up, walk_right*9))
+    //delay(10)
+    applymovement(LOCALID_ROUTE_1_BREEDER_M, moves(walk_up*2, walk_right*9))
+    applymovement(LOCALID_ROUTE_1_BREEDER_F, moves(walk_up, walk_right*9))
+    applymovement(LOCALID_ROUTE_1_RANCHER, moves(walk_up*2, walk_right*13))
+    setspeaker(SP_NAME_TRACIE)
+    msgbox(format("Wow… This ship is huge!\pThis is officially the start of our adventure, {PLAYER}!\pI can only imagine all the amazing things we'll see and do!\pI'll see you on board, okay?"))
+    closemessage
+    waitmovement(0)
+    applymovement(LOCALID_ROUTE_1_TRACIE, moves(walk_down, walk_right*12))
+    waitmovement(0)
+    setflag(FLAG_HIDE_ROUTE_1_NPCS)
+    setflag(FLAG_HIDE_ROUTE_1_ROTCART)
+    removeobject(LOCALID_ROUTE_1_TRACIE)
+    removeobject(LOCALID_ROUTE_1_ROTCART)
+    removeobject(LOCALID_ROUTE_1_BLACK_BELT)
+    removeobject(LOCALID_ROUTE_1_SCHOOL_KID_M)
+    removeobject(LOCALID_ROUTE_1_BREEDER_M)
+    removeobject(LOCALID_ROUTE_1_BREEDER_F)
+    removeobject(LOCALID_ROUTE_1_RANCHER)
+    removeobject(LOCALID_ROUTE_1_MARIO)
+    removeobject(LOCALID_ROUTE_1_MAPLE)
+    setvar(VAR_ROUTE1_STATE, 2)
+    release
+    end
+
+}
+script TestBoat_Route1 {
+    lock
+    faceplayer
+    setspeaker(SP_NAME_ACRE)
+    msgbox("Are you ready to board?")
+    closemessage
+    fadeoutbgm(0)
+    playse(SE_RG_SS_ANNE_HORN)
+    applymovement(LOCALID_ROUTE_1_BOAT_BACK, moves(walk_slow_right*10))
+    applymovement(LOCALID_ROUTE_1_BOAT_FRONT, moves(walk_slow_right*10))
+    waitmovement(0)
+    release
+    end
+    }

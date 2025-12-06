@@ -315,12 +315,14 @@
 #define OBJ_EVENT_GFX_YOUNG_COUPLE_F             308
 #define OBJ_EVENT_GFX_CHAMPINTHEMAKING           309
 #define OBJ_EVENT_GFX_COACH                      310
+#define OBJ_EVENT_GFX_TRACTOR_BOAT_BACK_HALF     311
+#define OBJ_EVENT_GFX_TRACTOR_BOAT_FRONT_HALF    312
 
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        311
+#define NUM_OBJ_EVENT_GFX                        313
 
 
 // These are dynamic object gfx ids.
@@ -474,6 +476,7 @@
 #define OBJ_EVENT_PAL_TAG_KYLE                    0x113A
 #define OBJ_EVENT_PAL_TAG_STEPH                   0x113B
 #define OBJ_EVENT_PAL_TAG_CYRUS                   0x113C
+
 #define OBJ_EVENT_PAL_TAG_ACE_TRAINER             0x113D
 #define OBJ_EVENT_PAL_TAG_AROMA_LADY              0x113E
 #define OBJ_EVENT_PAL_TAG_ARTIST                  0x113F
@@ -556,6 +559,7 @@
 #define OBJ_EVENT_PAL_TAG_GAMEBOY_KID             0x118C
 #define OBJ_EVENT_PAL_TAG_ITEM_BALL               0x118D
 #define OBJ_EVENT_PAL_TAG_COACH                   0x118E
+#define OBJ_EVENT_PAL_TAG_TRACTOR_BOAT            0x118F
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

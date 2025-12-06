@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "FieldstoneCavern_EventScript_Buck",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MARIO_MAPLE_LECTURE_HALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
@@ -51,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "FieldstoneCavern_EventScript_Colton",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MARIO_MAPLE_LECTURE_HALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RANCHER",
@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "FieldstoneCavern_EventScript_Bertie",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MARIO_MAPLE_LECTURE_HALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BREEDER_M",
@@ -77,7 +77,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "FieldstoneCavern_EventScript_PokemonBreederGabe",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MARIO_MAPLE_LECTURE_HALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BREEDER_F",
@@ -90,7 +90,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "FieldstoneCavern_EventScript_PokemonBreederCeleste",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MARIO_MAPLE_LECTURE_HALL"
     }
   ],
   "warp_events": [

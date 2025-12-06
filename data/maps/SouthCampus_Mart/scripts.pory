@@ -6,12 +6,14 @@ mapscripts SouthCampus_Mart_MapScripts
 script SouthCampus_Mart_Clerk {
     lock
     faceplayer
+    //setspeaker(SP_NAME_MART_VENDOR)
     msgbox("Welcome!\nHow may I serve you?")
     waitmessage
     if (flag(FLAG_POKEBALLS_UNLOCKED)) {
         pokemart(MyMartItems2)
     }
     pokemart(MyMartItems)
+    //setspeaker(SP_NAME_MART_VENDOR)
     msgbox("Please come again.")
     release
     end
@@ -21,6 +23,7 @@ mart MyMartItems {
     ITEM_POTION
     ITEM_ANTIDOTE
     ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
 }
 
 mart MyMartItems2 {
@@ -28,4 +31,5 @@ mart MyMartItems2 {
     ITEM_POTION
     ITEM_ANTIDOTE
     ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
 }

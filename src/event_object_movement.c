@@ -612,7 +612,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_ItemBall,              OBJ_EVENT_PAL_TAG_ITEM_BALL},
     {gObjectEventPal_Cyrus,                 OBJ_EVENT_PAL_TAG_CYRUS}, 
     {gObjectEventPal_Coach,                 OBJ_EVENT_PAL_TAG_COACH}, 
-
+    {gObjectEventPal_TractorBoat,           OBJ_EVENT_PAL_TAG_TRACTOR_BOAT},
  
 #if OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_MasterBall,            OBJ_EVENT_PAL_TAG_BALL_MASTER},
@@ -651,6 +651,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPaletteLight2,             OBJ_EVENT_PAL_TAG_LIGHT_2},
     {gObjectEventPaletteEmotes,             OBJ_EVENT_PAL_TAG_EMOTES},
     {gObjectEventPaletteNeonLight,          OBJ_EVENT_PAL_TAG_NEON_LIGHT},
+
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else

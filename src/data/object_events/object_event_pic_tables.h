@@ -1040,6 +1040,14 @@ static const struct SpriteFrameImage sPicTable_RayquazaStill[] = {
     obj_frame_tiles(gObjectEventPic_RayquazaStill),
 };
 
+static const struct SpriteFrameImage sPicTable_TractorBoatBack[] = {
+    obj_frame_tiles(gObjectEventPic_TractorBoatBack),
+};
+
+static const struct SpriteFrameImage sPicTable_TractorBoatFront[] = {
+    obj_frame_tiles(gObjectEventPic_TractorBoatFront),
+};
+
 static const struct SpriteFrameImage sPicTable_TuberMSwimming[] = {
     overworld_ascending_frames(gObjectEventPic_TuberMSwimming, 2, 2),
 };

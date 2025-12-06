@@ -25,8 +25,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "NorthCampus_LectureHall_Maple",
+      "flag": "FLAG_HIDE_MARIO_MAPLE_LECTURE_HALL"
     },
     {
       "local_id": "LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL",
@@ -120,7 +120,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NorthCampus_LectureHall_Mario",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MARIO_MAPLE_LECTURE_HALL"
     },
     {
       "local_id": "LOCALID_ROTCART_LECTURE_HALL_2",
@@ -229,7 +229,7 @@
       "elevation": 0,
       "var": "VAR_NORTH_CAMPUS_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "NorthCampus_LectureHall_WalkNextToTracieBeforeBattle6"
     },
     {
       "type": "trigger",
@@ -238,7 +238,7 @@
       "elevation": 0,
       "var": "VAR_NORTH_CAMPUS_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "NorthCampus_LectureHall_WalkNextToTracieBeforeBattle5"
     },
     {
       "type": "trigger",
@@ -247,7 +247,7 @@
       "elevation": 0,
       "var": "VAR_NORTH_CAMPUS_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "NorthCampus_LectureHall_WalkNextToTracieBeforeBattle4"
     },
     {
       "type": "trigger",
@@ -256,7 +256,7 @@
       "elevation": 0,
       "var": "VAR_NORTH_CAMPUS_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "NorthCampus_LectureHall_WalkNextToTracieBeforeBattle3"
     },
     {
       "type": "trigger",
@@ -274,7 +274,7 @@
       "elevation": 0,
       "var": "VAR_NORTH_CAMPUS_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "NorthCampus_LectureHall_WalkNextToTracieBeforeBattle2"
     }
   ],
   "bg_events": []

@@ -4,19 +4,9 @@ mapscripts PlayerDorm_MapScripts {
     ]
 }
 
-script SettingUniversalFlags  {
-    clearflag(FLAG_SAFE_FOLLOWER_MOVEMENT)
-    setflag(FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR)
-    setflag(FLAG_HIDE_TRACIE_CYRUS)
-    setflag(FLAG_HIDE_PROFESSOR_HANZNEESTOZ)
-    setflag(FLAG_HIDE_TRACIE_LECTURE_HALL)
-}
-
-
 script PlayerDorm_WakeUp {
     lockall
-    call (SettingUniversalFlags)
-    //applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    //call (EventScript_ResetAllMapFlags)
     delay(80)
     call (Player_Dorm_Door_Knocking)
     delay(40)
