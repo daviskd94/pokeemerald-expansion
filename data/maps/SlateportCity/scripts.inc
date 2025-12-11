@@ -1133,7 +1133,7 @@ SlateportCity_EventScript_CaptStern::
 # 567 "data/maps/SlateportCity/scripts.pory"
 	msgbox SlateportCity_Text_OhPlayerWeMadeDiscovery, MSGBOX_DEFAULT
 # 568 "data/maps/SlateportCity/scripts.pory"
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	playbgm MUS_EMPTY4, FALSE
 # 569 "data/maps/SlateportCity/scripts.pory"
 	msgbox SlateportCity_Text_AquaWillAssumeControlOfSubmarine, MSGBOX_DEFAULT
 # 570 "data/maps/SlateportCity/scripts.pory"

@@ -27,7 +27,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 14 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitmovement 0
 # 15 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	playbgm MUS_EMPTY4, FALSE
 # 16 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	msgbox SeafloorCavern_Room9_Text_ArchieHoldItRightThere, MSGBOX_DEFAULT
 # 17 "data/maps/SeafloorCavern_Room9/scripts.pory"
