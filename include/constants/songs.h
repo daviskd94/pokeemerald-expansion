@@ -349,12 +349,12 @@
 #define MUS_ENCOUNTER_INTENSE       416 // MUS_HAGESHII
 #define MUS_ENCOUNTER_COOL          417 // MUS_KAKKOII
 #define MUS_ROUTE113                418 // MUS_KAZANBAI
-#define MUS_ENCOUNTER_AQUA          419 // MUS_AQA_0
+#define MUS_EMPTY4          419 // MUS_AQA_0
 #define MUS_FOLLOW_ME               420 // MUS_TSURETEK
 #define MUS_ENCOUNTER_BRENDAN       421 // MUS_BOY_SUP
 #define MUS_EVER_GRANDE             422 // MUS_RAINBOW          // Also used in link rooms.
 #define MUS_ENCOUNTER_SUSPICIOUS    423 // MUS_AYASII
-#define MUS_VICTORY_AQUA_MAGMA      424 // MUS_KACHI4
+#define MUS_EMPTY3      424 // MUS_KACHI4
 #define MUS_CABLE_CAR               425 // MUS_ROPEWAY
 #define MUS_GAME_CORNER             426 // MUS_CASINO
 #define MUS_DEWFORD                 427 // MUS_HIGHTOWN         // Also used in Route 109's Seashore house.
@@ -371,7 +371,7 @@
 #define MUS_SEALED_CHAMBER          438 // MUS_MABOROSI         // Also used in Ancient Tomb, Desert Ruins and Island Cave.
 #define MUS_CONTEST_WINNER          439 // MUS_CON_FAN
 #define MUS_CONTEST                 440 // MUS_CONTEST0
-#define MUS_ENCOUNTER_MAGMA         441 // MUS_MGM0
+#define MUS_EMPTY5         441 // MUS_MGM0
 #define MUS_INTRO_BATTLE            442 // MUS_T_BATTLE
 #define MUS_ABNORMAL_WEATHER        443 // MUS_OOAME            // Replaces MUS_WEATHER_KYOGRE from R/S.
 #define MUS_WEATHER_GROUDON         444 // MUS_HIDERI           // Unused, from R/S.
@@ -400,20 +400,20 @@
 #define MUS_B_DOME                  467 // MUS_B_DOME
 #define MUS_B_PIKE                  468 // MUS_B_TUBE
 #define MUS_B_FACTORY               469 // MUS_B_FACTORY
-#define MUS_VS_RAYQUAZA             470 // MUS_VS_REKKU         // Identical to MUS_VS_KYOGRE_GROUDON.
+#define MUS_VS_RAYQUAZA             470 // MUS_VS_REKKU         // Identical to MUS_EMPTY2.
 #define MUS_VS_FRONTIER_BRAIN       471 // MUS_VS_FRONT
 #define MUS_VS_MEW                  472 // MUS_VS_MEW
 #define MUS_B_DOME_LOBBY            473 // MUS_B_DOME1
 #define MUS_VS_WILD                 474 // MUS_BATTLE27
-#define MUS_VS_AQUA_MAGMA           475 // MUS_BATTLE31
+#define MUS_EMPTY6           475 // MUS_BATTLE31
 #define MUS_VS_TRAINER              476 // MUS_BATTLE20
 #define MUS_VS_GYM_LEADER           477 // MUS_BATTLE32
 #define MUS_VS_CHAMPION             478 // MUS_BATTLE33
 #define MUS_VS_REGI                 479 // MUS_BATTLE36
-#define MUS_VS_KYOGRE_GROUDON       480 // MUS_BATTLE34
+#define MUS_EMPTY2       480 // MUS_BATTLE34
 #define MUS_VS_RIVAL                481 // MUS_BATTLE35
 #define MUS_VS_ELITE_FOUR           482 // MUS_BATTLE38
-#define MUS_VS_AQUA_MAGMA_LEADER    483 // MUS_BATTLE30
+#define MUS_EMPTY7    483 // MUS_BATTLE30
 // FRLG Music
 #define MUS_RG_FOLLOW_ME            484 // MUS_RG_ANNAI
 #define MUS_RG_GAME_CORNER          485 // MUS_RG_SLOT

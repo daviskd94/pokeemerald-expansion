@@ -458,6 +458,13 @@
       "elevation": 0,
       "dest_map": "MAP_NORTH_CAMPUS_POKEBALL_RESEARCH_LAB",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_NORTH_CAMPUS",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

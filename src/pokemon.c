@@ -6218,7 +6218,7 @@ u16 GetBattleBGM(void)
             return MUS_VS_RAYQUAZA;
         case SPECIES_KYOGRE:
         case SPECIES_GROUDON:
-            return MUS_VS_KYOGRE_GROUDON;
+            return MUS_EMPTY2;
         case SPECIES_REGIROCK:
         case SPECIES_REGICE:
         case SPECIES_REGISTEEL:
@@ -6249,12 +6249,12 @@ u16 GetBattleBGM(void)
         {
         case TRAINER_CLASS_AQUA_LEADER:
         case TRAINER_CLASS_MAGMA_LEADER:
-            return MUS_VS_AQUA_MAGMA_LEADER;
+            return MUS_EMPTY7;
         case TRAINER_CLASS_TEAM_AQUA:
         case TRAINER_CLASS_TEAM_MAGMA:
         case TRAINER_CLASS_AQUA_ADMIN:
         case TRAINER_CLASS_MAGMA_ADMIN:
-            return MUS_VS_AQUA_MAGMA;
+            return MUS_EMPTY6;
         case TRAINER_CLASS_LEADER:
             return MUS_VS_GYM_LEADER;
         case TRAINER_CLASS_CHAMPION:

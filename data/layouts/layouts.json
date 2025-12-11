@@ -4684,8 +4684,8 @@
     {
       "id": "LAYOUT_NORTH_CAMPUS_FOSSIL_RESEARCH_LAB",
       "name": "NorthCampus_FossilResearchLab_Layout",
-      "width": 38,
-      "height": 43,
+      "width": 49,
+      "height": 31,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_FossilLab",
       "border_filepath": "data/layouts/NorthCampus_FossilResearchLab/border.bin",

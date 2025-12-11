@@ -35,7 +35,7 @@ Route121_EventScript_AquaGruntsMoveOut::
 # 18 "data/maps/Route121/scripts.pory"
 	lockall
 # 19 "data/maps/Route121/scripts.pory"
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	playbgm MUS_EMPTY4, FALSE
 # 20 "data/maps/Route121/scripts.pory"
 	applymovement LOCALID_ROUTE121_GRUNT_2, Common_Movement_WalkInPlaceRight
 # 21 "data/maps/Route121/scripts.pory"

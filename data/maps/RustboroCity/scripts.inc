@@ -573,7 +573,7 @@ RustboroCity_EventScript_StolenGoodsScene::
 # 287 "data/maps/RustboroCity/scripts.pory"
 	closemessage
 # 288 "data/maps/RustboroCity/scripts.pory"
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	playbgm MUS_EMPTY4, FALSE
 # 289 "data/maps/RustboroCity/scripts.pory"
 	addobject LOCALID_RUSTBORO_GRUNT
 # 290 "data/maps/RustboroCity/scripts.pory"
