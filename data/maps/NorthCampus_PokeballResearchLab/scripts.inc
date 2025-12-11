@@ -5,9 +5,111 @@ NorthCampus_PokeballResearchLab_MapScripts::
 NorthCampus_PokeballResearchLab_PokeBall::
 # 4 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
 	msgbox NorthCampus_PokeballResearchLab_PokeBall_Text_0
+# 5 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
+	end
+
+
+NorthCampus_PokeballResearchLab_GreatBall::
+# 10 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_GreatBall_Text_0
+# 11 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
+	end
+
+
+NorthCampus_PokeballResearchLab_UltraBall::
+# 16 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_UltraBall_Text_0
+# 17 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
+	end
+
+
+NorthCampus_PokeballResearchLab_NetBall::
+# 22 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_NetBall_Text_0
+# 23 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
+	end
+
+
+NorthCampus_PokeballResearchLab_QuickBall::
+# 28 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_QuickBall_Text_0
+# 29 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
+	end
+
+
+NorthCampus_PokeballResearchLab_DuskBall::
+# 34 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_DuskBall_Text_0
+# 35 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
+	end
+
+
+NorthCampus_PokeballResearchLab_TimerBall::
+# 40 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_TimerBall_Text_0
+# 41 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
+	end
+
+
+NorthCampus_PokeballResearchLab_DiveaBall::
+# 46 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_DiveaBall_Text_0
+# 47 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
+	end
+
+
+NorthCampus_PokeballResearchLab_Laptops::
+# 52 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_Laptops_Text_0
+# 53 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
 	end
 
 
 NorthCampus_PokeballResearchLab_PokeBall_Text_0:
 # 4 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
-	.string "It's a model of a Poké Ball\nused for educational purposes.$"
+	.string "An educational model of a Poké Ball.\p"
+	.string "It's the most basic type of Poké Ball.$"
+
+NorthCampus_PokeballResearchLab_GreatBall_Text_0:
+# 10 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	.string "An educational model of a Great Ball.\pIt's 1.5x more effective than a Poké Ball.$"
+
+NorthCampus_PokeballResearchLab_UltraBall_Text_0:
+# 16 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	.string "An educational model of an Ultra Ball.\pIt's 2x more effective than a Poké Ball.$"
+
+NorthCampus_PokeballResearchLab_NetBall_Text_0:
+# 22 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	.string "An educational model of a Net Ball.\pIt's 2x more effective than a Poké Ball on {COLOR RED}Water- {COLOR DARK_GRAY}and {COLOR RED}Bug-type {COLOR DARK_GRAY}Pokémon.$"
+
+NorthCampus_PokeballResearchLab_QuickBall_Text_0:
+# 28 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	.string "An educational model of a Quick Ball.\pIt's 5x more effective than a Poké Ball when used at the start of a wild encounter.$"
+
+NorthCampus_PokeballResearchLab_DuskBall_Text_0:
+# 34 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	.string "An educational model of a Dusk Ball.\pIt's 3.5x more effective than a Poké Ball when used in dark places like caves or at night.$"
+
+NorthCampus_PokeballResearchLab_TimerBall_Text_0:
+# 40 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	.string "An educational model of a Timer Ball.\pIts effectiveness increases the longer the battle goes on, up to 4x.$"
+
+NorthCampus_PokeballResearchLab_DiveaBall_Text_0:
+# 46 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	.string "An educational model of a Dive Ball.\pIt's 2x more effective than a Poké Ball when used on Pokémon encountered while fishing or surfing.$"
+
+NorthCampus_PokeballResearchLab_Laptops_Text_0:
+# 52 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	.string "This laptop contains research data on\n"
+	.string "various Poké Balls.\p"
+	.string "Scientists are constantly working to\n"
+	.string "improve Poké Ball technology!$"

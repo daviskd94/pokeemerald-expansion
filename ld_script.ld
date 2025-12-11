@@ -1191,9 +1191,17 @@ SECTIONS {
         sound/songs/midi/mus_rg_teachy_tv_menu.o(.rodata);
         sound/songs/midi/cus_vs_wild.o(.rodata);
         sound/songs/midi/cus_vs_trainer.o(.rodata);
+        sound/songs/midi/cus_vs_gym_leader.o(.rodata);
         sound/songs/midi/cus_vs_team_genesis.o(.rodata);
+        sound/songs/midi/cus_vs_rotcart.o(.rodata);
+        sound/songs/midi/cus_encounter_rotcart.o(.rodata);
         sound/songs/midi/cus_ancient_poni_path.o(.rodata);
         sound/songs/midi/cus_kalos_powerplant.o(.rodata);
+        sound/songs/midi/cus_dd_pine_landing.o(.rodata);
+        sound/songs/midi/cus_dd_metal_city.o(.rodata);
+        sound/songs/midi/cus_dd_jill_vs_croog.o(.rodata);
+        sound/songs/midi/cus_dd_croog_theme.o(.rodata);
+        sound/songs/midi/cus_sn_peaceful_time.o(.rodata);
         sound/songs/midi/ph_trap_blend.o(.rodata);
         sound/songs/midi/ph_trap_held.o(.rodata);
         sound/songs/midi/ph_trap_solo.o(.rodata);

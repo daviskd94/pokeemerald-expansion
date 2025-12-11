@@ -3464,12 +3464,12 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_ENCOUNTER_INTENSE)        \
     X(MUS_ENCOUNTER_COOL)           \
     X(MUS_ROUTE113)                 \
-    X(MUS_EMPTY4)           \
+    X(MUS_ENCOUNTER_AQUA)           \
     X(MUS_FOLLOW_ME)                \
     X(MUS_ENCOUNTER_BRENDAN)        \
     X(MUS_EVER_GRANDE)              \
     X(MUS_ENCOUNTER_SUSPICIOUS)     \
-    X(MUS_EMPTY3)       \
+    X(MUS_VICTORY_AQUA_MAGMA)       \
     X(MUS_CABLE_CAR)                \
     X(MUS_GAME_CORNER)              \
     X(MUS_DEWFORD)                  \
@@ -3486,7 +3486,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_SEALED_CHAMBER)           \
     X(MUS_CONTEST_WINNER)           \
     X(MUS_CONTEST)                  \
-    X(MUS_EMPTY5)          \
+    X(MUS_ENCOUNTER_MAGMA)          \
     X(MUS_INTRO_BATTLE)             \
     X(MUS_ABNORMAL_WEATHER)         \
     X(MUS_WEATHER_GROUDON)          \
@@ -3520,15 +3520,15 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_VS_MEW)                   \
     X(MUS_B_DOME_LOBBY)             \
     X(MUS_VS_WILD)                  \
-    X(MUS_EMPTY6)            \
+    X(MUS_VS_AQUA_MAGMA)            \
     X(MUS_VS_TRAINER)               \
     X(MUS_VS_GYM_LEADER)            \
     X(MUS_VS_CHAMPION)              \
     X(MUS_VS_REGI)                  \
-    X(MUS_EMPTY2)        \
+    X(MUS_VS_KYOGRE_GROUDON)        \
     X(MUS_VS_RIVAL)                 \
     X(MUS_VS_ELITE_FOUR)            \
-    X(MUS_EMPTY7)     \
+    X(MUS_VS_AQUA_MAGMA_LEADER)     \
     X(MUS_RG_FOLLOW_ME)             \
     X(MUS_RG_GAME_CORNER)           \
     X(MUS_RG_ROCKET_HIDEOUT)        \
@@ -3606,9 +3606,17 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_RG_TEACHY_TV_MENU)        \
     X(CUS_VS_WILD)                  \
     X(CUS_VS_TRAINER)               \
+    X(CUS_VS_GYM_LEADER)            \
     X(CUS_VS_TEAM_GENESIS)          \
+    X(CUS_VS_ROTCART)               \
+    X(CUS_ENCOUNTER_ROTCART)        \
     X(CUS_ANCIENT_PONI_PATH)        \
-    X(CUS_KALOS_POWERPLANT)         
+    X(CUS_KALOS_POWERPLANT)         \
+    X(CUS_DD_PINE_LANDING)          \
+    X(CUS_DD_METAL_CITY)            \
+    X(CUS_DD_JILL_VS_CROOG)         \
+    X(CUS_DD_CROOG_THEME)           \
+    X(CUS_SN_PEACEFUL_TIME)         
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \

@@ -71,7 +71,7 @@ MtChimney_EventScript_Maxie::
 # 36 "data/maps/MtChimney/scripts.pory"
 	lockall
 # 37 "data/maps/MtChimney/scripts.pory"
-	playbgm MUS_EMPTY5, FALSE
+	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 # 38 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_MeteoriteWillActivateVolcano, MSGBOX_DEFAULT
 # 39 "data/maps/MtChimney/scripts.pory"

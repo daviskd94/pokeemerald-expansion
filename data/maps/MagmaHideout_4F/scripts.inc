@@ -11,7 +11,7 @@ MagmaHideout_4F_EventScript_Maxie::
 # 6 "data/maps/MagmaHideout_4F/scripts.pory"
 	lockall
 # 7 "data/maps/MagmaHideout_4F/scripts.pory"
-	playbgm MUS_EMPTY5, FALSE
+	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 # 8 "data/maps/MagmaHideout_4F/scripts.pory"
 	msgbox MagmaHideout_4F_Text_MaxieAwakenGroudon, MSGBOX_DEFAULT
 # 9 "data/maps/MagmaHideout_4F/scripts.pory"

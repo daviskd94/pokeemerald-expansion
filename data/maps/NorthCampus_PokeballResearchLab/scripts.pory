@@ -19,7 +19,7 @@ script NorthCampus_PokeballResearchLab_UltraBall {
 }
 
 script NorthCampus_PokeballResearchLab_NetBall {
-    msgbox("An educational model of a Net Ball.\pIt's 2x more effective than a Poké Ball on {COLOR RED}Water- {COLOR DARK_GRAY}and {COLOR_RED}Bug-type {COLOR DARK_GRAY}Pokémon.")
+    msgbox("An educational model of a Net Ball.\pIt's 2x more effective than a Poké Ball on {COLOR RED}Water- {COLOR DARK_GRAY}and {COLOR RED}Bug-type {COLOR DARK_GRAY}Pokémon.")
     closemessage
     end
 }
