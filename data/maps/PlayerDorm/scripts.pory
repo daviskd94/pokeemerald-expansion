@@ -71,7 +71,7 @@ script Player_Dorm_Enter_Tracie {
     applymovement(LOCALID_TRACIE, moves(walk_fast_left*2))
     waitmovement(0)
     setspeaker(SP_NAME_TRACIE)
-    msgbox(format("Well, what are we waiting for!?\pGrab Eevee and let's go!\nI'm so excited!"))
+    msgbox(format("Well, what are we waiting for!?\pGrab {COLOR GREEN}Eevee {COLOR DARK_GRAY}and let's go!\nI'm so excited!"))
     closemessage
     applymovement(LOCALID_TRACIE, Player_Dorm_Tracie_Leaves)
     waitmovement(0)
@@ -101,7 +101,7 @@ script Player_Dorm_Take_Eevee {
     removeobject(LOCALID_EEVEE)
     updatefollowingmon
     playfanfare(MUS_OBTAIN_ITEM)
-    msgbox("{PLAYER} picked up their\npartner, Eevee!")
+    msgbox("{PLAYER} picked up their\npartner, {COLOR GREEN}Eevee{COLOR DARK_GRAY}!")
     waitfanfare
     setflag(FLAG_TAKE_EEVEE)
     setflag(FLAG_SYS_POKEMON_GET)

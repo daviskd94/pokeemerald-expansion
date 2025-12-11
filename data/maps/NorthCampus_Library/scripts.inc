@@ -225,23 +225,37 @@ NorthCampus_Library_ProfessorHanzneestoz::
 # 145 "data/maps/NorthCampus_Library/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq NorthCampus_Library_ProfessorHanzneestoz_4
-# 167 "data/maps/NorthCampus_Library/scripts.pory"
+# 173 "data/maps/NorthCampus_Library/scripts.pory"
 	goto_if_set FLAG_FIELDSTONE_CAVERN_ENTER, NorthCampus_Library_ProfessorHanzneestoz_5
-# 179 "data/maps/NorthCampus_Library/scripts.pory"
+# 185 "data/maps/NorthCampus_Library/scripts.pory"
 	setspeaker SP_NAME_HANZNEESTOZ
-# 180 "data/maps/NorthCampus_Library/scripts.pory"
+# 186 "data/maps/NorthCampus_Library/scripts.pory"
 	checkplayergender
-# 181 "data/maps/NorthCampus_Library/scripts.pory"
+# 187 "data/maps/NorthCampus_Library/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq NorthCampus_Library_ProfessorHanzneestoz_22
-# 184 "data/maps/NorthCampus_Library/scripts.pory"
-	msgbox NorthCampus_Library_ProfessorHanzneestoz_Text_9
+# 190 "data/maps/NorthCampus_Library/scripts.pory"
+	msgbox NorthCampus_Library_ProfessorHanzneestoz_Text_10
 NorthCampus_Library_ProfessorHanzneestoz_21:
-# 186 "data/maps/NorthCampus_Library/scripts.pory"
+# 192 "data/maps/NorthCampus_Library/scripts.pory"
+	closemessage
+# 193 "data/maps/NorthCampus_Library/scripts.pory"
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_READY_SET_THROW
+# 194 "data/maps/NorthCampus_Library/scripts.pory"
+	questmenu QUEST_MENU_SET_ACTIVE, QUEST_SUBTERRANEAN_HUNT
+# 195 "data/maps/NorthCampus_Library/scripts.pory"
+	playse SE_DEX_SEARCH
+# 196 "data/maps/NorthCampus_Library/scripts.pory"
+	msgbox NorthCampus_Library_ProfessorHanzneestoz_Text_11
+# 197 "data/maps/NorthCampus_Library/scripts.pory"
+	waitse
+# 198 "data/maps/NorthCampus_Library/scripts.pory"
+	openquestmenu_active
+# 199 "data/maps/NorthCampus_Library/scripts.pory"
 	setflag FLAG_FIELDSTONE_CAVERN_ENTER
-# 187 "data/maps/NorthCampus_Library/scripts.pory"
+# 200 "data/maps/NorthCampus_Library/scripts.pory"
 	release
-# 188 "data/maps/NorthCampus_Library/scripts.pory"
+# 201 "data/maps/NorthCampus_Library/scripts.pory"
 	closemessage
 	return
 
@@ -286,25 +300,37 @@ NorthCampus_Library_ProfessorHanzneestoz_25:
 # 161 "data/maps/NorthCampus_Library/scripts.pory"
 	closemessage
 # 162 "data/maps/NorthCampus_Library/scripts.pory"
-	setflag FLAG_POST_PROFESSOR_HANZNEESTOZ
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_SUBTERRANEAN_HUNT
 # 163 "data/maps/NorthCampus_Library/scripts.pory"
-	setvar VAR_NORTH_CAMPUS_STATE, 6
+	questmenu QUEST_MENU_SET_ACTIVE, QUEST_BACK_TO_LAB_AGAIN
 # 164 "data/maps/NorthCampus_Library/scripts.pory"
+	playse SE_DEX_SEARCH
+# 165 "data/maps/NorthCampus_Library/scripts.pory"
+	msgbox NorthCampus_Library_ProfessorHanzneestoz_Text_6
+# 166 "data/maps/NorthCampus_Library/scripts.pory"
+	waitse
+# 167 "data/maps/NorthCampus_Library/scripts.pory"
+	openquestmenu_active
+# 168 "data/maps/NorthCampus_Library/scripts.pory"
+	setflag FLAG_POST_PROFESSOR_HANZNEESTOZ
+# 169 "data/maps/NorthCampus_Library/scripts.pory"
+	setvar VAR_NORTH_CAMPUS_STATE, 6
+# 170 "data/maps/NorthCampus_Library/scripts.pory"
 	release
 	end
 
 NorthCampus_Library_ProfessorHanzneestoz_5:
-# 168 "data/maps/NorthCampus_Library/scripts.pory"
+# 174 "data/maps/NorthCampus_Library/scripts.pory"
 	checkplayergender
-# 169 "data/maps/NorthCampus_Library/scripts.pory"
+# 175 "data/maps/NorthCampus_Library/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq NorthCampus_Library_ProfessorHanzneestoz_18
-# 172 "data/maps/NorthCampus_Library/scripts.pory"
-	msgbox NorthCampus_Library_ProfessorHanzneestoz_Text_7
+# 178 "data/maps/NorthCampus_Library/scripts.pory"
+	msgbox NorthCampus_Library_ProfessorHanzneestoz_Text_8
 NorthCampus_Library_ProfessorHanzneestoz_17:
-# 174 "data/maps/NorthCampus_Library/scripts.pory"
+# 180 "data/maps/NorthCampus_Library/scripts.pory"
 	closemessage
-# 175 "data/maps/NorthCampus_Library/scripts.pory"
+# 181 "data/maps/NorthCampus_Library/scripts.pory"
 	release
 	end
 
@@ -319,13 +345,13 @@ NorthCampus_Library_ProfessorHanzneestoz_14:
 	goto NorthCampus_Library_ProfessorHanzneestoz_13
 
 NorthCampus_Library_ProfessorHanzneestoz_18:
-# 170 "data/maps/NorthCampus_Library/scripts.pory"
-	msgbox NorthCampus_Library_ProfessorHanzneestoz_Text_6
+# 176 "data/maps/NorthCampus_Library/scripts.pory"
+	msgbox NorthCampus_Library_ProfessorHanzneestoz_Text_7
 	goto NorthCampus_Library_ProfessorHanzneestoz_17
 
 NorthCampus_Library_ProfessorHanzneestoz_22:
-# 182 "data/maps/NorthCampus_Library/scripts.pory"
-	msgbox NorthCampus_Library_ProfessorHanzneestoz_Text_8
+# 188 "data/maps/NorthCampus_Library/scripts.pory"
+	msgbox NorthCampus_Library_ProfessorHanzneestoz_Text_9
 	goto NorthCampus_Library_ProfessorHanzneestoz_21
 
 NorthCampus_Library_ProfessorHanzneestoz_26:
@@ -335,15 +361,15 @@ NorthCampus_Library_ProfessorHanzneestoz_26:
 
 
 NorthCampus_Library_Intercom::
-# 193 "data/maps/NorthCampus_Library/scripts.pory"
+# 206 "data/maps/NorthCampus_Library/scripts.pory"
 	playse SE_DING_DONG
-# 194 "data/maps/NorthCampus_Library/scripts.pory"
+# 207 "data/maps/NorthCampus_Library/scripts.pory"
 	waitse
-# 195 "data/maps/NorthCampus_Library/scripts.pory"
+# 208 "data/maps/NorthCampus_Library/scripts.pory"
 	setspeaker SP_NAME_INTERCOM
-# 196 "data/maps/NorthCampus_Library/scripts.pory"
+# 209 "data/maps/NorthCampus_Library/scripts.pory"
 	msgbox NorthCampus_Library_Intercom_Text_0
-# 197 "data/maps/NorthCampus_Library/scripts.pory"
+# 210 "data/maps/NorthCampus_Library/scripts.pory"
 	closemessage
 	return
 
@@ -455,7 +481,7 @@ NorthCampus_Library_NPC3_Text_1:
 	.string "Also, the vampire tractor is afraid to\n"
 	.string "turn the other tractor into a vampire\l"
 	.string "because she might regret becoming a\l"
-	.string "super-powered undead tractor who wil\l"
+	.string "super-powered undead tractor who will\l"
 	.string "never rust.\p"
 	.string "At the end, she nearly dies giving birth\n"
 	.string "to his baby tractor, and he has to turn\l"
@@ -538,23 +564,28 @@ NorthCampus_Library_ProfessorHanzneestoz_Text_5:
 	.string "Good luck on your journey!$"
 
 NorthCampus_Library_ProfessorHanzneestoz_Text_6:
-# 170 "data/maps/NorthCampus_Library/scripts.pory"
+# 165 "data/maps/NorthCampus_Library/scripts.pory"
+	.string "{COLOR BLUE}Back to the Lab, Again{COLOR DARK_GRAY} has been added\n"
+	.string "to your {COLOR BLUE}Quest Log{COLOR DARK_GRAY}.$"
+
+NorthCampus_Library_ProfessorHanzneestoz_Text_7:
+# 176 "data/maps/NorthCampus_Library/scripts.pory"
 	.string "Herr {PLAYER}, have you found ze item\n"
 	.string "I asked for?\p"
 	.string "Nein!?\p"
 	.string "You must go to Fieldstone Cavern und\n"
 	.string "retrieve it, vith haste!$"
 
-NorthCampus_Library_ProfessorHanzneestoz_Text_7:
-# 172 "data/maps/NorthCampus_Library/scripts.pory"
+NorthCampus_Library_ProfessorHanzneestoz_Text_8:
+# 178 "data/maps/NorthCampus_Library/scripts.pory"
 	.string "Frau {PLAYER}, have you found ze item\n"
 	.string "I asked for?\p"
 	.string "Nein!?\p"
 	.string "You must go to Fieldstone Cavern und\n"
 	.string "retrieve it, vith haste!$"
 
-NorthCampus_Library_ProfessorHanzneestoz_Text_8:
-# 182 "data/maps/NorthCampus_Library/scripts.pory"
+NorthCampus_Library_ProfessorHanzneestoz_Text_9:
+# 188 "data/maps/NorthCampus_Library/scripts.pory"
 	.string "Ahh, guten tag, Herr {PLAYER}!\p"
 	.string "You are here for the review, ja?\p"
 	.string "Vunderbar!\p"
@@ -583,8 +614,8 @@ NorthCampus_Library_ProfessorHanzneestoz_Text_8:
 	.string "Vunderbar!\p"
 	.string "Now, off you go!$"
 
-NorthCampus_Library_ProfessorHanzneestoz_Text_9:
-# 184 "data/maps/NorthCampus_Library/scripts.pory"
+NorthCampus_Library_ProfessorHanzneestoz_Text_10:
+# 190 "data/maps/NorthCampus_Library/scripts.pory"
 	.string "Ahh, guten tag, Frau {PLAYER}!\p"
 	.string "You are here for the review, ja?\p"
 	.string "Vunderbar!\p"
@@ -613,8 +644,13 @@ NorthCampus_Library_ProfessorHanzneestoz_Text_9:
 	.string "Vunderbar!\p"
 	.string "Now, off you go!$"
 
-NorthCampus_Library_Intercom_Text_0:
+NorthCampus_Library_ProfessorHanzneestoz_Text_11:
 # 196 "data/maps/NorthCampus_Library/scripts.pory"
+	.string "{COLOR BLUE}Subterranean Hunt{COLOR DARK_GRAY} has been added to\n"
+	.string "your {COLOR BLUE}Quest Log{COLOR DARK_GRAY}.$"
+
+NorthCampus_Library_Intercom_Text_0:
+# 209 "data/maps/NorthCampus_Library/scripts.pory"
 	.string "Attention seniors.\p"
 	.string "Please report back to Main Hall to\n"
 	.string "complete your review.$"

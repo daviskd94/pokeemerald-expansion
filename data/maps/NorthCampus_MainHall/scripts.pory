@@ -33,6 +33,7 @@ script NorthCampus_MainHall_Registration {
     msgbox(format("Alright, Rotcart.\nYou're all checked in for orientation!"))
     closemessage
     applymovement(2, moves(walk_right*6, walk_up*3)) // Rotcart leaving
+    setspeaker(SP_NAME_RECEPTIONIST)
     message("We'll be starting in…\nRotcart?{PAUSE 50}")
     waitmessage
     applymovement(1, moves(face_right)) // Receptionist facing Rotcart
@@ -88,5 +89,51 @@ script NorthCampus_MainHall_Registration {
     setvar(VAR_NORTH_CAMPUS_STATE, 2)
     callnative(UpdateFollowingPokemon)
     releaseall
+    end
+}
+
+script NorthCampus_MainHall_FrontDeskLady {
+    lock
+    faceplayer
+    setspeaker(SP_NAME_RECEPTIONIST)
+    msgbox(format("Hi, {PLAYER}!\nGood luck with your studies!"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_MainHall_NPC1 {
+    lock
+    faceplayer
+    msgbox(format("I can't wait to start my journey!\pTraveling around the region…\nSeeing the world…\pThat's the life!"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_MainHall_NPC2 {
+    lock
+    faceplayer
+    msgbox(format("Not only is President Mario super nice, but he's a powerful trainer too.\pI guess you have to be to be a member of the {COLOR GREEN}Elite Four{COLOR DARK_GRAY}!"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_MainHall_NPC3 {
+    lock
+    faceplayer
+    msgbox(format("There's rumors that a strange, bald guy is sneaking around campus.\pSomeone should probably notify the authorities…"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_MainHall_NPC4 {
+    lock
+    faceplayer
+    msgbox(format("My classes are so tough this semester!\pI just hope I can graduate on time…"))
+    closemessage
+    release
     end
 }

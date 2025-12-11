@@ -68,10 +68,10 @@
 #define FLAG_HIDE_ROUTE_1_GRUNT_AND_CYRUS       0x36 // Unused Flag
 #define FLAG_HIDE_ROUTE_1_MARIO_AND_MAPLE       0x37 // Unused Flag
 #define FLAG_HIDE_ROUTE_1_ROTCART               0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
+#define FLAG_DEFEATED_ORTHOC_MAIN_HALL          0x39 // Unused Flag
+#define FLAG_SHOW_GYM_NPCS                      0x3A // Unused Flag
+#define FLAG_DEFEATED_MARCIE_MAIN_HALL          0x3B // Unused Flag
+#define FLAG_DEFEATED_LYSSA_MAIN_HALL           0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag
@@ -1052,7 +1052,7 @@
 // Item Ball Flags
 #define FLAG_ITEM_ROUTE_1_POTION                                    0x3E8
 #define FLAG_ITEM_FIELDSTONE_CAVERN_ESCAPE_ROPE                     0x3E9
-#define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA
+#define FLAG_ITEM_NORTH_CAMPUS_RESEARCH_LAB_REPEL                   0x3EA
 #define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED

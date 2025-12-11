@@ -742,6 +742,9 @@ $(OBJEVENTGFXDIR)/misc/tractor_boat_back.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/misc/tractor_boat_front.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
+$(OBJEVENTGFXDIR)/misc/question_mark.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
 $(FLDEFFGFXDIR)/arrow.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 

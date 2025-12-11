@@ -1,0 +1,19 @@
+mapscripts NorthCampus_Classroom2_MapScripts {}
+
+script NorthCampus_Classroom2_NPC1 {
+    lock
+    faceplayer
+    msgbox(format("There was a time when {COLOR RED}Psychic-type {COLOR DARK_GRAY}Pokémon were considered to be the most powerful of all.\pSadly, that time has passed…"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_Classroom2_NPC2 {
+    lock
+    faceplayer
+    msgbox(format("I have Professor Maple for Berry Blending 101.\pShe's super nice!"))
+    closemessage
+    release
+    end
+}

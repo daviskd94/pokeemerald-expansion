@@ -43,6 +43,7 @@ static void TilesetAnim_MauvilleGym(u16);
 static void TilesetAnim_BikeShop(u16);
 static void TilesetAnim_BattlePyramid(u16);
 static void TilesetAnim_BattleDome(u16);
+static void TilesetAnim_Laboratory(u16);
 static void QueueAnimTiles_General_Flower(u16);
 static void QueueAnimTiles_General_Red_Flower(u16);
 static void QueueAnimTiles_General_Water(u16);
@@ -75,6 +76,66 @@ static void QueueAnimTiles_SootopolisGym_Waterfalls(u16);
 static void QueueAnimTiles_EliteFour_GroundLights(u16);
 static void QueueAnimTiles_EliteFour_WallLights(u16);
 static void QueueAnimTiles_Campus_Fountain(u16);
+static void QueueAnimTiles_Secondary_Laboratory_MovingLight(u16);
+static void QueueAnimTiles_Secondary_Laboratory_FlashingLight(u16);
+static void QueueAnimTiles_Secondary_Laboratory_GreenTube(u16);
+
+const u16 gTilesetAnims_Secondary_Laboratory_GreenTube_Frame0[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/green_tube/green_tube_0.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_GreenTube_Frame1[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/green_tube/green_tube_1.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_GreenTube_Frame2[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/green_tube/green_tube_2.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_GreenTube_Frame3[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/green_tube/green_tube_3.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_GreenTube_Frame4[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/green_tube/green_tube_4.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_GreenTube_Frame5[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/green_tube/green_tube_5.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_GreenTube_Frame6[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/green_tube/green_tube_6.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_GreenTube_Frame7[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/green_tube/green_tube_7.4bpp");
+
+const u16 *const gTilesetAnims_Secondary_Laboratory_GreenTube[] = {
+    gTilesetAnims_Secondary_Laboratory_GreenTube_Frame0,
+    gTilesetAnims_Secondary_Laboratory_GreenTube_Frame1,
+    gTilesetAnims_Secondary_Laboratory_GreenTube_Frame2,
+    gTilesetAnims_Secondary_Laboratory_GreenTube_Frame3,
+    gTilesetAnims_Secondary_Laboratory_GreenTube_Frame4,
+    gTilesetAnims_Secondary_Laboratory_GreenTube_Frame5,
+    gTilesetAnims_Secondary_Laboratory_GreenTube_Frame6,
+    gTilesetAnims_Secondary_Laboratory_GreenTube_Frame7,
+};
+
+const u16 gTilesetAnims_Secondary_Laboratory_MovingLight_Frame0[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/moving_light/Animation1.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_MovingLight_Frame1[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/moving_light/Animation2.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_MovingLight_Frame2[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/moving_light/Animation3.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_MovingLight_Frame3[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/moving_light/Animation4.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_MovingLight_Frame4[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/moving_light/Animation5.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_MovingLight_Frame5[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/moving_light/Animation6.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_MovingLight_Frame6[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/moving_light/Animation7.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_MovingLight_Frame7[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/moving_light/Animation8.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_MovingLight_Frame8[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/moving_light/Animation9.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_MovingLight_Frame9[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/moving_light/Animation10.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_MovingLight_Frame10[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/moving_light/Animation11.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_MovingLight_Frame11[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/moving_light/Animation12.4bpp");
+
+
+const u16 *const gTilesetAnims_Secondary_Laboratory_MovingLight[] = {
+    gTilesetAnims_Secondary_Laboratory_MovingLight_Frame0,
+    gTilesetAnims_Secondary_Laboratory_MovingLight_Frame1,
+    gTilesetAnims_Secondary_Laboratory_MovingLight_Frame2,
+    gTilesetAnims_Secondary_Laboratory_MovingLight_Frame3,
+    gTilesetAnims_Secondary_Laboratory_MovingLight_Frame4,
+    gTilesetAnims_Secondary_Laboratory_MovingLight_Frame5,
+    gTilesetAnims_Secondary_Laboratory_MovingLight_Frame6,
+    gTilesetAnims_Secondary_Laboratory_MovingLight_Frame7,
+    gTilesetAnims_Secondary_Laboratory_MovingLight_Frame8,
+    gTilesetAnims_Secondary_Laboratory_MovingLight_Frame9,
+    gTilesetAnims_Secondary_Laboratory_MovingLight_Frame10,
+    gTilesetAnims_Secondary_Laboratory_MovingLight_Frame11
+};
+
+const u16 gTilesetAnims_Secondary_Laboratory_FlashingLight_Frame0[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/flashing_light/flashing_light_0.4bpp");
+const u16 gTilesetAnims_Secondary_Laboratory_FlashingLight_Frame1[] = INCBIN_U16("data/tilesets/secondary/laboratory/anim/flashing_light/flashing_light_1.4bpp");
+
+const u16 *const gTilesetAnims_Secondary_Laboratory_FlashingLight[] = {
+    gTilesetAnims_Secondary_Laboratory_FlashingLight_Frame0,
+    gTilesetAnims_Secondary_Laboratory_FlashingLight_Frame1,
+};
 
 const u16 gTilesetAnims_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/1.4bpp");
 const u16 gTilesetAnims_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/0.4bpp");
@@ -698,6 +759,24 @@ static void QueueAnimTiles_General_Flower(u16 timer)
     AppendTilesetAnimToBuffer(gTilesetAnims_General_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(534)), 4 * TILE_SIZE_4BPP);
 }
 
+static void QueueAnimTiles_Secondary_Laboratory_MovingLight(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Secondary_Laboratory_MovingLight);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Secondary_Laboratory_MovingLight[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(760)), 2 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Secondary_Laboratory_FlashingLight(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Secondary_Laboratory_FlashingLight);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Secondary_Laboratory_FlashingLight[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(762)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Secondary_Laboratory_GreenTube(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Secondary_Laboratory_GreenTube);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Secondary_Laboratory_GreenTube[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(792)), 8 * TILE_SIZE_4BPP);
+}
+
 static void QueueAnimTiles_General_Red_Flower(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_Red_Flower);
@@ -747,6 +826,13 @@ void InitTilesetAnim_Dewford(void)
     sSecondaryTilesetAnimCounter = 0;
     sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
     sSecondaryTilesetAnimCallback = TilesetAnim_Dewford;
+}
+
+void InitTilesetAnim_Laboratory(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = 192;
+    sSecondaryTilesetAnimCallback = TilesetAnim_Laboratory;
 }
 
 void InitTilesetAnim_Slateport(void)
@@ -918,6 +1004,18 @@ static void TilesetAnim_Dewford(u16 timer)
         QueueAnimTiles_Dewford_Flag(timer / 8);
     if (timer % 8 == 1)
         QueueAnimTiles_Campus_Fountain(timer / 8);
+}
+
+static void TilesetAnim_Laboratory(u16 timer)
+{
+    if (timer % 8 == 0)
+        QueueAnimTiles_Secondary_Laboratory_MovingLight(timer / 8);
+
+    if (timer % 32 == 1)
+        QueueAnimTiles_Secondary_Laboratory_FlashingLight(timer / 32);
+
+    if (timer % 8 == 2)
+        QueueAnimTiles_Secondary_Laboratory_GreenTube(timer / 8);
 }
 
 static void TilesetAnim_Slateport(u16 timer)

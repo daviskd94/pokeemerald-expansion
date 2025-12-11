@@ -1202,3 +1202,19 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NorthCampus_Gymnasium/scripts.inc"
 
 	.include "data/maps/NorthCampus_Library/scripts.inc"
+
+	.include "data/maps/NorthCampus_ResearchLab/scripts.inc"
+
+	.include "data/maps/SouthCampus_Dorm_1/scripts.inc"
+
+	.include "data/maps/SouthCampus_Dorm_2/scripts.inc"
+
+	.include "data/maps/SouthCampus_Dorm_3/scripts.inc"
+
+	.include "data/maps/NorthCampus_Classroom2/scripts.inc"
+
+	.include "data/maps/NorthCampus_Classroom3/scripts.inc"
+
+	.include "data/maps/NorthCampus_PokeballResearchLab/scripts.inc"
+
+	.include "data/maps/NorthCampus_FossilResearchLab/scripts.inc"

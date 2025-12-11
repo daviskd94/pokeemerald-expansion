@@ -13,15 +13,20 @@
 #define QUEST_MENU_CHECK_REWARD         8  //checks if questId is in Reward state. Returns result to gSpecialVar_Result
 #define QUEST_MENU_CHECK_COMPLETE       9   //checks if questId has been completed. Returns result to gSpecialVar_Result
 #define QUEST_MENU_BUFFER_QUEST_NAME    10   //buffers a quest name to gStringVar1
+#define QUEST_MENU_OPEN_ALL             11   //opens the quest menu to "All Quests" tab (questId = 0)
+#define QUEST_MENU_OPEN_INACTIVE        12   //opens the quest menu to "Inactive Quests" tab (questId = 0)
+#define QUEST_MENU_OPEN_ACTIVE          13   //opens the quest menu to "Active Quests" tab (questId = 0)
+#define QUEST_MENU_OPEN_REWARD          14   //opens the quest menu to "Reward Available" tab (questId = 0)
+#define QUEST_MENU_OPEN_COMPLETED       15   //opens the quest menu to "Completed Quests" tab (questId = 0)
 
 // quest number defines
-#define QUEST_ORIENTATION          0
-#define QUEST_2          1
-#define QUEST_3          2
-#define QUEST_4          3
-#define QUEST_5          4
-#define QUEST_6          5
-#define QUEST_7          6
+#define QUEST_ORIENTATION               0
+#define QUEST_POKEMON_BATTLES_101       1
+#define QUEST_READY_SET_THROW           2
+#define QUEST_SUBTERRANEAN_HUNT         3
+#define QUEST_BACK_TO_LAB_AGAIN         4
+#define QUEST_PRESIDENT_TEST            5
+#define QUEST_NEXT_STOP_ADVENTURE       6
 #define QUEST_8          7
 #define QUEST_9          8
 #define QUEST_10         9
@@ -78,9 +83,10 @@
 #define SUB_QUEST_29        28
 #define SUB_QUEST_30        29
 
-#define QUEST_1_SUB_COUNT 10
-#define QUEST_2_SUB_COUNT 20
-#define SUB_QUEST_COUNT (QUEST_1_SUB_COUNT + QUEST_2_SUB_COUNT)
+//#define QUEST_0_SUB_COUNT 6
+//#define QUEST_1_SUB_COUNT 10
+//#define QUEST_2_SUB_COUNT 20
+#define SUB_QUEST_COUNT (0/*QUEST_0_SUB_COUNT +QUEST_1_SUB_COUNT + QUEST_2_SUB_COUNT*/)
 
 #define QUEST_ARRAY_COUNT (SUB_QUEST_COUNT > QUEST_COUNT ? SUB_QUEST_COUNT : QUEST_COUNT)
 #endif // GUARD_CONSTANTS_QUESTS_H

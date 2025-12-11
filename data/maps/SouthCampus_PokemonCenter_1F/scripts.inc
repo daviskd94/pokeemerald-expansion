@@ -30,6 +30,45 @@ SouthCampus_PokemonCenter_1F_EventScript_NurseJoy::
 	end
 
 
+SouthCampus_PokemonCenter_1F_NPC1::
+# 27 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
+	lock
+# 28 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
+	faceplayer
+# 29 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
+	msgbox SouthCampus_PokemonCenter_1F_NPC1_Text_0
+# 30 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
+	closemessage
+# 31 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
+	release
+	end
+
+
+SouthCampus_PokemonCenter_1F_NPC2::
+# 36 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
+	lock
+# 37 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
+	faceplayer
+# 38 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
+	msgbox SouthCampus_PokemonCenter_1F_NPC2_Text_0
+# 39 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
+	closemessage
+# 40 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
+	release
+	end
+
+
+SouthCampus_PokemonCenter_1F_NPC1_Text_0:
+# 29 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
+	.string "This is a great place to relax in\n"
+	.string "between classes!$"
+
+SouthCampus_PokemonCenter_1F_NPC2_Text_0:
+# 38 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
+	.string "Talk to Nurse Joy if your Pokémon are\n"
+	.string "injured.\p"
+	.string "She'll heal them up free of charge!$"
+
 Joy::
 # 11 "data/maps/SouthCampus_PokemonCenter_1F/scripts.pory"
 	.string "Nurse Joy$"

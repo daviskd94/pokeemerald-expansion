@@ -23,3 +23,22 @@ script SouthCampus_PokemonCenter_1F_EventScript_NurseJoy {
     end
 }
 
+script SouthCampus_PokemonCenter_1F_NPC1 {
+    lock
+    faceplayer
+    msgbox(format("This is a great place to relax in between classes!"))
+    closemessage
+    release
+    end
+}
+
+script SouthCampus_PokemonCenter_1F_NPC2 {
+    lock
+    faceplayer
+    msgbox(format("Talk to Nurse Joy if your Pokémon are injured.\pShe'll heal them up free of charge!"))
+    closemessage
+    release
+    end
+}
+
+

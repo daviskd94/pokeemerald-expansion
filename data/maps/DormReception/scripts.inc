@@ -88,6 +88,62 @@ DormReception_Bookcase::
 	end
 
 
+DormReception_Camper::
+# 64 "data/maps/DormReception/scripts.pory"
+	lock
+# 65 "data/maps/DormReception/scripts.pory"
+	faceplayer
+# 66 "data/maps/DormReception/scripts.pory"
+	msgbox DormReception_Camper_Text_0
+# 67 "data/maps/DormReception/scripts.pory"
+	closemessage
+# 68 "data/maps/DormReception/scripts.pory"
+	release
+	end
+
+
+DormReception_Lady::
+# 73 "data/maps/DormReception/scripts.pory"
+	lock
+# 74 "data/maps/DormReception/scripts.pory"
+	faceplayer
+# 75 "data/maps/DormReception/scripts.pory"
+	msgbox DormReception_Lady_Text_0
+# 76 "data/maps/DormReception/scripts.pory"
+	closemessage
+# 77 "data/maps/DormReception/scripts.pory"
+	release
+	end
+
+
+DormReception_Picnicker::
+# 82 "data/maps/DormReception/scripts.pory"
+	lock
+# 83 "data/maps/DormReception/scripts.pory"
+	faceplayer
+# 84 "data/maps/DormReception/scripts.pory"
+	msgbox DormReception_Picnicker_Text_0
+# 85 "data/maps/DormReception/scripts.pory"
+	closemessage
+# 86 "data/maps/DormReception/scripts.pory"
+	release
+	end
+
+
+DormReception_Lass::
+# 91 "data/maps/DormReception/scripts.pory"
+	lock
+# 92 "data/maps/DormReception/scripts.pory"
+	faceplayer
+# 93 "data/maps/DormReception/scripts.pory"
+	msgbox DormReception_Lass_Text_0
+# 94 "data/maps/DormReception/scripts.pory"
+	closemessage
+# 95 "data/maps/DormReception/scripts.pory"
+	release
+	end
+
+
 DormReception_Trash_Text_0:
 # 5 "data/maps/DormReception/scripts.pory"
 	.string "Nothing but trash inside…$"
@@ -119,3 +175,34 @@ DormReception_Sink_Text_0:
 DormReception_Bookcase_Text_0:
 # 58 "data/maps/DormReception/scripts.pory"
 	.string "Very dusty, clearly not used.$"
+
+DormReception_Camper_Text_0:
+# 66 "data/maps/DormReception/scripts.pory"
+	.string "Oh!\n"
+	.string "You have a {COLOR BLUE}Quest Log{COLOR DARK_GRAY} too?\p"
+	.string "It's a good thing to have if you ever\n"
+	.string "forget what you were doing.\p"
+	.string "Happens to me all the time!$"
+
+DormReception_Lady_Text_0:
+# 75 "data/maps/DormReception/scripts.pory"
+	.string "You can store {COLOR GREEN}Pokémon {COLOR DARK_GRAY}and {COLOR GREEN}Items{COLOR DARK_GRAY} in\n"
+	.string "your PC.\p"
+	.string "I'm sure you have one in your dorm room,\n"
+	.string "but that one only holds {COLOR GREEN}Items{COLOR DARK_GRAY}.\p"
+	.string "The {COLOR GREEN}Pokémon Centers{COLOR DARK_GRAY} have PCs that can\n"
+	.string "store both {COLOR GREEN}Pokémon {COLOR DARK_GRAY}and {COLOR GREEN}Items{COLOR DARK_GRAY}.\p"
+	.string "They're very useful!$"
+
+DormReception_Picnicker_Text_0:
+# 84 "data/maps/DormReception/scripts.pory"
+	.string "You should check out the South Campus\n"
+	.string "Poké Mart sometime!\p"
+	.string "They have some useful medicine for\n"
+	.string "sale.$"
+
+DormReception_Lass_Text_0:
+# 93 "data/maps/DormReception/scripts.pory"
+	.string "Hi, {PLAYER}!\n"
+	.string "I saw Rotcart leave just a minute ago.\p"
+	.string "He flipped me off as he went by!$"

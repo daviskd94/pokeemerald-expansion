@@ -940,3 +940,25 @@ const struct Tileset gTileset_Library =
     .metatileAttributes = gMetatileAttributes_Library,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Laboratory =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Laboratory,
+    .palettes = gTilesetPalettes_Laboratory,
+    .metatiles = gMetatiles_Laboratory,
+    .metatileAttributes = gMetatileAttributes_Laboratory,
+    .callback = InitTilesetAnim_Laboratory,
+};
+
+const struct Tileset gTileset_FossilLab =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_FossilLab,
+    .palettes = gTilesetPalettes_FossilLab,
+    .metatiles = gMetatiles_FossilLab,
+    .metatileAttributes = gMetatileAttributes_FossilLab,
+    .callback = NULL,
+};

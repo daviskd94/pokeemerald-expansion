@@ -636,7 +636,10 @@
     "DormReception",
     "TracieDorm",
     "RotcartDorm",
-    "SouthCampus_Cafeteria"
+    "SouthCampus_Cafeteria",
+    "SouthCampus_Dorm_1",
+    "SouthCampus_Dorm_2",
+    "SouthCampus_Dorm_3"
   ],
   "gMapGroup_IndoorNorthCampus": [
     "PokemonCenter_1F",
@@ -646,6 +649,11 @@
     "NorthCampus_LectureHall",
     "NorthCampus_MainHall_2F",
     "NorthCampus_Gymnasium",
-    "NorthCampus_Library"
+    "NorthCampus_Library",
+    "NorthCampus_ResearchLab",
+    "NorthCampus_Classroom2",
+    "NorthCampus_Classroom3",
+    "NorthCampus_PokeballResearchLab",
+    "NorthCampus_FossilResearchLab"
   ]
 }

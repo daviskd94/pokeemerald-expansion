@@ -1824,3 +1824,41 @@ const u16 gTilesetPalettes_Library[][16] =
 };
 
 const u32 gTilesetTiles_Library[] = INCBIN_U32("data/tilesets/secondary/library/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Laboratory[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/laboratory/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Laboratory[] = INCBIN_U32("data/tilesets/secondary/laboratory/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_FossilLab[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/fossil_lab/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_FossilLab[] = INCBIN_U32("data/tilesets/secondary/fossil_lab/tiles.4bpp.lz");

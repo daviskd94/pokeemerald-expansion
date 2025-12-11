@@ -11,41 +11,41 @@ DormHallway_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 
 DormHallway_LeaveDorm::
 # 8 "data/maps/DormHallway/scripts.pory"
-	lockall
+	setspeaker SP_NAME_TRACIE
 # 9 "data/maps/DormHallway/scripts.pory"
-	setspeaker SP_NAME_TRACIE
-# 10 "data/maps/DormHallway/scripts.pory"
 	msgbox DormHallway_LeaveDorm_Text_0
+# 10 "data/maps/DormHallway/scripts.pory"
+	closemessage
 # 11 "data/maps/DormHallway/scripts.pory"
-	closemessage
-# 12 "data/maps/DormHallway/scripts.pory"
 	call DormHallway_EnterRotcart
-# 13 "data/maps/DormHallway/scripts.pory"
+# 12 "data/maps/DormHallway/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, DormHallway_LeaveDorm_Movement_0
+# 13 "data/maps/DormHallway/scripts.pory"
+	waitmovement 0
 # 14 "data/maps/DormHallway/scripts.pory"
-	waitmovement 0
-# 15 "data/maps/DormHallway/scripts.pory"
 	setspeaker SP_NAME_TRACIE
-# 16 "data/maps/DormHallway/scripts.pory"
+# 15 "data/maps/DormHallway/scripts.pory"
 	msgbox DormHallway_LeaveDorm_Text_1
-# 17 "data/maps/DormHallway/scripts.pory"
+# 16 "data/maps/DormHallway/scripts.pory"
 	closemessage
-# 18 "data/maps/DormHallway/scripts.pory"
+# 17 "data/maps/DormHallway/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, DormHallway_LeaveDorm_Movement_1
-# 19 "data/maps/DormHallway/scripts.pory"
+# 18 "data/maps/DormHallway/scripts.pory"
 	applymovement LOCALID_TRACIE, DormHallway_LeaveDorm_Movement_2
-# 20 "data/maps/DormHallway/scripts.pory"
+# 19 "data/maps/DormHallway/scripts.pory"
 	waitmovement 0
-# 21 "data/maps/DormHallway/scripts.pory"
+# 20 "data/maps/DormHallway/scripts.pory"
 	removeobject LOCALID_TRACIE
-# 22 "data/maps/DormHallway/scripts.pory"
+# 21 "data/maps/DormHallway/scripts.pory"
 	playse SE_DOOR
-# 23 "data/maps/DormHallway/scripts.pory"
+# 22 "data/maps/DormHallway/scripts.pory"
 	waitse
-# 24 "data/maps/DormHallway/scripts.pory"
+# 23 "data/maps/DormHallway/scripts.pory"
 	setflag FLAG_HIDE_TRACIEROTCART
-# 25 "data/maps/DormHallway/scripts.pory"
+# 24 "data/maps/DormHallway/scripts.pory"
 	setvar VAR_PLAYERDORM_STATE, 3
+# 25 "data/maps/DormHallway/scripts.pory"
+	callnative UpdateFollowingPokemon
 	end
 
 
@@ -135,39 +135,69 @@ Player_Dorm_EventScript_RotcartSign::
 	end
 
 
-# 13 "data/maps/DormHallway/scripts.pory"
+Player_Dorm_EventScript_BuckSign::
+# 84 "data/maps/DormHallway/scripts.pory"
+	lock
+# 85 "data/maps/DormHallway/scripts.pory"
+	msgbox Player_Dorm_EventScript_BuckSign_Text_0
+# 86 "data/maps/DormHallway/scripts.pory"
+	release
+	end
+
+
+Player_Dorm_EventScript_ColtonSign::
+# 91 "data/maps/DormHallway/scripts.pory"
+	lock
+# 92 "data/maps/DormHallway/scripts.pory"
+	msgbox Player_Dorm_EventScript_ColtonSign_Text_0
+# 93 "data/maps/DormHallway/scripts.pory"
+	release
+	end
+
+
+Player_Dorm_EventScript_CelesteGabeSign::
+# 98 "data/maps/DormHallway/scripts.pory"
+	lock
+# 99 "data/maps/DormHallway/scripts.pory"
+	msgbox Player_Dorm_EventScript_CelesteGabeSign_Text_0
+# 100 "data/maps/DormHallway/scripts.pory"
+	release
+	end
+
+
+# 12 "data/maps/DormHallway/scripts.pory"
 DormHallway_LeaveDorm_Movement_0:
-# 13 "data/maps/DormHallway/scripts.pory"
+# 12 "data/maps/DormHallway/scripts.pory"
 	face_down
 	step_end
 
-# 18 "data/maps/DormHallway/scripts.pory"
+# 17 "data/maps/DormHallway/scripts.pory"
 DormHallway_LeaveDorm_Movement_1:
-# 18 "data/maps/DormHallway/scripts.pory"
+# 17 "data/maps/DormHallway/scripts.pory"
 	face_right
 	step_end
 
-# 19 "data/maps/DormHallway/scripts.pory"
+# 18 "data/maps/DormHallway/scripts.pory"
 DormHallway_LeaveDorm_Movement_2:
-# 19 "data/maps/DormHallway/scripts.pory"
+# 18 "data/maps/DormHallway/scripts.pory"
 	walk_right
-# 19 "data/maps/DormHallway/scripts.pory"
+# 18 "data/maps/DormHallway/scripts.pory"
 	walk_right
-# 19 "data/maps/DormHallway/scripts.pory"
+# 18 "data/maps/DormHallway/scripts.pory"
 	walk_right
-# 19 "data/maps/DormHallway/scripts.pory"
+# 18 "data/maps/DormHallway/scripts.pory"
 	walk_right
-# 19 "data/maps/DormHallway/scripts.pory"
+# 18 "data/maps/DormHallway/scripts.pory"
 	walk_right
-# 19 "data/maps/DormHallway/scripts.pory"
+# 18 "data/maps/DormHallway/scripts.pory"
 	walk_right
-# 19 "data/maps/DormHallway/scripts.pory"
+# 18 "data/maps/DormHallway/scripts.pory"
 	walk_right
-# 19 "data/maps/DormHallway/scripts.pory"
+# 18 "data/maps/DormHallway/scripts.pory"
 	walk_right
-# 19 "data/maps/DormHallway/scripts.pory"
+# 18 "data/maps/DormHallway/scripts.pory"
 	walk_right
-# 19 "data/maps/DormHallway/scripts.pory"
+# 18 "data/maps/DormHallway/scripts.pory"
 	walk_up
 	step_end
 
@@ -234,13 +264,13 @@ DormHallway_DontLeave_Movement_0:
 	step_end
 
 DormHallway_LeaveDorm_Text_0:
-# 10 "data/maps/DormHallway/scripts.pory"
+# 9 "data/maps/DormHallway/scripts.pory"
 	.string "Oh! Before I forget!\p"
 	.string "I need to stop at my room to grab some\n"
 	.string "things.$"
 
 DormHallway_LeaveDorm_Text_1:
-# 16 "data/maps/DormHallway/scripts.pory"
+# 15 "data/maps/DormHallway/scripts.pory"
 	.string "Ugh! Rotcart…\n"
 	.string "What an asshole!\p"
 	.string "I know he's one of the strongest\n"
@@ -271,3 +301,15 @@ Player_Dorm_EventScript_TracieSign_Text_0:
 Player_Dorm_EventScript_RotcartSign_Text_0:
 # 78 "data/maps/DormHallway/scripts.pory"
 	.string "Rotcart's room$"
+
+Player_Dorm_EventScript_BuckSign_Text_0:
+# 85 "data/maps/DormHallway/scripts.pory"
+	.string "Buck's room$"
+
+Player_Dorm_EventScript_ColtonSign_Text_0:
+# 92 "data/maps/DormHallway/scripts.pory"
+	.string "Colton's room$"
+
+Player_Dorm_EventScript_CelesteGabeSign_Text_0:
+# 99 "data/maps/DormHallway/scripts.pory"
+	.string "Celeste & Gabe's room$"

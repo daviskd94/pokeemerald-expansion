@@ -29,7 +29,7 @@ MtPyre_3F_EventScript_Kayla::
 # 15 "data/maps/MtPyre_3F/scripts.pory"
 MtPyre_3F_EventScript_Gabrielle::
 # 16 "data/maps/MtPyre_3F/scripts.pory"
-	trainerbattle_single TRAINER_GABRIELLE_1, MtPyre_3F_Text_GabrielleIntro, MtPyre_3F_Text_GabrielleDefeat, MtPyre_3F_EventScript_RegisterGabrielle
+	trainerbattle_single TRAINER_MAIN_HALL_LYSSA, MtPyre_3F_Text_GabrielleIntro, MtPyre_3F_Text_GabrielleDefeat, MtPyre_3F_EventScript_RegisterGabrielle
 # 17 "data/maps/MtPyre_3F/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 18 "data/maps/MtPyre_3F/scripts.pory"
@@ -51,7 +51,7 @@ MtPyre_3F_EventScript_RegisterGabrielle::
 # 26 "data/maps/MtPyre_3F/scripts.pory"
 	msgbox MtPyre_3F_Text_GabrielleRegister, MSGBOX_DEFAULT
 # 27 "data/maps/MtPyre_3F/scripts.pory"
-	register_matchcall TRAINER_GABRIELLE_1
+	register_matchcall TRAINER_MAIN_HALL_LYSSA
 # 28 "data/maps/MtPyre_3F/scripts.pory"
 	release
 # 29 "data/maps/MtPyre_3F/scripts.pory"
@@ -61,7 +61,7 @@ MtPyre_3F_EventScript_RegisterGabrielle::
 # 31 "data/maps/MtPyre_3F/scripts.pory"
 MtPyre_3F_EventScript_RematchGabrielle::
 # 32 "data/maps/MtPyre_3F/scripts.pory"
-	trainerbattle_rematch TRAINER_GABRIELLE_1, MtPyre_3F_Text_GabrielleRematchIntro, MtPyre_3F_Text_GabrielleRematchDefeat
+	trainerbattle_rematch TRAINER_MAIN_HALL_LYSSA, MtPyre_3F_Text_GabrielleRematchIntro, MtPyre_3F_Text_GabrielleRematchDefeat
 # 33 "data/maps/MtPyre_3F/scripts.pory"
 	msgbox MtPyre_3F_Text_GabriellePostRematch, MSGBOX_AUTOCLOSE
 # 34 "data/maps/MtPyre_3F/scripts.pory"

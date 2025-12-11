@@ -1,4 +1,10 @@
 mapscripts SouthCampus_MapScripts {   
+	 MAP_SCRIPT_ON_TRANSITION {
+        if (var(VAR_SOUTH_CAMPUS_STATE) >= 1) {
+			setobjectxyperm(LOCALID_SOUTH_CAMPUS_FAT_MAN, 26, 30)
+			setobjectmovementtype(LOCALID_SOUTH_CAMPUS_FAT_MAN, MOVEMENT_TYPE_WANDER_AROUND)
+		}
+	 }
 }
 
 script SouthCampus_MoveToBattle1 {
@@ -79,7 +85,7 @@ script SouthCampus_MoveToBattle8 {
 
 script SouthCampus_HearBattle {
 	lock
-	applymovement(LOCALID_FAT_MAN, moves(face_up))
+	applymovement(LOCALID_SOUTH_CAMPUS_FAT_MAN, moves(face_up))
 	setspeaker(SP_NAME_UNKNOWN)
 	msgbox(format("Go, Meowth!"))
 	playmoncry(SPECIES_MEOWTH, 0)
@@ -105,7 +111,7 @@ script SouthCampus_HearBattle {
 
 script SouthCampus_HearBattle2 {
 	lock
-	applymovement(LOCALID_FAT_MAN, moves(face_up))
+	applymovement(LOCALID_SOUTH_CAMPUS_FAT_MAN, moves(face_up))
 	setspeaker(SP_NAME_UNKNOWN)
 	msgbox(format("Go, Meowth!"))
 	playmoncry(SPECIES_MEOWTH, 0)
@@ -153,7 +159,7 @@ script SouthCampus_ApproachBattle {
 	closemessage
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(face_left))
-	applymovement(LOCALID_FAT_MAN, moves(face_right))
+	applymovement(LOCALID_SOUTH_CAMPUS_FAT_MAN, moves(face_right))
 	waitmovement(0)
 	setspeaker(SP_NAME_MAN)
 	msgbox(format("Some Pokémon come in different varieties depending on their habitat.\pHer Meowth is a {COLOR RED}Dark-type {COLOR DARK_GRAY}and his is a {COLOR RED}Normal-type.\p{COLOR DARK_GRAY}Neither Meowth has a type advantage against the other, so it's been a good battle so far!"))
@@ -163,7 +169,7 @@ script SouthCampus_ApproachBattle {
 	closemessage
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(face_up))
-	applymovement(LOCALID_FAT_MAN, moves(face_up))
+	applymovement(LOCALID_SOUTH_CAMPUS_FAT_MAN, moves(face_up))
 	applymovement(LOCALID_CAMERA, moves(walk_fast_up*3))
 	waitmovement(0)
 	call(SouthCampus_MeowthBattle)
@@ -266,7 +272,7 @@ script SouthCampus_TraciePostBattle {
 		call(SouthCampus_HealParty)
 	}
 	setspeaker(SP_NAME_TRACIE)
-	msgbox(format("I'm going to go on ahead to North Campus for orientation.\pTry not to take too long getting there. You don't want to be late!\pSee you soon!"))
+	msgbox(format("I'm going to go on ahead to {COLOR GREEN}North Campus{COLOR DARK_GRAY} for orientation.\pTry not to take too long getting there. You don't want to be late!\pSee you soon!"))
 	closemessage
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(walk_right*8))
 	waitmovement(0)

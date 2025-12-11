@@ -6,3 +6,21 @@ script NorthCampus_PokemonCenter_OnTransition {
     setrespawn(HEAL_LOCATION_NORTH_CAMPUS)
     end
 }
+
+script NorthCampus_PokemonCenter_Gentleman {
+    lock
+    faceplayer
+    msgbox(format("Most {COLOR GREEN}Items{COLOR DARK_GRAY} you can only use once.\pHowever, {COLOR GREEN}Key Items{COLOR DARK_GRAY} can be used over and over again."))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_PokemonCenter_Juggler {
+    lock
+    faceplayer
+    msgbox(format("I don't get it!\pHow come wild Pokémon keep busting my balls?\p…My Poké Balls, I mean."))
+    closemessage
+    release
+    end
+}

@@ -38,7 +38,7 @@ script NorthCampus_Gymnasium_Enter {
     applymovement(LOCALID_GYMNASIUM_COACH_CEDAR, moves(walk_left))
     waitmovement(0)
     setspeaker(SP_NAME_CEDAR)
-    msgbox(format("A Pokémon battle is about more than just throwing out attacks.\pYou need to read your opponent, remember type matchups, and use your environemnt.\pBut, most importantly…"))
+    msgbox(format("A Pokémon battle is about more than just throwing out attacks.\pYou need to read your opponent, remember type matchups, and use your environment.\pBut, most importantly…"))
     closemessage
     applymovement(LOCALID_GYMNASIUM_COACH_CEDAR, moves(walk_right*2))
     waitmovement(0)
@@ -64,8 +64,8 @@ script NorthCampus_Gymnasium_Enter {
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("Whew…\nIt's not Rotcart…"))
     closemessage
-    applymovement(LOCALID_GYMNASIUM_TRACIE, moves(walk_up*2, walk_right*2, walk_up*6, slide_right*3, slide_up*2, face_left))
-    applymovement(LOCALID_GYMNASIUM_COLTON, moves(walk_up*3, walk_right*5, walk_up*8))
+    applymovement(LOCALID_GYMNASIUM_TRACIE, moves(walk_up*2, walk_right*2, walk_up*5, walk_right*3, slide_up*2, face_left))
+    applymovement(LOCALID_GYMNASIUM_COLTON, moves(walk_up*3, walk_right*5, walk_up*6, walk_right*2))
     setspeaker(SP_NAME_CEDAR)
     msgbox(format("On to the next pair!"))
     closemessage
@@ -121,12 +121,13 @@ script NorthCampus_Gymnasium_Enter {
     setspeaker(SP_NAME_ROTCART)
     msgbox(format("Just because this is a practice match, don't expect me to go easy on the weak.\pFollow me."))
     closemessage
-    applymovement(LOCALID_CAMERA, moves(walk_left, walk_up, walk_left*4, walk_up*7, walk_left*7))
-    applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_up, walk_left*4, walk_up*7, walk_left*11, face_right))
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left, walk_up, walk_left*4, walk_up*7, walk_left*3))
+    applymovement(LOCALID_CAMERA, moves(walk_left, walk_up, walk_left*4, walk_up*6, walk_left*6))
+    applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_up, walk_left*4, walk_up*6, walk_left*9, face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left, walk_up, walk_left*4, walk_up*6, walk_left*2))
     waitmovement(0)
     waitmovement(LOCALID_GYMNASIUM_ROTCART)
-    delay(15)
+    applymovement(LOCALID_GYMNASIUM_COACH_CEDAR, moves(slide_right*3, slide_up*5))
+    setobjectxyperm(LOCALID_GYMNASIUM_COACH_CEDAR, 22, 8)
     clearflag(FLAG_HIDE_TRACIE)
     addobject(LOCALID_GYMNASIUM_TRACIE_2) //show Tracie
     setspeaker(SP_NAME_ROTCART)
@@ -134,7 +135,6 @@ script NorthCampus_Gymnasium_Enter {
     closemessage
     special(HealPlayerParty)
     setflag(FLAG_WHITEOUT_CONTINUE)
-    setobjectxyperm(LOCALID_GYMNASIUM_COACH_CEDAR, 21, 7)
     trainerbattle_no_intro(TRAINER_ROTCART_1, format("Tch…\nEnjoy that while you still can."))
     playbgm(MUS_RG_ENCOUNTER_RIVAL, FALSE) 
     clearflag(FLAG_WHITEOUT_CONTINUE)
@@ -143,7 +143,7 @@ script NorthCampus_Gymnasium_Enter {
     special (SpawnCameraObject)
     setobjectxyperm(LOCALID_CAMERA, 8, 7)  
     applymovement(LOCALID_CAMERA, moves(walk_right*4))
-    applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_right*7))
+    applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_right*6))
     waitmovement(0)
     special(HealPlayerParty)
     if (var(VAR_RESULT) == B_OUTCOME_LOST) {
@@ -191,7 +191,7 @@ script NorthCampus_Gymnasium_Enter {
     playse(SE_DING_DONG)
     waitse
     setspeaker(SP_NAME_INTERCOM)
-    msgbox(format("Attention seniors.\pPlease report to the Wild Area for a review on catching Pokémon.\pThank you."))
+    msgbox(format("Attention seniors.\pPlease report to the {COLOR GREEN}Wild Area{COLOR DARK_GRAY} for a review on catching Pokémon.\pThank you."))
     closemessage
     playbgm(MUS_ENCOUNTER_MAY, FALSE)
     setspeaker(SP_NAME_TRACIE)
@@ -206,7 +206,7 @@ script NorthCampus_Gymnasium_Enter {
     waitmovement(0)
     fadedefaultbgm
     setspeaker(SP_NAME_CEDAR)
-    msgbox(format("You and Tracie will do great!\pRemember to trust your Pokémon.\pThe Wild Area is outside on the west side of North Campus.\pGood luck, {PLAYER}!"))
+    msgbox(format("You and Tracie will do great!\pRemember to trust your Pokémon.\pThe {COLOR GREEN}Wild Area{COLOR DARK_GRAY} is outside on the west side of {COLOR GREEN}North Campus{COLOR DARK_GRAY}.\pGood luck, {PLAYER}!"))
     closemessage
     setflag(FLAG_HIDE_GYMNASIUM_STUDENTS)
     setflag(FLAG_HIDE_TRACIE)
@@ -220,15 +220,64 @@ script NorthCampus_Gymnasium_Enter {
     special(RemoveCameraObject)
 	removeobject(LOCALID_CAMERA)
     setvar(VAR_NORTH_CAMPUS_STATE, 4)
+    questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_POKEMON_BATTLES_101)
+    questmenu(QUEST_MENU_SET_ACTIVE, QUEST_READY_SET_THROW)
+    playse(SE_DEX_SEARCH)
+    msgbox(format("{COLOR BLUE}Ready, Set, Throw!{COLOR DARK_GRAY} has been added to your {COLOR BLUE}Quest Log{COLOR DARK_GRAY}."))
+    waitse
+    openquestmenu_active
     callnative(UpdateFollowingPokemon)
+    clearflag(FLAG_SHOW_GYM_NPCS)
     release
     end
 }
 
 script NorthCampus_Gymnasium_Coach_Cedar {
+    lock
+    faceplayer
     setspeaker(SP_NAME_CEDAR)
     msgbox(format("Remember, Pokémon battles are not about who can bark the loudest.\pA true Trainer knows how to stay calm and collected in any situation.\pTrust in your Pokémon, and they will trust in you."))
     closemessage
     end
 }
 
+script NorthCampus_Gymnasium_Orthoc {
+    faceplayer
+    setspeaker(SP_NAME_ORTHOC)
+    if(flag(FLAG_DEFEATED_ORTHOC_MAIN_HALL)) 
+    {
+        msgbox(format("Thank you for providing me a good challenge."))
+        closemessage
+        release
+        end
+    }
+    else {
+        msgbox("Greetings.\pI am looking for someone to do\nbattle with.\pWould you like to have a\nmatch with me?", MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            closemessage
+            setspeaker(SP_NAME_ORTHOC)
+            msgbox(format("Excellent.\nLet us begin."))
+            trainerbattle_no_intro(TRAINER_MAIN_HALL_ORTHOC, format("It seems I have more work to do."))
+            setflag(FLAG_DEFEATED_ORTHOC_MAIN_HALL)
+            release
+            end
+        }   
+        else {
+            closemessage
+            setspeaker(SP_NAME_ORTHOC)
+            msgbox(format("No?\nThen leave me to my training."))
+    }
+    closemessage
+    release
+    end
+    }
+}
+
+script NorthCampus_Gymnasium_NPC1 {
+    lock
+    faceplayer
+    msgbox(format("I heard that Coach Cedar was a world-class Pokémon Trainer before becoming a teacher.\pI wonder if that's true…"))
+    closemessage
+    release
+    end
+}

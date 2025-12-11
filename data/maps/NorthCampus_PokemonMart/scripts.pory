@@ -1,1 +1,10 @@
 mapscripts NorthCampus_PokemonMart_MapScripts {}
+
+script NorthCampus_PokemonMart_NPC1 {
+    lock
+    faceplayer
+    msgbox(format("{COLOR GREEN}Awakenings{COLOR DARK_GRAY} are so useful.\pI hate when my Pokémon is put to sleep in the middle of a battle!"))
+    closemessage
+    release
+    end
+}

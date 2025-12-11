@@ -25,7 +25,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NorthCampus_MainHall_FrontDeskLady",
       "flag": "0"
     },
     {
@@ -55,6 +55,58 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_NORTH_CAMPUS_TRACIE_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LADY",
+      "x": 65,
+      "y": 31,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthCampus_MainHall_NPC1",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 11,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthCampus_MainHall_NPC2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
+      "x": 29,
+      "y": 32,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthCampus_MainHall_NPC3",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M",
+      "x": 41,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthCampus_MainHall_NPC4",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -85,6 +137,27 @@
       "elevation": 0,
       "dest_map": "MAP_NORTH_CAMPUS_LECTURE_HALL",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 52,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NORTH_CAMPUS_CLASSROOM3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 37,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NORTH_CAMPUS_CLASSROOM2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NORTH_CAMPUS_CLASSROOM1",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

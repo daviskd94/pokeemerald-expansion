@@ -246,7 +246,7 @@
       "flag": "FLAG_HIDE_MEOWTHS"
     },
     {
-      "local_id": "LOCALID_FAT_MAN",
+      "local_id": "LOCALID_SOUTH_CAMPUS_FAT_MAN",
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
       "x": 21,
       "y": 29,
@@ -416,5 +416,22 @@
       "script": "SouthCampus_MoveToBattle7"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 39,
+      "y": 29,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LilycoveCity_DepartmentStoreRooftop_EventScript_VendingMachine"
+    },
+    {
+      "type": "sign",
+      "x": 40,
+      "y": 29,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LilycoveCity_DepartmentStoreRooftop_EventScript_VendingMachine"
+    }
+  ]
 }

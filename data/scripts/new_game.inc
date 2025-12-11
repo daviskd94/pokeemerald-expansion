@@ -281,5 +281,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_ROUTE_1_MARIO_AND_MAPLE
 	setflag FLAG_HIDE_ROUTE_1_GRUNT_AND_CYRUS
 	setflag FLAG_HIDE_ROUTE_1_ROTCART
+	setflag FLAG_SHOW_GYM_NPCS
 	call EventScript_ResetAllBerries
 	end

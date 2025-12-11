@@ -52,6 +52,7 @@ struct QuestMenuResources
 	u8 filterMode;
 	u8 parentQuest;
 	bool8 restoreCursor;
+	bool8 filterModePreset;
 };
 
 struct QuestMenuStaticResources
@@ -240,6 +241,70 @@ static const u8 sText_AZ[] = _(" A-Z");
 
 //Declaration of subquest structures. Edits to subquests are made here.
 #define sub_quest(i, n, d, m, s, st, t) {.id = i, .name = n, .desc = d, .map = m, .sprite = s, .spritetype = st, .type = t}
+
+/*static const struct SubQuest sSubQuests0[QUEST_0_SUB_COUNT] =
+{
+	sub_quest(
+	      0,
+	      gText_SubQuest0_Name1,
+	      gText_SubQuest0_Desc1,
+	      gText_SideQuestMap1,
+	      OBJ_EVENT_GFX_LINK_RS_MAY,
+	      OBJECT,
+	      sText_Found
+	),
+
+	sub_quest(
+	      1,
+	      gText_SubQuest0_Name2,
+	      gText_SubQuest0_Desc2,
+	      gText_SideQuestMap1,
+	      OBJ_EVENT_GFX_COACH,
+	      OBJECT,
+	      sText_Found
+	),
+
+	sub_quest(
+	      2,
+	      gText_SubQuest0_Name3,
+	      gText_SubQuest0_Desc3,
+	      gText_SideQuestMap3,
+	      OBJ_EVENT_GFX_SCIENTIST_1,
+	      OBJECT,
+	      sText_Found
+	),
+
+	sub_quest(
+	      3,
+	      gText_SubQuest0_Name4,
+	      gText_SubQuest0_Desc4,
+	      gText_SideQuestMap4,
+	      OBJ_EVENT_GFX_SCIENTIST_1,
+	      OBJECT,
+	      sText_Found
+	),
+
+	sub_quest(
+	      4,
+	      gText_SubQuest0_Name5,
+	      gText_SubQuest0_Desc5,
+	      gText_SideQuestMap5,
+	      OBJ_EVENT_GFX_MARIO,
+	      OBJECT,
+	      sText_Found
+	),
+
+	sub_quest(
+	      5,
+	      gText_SubQuest0_Name6,
+	      gText_SubQuest0_Desc6,
+	      gText_SideQuestMap6,
+	      OBJ_EVENT_GFX_CAPTAIN,
+	      OBJECT,
+	      sText_Found
+	),
+};
+
 static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 {
 	sub_quest(
@@ -256,8 +321,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      1,
 	      gText_SubQuest1_Name2,
 	      gText_SubQuest1_Desc2,
-	      gText_SideQuestMap2,
-	      OBJ_EVENT_GFX_ITEM_BALL,
+	      gText_SideQuestMap1,
+	      OBJ_EVENT_GFX_COACH,
 	      OBJECT,
 	      sText_Found
 	),
@@ -266,8 +331,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      2,
 	      gText_SubQuest1_Name3,
 	      gText_SubQuest1_Desc3,
-	      gText_SideQuestMap3,
-	      OBJ_EVENT_GFX_ITEM_BALL,
+	      gText_SideQuestMap2,
+	      OBJ_EVENT_GFX_SCIENTIST_1,
 	      OBJECT,
 	      sText_Found
 	),
@@ -276,8 +341,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      3,
 	      gText_SubQuest1_Name4,
 	      gText_SubQuest1_Desc4,
-	      gText_SideQuestMap4,
-	      OBJ_EVENT_GFX_ITEM_BALL,
+	      gText_SideQuestMap3,
+	      OBJ_EVENT_GFX_SCIENTIST_1,
 	      OBJECT,
 	      sText_Found
 	),
@@ -286,8 +351,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      4,
 	      gText_SubQuest1_Name5,
 	      gText_SubQuest1_Desc5,
-	      gText_SideQuestMap5,
-	      OBJ_EVENT_GFX_ITEM_BALL,
+	      gText_SideQuestMap4,
+	      OBJ_EVENT_GFX_MARIO,
 	      OBJECT,
 	      sText_Found
 	),
@@ -297,7 +362,7 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      gText_SubQuest1_Name6,
 	      gText_SubQuest1_Desc6,
 	      gText_SideQuestMap6,
-	      OBJ_EVENT_GFX_ITEM_BALL,
+	      OBJ_EVENT_GFX_CAPTAIN,
 	      OBJECT,
 	      sText_Found
 	),
@@ -546,7 +611,7 @@ static const struct SubQuest sSubQuests2[QUEST_2_SUB_COUNT] =
 	      sText_Found
 	),
 
-};
+};*/
 
 ////////////////////////END SUBQUEST CUSTOMIZATION/////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
@@ -563,7 +628,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_1,
 	      gText_SideQuestDoneDesc_1,
 	      gText_SideQuestMap1,
-	      OBJ_EVENT_GFX_LINK_RS_MAY,
+	      OBJ_EVENT_GFX_TRACIE,
 	      OBJECT,
 	      NULL,
 	      0
@@ -572,28 +637,28 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestName_2,
 	      gText_SideQuestDesc_2,
 	      gText_SideQuestDoneDesc_2,
-	      gText_SideQuestMap2,
-	      OBJ_EVENT_GFX_ITEM_BALL,
+	      gText_SideQuestMap1,
+	      OBJ_EVENT_GFX_COACH,
 	      OBJECT,
-	      sSubQuests1,
-	      QUEST_1_SUB_COUNT
+	      NULL,
+	      0
 	),
 	side_quest(
 	      gText_SideQuestName_3,
 	      gText_SideQuestDesc_3,
 	      gText_SideQuestDoneDesc_3,
-	      gText_SideQuestMap3,
-	      OBJ_EVENT_GFX_ITEM_BALL,
+	      gText_SideQuestMap2,
+	      OBJ_EVENT_GFX_SCIENTIST_1,
 	      OBJECT,
-	      sSubQuests2,
-	      QUEST_2_SUB_COUNT
+	      NULL,
+	      0
 	),
 	side_quest(
 	      gText_SideQuestName_4,
 	      gText_SideQuestDesc_4,
 	      gText_SideQuestDoneDesc_4,
-	      gText_SideQuestMap4,
-	      OBJ_EVENT_GFX_ITEM_BALL,
+	      gText_SideQuestMap3,
+	      OBJ_EVENT_GFX_SCIENTIST_1,
 	      OBJECT,
 	      NULL,
 	      0
@@ -602,8 +667,8 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestName_5,
 	      gText_SideQuestDesc_5,
 	      gText_SideQuestDoneDesc_5,
-	      gText_SideQuestMap5,
-	      OBJ_EVENT_GFX_ITEM_BALL,
+	      gText_SideQuestMap1,
+	      OBJ_EVENT_GFX_MARIO,
 	      OBJECT,
 	      NULL,
 	      0
@@ -612,8 +677,8 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestName_6,
 	      gText_SideQuestDesc_6,
 	      gText_SideQuestDoneDesc_6,
-	      gText_SideQuestMap6,
-	      OBJ_EVENT_GFX_ITEM_BALL,
+	      gText_SideQuestMap1,
+	      OBJ_EVENT_GFX_MARIO,
 	      OBJECT,
 	      NULL,
 	      0
@@ -622,8 +687,8 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestName_7,
 	      gText_SideQuestDesc_7,
 	      gText_SideQuestDoneDesc_7,
-	      gText_SideQuestMap7,
-	      OBJ_EVENT_GFX_ITEM_BALL,
+	      gText_SideQuestMap4,
+	      OBJ_EVENT_GFX_CAPTAIN,
 	      OBJECT,
 	      NULL,
 	      0
@@ -981,6 +1046,7 @@ void QuestMenu_Init(u8 a0, MainCallback callback)
 	sStateDataPtr->spriteIconSlot = 0;
 	sStateDataPtr->scrollIndicatorArrowPairId = 0xFF;
 	sStateDataPtr->savedCallback = 0;
+	sStateDataPtr->filterModePreset = FALSE;
 	for (i = 0; i < 3; i++)
 	{
 		sStateDataPtr->data[i] = 0;
@@ -1343,7 +1409,10 @@ static void SaveScrollAndRow(s16 *data)
 
 void ClearModeOnStartup(void)
 {
-	sStateDataPtr->filterMode = 0;
+	if (!sStateDataPtr->filterModePreset)
+	{
+		sStateDataPtr->filterMode = 0;
+	}
 }
 
 static u8 ManageMode(u8 action)
@@ -1992,17 +2061,24 @@ void GenerateAndPrintQuestDetails(s32 questId)
 }
 void GenerateQuestLocation(s32 questId)
 {
-	if (!IsSubquestMode())
+	if (IsQuestInactiveState(questId) == TRUE && IsQuestCompletedState(questId) == FALSE)
 	{
-		StringCopy(gStringVar2, sSideQuests[questId].map);
+		StringCopy(gStringVar4, sText_StartForMore);
 	}
 	else
 	{
-		StringCopy(gStringVar2,
-		           sSideQuests[sStateDataPtr->parentQuest].subquests[questId].map);
-	}
+		if (!IsSubquestMode())
+		{
+			StringCopy(gStringVar2, sSideQuests[questId].map);
+		}
+		else
+		{
+			StringCopy(gStringVar2,
+			           sSideQuests[sStateDataPtr->parentQuest].subquests[questId].map);
+		}
 
-	StringExpandPlaceholders(gStringVar4, sText_ShowLocation);
+		StringExpandPlaceholders(gStringVar4, sText_ShowLocation);
+	}
 }
 void PrintQuestLocation(s32 questId)
 {
@@ -2136,8 +2212,16 @@ void DetermineSpriteType(s32 questId)
 
 	if (IsSubquestMode() == FALSE)
 	{
-		spriteId = sSideQuests[questId].sprite;
-		spriteType = sSideQuests[questId].spritetype;
+		if (IsQuestInactiveState(questId) == TRUE && IsQuestCompletedState(questId) == FALSE)
+		{
+			spriteId = OBJ_EVENT_GFX_QUESTION_MARK;
+			spriteType = sSideQuests[questId].spritetype;
+		}
+		else
+		{
+			spriteId = sSideQuests[questId].sprite;
+			spriteType = sSideQuests[questId].spritetype;
+		}
 
 		QuestMenu_CreateSprite(spriteId, sStateDataPtr->spriteIconSlot,
 		                       spriteType);
@@ -2172,7 +2256,7 @@ static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType)
 		{
 			case OBJECT:
 				spriteId = CreateObjectGraphicsSprite(itemId, SpriteCallbackDummy, 20,
-				                                      132, 0);
+				                                      134, 0);
 				break;
 			case ITEM:
 				spriteId = AddItemIconSprite(102 + idx, 102 + idx, itemId);
@@ -2785,6 +2869,16 @@ void Task_QuestMenu_OpenFromStartMenu(u8 taskId)
 void CB2_OpenQuestMenu(void)
 {
     QuestMenu_Init(0, CB2_ReturnToFieldWithOpenMenu);
+}
+
+void QuestMenu_InitWithFilter(u8 filterMode, MainCallback callback)
+{
+    QuestMenu_Init(0, callback);
+    if (sStateDataPtr != NULL)
+    {
+        sStateDataPtr->filterMode = filterMode;
+        sStateDataPtr->filterModePreset = TRUE;
+    }
 }
 
 void QuestMenu_CopyQuestName(u8 *dst, u8 questId)

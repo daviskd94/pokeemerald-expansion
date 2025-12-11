@@ -32,7 +32,7 @@ script TracieDorm_Enter {
     playse(SE_DEX_SEARCH)
     msgbox(format("{COLOR BLUE}Senior Year{COLOR DARK_GRAY} has been added to your {COLOR BLUE}Quest Log{COLOR DARK_GRAY}."))
     waitse
-    openquestmenu
+    openquestmenu_active
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("Easy! Right?\pAnyways, we can't lag too far behind Rotcart.\pOrientation is starting soon, after all.\p Lead the way!\nI'll follow."))
     closemessage

@@ -410,12 +410,12 @@ Player_Dorm_Enter_Tracie_Text_2:
 Player_Dorm_Enter_Tracie_Text_3:
 # 74 "data/maps/PlayerDorm/scripts.pory"
 	.string "Well, what are we waiting for!?\p"
-	.string "Grab Eevee and let's go!\n"
+	.string "Grab {COLOR GREEN}Eevee {COLOR DARK_GRAY}and let's go!\n"
 	.string "I'm so excited!$"
 
 Player_Dorm_Take_Eevee_Text_0:
 # 104 "data/maps/PlayerDorm/scripts.pory"
-	.string "{PLAYER} picked up their\npartner, Eevee!$"
+	.string "{PLAYER} picked up their\npartner, {COLOR GREEN}Eevee{COLOR DARK_GRAY}!$"
 
 Player_Dorm_Nickname_Eevee_Text_0:
 # 114 "data/maps/PlayerDorm/scripts.pory"

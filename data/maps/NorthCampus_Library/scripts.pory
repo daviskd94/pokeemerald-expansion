@@ -102,7 +102,7 @@ script NorthCampus_Library_NPC3 {
     faceplayer
     msgbox("Would you like to hear about\nthe book I'm reading?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
-        msgbox(format("It's called 'Twilight Tractors'.\pIt's about these two tractors who fall in love…\pExcept, one of them is a vampire tractor who wants to drink the other's oil!\pThey spend all this time trying to figure out how to make their relationship work.\pThere's also all these other evil vampire tractors who want to keep them apart.\pAll they want is to plow fields together forever!\pAlso, the vampire tractor is afraid to turn the other tractor into a vampire because she might regret becoming a super-powered undead tractor who wil never rust.\pAt the end, she nearly dies giving birth to his baby tractor, and he has to turn into into a vampire tractor to save her life…\pIt's really quite the love story!"))
+        msgbox(format("It's called 'Twilight Tractors'.\pIt's about these two tractors who fall in love…\pExcept, one of them is a vampire tractor who wants to drink the other's oil!\pThey spend all this time trying to figure out how to make their relationship work.\pThere's also all these other evil vampire tractors who want to keep them apart.\pAll they want is to plow fields together forever!\pAlso, the vampire tractor is afraid to turn the other tractor into a vampire because she might regret becoming a super-powered undead tractor who will never rust.\pAt the end, she nearly dies giving birth to his baby tractor, and he has to turn into into a vampire tractor to save her life…\pIt's really quite the love story!"))
     } else {
         msgbox(format("Oh, okay. Maybe next time!"))
     }
@@ -159,6 +159,12 @@ script NorthCampus_Library_ProfessorHanzneestoz {
             msgbox(format("Now, off you go, Frau {PLAYER}!\pI vill see you around, ja?\nGood luck on your journey!"))
         }
         closemessage
+        questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_SUBTERRANEAN_HUNT)
+        questmenu(QUEST_MENU_SET_ACTIVE, QUEST_BACK_TO_LAB_AGAIN)
+        playse(SE_DEX_SEARCH)
+        msgbox(format("{COLOR BLUE}Back to the Lab, Again{COLOR DARK_GRAY} has been added to your {COLOR BLUE}Quest Log{COLOR DARK_GRAY}."))
+        waitse
+        openquestmenu_active
         setflag(FLAG_POST_PROFESSOR_HANZNEESTOZ)
         setvar(VAR_NORTH_CAMPUS_STATE, 6)
         release
@@ -183,6 +189,13 @@ script NorthCampus_Library_ProfessorHanzneestoz {
     } else {
         msgbox(format("Ahh, guten tag, Frau {PLAYER}!\pYou are here for the review, ja?\pVunderbar!\pNow, as you know, I am Professor Hanzneestoz.\pI am specialist in subterranenan studies, expert in fossil research, and part-time enthusiast of yelling 'AH-HAH!' vhen I make a discovery!\pZis ist completely normal scientific behavior, ja?\pNow, today's review ist simple.\pYou vill be exploring der little cave to the vest of Main Hall.\pInside, you vill retrieve an item I have hidden!\pNow, be very, very careful, Frau {PLAYER}, as falling into holes ist NOT on ze syllabus!\pVe had an incident last year zat resulted in a student losing his eyebrows!\pYour mission ist to retrieve ze item and show me here in ze Library!\pGot it?\nVunderbar!\pNow, off you go!"))
     }
+    closemessage
+    questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_READY_SET_THROW)
+    questmenu(QUEST_MENU_SET_ACTIVE, QUEST_SUBTERRANEAN_HUNT)
+    playse(SE_DEX_SEARCH)
+    msgbox(format("{COLOR BLUE}Subterranean Hunt{COLOR DARK_GRAY} has been added to your {COLOR BLUE}Quest Log{COLOR DARK_GRAY}."))
+    waitse
+    openquestmenu_active
     setflag(FLAG_FIELDSTONE_CAVERN_ENTER)
     release
     closemessage

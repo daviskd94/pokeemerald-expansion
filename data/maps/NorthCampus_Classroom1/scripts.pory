@@ -1,1 +1,10 @@
 mapscripts NorthCampus_Classroom1_MapScripts {}
+
+script NorthCampus_Classroom1_NPC1 {
+    lock
+    faceplayer
+    msgbox(format("My goal is to collect every kind of Pokémon you can find around the school before I leave on my journey."))
+    closemessage
+    release
+    end
+}

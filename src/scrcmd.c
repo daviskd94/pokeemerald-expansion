@@ -3104,6 +3104,31 @@ bool8 ScrCmd_questmenu(struct ScriptContext *ctx)
     case QUEST_MENU_BUFFER_QUEST_NAME:
             QuestMenu_CopyQuestName(gStringVar1, questId);
         break;
+    case QUEST_MENU_OPEN_ALL:
+        BeginNormalPaletteFade(0xFFFFFFFF, 2, 16, 0, 0);
+        QuestMenu_InitWithFilter(SORT_DEFAULT, CB2_ReturnToFieldContinueScriptPlayMapMusic);
+        ScriptContext_Stop();
+        break;
+    case QUEST_MENU_OPEN_INACTIVE:
+        BeginNormalPaletteFade(0xFFFFFFFF, 2, 16, 0, 0);
+        QuestMenu_InitWithFilter(SORT_INACTIVE, CB2_ReturnToFieldContinueScriptPlayMapMusic);
+        ScriptContext_Stop();
+        break;
+    case QUEST_MENU_OPEN_ACTIVE:
+        BeginNormalPaletteFade(0xFFFFFFFF, 2, 16, 0, 0);
+        QuestMenu_InitWithFilter(SORT_ACTIVE, CB2_ReturnToFieldContinueScriptPlayMapMusic);
+        ScriptContext_Stop();
+        break;
+    case QUEST_MENU_OPEN_REWARD:
+        BeginNormalPaletteFade(0xFFFFFFFF, 2, 16, 0, 0);
+        QuestMenu_InitWithFilter(SORT_REWARD, CB2_ReturnToFieldContinueScriptPlayMapMusic);
+        ScriptContext_Stop();
+        break;
+    case QUEST_MENU_OPEN_COMPLETED:
+        BeginNormalPaletteFade(0xFFFFFFFF, 2, 16, 0, 0);
+        QuestMenu_InitWithFilter(SORT_DONE, CB2_ReturnToFieldContinueScriptPlayMapMusic);
+        ScriptContext_Stop();
+        break;
     }
 
     return TRUE;

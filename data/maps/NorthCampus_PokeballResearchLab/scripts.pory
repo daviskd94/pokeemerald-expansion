@@ -1,0 +1,55 @@
+mapscripts NorthCampus_PokeballResearchLab_MapScripts {}
+
+script NorthCampus_PokeballResearchLab_PokeBall {
+    msgbox(format("An educational model of a Poké Ball.\pIt's the most basic type of Poké Ball."))
+    closemessage
+    end
+}
+
+script NorthCampus_PokeballResearchLab_GreatBall {
+    msgbox("An educational model of a Great Ball.\pIt's 1.5x more effective than a Poké Ball.")
+    closemessage
+    end
+}
+
+script NorthCampus_PokeballResearchLab_UltraBall {
+    msgbox("An educational model of an Ultra Ball.\pIt's 2x more effective than a Poké Ball.")
+    closemessage
+    end
+}
+
+script NorthCampus_PokeballResearchLab_NetBall {
+    msgbox("An educational model of a Net Ball.\pIt's 2x more effective than a Poké Ball on {COLOR RED}Water- {COLOR DARK_GRAY}and {COLOR_RED}Bug-type {COLOR DARK_GRAY}Pokémon.")
+    closemessage
+    end
+}
+
+script NorthCampus_PokeballResearchLab_QuickBall {
+    msgbox("An educational model of a Quick Ball.\pIt's 5x more effective than a Poké Ball when used at the start of a wild encounter.")
+    closemessage
+    end
+}
+
+script NorthCampus_PokeballResearchLab_DuskBall {
+    msgbox("An educational model of a Dusk Ball.\pIt's 3.5x more effective than a Poké Ball when used in dark places like caves or at night.")
+    closemessage
+    end
+}
+
+script NorthCampus_PokeballResearchLab_TimerBall {
+    msgbox("An educational model of a Timer Ball.\pIts effectiveness increases the longer the battle goes on, up to 4x.")
+    closemessage
+    end
+}
+
+script NorthCampus_PokeballResearchLab_DiveaBall {
+    msgbox("An educational model of a Dive Ball.\pIt's 2x more effective than a Poké Ball when used on Pokémon encountered while fishing or surfing.")
+    closemessage
+    end
+}
+
+script NorthCampus_PokeballResearchLab_Laptops {
+    msgbox(format("This laptop contains research data on various Poké Balls.\pScientists are constantly working to improve Poké Ball technology!"))
+    closemessage
+    end
+}

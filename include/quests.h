@@ -70,6 +70,7 @@ enum QuestCases
 
 // functions
 void QuestMenu_Init(u8 a0, MainCallback callback);
+void QuestMenu_InitWithFilter(u8 filterMode, MainCallback callback);
 u8 QuestMenu_GetSetSubquestState(u8 quest, u8 caseId, u8 childQuest);
 u8 QuestMenu_GetSetQuestState(u8 quest, u8 caseId);
 void Task_QuestMenu_OpenFromStartMenu(u8);

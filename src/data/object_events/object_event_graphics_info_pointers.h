@@ -206,6 +206,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Registeel;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Skitty;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TractorBoatBack;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TractorBoatFront;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_QuestionMark;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kecleon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KyogreAsleep;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GroudonAsleep;
@@ -313,6 +314,13 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Coach;
 
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GreatBall;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UltraBall;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NetBall;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DiveBall;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TimerBall;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_QuickBall;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DuskBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBallHigher;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BallLight;
@@ -566,6 +574,13 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LUGIA] =                    &gObjectEventGraphicsInfo_Lugia,
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
+    [OBJ_EVENT_GFX_GREAT_BALL] =               &gObjectEventGraphicsInfo_GreatBall,
+    [OBJ_EVENT_GFX_ULTRA_BALL] =               &gObjectEventGraphicsInfo_UltraBall,
+    [OBJ_EVENT_GFX_NET_BALL] =                 &gObjectEventGraphicsInfo_NetBall,
+    [OBJ_EVENT_GFX_DIVE_BALL] =                &gObjectEventGraphicsInfo_DiveBall,
+    [OBJ_EVENT_GFX_QUICK_BALL] =               &gObjectEventGraphicsInfo_QuickBall,
+    [OBJ_EVENT_GFX_DUSK_BALL] =                &gObjectEventGraphicsInfo_DuskBall,
+    [OBJ_EVENT_GFX_TIMER_BALL] =               &gObjectEventGraphicsInfo_TimerBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
     [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,
     [OBJ_EVENT_GFX_TRACIE] =                   &gObjectEventGraphicsInfo_Tracie,
@@ -639,6 +654,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_COACH] =                    &gObjectEventGraphicsInfo_Coach,
     [OBJ_EVENT_GFX_TRACTOR_BOAT_BACK_HALF] =   &gObjectEventGraphicsInfo_TractorBoatBack,
     [OBJ_EVENT_GFX_TRACTOR_BOAT_FRONT_HALF] =  &gObjectEventGraphicsInfo_TractorBoatFront,
+    [OBJ_EVENT_GFX_QUESTION_MARK] =             &gObjectEventGraphicsInfo_QuestionMark,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

@@ -26,6 +26,9 @@ const u16 gTrainerPalette_CoolTrainerM[] = INCBIN_U16("graphics/trainers/front_p
 const u32 gTrainerFrontPic_BirdKeeper[] = INCBIN_U32("graphics/trainers/front_pics/bird_keeper.4bpp.smol");
 const u16 gTrainerPalette_BirdKeeper[] = INCBIN_U16("graphics/trainers/front_pics/bird_keeper.gbapal");
 
+const u32 gTrainerFrontPic_Jogger[] = INCBIN_U32("graphics/trainers/front_pics/jogger.4bpp.smol");
+const u16 gTrainerPalette_Jogger[] = INCBIN_U16("graphics/trainers/front_pics/jogger.gbapal");
+
 const u32 gTrainerFrontPic_Collector[] = INCBIN_U32("graphics/trainers/front_pics/collector.4bpp.smol");
 const u16 gTrainerPalette_Collector[] = INCBIN_U16("graphics/trainers/front_pics/collector.gbapal");
 
@@ -328,6 +331,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_TRACIE, gTrainerFrontPic_Tracie, gTrainerPalette_Tracie),
     TRAINER_SPRITE(TRAINER_PIC_ROTCART, gTrainerFrontPic_Rotcart, gTrainerPalette_Rotcart),
     TRAINER_SPRITE(TRAINER_PIC_MARIO, gTrainerFrontPic_Mario, gTrainerPalette_Mario),
+    TRAINER_SPRITE(TRAINER_PIC_JOGGER, gTrainerFrontPic_Jogger, gTrainerPalette_Jogger),
     TRAINER_SPRITE(TRAINER_PIC_AQUA_GRUNT_M, gTrainerFrontPic_AquaGruntM, gTrainerPalette_AquaGruntM),
     TRAINER_SPRITE(TRAINER_PIC_POKEMON_BREEDER_F, gTrainerFrontPic_PokemonBreederF, gTrainerPalette_PokemonBreederF),
     TRAINER_SPRITE(TRAINER_PIC_COOLTRAINER_M, gTrainerFrontPic_CoolTrainerM, gTrainerPalette_CoolTrainerM),

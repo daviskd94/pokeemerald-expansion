@@ -16745,7 +16745,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #elif B_PREFERRED_ICE_WEATHER == B_ICE_WEATHER_BOTH
         .description = COMPOUND_STRING(
             "Weakens all attacks if\n"
-            "used in hail or snow."),
+            "used in snow."),
         #else
         .description = COMPOUND_STRING(
             "Weakens all attacks, but\n"

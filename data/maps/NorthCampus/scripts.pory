@@ -50,7 +50,8 @@ script NorthCampus_WalkNextToTracie6 {
 script NorthCampus_TalkToTracie {
     fadeoutbgm(0)
     setspeaker(SP_NAME_TRACIE)
-    msgbox(format("…\pTake a good look, {PLAYER}…\pMain Hall sure does hit different when you know it's your final year.\p We've had a lot of great memories in here.\pAnd… okay, maybe a few\ncatastrophes too.\pWe never did find out what happened to the guy with the Mareep and the lotion…"))
+    msgbox(format("…\pTake a good look, {PLAYER}…\p{COLOR GREEN}Main Hall{COLOR DARK_GRAY} sure does hit different when you know it's your final year.\p We've had a lot of great memories in here.\pAnd… okay, maybe a few\ncatastrophes too.\pWe never did find out what happened to the guy with the Mareep and the lotion…"))
+    closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     applymovement(LOCALID_TRACIE_ENTERING_MAIN_HALL, moves(face_right))
     waitmovement(0)
@@ -67,7 +68,7 @@ script NorthCampus_TalkToTracie {
     applymovement(LOCALID_TRACIE_ENTERING_MAIN_HALL, moves(walk_up))
     waitmovement(0)
     hideobjectat(LOCALID_TRACIE_ENTERING_MAIN_HALL, MAP_NORTH_CAMPUS)
-    closedoor(42, 16)
+    closedoor(46, 16)
     waitdooranim
     special(SpawnCameraObject)
     setobjectxyperm(LOCALID_CAMERA, 42, 16)
@@ -127,7 +128,7 @@ script NorthCampus_EnterWildArea {
     msgbox(format("Eek!"))
     closemessage
     setspeaker(SP_NAME_CYRUS_3) 
-    msgbox(format("Splendid!\nPleasure to meet you all!\pI'm here to teach you all about catching Pokémon.\pFirst, to catch a Pokémon, you use what's called a Poké Ball.\pOnce you find a wild Pokémon, you throw the Poké Ball at it to capture it!\pIt's really quite simple!"))
+    msgbox(format("Splendid!\nPleasure to meet you all!\pI'm here to teach you all about catching Pokémon.\pFirst, to catch a Pokémon, you use what's called a {COLOR GREEN}Poké Ball{COLOR DARK_GRAY}.\pOnce you find a wild Pokémon, you throw the Poké Ball at it to capture it!\pIt's really quite simple!"))
     closemessage
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("But um… Mister Doctor Professor Cyrus…"))
@@ -136,7 +137,7 @@ script NorthCampus_EnterWildArea {
     msgbox(format("No need to be so formal,\ncall me Cyrus!"))
     closemessage
     setspeaker(SP_NAME_TRACIE)
-    msgbox(format("… … …\pRight… Cyrus.\pYou have to weaken a Pokémon first\nbefore you can catch it.\pYou can't just throw a Poké Ball at a wild Pokémon out of nowhere!\pThat's… not how it works."))
+    msgbox(format("… … …\pRight… Cyrus.\pYou have to weaken a Pokémon first\nbefore you can catch it.\pYou can't just throw a {COLOR GREEN}Poké Ball{COLOR DARK_GRAY} at a wild Pokémon out of nowhere!\pThat's… not how it works."))
     closemessage
     setspeaker(SP_NAME_CYRUS)
     msgbox(format("That's a great point!\nI like your style.\pWhat's your name?"))
@@ -174,6 +175,7 @@ script NorthCampus_EnterWildArea {
     closemessage
     special(StartWallyTutorialBattle)
 	waitstate
+    playbgm(MUS_ENCOUNTER_SUSPICIOUS, FALSE)
     setspeaker(SP_NAME_CYRUS)
     msgbox(format("Not another one…\pThese poor miscolored Pokémon…\nThey're so sick."))
     closemessage
@@ -256,7 +258,7 @@ script NorthCampus_EnterWildArea {
     waitse
     delay(40)
     setspeaker(SP_NAME_INTERCOM)
-    msgbox(format("Attention seniors.\pPlease report to Mahindra Library for your next assignment."))
+    msgbox(format("Attention seniors.\pPlease report to {COLOR GREEN}Mahindra Library{COLOR DARK_GRAY} for your next assignment."))
     closemessage
     playbgm(MUS_ENCOUNTER_MAY, FALSE)
     setspeaker(SP_NAME_TRACIE)
@@ -281,10 +283,14 @@ script NorthCampus_EnterWildArea {
     end
 }
 
+script NorthCampus_TractorStatue {
+    msgbox("Tractor University\n'Your Tractor in Your Field'", MSGBOX_SIGN)
+    closemessage
+}
 script NorthCampus_Cave_Guard {
     lock
     faceplayer
-    msgbox(format("Fieldstone Cavern is currently off limits during orientation.\pPlease come back later."))
+    msgbox(format("{COLOR GREEN}Fieldstone Cavern{COLOR DARK_GRAY} is currently off limits during orientation.\pPlease come back later."))
     closemessage
     release
     end
@@ -328,7 +334,7 @@ script NorthCampus_NPC4 {
 script NorthCampus_NPC5 {
     lock
 	faceplayer
-	msgbox(format("I read that Main Hall was built almost a century ago!\pIt's amazing that it's still standing strong.\pI hope it lasts for another hundred years!"))
+	msgbox(format("I read that {COLOR GREEN}Main Hall{COLOR DARK_GRAY} was built almost a century ago!\pIt's amazing that it's still standing strong.\pI hope it lasts for another hundred years!"))
 	closemessage
 	release
 	end
@@ -345,5 +351,10 @@ script NorthCampus_NPC6 {
 
 script NorthCampus_MahindraLibrarySign {
     msgbox("Mahindra Library" MSGBOX_SIGN)
+    closemessage
+}
+
+script NorthCampus_PokemonResearchLabSign {
+    msgbox("John Deere Pokémon Research Lab" MSGBOX_SIGN)
     closemessage
 }

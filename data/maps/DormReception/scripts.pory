@@ -59,3 +59,39 @@ script DormReception_Bookcase {
     release
     end
 }
+
+script DormReception_Camper {
+    lock
+    faceplayer
+    msgbox(format("Oh!\nYou have a {COLOR BLUE}Quest Log{COLOR DARK_GRAY} too?\pIt's a good thing to have if you ever forget what you were doing.\pHappens to me all the time!"))
+    closemessage
+    release
+    end
+}
+
+script DormReception_Lady {
+    lock
+    faceplayer
+    msgbox(format("You can store {COLOR GREEN}Pokémon {COLOR DARK_GRAY}and {COLOR GREEN}Items{COLOR DARK_GRAY} in your PC.\pI'm sure you have one in your dorm room, but that one only holds {COLOR GREEN}Items{COLOR DARK_GRAY}.\pThe {COLOR GREEN}Pokémon Centers{COLOR DARK_GRAY} have PCs that can store both {COLOR GREEN}Pokémon {COLOR DARK_GRAY}and {COLOR GREEN}Items{COLOR DARK_GRAY}.\pThey're very useful!"))
+    closemessage
+    release
+    end
+}
+
+script DormReception_Picnicker {
+    lock
+    faceplayer
+    msgbox(format("You should check out the South Campus Poké Mart sometime!\pThey have some useful medicine for sale."))
+    closemessage
+    release
+    end
+}
+
+script DormReception_Lass {
+    lock
+    faceplayer
+    msgbox(format("Hi, {PLAYER}!\nI saw Rotcart leave just a minute ago.\pHe flipped me off as he went by!"))
+    closemessage
+    release
+    end
+}

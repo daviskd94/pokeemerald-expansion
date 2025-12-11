@@ -4610,6 +4610,86 @@
       "secondary_tileset": "gTileset_Library",
       "border_filepath": "data/layouts/NorthCampus_Library/border.bin",
       "blockdata_filepath": "data/layouts/NorthCampus_Library/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_CAMPUS_RESEARCH_LAB",
+      "name": "NorthCampus_ResearchLab_Layout",
+      "width": 28,
+      "height": 23,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Laboratory",
+      "border_filepath": "data/layouts/NorthCampus_ResearchLab/border.bin",
+      "blockdata_filepath": "data/layouts/NorthCampus_ResearchLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTH_CAMPUS_DORM_1",
+      "name": "SouthCampus_Dorm_1_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/SouthCampus_Dorm_1/border.bin",
+      "blockdata_filepath": "data/layouts/SouthCampus_Dorm_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTH_CAMPUS_DORM_2",
+      "name": "SouthCampus_Dorm_2_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/SouthCampus_Dorm_2/border.bin",
+      "blockdata_filepath": "data/layouts/SouthCampus_Dorm_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTH_CAMPUS_DORM_3",
+      "name": "SouthCampus_Dorm_3_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/SouthCampus_Dorm_3/border.bin",
+      "blockdata_filepath": "data/layouts/SouthCampus_Dorm_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_CAMPUS_CLASSROOM2",
+      "name": "NorthCampus_Classroom2_Layout",
+      "width": 16,
+      "height": 18,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Classroom",
+      "border_filepath": "data/layouts/NorthCampus_Classroom2/border.bin",
+      "blockdata_filepath": "data/layouts/NorthCampus_Classroom2/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_CAMPUS_CLASSROOM3",
+      "name": "NorthCampus_Classroom3_Layout",
+      "width": 16,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Classroom",
+      "border_filepath": "data/layouts/NorthCampus_Classroom3/border.bin",
+      "blockdata_filepath": "data/layouts/NorthCampus_Classroom3/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_CAMPUS_POKEBALL_RESEARCH_LAB",
+      "name": "NorthCampus_PokeballResearchLab_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Laboratory",
+      "border_filepath": "data/layouts/NorthCampus_PokeballResearchLab/border.bin",
+      "blockdata_filepath": "data/layouts/NorthCampus_PokeballResearchLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_CAMPUS_FOSSIL_RESEARCH_LAB",
+      "name": "NorthCampus_FossilResearchLab_Layout",
+      "width": 38,
+      "height": 43,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_FossilLab",
+      "border_filepath": "data/layouts/NorthCampus_FossilResearchLab/border.bin",
+      "blockdata_filepath": "data/layouts/NorthCampus_FossilResearchLab/map.bin"
     }
   ]
 }

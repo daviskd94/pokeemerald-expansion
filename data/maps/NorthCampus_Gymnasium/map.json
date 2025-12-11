@@ -44,7 +44,7 @@
     },
     {
       "local_id": "LOCALID_GYMNASIUM_ACE_TRAINER_F",
-      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_F",
+      "graphics_id": "OBJ_EVENT_GFX_RANCHER",
       "x": 15,
       "y": 15,
       "elevation": 0,
@@ -101,8 +101,8 @@
     {
       "local_id": "LOCALID_GYMNASIUM_TRACIE_2",
       "graphics_id": "OBJ_EVENT_GFX_TRACIE",
-      "x": 21,
-      "y": 6,
+      "x": 22,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -125,6 +125,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_TRACIEROTCART"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_JOGGER",
+      "x": 31,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthCampus_Gymnasium_Orthoc",
+      "flag": "FLAG_SHOW_GYM_NPCS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 6,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_UP_LEFT_DOWN",
+      "movement_range_x": 7,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NorthCampus_Gymnasium_NPC1",
+      "flag": "FLAG_SHOW_GYM_NPCS"
     }
   ],
   "warp_events": [

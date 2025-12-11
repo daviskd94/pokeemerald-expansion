@@ -65,7 +65,7 @@ TracieDorm_Enter::
 # 34 "data/maps/TracieDorm/scripts.pory"
 	waitse
 # 35 "data/maps/TracieDorm/scripts.pory"
-	openquestmenu
+	openquestmenu_active
 # 36 "data/maps/TracieDorm/scripts.pory"
 	setspeaker SP_NAME_TRACIE
 # 37 "data/maps/TracieDorm/scripts.pory"

@@ -9,3 +9,67 @@ script NorthCampus_MainHall_2F_Coach_Cedar {
     release
     end
 }
+
+script NorthCampus_MainHall_2F_Marcie {
+    faceplayer
+    setspeaker(SP_NAME_MARCIE)
+    if(flag(FLAG_DEFEATED_MARCIE_MAIN_HALL)) 
+    {
+        msgbox(format("I'm going to keep training so I can beat you one day!"))
+        closemessage
+        release
+        end
+    }
+    else {
+        msgbox("Hey!\nWanna battle?\pI'm itching for a good fight!", MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            closemessage
+            setspeaker(SP_NAME_MARCIE)
+            msgbox(format("Great! Let's go!"))
+            trainerbattle_no_intro(TRAINER_MAIN_HALL_MARCIE, format("Oh wow.\nYou're good!"))
+            setflag(FLAG_DEFEATED_MARCIE_MAIN_HALL)
+            release
+            end
+        }   
+        else {
+            closemessage
+            setspeaker(SP_NAME_MARCIE)
+            msgbox(format("Oh, that's OK.\nLet me know if you change your mind!"))
+    }
+    closemessage
+    release
+    end
+    }
+}
+
+script NorthCampus_MainHall_2F_Lyssa {
+    faceplayer
+    setspeaker(SP_NAME_LYSSA)
+    if(flag(FLAG_DEFEATED_LYSSA_MAIN_HALL)) 
+    {
+        msgbox(format("You did well to beat my Tinkatink.\nBut we'll be back even stonger next time!"))
+        closemessage
+        release
+        end
+    }
+    else {
+        msgbox("I'm kind of bored.\nWant to have a battle?", MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            closemessage
+            setspeaker(SP_NAME_LYSSA)
+            msgbox(format("Wonderful!\nGood luck!"))
+            trainerbattle_no_intro(TRAINER_MAIN_HALL_LYSSA, format("Darn!\nI thought I had that!"))
+            setflag(FLAG_DEFEATED_LYSSA_MAIN_HALL)
+            release
+            end
+        }   
+        else {
+            closemessage
+            setspeaker(SP_NAME_LYSSA)
+            msgbox(format("No worries.\nDo you need some time to prepare?\pThat's fine!"))
+    }
+    closemessage
+    release
+    end
+    }
+}

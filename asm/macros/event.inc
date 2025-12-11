@@ -1920,6 +1920,26 @@
     questmenu 0 0
     .endm
 
+    .macro openquestmenu_active
+    questmenu QUEST_MENU_OPEN_ACTIVE, 0
+    .endm
+
+    .macro openquestmenu_inactive
+    questmenu QUEST_MENU_OPEN_INACTIVE, 0
+    .endm
+
+    .macro openquestmenu_all
+    questmenu QUEST_MENU_OPEN_ALL, 0
+    .endm
+
+    .macro openquestmenu_reward
+    questmenu QUEST_MENU_OPEN_REWARD, 0
+    .endm
+
+    .macro openquestmenu_completed
+    questmenu QUEST_MENU_OPEN_COMPLETED, 0
+    .endm
+
     @ Starts the specified quest.
 	.macro startquest quest:req
 	closemessage

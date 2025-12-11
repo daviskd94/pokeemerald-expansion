@@ -1,0 +1,19 @@
+mapscripts NorthCampus_Classroom3_MapScripts {}
+
+script NorthCampus_Classroom3_NPC1 {
+    lock
+    faceplayer
+    msgbox(format("Ugh, this class is hard.\nI have to actually study!"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_Classroom3_NPC2 {
+    lock
+    faceplayer
+    msgbox(format("DHave you taken Water Pokémon Habits and Habitats?\pIt's my favorite class so far!\pNext to Famous Fishing Folk Fables, that is."))
+    closemessage
+    release
+    end
+}

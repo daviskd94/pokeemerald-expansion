@@ -1,0 +1,96 @@
+mapscripts NorthCampus_ResearchLab_MapScripts {}
+
+
+script NorthCampus_ResearchLab_Scientist1 {
+    faceplayer
+    msgbox(format("It's theorized that {COLOR GREEN}Voltorb{COLOR DARK_GRAY} are actually a result of failed Poké Ball experiments.\pWe've found that its physical components are not made naturally.\pFascinating, isn't it?"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_ResearchLab_Scientist2 {
+    faceplayer
+    msgbox(format("Did you know that {COLOR GREEN}Porygon{COLOR DARK_GRAY} is the first\nentirely virtual Pokémon?\pIt was created using advanced computer programming!"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_ResearchLab_Scientist3 {
+    faceplayer
+    msgbox(format("Records from Ancient Sinnoh show that {COLOR GREEN}Voltorb{COLOR DARK_GRAY} once had a different appearance.\pThey appeared more like wood, which was the design of {COLOR GREEN}Poké Balls {COLOR DARK_GRAY}at the time.\pThis further supports our theories."))
+    closemessage
+    release
+    end
+}
+
+
+script NorthCampus_ResearchLab_Scientist4 {
+    lock
+    faceplayer
+    msgbox(format("We're lucky to have the funding to be able to study Pokémon as much as we want.\pYou can't exactly put a price on knowledge, after all!"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_ResearchLab_Scientist5 {
+    faceplayer
+    msgbox(format("Professor Maple has me organizing all our documents and research data.\pIt's a lot of work, but it's important to keep everything in order!"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_ResearchLab_Machine1 {
+    msgbox(format("This machine is flashing lights and beeping.\pBetter not mess with it."))
+    closemessage
+}
+
+script NorthCampus_ResearchLab_Machine2 {
+    msgbox(format("It seems to be measuring something…\pProbably best to leave it alone."))
+    closemessage
+}
+
+script NorthCampus_ResearchLab_Machine3 {
+    msgbox(format("It's filled with some sort of mysterious, green liquid.\pI wonder what it's for?"))
+    closemessage
+}
+
+script NorthCampus_ResearchLab_Laptop {
+    msgbox(format("This laptop seems to be a newer model.\pIt's running some sort of data analysis software."))
+    closemessage
+}
+
+script NorthCampus_ResearchLab_Drawer {
+    msgbox(format("The drawers are filled with tools and various research supplies"))
+    closemessage
+}
+
+script NorthCampus_ResearchLab_Sink {
+    msgbox(format("There's a sign above the sink that says,\n'Do not dump chemicals down the drain.'"))
+    closemessage
+}
+
+script NorthCampus_ResearchLab_Voltorb {
+    faceplayer
+    setspeaker(SP_NAME_VOLTORB)
+    playmoncry(SPECIES_VOLTORB, 0)
+    msgbox("Bzzzzt! Bzzzzt", MSGBOX_DEFAULT)
+    waitmoncry
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_ResearchLab_Porygon {
+    faceplayer
+    setspeaker(SP_NAME_PORYGON)
+    playmoncry(SPECIES_PORYGON, 0)
+    msgbox("Cree!", MSGBOX_DEFAULT)
+    waitmoncry
+    closemessage
+    release
+    end
+}

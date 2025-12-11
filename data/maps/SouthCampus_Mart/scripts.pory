@@ -19,6 +19,15 @@ script SouthCampus_Mart_Clerk {
     end
 }
 
+script SouthCampus_Mart_NPC1 {
+    lock
+    faceplayer
+    msgbox(format("So many useful items for sale!"))
+    closemessage
+    release
+    end
+}
+
 mart MyMartItems {
     ITEM_POTION
     ITEM_ANTIDOTE

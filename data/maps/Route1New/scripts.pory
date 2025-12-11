@@ -5,9 +5,20 @@ script SignScript_Route1 {
     closemessage
 }
 
-script Route1_ArriveAtBoat {
+script Route1_WalkUpToBoat1 {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down*3))
     waitmovement(0)
+    call (Route1_ArriveAtBoat)
+}
+
+script Route1_WalkUpToBoat2 {
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down*1, walk_left, walk_down*2))
+    waitmovement(0)
+    call (Route1_ArriveAtBoat)
+}
+
+
+script Route1_ArriveAtBoat {
     fadeoutbgm(0)
     applymovement(LOCALID_ROUTE_1_TRACIE, moves(face_up))
     waitmovement(0)
@@ -59,7 +70,7 @@ script Route1_ArriveAtBoat {
     waitmovement(0)
     playbgm(MUS_B_TOWER, TRUE)
     setspeaker(SP_NAME_MARIO)
-    msgbox(format("Hi, everybody!\nThank you all for making it down here!\pBefore we get started, I just want to say how proud we are to have you all as students.\pYou are the future of Tractoria, and we know you'll do great things!\pUpon boarding, you'll each have\nyour own cabin to settle into.\pFeel free to explore the boat and\nmake yourselves at home!\pIt will be a long journey,\nafter all!\pProfessor Maple and I will be accompanying you to make sure everything goes smoothly.\pIf you need anything, don't hesitate\nto ask one of us!\pOnce you're ready,\nspeak with the Captain to board!"))
+    msgbox(format("Hi, everybody!\nThank you all for making it down here!\pBefore we get started, I just want to say how proud we are to have you all as students.\pYou are the future of {COLOR GREEN}Tractoria{COLOR DARK_GRAY}, and we know you'll do great things!\pUpon boarding, you'll each have\nyour own cabin to settle into.\pFeel free to explore the boat and\nmake yourselves at home!\pIt will be a long journey,\nafter all!\pProfessor Maple and I will be accompanying you to make sure everything goes smoothly.\pIf you need anything, don't hesitate\nto ask one of us!\pOnce you're ready,\nspeak with the {COLOR GREEN}Captain{COLOR DARK_GRAY} to board!"))
     closemessage
     applymovement(LOCALID_CAMERA, moves(walk_left*2, walk_up, walk_left))
     waitmovement(0)
@@ -99,17 +110,107 @@ script Route1_ArriveAtBoat {
     end
 
 }
-script TestBoat_Route1 {
+script Route1_Captain {
     lock
     faceplayer
     setspeaker(SP_NAME_ACRE)
-    msgbox("Are you ready to board?")
-    closemessage
+    msgbox("Are you ready to board?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        closemessage
+        setspeaker(SP_NAME_ACRE)
+        msgbox(format("Watch your step."))
+        closemessage
+        call (Route1_BoardingBoat)
+    } else {
+        closemessage
+        setspeaker(SP_NAME_ACRE)
+        msgbox(format("Please board once you're ready."))
+    }   
     fadeoutbgm(0)
     playse(SE_RG_SS_ANNE_HORN)
-    applymovement(LOCALID_ROUTE_1_BOAT_BACK, moves(walk_slow_right*10))
-    applymovement(LOCALID_ROUTE_1_BOAT_FRONT, moves(walk_slow_right*10))
+    applymovement(LOCALID_ROUTE_1_BOAT_BACK, moves(walk_slow_right*12))
+    applymovement(LOCALID_ROUTE_1_BOAT_FRONT, moves(walk_slow_right*11))
     waitmovement(0)
     release
     end
+}
+
+script Route1_BoardingBoat {
+    specialvar(VAR_RESULT, GetPlayerFacingDirection)
+    switch(var(VAR_RESULT)) {
+    case DIR_SOUTH:
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left, walk_down*2))
+        waitmovement(0)
+        hideobjectat(OBJ_EVENT_ID_PLAYER, MAP_ROUTE1NEW)
+    case DIR_EAST:
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+        waitmovement(0)
     }
+    playse(SE_EXIT)
+    hideobjectat(OBJ_EVENT_ID_PLAYER, MAP_ROUTE1NEW)
+    applymovement(LOCALID_ROUTE_1_CAPTAIN, moves(walk_left, walk_down))
+    waitmovement(0)
+    playse(SE_EXIT)
+    hideobjectat(LOCALID_ROUTE_1_CAPTAIN, MAP_ROUTE1NEW)
+    fadeoutbgm(0)
+    addobject(LOCALID_ROUTE_1_CYRUS)
+    delay(180)
+    playbgm(MUS_ENCOUNTER_SUSPICIOUS, FALSE)
+    applymovement(LOCALID_ROUTE_1_CYRUS, moves(walk_fast_right*5))
+    waitmovement(0)
+    delay(20)
+    applymovement(LOCALID_ROUTE_1_CYRUS, moves(face_up))
+    delay(20)
+    applymovement(LOCALID_ROUTE_1_CYRUS, moves(face_down))
+    delay(20)
+    applymovement(LOCALID_ROUTE_1_CYRUS, moves(face_left))
+    delay(20)
+    applymovement(LOCALID_ROUTE_1_CYRUS, moves(walk_fast_right*4, walk_fast_down))
+    waitmovement(0)
+    playse(SE_EXIT)
+    removeobject(LOCALID_ROUTE_1_CYRUS)
+    fadeoutbgm(0)
+    addobject(LOCALID_ROUTE_1_GRUNT)
+    delay(40)
+    playse(SE_RG_SS_ANNE_HORN)
+    applymovement(LOCALID_ROUTE_1_BOAT_BACK, moves(walk_slow_right*13))
+    applymovement(LOCALID_ROUTE_1_BOAT_FRONT, moves(walk_slow_right*13))
+    waitmovement(0)
+    setflag(FLAG_HIDE_ROUTE_1_BOAT)
+    removeobject(LOCALID_ROUTE_1_BOAT_BACK)
+    removeobject(LOCALID_ROUTE_1_BOAT_FRONT)
+    delay(120)
+    special(SpawnCameraObject)
+    setobjectxyperm(LOCALID_CAMERA, 37, 33)
+    playbgm(MUS_ABNORMAL_WEATHER, FALSE)
+    applymovement(LOCALID_CAMERA, moves(walk_slow_left*8))
+    waitmovement(0)
+    removeobject(LOCALID_CAMERA)
+    special(RemoveCameraObject)
+    delay(100)
+    applymovement(LOCALID_ROUTE_1_GRUNT, moves(face_up))
+    waitmovement(0)
+    playse(SE_POKENAV_CALL)
+    waitse
+    delay(30)
+    playse(SE_POKENAV_CALL)
+    waitse
+    delay(30)
+    setspeaker(SP_NAME_UNKNOWN)
+    msgbox(format("… … …\pMario has boarded the ship.\nThey are enroute across the sea.\p… … …\pI counted 7 students.\p… … …\pUnderstood."))
+    closemessage
+    playse(SE_POKENAV_HANG_UP)
+    waitse
+    applymovement(LOCALID_ROUTE_1_GRUNT, moves(walk_up*8))
+    waitmovement(0)
+    fadescreenspeed(FADE_TO_BLACK, 12)
+    delay(60)
+    fadeoutbgm(0)
+    msgbox(format("This concludes the demo for Pokémon Tractors. Thank you for playing!{PAUSE 120}"))
+    closemessage
+    playbgm (MUS_LILYCOVE_MUSEUM, TRUE)
+    warp(MAP_SOUTH_CAMPUS, 37, 40)
+    waitstate
+    release
+    end
+}

@@ -5,7 +5,6 @@ mapscripts DormHallway_MapScripts {
 }
 
 script DormHallway_LeaveDorm {
-    lockall
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("Oh! Before I forget!\pI need to stop at my room to grab some things."))
     closemessage
@@ -23,6 +22,7 @@ script DormHallway_LeaveDorm {
     waitse
     setflag(FLAG_HIDE_TRACIEROTCART)
     setvar(VAR_PLAYERDORM_STATE, 3)
+    callnative(UpdateFollowingPokemon)
     end
 }
 
@@ -80,3 +80,23 @@ script Player_Dorm_EventScript_RotcartSign {
     end
 }
 
+script Player_Dorm_EventScript_BuckSign {
+    lock
+    msgbox("Buck's room" MSGBOX_SIGN) 
+    release
+    end
+}
+
+script Player_Dorm_EventScript_ColtonSign {
+    lock
+    msgbox("Colton's room" MSGBOX_SIGN) 
+    release
+    end
+}
+
+script Player_Dorm_EventScript_CelesteGabeSign {
+    lock
+    msgbox("Celeste & Gabe's room" MSGBOX_SIGN) 
+    release
+    end
+}

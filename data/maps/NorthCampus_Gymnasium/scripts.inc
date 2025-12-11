@@ -239,23 +239,23 @@ NorthCampus_Gymnasium_Enter_1:
 # 128 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	waitmovement LOCALID_GYMNASIUM_ROTCART
 # 129 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	delay 15
+	applymovement LOCALID_GYMNASIUM_COACH_CEDAR, NorthCampus_Gymnasium_Enter_Movement_19
 # 130 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	clearflag FLAG_HIDE_TRACIE
+	setobjectxyperm LOCALID_GYMNASIUM_COACH_CEDAR, 22, 8
 # 131 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	addobject LOCALID_GYMNASIUM_TRACIE_2
+	clearflag FLAG_HIDE_TRACIE
 # 132 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	setspeaker SP_NAME_ROTCART
+	addobject LOCALID_GYMNASIUM_TRACIE_2
 # 133 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	msgbox NorthCampus_Gymnasium_Enter_Text_18
+	setspeaker SP_NAME_ROTCART
 # 134 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	closemessage
+	msgbox NorthCampus_Gymnasium_Enter_Text_18
 # 135 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	special HealPlayerParty
+	closemessage
 # 136 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	setflag FLAG_WHITEOUT_CONTINUE
+	special HealPlayerParty
 # 137 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	setobjectxyperm LOCALID_GYMNASIUM_COACH_CEDAR, 21, 7
+	setflag FLAG_WHITEOUT_CONTINUE
 # 138 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	trainerbattle_no_intro TRAINER_ROTCART_1, NorthCampus_Gymnasium_Enter_Text_19
 # 139 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -271,9 +271,9 @@ NorthCampus_Gymnasium_Enter_1:
 # 144 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	setobjectxyperm LOCALID_CAMERA, 8, 7
 # 145 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	applymovement LOCALID_CAMERA, NorthCampus_Gymnasium_Enter_Movement_19
+	applymovement LOCALID_CAMERA, NorthCampus_Gymnasium_Enter_Movement_20
 # 146 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	applymovement LOCALID_GYMNASIUM_ROTCART, NorthCampus_Gymnasium_Enter_Movement_20
+	applymovement LOCALID_GYMNASIUM_ROTCART, NorthCampus_Gymnasium_Enter_Movement_21
 # 147 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	waitmovement 0
 # 148 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -288,15 +288,15 @@ NorthCampus_Gymnasium_Enter_1:
 # 173 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	closemessage
 # 174 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_Gymnasium_Enter_Movement_21
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_Gymnasium_Enter_Movement_22
 # 175 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	applymovement LOCALID_GYMNASIUM_ROTCART, NorthCampus_Gymnasium_Enter_Movement_22
+	applymovement LOCALID_GYMNASIUM_ROTCART, NorthCampus_Gymnasium_Enter_Movement_23
 # 176 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	waitmovement 0
 # 177 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	fadedefaultbgm
 # 178 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	applymovement LOCALID_GYMNASIUM_COACH_CEDAR, NorthCampus_Gymnasium_Enter_Movement_23
+	applymovement LOCALID_GYMNASIUM_COACH_CEDAR, NorthCampus_Gymnasium_Enter_Movement_24
 # 179 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	waitmovement 0
 # 180 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -308,7 +308,7 @@ NorthCampus_Gymnasium_Enter_1:
 # 183 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	closemessage
 # 184 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	applymovement LOCALID_GYMNASIUM_TRACIE_2, NorthCampus_Gymnasium_Enter_Movement_24
+	applymovement LOCALID_GYMNASIUM_TRACIE_2, NorthCampus_Gymnasium_Enter_Movement_25
 # 185 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	waitmovement 0
 # 186 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -339,13 +339,13 @@ NorthCampus_Gymnasium_Enter_5:
 # 199 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	closemessage
 # 200 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	applymovement LOCALID_GYMNASIUM_TRACIE_2, NorthCampus_Gymnasium_Enter_Movement_25
+	applymovement LOCALID_GYMNASIUM_TRACIE_2, NorthCampus_Gymnasium_Enter_Movement_26
 # 201 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_Gymnasium_Enter_Movement_15
 # 202 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	delay 80
 # 203 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_Gymnasium_Enter_Movement_21
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_Gymnasium_Enter_Movement_22
 # 204 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	delay 130
 # 205 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -385,8 +385,22 @@ NorthCampus_Gymnasium_Enter_5:
 # 222 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	setvar VAR_NORTH_CAMPUS_STATE, 4
 # 223 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	callnative UpdateFollowingPokemon
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_POKEMON_BATTLES_101
 # 224 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	questmenu QUEST_MENU_SET_ACTIVE, QUEST_READY_SET_THROW
+# 225 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	playse SE_DEX_SEARCH
+# 226 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	msgbox NorthCampus_Gymnasium_Enter_Text_29
+# 227 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	waitse
+# 228 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	openquestmenu_active
+# 229 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	callnative UpdateFollowingPokemon
+# 230 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	clearflag FLAG_SHOW_GYM_NPCS
+# 231 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	release
 	end
 
@@ -407,15 +421,15 @@ NorthCampus_Gymnasium_Enter_6:
 # 152 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	closemessage
 # 153 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_Gymnasium_Enter_Movement_21
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_Gymnasium_Enter_Movement_22
 # 154 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	applymovement LOCALID_GYMNASIUM_ROTCART, NorthCampus_Gymnasium_Enter_Movement_22
+	applymovement LOCALID_GYMNASIUM_ROTCART, NorthCampus_Gymnasium_Enter_Movement_23
 # 155 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	waitmovement 0
 # 156 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	fadedefaultbgm
 # 157 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	applymovement LOCALID_GYMNASIUM_COACH_CEDAR, NorthCampus_Gymnasium_Enter_Movement_23
+	applymovement LOCALID_GYMNASIUM_COACH_CEDAR, NorthCampus_Gymnasium_Enter_Movement_24
 # 158 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	waitmovement 0
 # 159 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -427,7 +441,7 @@ NorthCampus_Gymnasium_Enter_6:
 # 162 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	closemessage
 # 163 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	applymovement LOCALID_GYMNASIUM_TRACIE_2, NorthCampus_Gymnasium_Enter_Movement_24
+	applymovement LOCALID_GYMNASIUM_TRACIE_2, NorthCampus_Gymnasium_Enter_Movement_25
 # 164 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	waitmovement 0
 # 165 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -442,12 +456,79 @@ NorthCampus_Gymnasium_Enter_6:
 
 
 NorthCampus_Gymnasium_Coach_Cedar::
-# 229 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+# 236 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	lock
+# 237 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	faceplayer
+# 238 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	setspeaker SP_NAME_CEDAR
-# 230 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+# 239 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	msgbox NorthCampus_Gymnasium_Coach_Cedar_Text_0
-# 231 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+# 240 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	closemessage
+	end
+
+
+NorthCampus_Gymnasium_Orthoc::
+# 245 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	faceplayer
+# 246 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	setspeaker SP_NAME_ORTHOC
+# 247 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	goto_if_set FLAG_DEFEATED_ORTHOC_MAIN_HALL, NorthCampus_Gymnasium_Orthoc_1
+# 255 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	msgbox NorthCampus_Gymnasium_Orthoc_Text_1, MSGBOX_YESNO
+# 256 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq NorthCampus_Gymnasium_Orthoc_5
+# 266 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	closemessage
+# 267 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	setspeaker SP_NAME_ORTHOC
+# 268 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	msgbox NorthCampus_Gymnasium_Orthoc_Text_4
+# 270 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	closemessage
+# 271 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	release
+	end
+
+NorthCampus_Gymnasium_Orthoc_1:
+# 249 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	msgbox NorthCampus_Gymnasium_Orthoc_Text_0
+# 250 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	closemessage
+# 251 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	release
+	end
+
+NorthCampus_Gymnasium_Orthoc_5:
+# 257 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	closemessage
+# 258 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	setspeaker SP_NAME_ORTHOC
+# 259 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	msgbox NorthCampus_Gymnasium_Orthoc_Text_2
+# 260 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	trainerbattle_no_intro TRAINER_MAIN_HALL_ORTHOC, NorthCampus_Gymnasium_Orthoc_Text_3
+# 261 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	setflag FLAG_DEFEATED_ORTHOC_MAIN_HALL
+# 262 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	release
+	end
+
+
+NorthCampus_Gymnasium_NPC1::
+# 277 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	lock
+# 278 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	faceplayer
+# 279 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	msgbox NorthCampus_Gymnasium_NPC1_Text_0
+# 280 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	closemessage
+# 281 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	release
 	end
 
 
@@ -554,13 +635,11 @@ NorthCampus_Gymnasium_Enter_Movement_10:
 # 67 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_up
 # 67 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	walk_up
+	walk_right
 # 67 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	slide_right
+	walk_right
 # 67 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	slide_right
-# 67 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	slide_right
+	walk_right
 # 67 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	slide_up
 # 67 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -600,9 +679,9 @@ NorthCampus_Gymnasium_Enter_Movement_11:
 # 68 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_up
 # 68 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	walk_up
+	walk_right
 # 68 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	walk_up
+	walk_right
 	step_end
 
 # 86 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -670,10 +749,6 @@ NorthCampus_Gymnasium_Enter_Movement_16:
 # 124 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_up
 # 124 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	walk_up
-# 124 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	walk_left
-# 124 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_left
 # 124 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_left
@@ -711,12 +786,6 @@ NorthCampus_Gymnasium_Enter_Movement_17:
 	walk_up
 # 125 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_up
-# 125 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	walk_up
-# 125 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	walk_left
-# 125 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	walk_left
 # 125 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_left
 # 125 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -766,17 +835,33 @@ NorthCampus_Gymnasium_Enter_Movement_18:
 # 126 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_up
 # 126 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	walk_up
-# 126 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	walk_left
-# 126 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_left
 # 126 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_left
 	step_end
 
-# 145 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+# 129 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 NorthCampus_Gymnasium_Enter_Movement_19:
+# 129 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	slide_right
+# 129 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	slide_right
+# 129 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	slide_right
+# 129 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	slide_up
+# 129 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	slide_up
+# 129 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	slide_up
+# 129 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	slide_up
+# 129 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	slide_up
+	step_end
+
+# 145 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+NorthCampus_Gymnasium_Enter_Movement_20:
 # 145 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_right
 # 145 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -788,9 +873,7 @@ NorthCampus_Gymnasium_Enter_Movement_19:
 	step_end
 
 # 146 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-NorthCampus_Gymnasium_Enter_Movement_20:
-# 146 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	walk_right
+NorthCampus_Gymnasium_Enter_Movement_21:
 # 146 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_right
 # 146 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -806,13 +889,13 @@ NorthCampus_Gymnasium_Enter_Movement_20:
 	step_end
 
 # 153 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-NorthCampus_Gymnasium_Enter_Movement_21:
+NorthCampus_Gymnasium_Enter_Movement_22:
 # 153 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	face_down
 	step_end
 
 # 154 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-NorthCampus_Gymnasium_Enter_Movement_22:
+NorthCampus_Gymnasium_Enter_Movement_23:
 # 154 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_down
 # 154 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -838,7 +921,7 @@ NorthCampus_Gymnasium_Enter_Movement_22:
 	step_end
 
 # 157 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-NorthCampus_Gymnasium_Enter_Movement_23:
+NorthCampus_Gymnasium_Enter_Movement_24:
 # 157 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_left
 # 157 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -858,7 +941,7 @@ NorthCampus_Gymnasium_Enter_Movement_23:
 	step_end
 
 # 163 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-NorthCampus_Gymnasium_Enter_Movement_24:
+NorthCampus_Gymnasium_Enter_Movement_25:
 # 163 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_left
 # 163 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -882,7 +965,7 @@ NorthCampus_Gymnasium_Enter_Movement_24:
 	step_end
 
 # 200 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-NorthCampus_Gymnasium_Enter_Movement_25:
+NorthCampus_Gymnasium_Enter_Movement_26:
 # 200 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	walk_right
 # 200 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -937,7 +1020,7 @@ NorthCampus_Gymnasium_Enter_Text_3:
 	.string "just throwing out attacks.\p"
 	.string "You need to read your opponent,\n"
 	.string "remember type matchups, and use your\l"
-	.string "environemnt.\p"
+	.string "environment.\p"
 	.string "But, most importantly…$"
 
 NorthCampus_Gymnasium_Enter_Text_4:
@@ -1019,7 +1102,7 @@ NorthCampus_Gymnasium_Enter_Text_17:
 	.string "Follow me.$"
 
 NorthCampus_Gymnasium_Enter_Text_18:
-# 133 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+# 134 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	.string "Kicking your ass will be a nice warm up\n"
 	.string "before I fight those other weaklings.\p"
 	.string "Try not to lose too fast.\n"
@@ -1079,7 +1162,7 @@ NorthCampus_Gymnasium_Enter_Text_25:
 NorthCampus_Gymnasium_Enter_Text_26:
 # 194 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	.string "Attention seniors.\p"
-	.string "Please report to the Wild Area for a\n"
+	.string "Please report to the {COLOR GREEN}Wild Area{COLOR DARK_GRAY} for a\n"
 	.string "review on catching Pokémon.\p"
 	.string "Thank you.$"
 
@@ -1093,15 +1176,50 @@ NorthCampus_Gymnasium_Enter_Text_28:
 # 209 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	.string "You and Tracie will do great!\p"
 	.string "Remember to trust your Pokémon.\p"
-	.string "The Wild Area is outside on the west\n"
-	.string "side of North Campus.\p"
+	.string "The {COLOR GREEN}Wild Area{COLOR DARK_GRAY} is outside on the west\n"
+	.string "side of {COLOR GREEN}North Campus{COLOR DARK_GRAY}.\p"
 	.string "Good luck, {PLAYER}!$"
 
+NorthCampus_Gymnasium_Enter_Text_29:
+# 226 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	.string "{COLOR BLUE}Ready, Set, Throw!{COLOR DARK_GRAY} has been added to\n"
+	.string "your {COLOR BLUE}Quest Log{COLOR DARK_GRAY}.$"
+
 NorthCampus_Gymnasium_Coach_Cedar_Text_0:
-# 230 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+# 239 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	.string "Remember, Pokémon battles are not\n"
 	.string "about who can bark the loudest.\p"
 	.string "A true Trainer knows how to stay calm\n"
 	.string "and collected in any situation.\p"
 	.string "Trust in your Pokémon, and they will\n"
 	.string "trust in you.$"
+
+NorthCampus_Gymnasium_Orthoc_Text_0:
+# 249 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	.string "Thank you for providing me a good\n"
+	.string "challenge.$"
+
+NorthCampus_Gymnasium_Orthoc_Text_1:
+# 255 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	.string "Greetings.\pI am looking for someone to do\nbattle with.\pWould you like to have a\nmatch with me?$"
+
+NorthCampus_Gymnasium_Orthoc_Text_2:
+# 259 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	.string "Excellent.\n"
+	.string "Let us begin.$"
+
+NorthCampus_Gymnasium_Orthoc_Text_3:
+# 260 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	.string "It seems I have more work to do.$"
+
+NorthCampus_Gymnasium_Orthoc_Text_4:
+# 268 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	.string "No?\n"
+	.string "Then leave me to my training.$"
+
+NorthCampus_Gymnasium_NPC1_Text_0:
+# 279 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	.string "I heard that Coach Cedar was a\n"
+	.string "world-class Pokémon Trainer before\l"
+	.string "becoming a teacher.\p"
+	.string "I wonder if that's true…$"

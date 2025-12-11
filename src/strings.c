@@ -160,7 +160,7 @@ const u8 gText_TossHowManyVar1s[] = _("Toss out how many\n{STR_VAR_1}?");
 const u8 gText_ThrewAwayVar2Var1s[] = _("Threw away {STR_VAR_2}\n{STR_VAR_1}.");
 const u8 gText_ConfirmTossItems[] = _("Is it okay to\nthrow away {STR_VAR_2}\n{STR_VAR_1}?");
 const u8 gText_DadsAdvice[] = _("You can't use that here!{PAUSE_UNTIL_PRESS}");
-const u8 gText_PlayerUsedVar2[] = _("{PLAYER} used the\n{STR_VAR_2}.{PAUSE_UNTIL_PRESS}");
+const u8 gText_PlayerUsedVar2[] = _("{PLAYER} used the\n{COLOR GREEN}{STR_VAR_2}.{PAUSE_UNTIL_PRESS}{COLOR DARK_GRAY}");
 const u8 gText_RepelEffectsLingered[] = _("But the effects of a Repel\nlingered from earlier.{PAUSE_UNTIL_PRESS}");
 const u8 gText_LureEffectsLingered[] = _("But the effects of a Lure\nlingered from earlier.{PAUSE_UNTIL_PRESS}");
 const u8 gText_BoxFull[] = _("The Box is full.{PAUSE_UNTIL_PRESS}");
@@ -727,7 +727,7 @@ const u8 gText_Colon2[] = _(": ");
 const u8 gText_Points[] = _(" points"); // Unused
 const u8 gText_TrainerCardTime[] = _("Time");
 const u8 gJPText_BattlePoints[] = _("ゲ-ムポイント"); // Unused. Name presumed, translation is Game Points
-const u8 gText_Var1sTrainerCard[] = _("{STR_VAR_1}'s TRAINER CARD");
+const u8 gText_Var1sTrainerCard[] = _("{STR_VAR_1}'s Trainer Card");
 const u8 gText_HallOfFameDebut[] = _("HALL OF FAME DEBUT  ");
 const u8 gText_LinkBattles[] = _("LINK BATTLES");
 const u8 gText_LinkCableBattles[] = _("LINK CABLE BATTLES");
@@ -851,7 +851,7 @@ const u8 gText_BattlePoints[] = _("Battle Points");
 const u8 gText_UnusedCancel[] = _("CANCEL"); // Unused
 const u8 gText_EmptyString7[] = _("");
 const u8 gText_CheckFrontierMap[] = _("Check BATTLE FRONTIER MAP.");
-const u8 gText_CheckTrainerCard[] = _("Check TRAINER CARD.");
+const u8 gText_CheckTrainerCard[] = _("Check Trainer Card.");
 const u8 gText_ViewRecordedBattle[] = _("View recorded battle.");
 const u8 gText_PutAwayFrontierPass[] = _("Put away the FRONTIER PASS.");
 const u8 gText_CurrentBattlePoints[] = _("Your current Battle Points.");
@@ -1325,12 +1325,12 @@ const u8 gText_QuestActive[] =_("active");
 
 //names
 const u8 gText_SideQuestName_1[] = _("Senior Year");
-const u8 gText_SideQuestName_2[] = _("Side Quest 2");
-const u8 gText_SideQuestName_3[] = _("Side Quest 3");
-const u8 gText_SideQuestName_4[] = _("Side Quest 4");
-const u8 gText_SideQuestName_5[] = _("Side Quest 5");
-const u8 gText_SideQuestName_6[] = _("Side Quest 6");
-const u8 gText_SideQuestName_7[] = _("Side Quest 7");
+const u8 gText_SideQuestName_2[] = _("Pokémon Battles 101");
+const u8 gText_SideQuestName_3[] = _("Ready, Set, Throw!");
+const u8 gText_SideQuestName_4[] = _("Subterranean Hunt");
+const u8 gText_SideQuestName_5[] = _("Back to the Lab, Again");
+const u8 gText_SideQuestName_6[] = _("The President's Test");
+const u8 gText_SideQuestName_7[] = _("Next Stop: Adventure!");
 const u8 gText_SideQuestName_8[] = _("Side Quest 8");
 const u8 gText_SideQuestName_9[] = _("Side Quest 9");
 const u8 gText_SideQuestName_10[] = _("Side Quest 10");
@@ -1356,13 +1356,13 @@ const u8 gText_SideQuestName_29[] = _("Side Quest 29");
 const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
-const u8 gText_SideQuestDesc_1[] = _("It's your senior year! Travel\nto North Campus and attend\norientation with Tracie.");
-const u8 gText_SideQuestDesc_2[] = _("Description 2");
-const u8 gText_SideQuestDesc_3[] = _("Description 3");
-const u8 gText_SideQuestDesc_4[] = _("Description 4");
-const u8 gText_SideQuestDesc_5[] = _("Description 5");
-const u8 gText_SideQuestDesc_6[] = _("Description 6");
-const u8 gText_SideQuestDesc_7[] = _("Description 7");
+const u8 gText_SideQuestDesc_1[] = _("It's your senior year! Travel to\nNorth Campus and attend orientation\nwith Tracie.");
+const u8 gText_SideQuestDesc_2[] = _("Part 1 of your review. Go to the\nupstairs Gymnasium to review\nPokémon battles.");
+const u8 gText_SideQuestDesc_3[] = _("Part 2 of your review. Visit the\nWild Area in North Campus\nto review catching Pokémon.");
+const u8 gText_SideQuestDesc_4[] = _("Part 3 of your review. Explore\nFieldstone Cavern in North Campus\nand find the hidden item.");
+const u8 gText_SideQuestDesc_5[] = _("Return to the Lecture Hall and\nlearn what President Mario and\nProfessor Maple have to say.");
+const u8 gText_SideQuestDesc_6[] = _("President Mario has challenged\nyou to a battle. Show him what\nyou've got!");
+const u8 gText_SideQuestDesc_7[] = _("Time for adventure! Head to Route\n1 and meet with everybody down\nat the dock.");
 const u8 gText_SideQuestDesc_8[] = _("Description 8");
 const u8 gText_SideQuestDesc_9[] = _("Description 9");
 const u8 gText_SideQuestDesc_10[] = _("Description 10");
@@ -1388,13 +1388,13 @@ const u8 gText_SideQuestDesc_29[] = _("Description 29");
 const u8 gText_SideQuestDesc_30[] = _("Description 30");
 
 //completed quest description
-const u8 gText_SideQuestDoneDesc_1[] = _("You completed this quest!");
-const u8 gText_SideQuestDoneDesc_2[] = _("Completed Quest 2");
-const u8 gText_SideQuestDoneDesc_3[] = _("Completed Quest 3");
-const u8 gText_SideQuestDoneDesc_4[] = _("Completed Quest 4");
-const u8 gText_SideQuestDoneDesc_5[] = _("Completed Quest 5");
-const u8 gText_SideQuestDoneDesc_6[] = _("Completed Quest 6");
-const u8 gText_SideQuestDoneDesc_7[] = _("Completed Quest 7");
+const u8 gText_SideQuestDoneDesc_1[] = _("It's your senior year! Travel to\nNorth Campus and attend orientation\nwith Tracie.");
+const u8 gText_SideQuestDoneDesc_2[] = _("Part 1 of your review. Go to the\nupstairs Gymnasium to review\nPokémon battles.");
+const u8 gText_SideQuestDoneDesc_3[] = _("Part 2 of your review. Visit the\nWild Area in North Campus\nto review catching Pokémon.");
+const u8 gText_SideQuestDoneDesc_4[] = _("Part 3 of your review. Explore\nFieldstone Cavern in North Campus\nand find the hidden item.");
+const u8 gText_SideQuestDoneDesc_5[] = _("Return to the Lecture Hall and\nlearn what President Mario and\nProfessor Maple have to say.");
+const u8 gText_SideQuestDoneDesc_6[] = _("President Mario has challenged\nyou to a battle. Show him what\nyou've got!");
+const u8 gText_SideQuestDoneDesc_7[] = _("Time for adventure! Head to Route\n1 and meet with everybody down\nat the dock.");
 const u8 gText_SideQuestDoneDesc_8[] = _("Completed Quest 8");
 const u8 gText_SideQuestDoneDesc_9[] = _("Completed Quest 9");
 const u8 gText_SideQuestDoneDesc_10[] = _("Completed Quest 10");
@@ -1420,12 +1420,12 @@ const u8 gText_SideQuestDoneDesc_29[] = _("Completed Quest 29");
 const u8 gText_SideQuestDoneDesc_30[] = _("Completed Quest 30");
 
 //map
-const u8 gText_SideQuestMap1[] = _("South Campus");
-const u8 gText_SideQuestMap2[] = _("Map 2");
-const u8 gText_SideQuestMap3[] = _("Map 3");
-const u8 gText_SideQuestMap4[] = _("Map 4");
-const u8 gText_SideQuestMap5[] = _("Map 5");
-const u8 gText_SideQuestMap6[] = _("Map 6");
+const u8 gText_SideQuestMap1[] = _("North Campus, Main Hall");
+const u8 gText_SideQuestMap2[] = _("North Campus, Wild Area");
+const u8 gText_SideQuestMap3[] = _("Fieldstone Cavern");
+const u8 gText_SideQuestMap4[] = _("Route 1, Dock");
+const u8 gText_SideQuestMap5[] = _("???");
+const u8 gText_SideQuestMap6[] = _("Route 1, Dock");
 const u8 gText_SideQuestMap7[] = _("Map 7");
 const u8 gText_SideQuestMap8[] = _("Map 8");
 const u8 gText_SideQuestMap9[] = _("Map 9");
@@ -1452,6 +1452,14 @@ const u8 gText_SideQuestMap29[] = _("Map 29");
 const u8 gText_SideQuestMap30[] = _("Map 30");
 
 //subquests
+
+const u8 gText_SubQuest0_Name1[] = _("Part 1");
+const u8 gText_SubQuest0_Name2[] = _("Part 2");
+const u8 gText_SubQuest0_Name3[] = _("Part 3");
+const u8 gText_SubQuest0_Name4[] = _("Part 4");
+const u8 gText_SubQuest0_Name5[] = _("Part 5");
+const u8 gText_SubQuest0_Name6[] = _("Part 6");
+
 const u8 gText_SubQuest1_Name1[] = _("Part 1");
 const u8 gText_SubQuest1_Name2[] = _("Part 2");
 const u8 gText_SubQuest1_Name3[] = _("Part 3");
@@ -1483,6 +1491,14 @@ const u8 gText_SubQuest2_Name17[] = _("Part 17");
 const u8 gText_SubQuest2_Name18[] = _("Part 18");
 const u8 gText_SubQuest2_Name19[] = _("Part 19");
 const u8 gText_SubQuest2_Name20[] = _("Part 20");
+
+const u8 gText_SubQuest0_Desc1[] = _("Description Sub 1");
+const u8 gText_SubQuest0_Desc2[] = _("Description Sub 2");
+const u8 gText_SubQuest0_Desc3[] = _("Description Sub 3");
+const u8 gText_SubQuest0_Desc4[] = _("Description Sub 4");
+const u8 gText_SubQuest0_Desc5[] = _("Description Sub 5");
+const u8 gText_SubQuest0_Desc6[] = _("Description Sub 6");
+
 
 const u8 gText_SubQuest1_Desc1[] = _("Description Sub 1");
 const u8 gText_SubQuest1_Desc2[] = _("Description Sub 2");
