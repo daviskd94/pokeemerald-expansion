@@ -65,7 +65,7 @@ MtPyre_Summit_EventScript_TeamAquaTrigger2::
 # 33 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_TeamAquaExits::
 # 34 "data/maps/MtPyre_Summit/scripts.pory"
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	playbgm MUS_EMPTY4, FALSE
 # 35 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 # 36 "data/maps/MtPyre_Summit/scripts.pory"

@@ -7,7 +7,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	faceplayer
 	msgbox SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts, MSGBOX_DEFAULT
 	closemessage
-	playbgm MUS_ENCOUNTER_AQUA, TRUE
+	playbgm MUS_EMPTY4, TRUE
 	addobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1
 	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_FirstGruntEnter
 	waitmovement 0
