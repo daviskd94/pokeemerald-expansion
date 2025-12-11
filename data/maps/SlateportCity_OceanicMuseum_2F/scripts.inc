@@ -17,7 +17,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 # 9 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	closemessage
 # 10 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	playbgm MUS_EMPTY4, TRUE
+	playbgm MUS_ENCOUNTER_AQUA, TRUE
 # 11 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	addobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1
 # 12 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"

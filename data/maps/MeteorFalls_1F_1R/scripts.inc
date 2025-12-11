@@ -35,7 +35,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 # 18 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	lockall
 # 19 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	playbgm MUS_EMPTY5, FALSE
+	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 # 20 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
 # 21 "data/maps/MeteorFalls_1F_1R/scripts.pory"
@@ -93,7 +93,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 # 47 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	addobject LOCALID_METEOR_FALLS_AQUA_GRUNT_2
 # 48 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	playbgm MUS_EMPTY4, FALSE
+	playbgm MUS_ENCOUNTER_AQUA, FALSE
 # 49 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	applymovement LOCALID_METEOR_FALLS_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieArrive
 # 50 "data/maps/MeteorFalls_1F_1R/scripts.pory"

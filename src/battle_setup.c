@@ -488,11 +488,11 @@ void BattleSetup_StartLegendaryBattle(void)
     default:
     case SPECIES_GROUDON:
     case SPECIES_GROUDON_PRIMAL:
-        CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_EMPTY2);
+        CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_VS_KYOGRE_GROUDON);
         break;
     case SPECIES_KYOGRE:
     case SPECIES_KYOGRE_PRIMAL:
-        CreateBattleStartTask(B_TRANSITION_KYOGRE, MUS_EMPTY2);
+        CreateBattleStartTask(B_TRANSITION_KYOGRE, MUS_VS_KYOGRE_GROUDON);
         break;
     case SPECIES_RAYQUAZA:
     case SPECIES_RAYQUAZA_MEGA:
@@ -526,9 +526,9 @@ void StartGroudonKyogreBattle(void)
     gBattleTypeFlags = BATTLE_TYPE_LEGENDARY;
 
     if (gGameVersion == VERSION_RUBY)
-        CreateBattleStartTask(B_TRANSITION_ANGLED_WIPES, MUS_EMPTY2); // GROUDON
+        CreateBattleStartTask(B_TRANSITION_ANGLED_WIPES, MUS_VS_KYOGRE_GROUDON); // GROUDON
     else
-        CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_EMPTY2); // KYOGRE
+        CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_VS_KYOGRE_GROUDON); // KYOGRE
 
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);
@@ -1453,10 +1453,10 @@ void PlayTrainerEncounterMusic(void)
             music = MUS_ENCOUNTER_COOL;
             break;
         case TRAINER_ENCOUNTER_MUSIC_AQUA:
-            music = MUS_EMPTY4;
+            music = MUS_ENCOUNTER_AQUA;
             break;
         case TRAINER_ENCOUNTER_MUSIC_MAGMA:
-            music = MUS_EMPTY5;
+            music = MUS_ENCOUNTER_MAGMA;
             break;
         case TRAINER_ENCOUNTER_MUSIC_SWIMMER:
             music = MUS_ENCOUNTER_SWIMMER;

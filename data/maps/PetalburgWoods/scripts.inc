@@ -21,7 +21,7 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 # 11 "data/maps/PetalburgWoods/scripts.pory"
 	closemessage
 # 12 "data/maps/PetalburgWoods/scripts.pory"
-	playbgm MUS_EMPTY4, FALSE
+	playbgm MUS_ENCOUNTER_AQUA, FALSE
 # 13 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaEntrance
 # 14 "data/maps/PetalburgWoods/scripts.pory"
@@ -95,7 +95,7 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 # 48 "data/maps/PetalburgWoods/scripts.pory"
 	closemessage
 # 49 "data/maps/PetalburgWoods/scripts.pory"
-	playbgm MUS_EMPTY4, FALSE
+	playbgm MUS_ENCOUNTER_AQUA, FALSE
 # 50 "data/maps/PetalburgWoods/scripts.pory"
 	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaEntrance
 # 51 "data/maps/PetalburgWoods/scripts.pory"

@@ -603,7 +603,7 @@ RusturfTunnel_EventScript_Grunt::
 # 302 "data/maps/RusturfTunnel/scripts.pory"
 	faceplayer
 # 303 "data/maps/RusturfTunnel/scripts.pory"
-	playbgm MUS_EMPTY4, FALSE
+	playbgm MUS_ENCOUNTER_AQUA, FALSE
 # 304 "data/maps/RusturfTunnel/scripts.pory"
 	msgbox RusturfTunnel_Text_GruntIntro, MSGBOX_DEFAULT
 # 305 "data/maps/RusturfTunnel/scripts.pory"

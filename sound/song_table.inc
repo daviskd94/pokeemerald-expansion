@@ -351,7 +351,7 @@ gSongTable::
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
-	song mus_empty, 0, 0
+	song mus_littleroot_test, 0, 0
 	song mus_gsc_route38, 0, 0
 	song mus_caught, 0, 0
 	song mus_victory_wild, 0, 0
@@ -415,17 +415,17 @@ gSongTable::
 	song mus_underwater, 0, 0
 	song mus_victory_trainer, 0, 0
 	song mus_title, 0, 0
-	song mus_empty2, 0, 0
+	song mus_intro, 0, 0
 	song mus_encounter_may, 0, 0
 	song mus_encounter_intense, 0, 0
 	song mus_encounter_cool, 0, 0
 	song mus_route113, 0, 0
-	song mus_empty3, 0, 0
+	song mus_encounter_aqua, 0, 0
 	song mus_follow_me, 0, 0
-	song mus_empty4, 0, 0
+	song mus_encounter_brendan, 0, 0
 	song mus_ever_grande, 0, 0
 	song mus_encounter_suspicious, 0, 0
-	song mus_empty5, 0, 0
+	song mus_victory_aqua_magma, 0, 0
 	song mus_cable_car, 0, 0
 	song mus_game_corner, 0, 0
 	song mus_dewford, 0, 0
@@ -442,8 +442,8 @@ gSongTable::
 	song mus_sealed_chamber, 0, 0
 	song mus_contest_winner, 0, 0
 	song mus_contest, 0, 0
-	song mus_empty6, 0, 0
-	song mus_empty7, 0, 0
+	song mus_encounter_magma, 0, 0
+	song mus_intro_battle, 0, 0
 	song mus_abnormal_weather, 0, 0
 	song mus_weather_groudon, 0, 0
 	song mus_sootopolis, 0, 0
@@ -455,7 +455,7 @@ gSongTable::
 	song mus_encounter_hiker, 0, 0
 	song mus_contest_lobby, 0, 0
 	song mus_encounter_interviewer, 0, 0
-	song cus_encounter_rotcart, 0, 0
+	song mus_encounter_champion, 0, 0
 	song mus_credits, 0, 0
 	song mus_end, 0, 0
 	song mus_b_frontier, 0, 0
@@ -473,24 +473,24 @@ gSongTable::
 	song mus_b_factory, 0, 0
 	song mus_vs_rayquaza, 0, 0
 	song mus_vs_frontier_brain, 0, 0
-	song cus_pine_landing, 0, 0
+	song mus_vs_mew, 0, 0
 	song mus_b_dome_lobby, 0, 0
-	song cus_vs_wild, 0, 0
-	song MUS_EMPTY6, 0, 0
-	song cus_vs_trainer, 0, 0
-	song cus_vs_gym, 0, 0
+	song mus_vs_wild, 0, 0
+	song mus_vs_aqua_magma, 0, 0
+	song mus_vs_trainer, 0, 0
+	song mus_vs_gym_leader, 0, 0
 	song mus_vs_champion, 0, 0
 	song mus_vs_regi, 0, 0
-	song cus_vs_team_genesis, 0, 0
+	song mus_vs_kyogre_groudon, 0, 0
 	song mus_vs_rival, 0, 0
 	song mus_vs_elite_four, 0, 0
-	song cus_vs_rotcart, 0, 0
+	song mus_vs_aqua_magma_leader, 0, 0
 	song mus_rg_follow_me, 0, 0
 	song mus_rg_game_corner, 0, 0
 	song mus_rg_rocket_hideout, 0, 0
 	song mus_rg_gym, 0, 0
 	song mus_rg_jigglypuff, 2, 2
-	song cus_dd_metal_city, 0, 0
+	song mus_rg_intro_fight, 0, 0
 	song mus_rg_title, 0, 0
 	song mus_rg_cinnabar, 0, 0
 	song mus_rg_lavender, 0, 0
@@ -544,16 +544,16 @@ gSongTable::
 	song mus_rg_net_center, 0, 0
 	song mus_rg_mystery_gift, 0, 0
 	song mus_rg_berry_pick, 0, 0
-	song cus_dd_jill_vs_croog, 0, 0
+	song mus_rg_sevii_cave, 0, 0
 	song mus_rg_teachy_tv_show, 0, 0
 	song mus_rg_sevii_route, 0, 0
-	song cus_sn_peaceful_time, 0, 0
-	song cus_croog_theme, 0, 0
+	song mus_rg_sevii_dungeon, 0, 0
+	song mus_rg_sevii_123, 0, 0
 	song mus_rg_sevii_45, 0, 0
 	song mus_rg_sevii_67, 0, 0
 	song mus_rg_poke_flute, 2, 2
 	song mus_rg_vs_deoxys, 0, 0
-	song mus_empty14, 0, 0
+	song mus_rg_vs_mewtwo, 0, 0
 	song mus_rg_vs_legend, 0, 0
 	song mus_rg_encounter_gym_leader, 0, 0
 	song mus_rg_encounter_deoxys, 0, 0
