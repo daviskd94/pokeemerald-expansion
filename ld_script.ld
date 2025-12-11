@@ -1049,12 +1049,12 @@ SECTIONS {
         sound/songs/midi/mus_encounter_intense.o(.rodata);
         sound/songs/midi/mus_encounter_cool.o(.rodata);
         sound/songs/midi/mus_route113.o(.rodata);
-        sound/songs/midi/mus_encounter_aqua.o(.rodata);
+        sound/songs/midi/MUS_EMPTY4.o(.rodata);
         sound/songs/midi/mus_follow_me.o(.rodata);
         sound/songs/midi/mus_encounter_brendan.o(.rodata);
         sound/songs/midi/mus_ever_grande.o(.rodata);
         sound/songs/midi/mus_encounter_suspicious.o(.rodata);
-        sound/songs/midi/mus_victory_aqua_magma.o(.rodata);
+        sound/songs/midi/MUS_EMPTY3.o(.rodata);
         sound/songs/midi/mus_cable_car.o(.rodata);
         sound/songs/midi/mus_game_corner.o(.rodata);
         sound/songs/midi/mus_dewford.o(.rodata);
@@ -1071,7 +1071,7 @@ SECTIONS {
         sound/songs/midi/mus_sealed_chamber.o(.rodata);
         sound/songs/midi/mus_contest_winner.o(.rodata);
         sound/songs/midi/mus_contest.o(.rodata);
-        sound/songs/midi/mus_encounter_magma.o(.rodata);
+        sound/songs/midi/MUS_EMPTY5.o(.rodata);
         sound/songs/midi/mus_intro_battle.o(.rodata);
         sound/songs/midi/mus_abnormal_weather.o(.rodata);
         sound/songs/midi/mus_weather_groudon.o(.rodata);
@@ -1105,15 +1105,15 @@ SECTIONS {
         sound/songs/midi/mus_vs_mew.o(.rodata);
         sound/songs/midi/mus_b_dome_lobby.o(.rodata);
         sound/songs/midi/mus_vs_wild.o(.rodata);
-        sound/songs/midi/mus_vs_aqua_magma.o(.rodata);
+        sound/songs/midi/MUS_EMPTY6.o(.rodata);
         sound/songs/midi/mus_vs_trainer.o(.rodata);
         sound/songs/midi/mus_vs_gym_leader.o(.rodata);
         sound/songs/midi/mus_vs_champion.o(.rodata);
         sound/songs/midi/mus_vs_regi.o(.rodata);
-        sound/songs/midi/mus_vs_kyogre_groudon.o(.rodata);
+        sound/songs/midi/MUS_EMPTY2.o(.rodata);
         sound/songs/midi/mus_vs_rival.o(.rodata);
         sound/songs/midi/mus_vs_elite_four.o(.rodata);
-        sound/songs/midi/mus_vs_aqua_magma_leader.o(.rodata);
+        sound/songs/midi/MUS_EMPTY7.o(.rodata);
         sound/songs/midi/mus_rg_follow_me.o(.rodata);
         sound/songs/midi/mus_rg_game_corner.o(.rodata);
         sound/songs/midi/mus_rg_rocket_hideout.o(.rodata);
@@ -1253,6 +1253,20 @@ SECTIONS {
         sound/songs/midi/ph_nurse_blend.o(.rodata);
         sound/songs/midi/ph_nurse_held.o(.rodata);
         sound/songs/midi/ph_nurse_solo.o(.rodata);
+	sound/songs/midi/mus_empty.o(.rodata);
+	sound/songs/midi/mus_empty2.o(.rodata);
+	sound/songs/midi/mus_empty3.o(.rodata);
+	sound/songs/midi/mus_empty4.o(.rodata);
+	sound/songs/midi/mus_empty5.o(.rodata);
+	sound/songs/midi/mus_empty6.o(.rodata);
+	sound/songs/midi/mus_empty7.o(.rodata);
+	sound/songs/midi/cus_encounter_rotcart.o(.rodata);
+	sound/songs/midi/cus_pine_landing.o(.rodata);
+	sound/songs/midi/cus_dd_metal_city.o(.rodata);
+	sound/songs/midi/cus_dd_jill_vs_croog.o(.rodata);
+	sound/songs/midi/cus_sn_peaceful_time.o(.rodata);
+	sound/songs/midi/cus_croog_theme.o(.rodata);
+	sound/songs/midi/mus_empty14.o(.rodata);
     } > ROM =0
 
     lib_rodata :

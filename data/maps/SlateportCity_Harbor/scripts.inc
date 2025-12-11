@@ -33,7 +33,7 @@ SlateportCity_Harbor_EventScript_ShowSSTidal::
 # 17 "data/maps/SlateportCity_Harbor/scripts.pory"
 SlateportCity_Harbor_EventScript_ReadyAquaEscapeScene::
 # 18 "data/maps/SlateportCity_Harbor/scripts.pory"
-	savebgm MUS_ENCOUNTER_AQUA
+	savebgm MUS_EMPTY4
 # 19 "data/maps/SlateportCity_Harbor/scripts.pory"
 	setobjectxyperm LOCALID_SLATEPORT_HARBOR_CAPT_STERN, 12, 13
 # 20 "data/maps/SlateportCity_Harbor/scripts.pory"
