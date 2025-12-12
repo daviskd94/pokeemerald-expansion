@@ -282,7 +282,7 @@ Route1_BoardingBoat_1:
 # 157 "data/maps/Route1New/scripts.pory"
 	delay 180
 # 158 "data/maps/Route1New/scripts.pory"
-	playbgm MUS_ENCOUNTER_SUSPICIOUS, FALSE
+	playbgm CUS_DD_CROOG_THEME, FALSE
 # 159 "data/maps/Route1New/scripts.pory"
 	applymovement LOCALID_ROUTE_1_CYRUS, Route1_BoardingBoat_Movement_3
 # 160 "data/maps/Route1New/scripts.pory"

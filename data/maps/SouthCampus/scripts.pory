@@ -242,6 +242,7 @@ script SouthCampus_MeowthBattle {
 	setflag(FLAG_HIDE_SOUTH_CAMPUS_TRAINERS)
 	setflag(FLAG_WHITEOUT_CONTINUE)
 	trainerbattle_no_intro(TRAINER_TRACIE_SOUTH_CAMPUS, format("Looks like I still have some\ncatching up to do!"))
+	playbgm(MUS_ENCOUNTER_MAY, FALSE)
 	clearflag(FLAG_WHITEOUT_CONTINUE)
 	special(RemoveCameraObject)
 	removeobject(LOCALID_CAMERA)

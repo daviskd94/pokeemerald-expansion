@@ -53,3 +53,38 @@ script NorthCampus_PokeballResearchLab_Laptops {
     closemessage
     end
 }
+
+script NorthCampus_PokeballResearchLab_AceTrainerF {
+    lock
+    faceplayer
+    msgbox(format("There's so many different types of Poké Balls!\pI wonder which one is the best…"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_PokeballResearchLab_Scientist {
+    lock
+    msgbox(format("Let's see…\pCarry the one…\nSet the capture rates…\pNo, no, that's not right!\nMy mathematics are all off today!"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_PokeballResearchLab_Boy {
+    lock
+    faceplayer
+    msgbox(format("I want to be an amazing Pokémon Trainer someday!\pI think I'll start by learning all about Poké Balls!"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_PokeballResearchLab_SuperNerd {
+    lock
+    faceplayer
+    msgbox(format("Did you know that Poké Balls were originally crafted by hand by carving out {COLOR GREEN}Apricorns{COLOR DARK_GRAY}?\pModern Poké Balls are made using high-tech machinery, but the basic design has remained the same!\pI hear there's a man in Johto who still makes Poké Balls the old-fashioned way!"))
+    closemessage
+    release
+    end
+}

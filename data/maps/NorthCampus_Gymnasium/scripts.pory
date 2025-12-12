@@ -86,7 +86,7 @@ script NorthCampus_Gymnasium_Enter {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down, emote_exclamation_mark))
     playse(SE_PIN)
     waitse
-    playbgm(MUS_RG_ENCOUNTER_RIVAL, FALSE)
+    playbgm(CUS_ENCOUNTER_ROTCART, FALSE)
     applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_up*6))
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
@@ -136,7 +136,7 @@ script NorthCampus_Gymnasium_Enter {
     special(HealPlayerParty)
     setflag(FLAG_WHITEOUT_CONTINUE)
     trainerbattle_no_intro(TRAINER_ROTCART_1, format("Tch…\nEnjoy that while you still can."))
-    playbgm(MUS_RG_ENCOUNTER_RIVAL, FALSE) 
+    playbgm(CUS_ENCOUNTER_ROTCART, FALSE) 
     clearflag(FLAG_WHITEOUT_CONTINUE)
 	special(RemoveCameraObject)
 	removeobject(LOCALID_CAMERA)

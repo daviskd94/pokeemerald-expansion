@@ -196,8 +196,8 @@ DormReception_Lady_Text_0:
 
 DormReception_Picnicker_Text_0:
 # 84 "data/maps/DormReception/scripts.pory"
-	.string "You should check out the South Campus\n"
-	.string "Poké Mart sometime!\p"
+	.string "You should check out the {COLOR GREEN}South Campus\n"
+	.string "{COLOR DARK_GRAY}Poké Mart sometime!\p"
 	.string "They have some useful medicine for\n"
 	.string "sale.$"
 

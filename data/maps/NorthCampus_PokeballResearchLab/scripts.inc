@@ -74,6 +74,60 @@ NorthCampus_PokeballResearchLab_Laptops::
 	end
 
 
+NorthCampus_PokeballResearchLab_AceTrainerF::
+# 58 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	lock
+# 59 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	faceplayer
+# 60 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_AceTrainerF_Text_0
+# 61 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
+# 62 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	release
+	end
+
+
+NorthCampus_PokeballResearchLab_Scientist::
+# 67 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	lock
+# 68 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_Scientist_Text_0
+# 69 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
+# 70 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	release
+	end
+
+
+NorthCampus_PokeballResearchLab_Boy::
+# 75 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	lock
+# 76 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	faceplayer
+# 77 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_Boy_Text_0
+# 78 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
+# 79 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	release
+	end
+
+
+NorthCampus_PokeballResearchLab_SuperNerd::
+# 84 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	lock
+# 85 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	faceplayer
+# 86 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_SuperNerd_Text_0
+# 87 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	closemessage
+# 88 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	release
+	end
+
+
 NorthCampus_PokeballResearchLab_PokeBall_Text_0:
 # 4 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
 	.string "An educational model of a Poké Ball.\p"
@@ -113,3 +167,36 @@ NorthCampus_PokeballResearchLab_Laptops_Text_0:
 	.string "various Poké Balls.\p"
 	.string "Scientists are constantly working to\n"
 	.string "improve Poké Ball technology!$"
+
+NorthCampus_PokeballResearchLab_AceTrainerF_Text_0:
+# 60 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	.string "There's so many different types of\n"
+	.string "Poké Balls!\p"
+	.string "I wonder which one is the best…$"
+
+NorthCampus_PokeballResearchLab_Scientist_Text_0:
+# 68 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	.string "Let's see…\p"
+	.string "Carry the one…\n"
+	.string "Set the capture rates…\p"
+	.string "No, no, that's not right!\n"
+	.string "My mathematics are all off today!$"
+
+NorthCampus_PokeballResearchLab_Boy_Text_0:
+# 77 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	.string "I want to be an amazing Pokémon Trainer\n"
+	.string "someday!\p"
+	.string "I think I'll start by learning all about\n"
+	.string "Poké Balls!$"
+
+NorthCampus_PokeballResearchLab_SuperNerd_Text_0:
+# 86 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
+	.string "Did you know that Poké Balls were\n"
+	.string "originally crafted by hand by carving\l"
+	.string "out {COLOR GREEN}Apricorns{COLOR DARK_GRAY}?\p"
+	.string "Modern Poké Balls are made using\n"
+	.string "high-tech machinery, but the basic\l"
+	.string "design has remained the same!\p"
+	.string "I hear there's a man in Johto who still\n"
+	.string "makes Poké Balls the old-fashioned\l"
+	.string "way!$"

@@ -55,7 +55,7 @@ DormHallway_EnterRotcart::
 # 31 "data/maps/DormHallway/scripts.pory"
 	waitse
 # 32 "data/maps/DormHallway/scripts.pory"
-	playbgm MUS_RG_ENCOUNTER_RIVAL, FALSE
+	playbgm CUS_ENCOUNTER_ROTCART, FALSE
 # 33 "data/maps/DormHallway/scripts.pory"
 	applymovement LOCALID_ROTCART, DormHallway_EnterRotcart_Movement_0
 # 34 "data/maps/DormHallway/scripts.pory"
@@ -266,8 +266,8 @@ DormHallway_DontLeave_Movement_0:
 DormHallway_LeaveDorm_Text_0:
 # 9 "data/maps/DormHallway/scripts.pory"
 	.string "Oh! Before I forget!\p"
-	.string "I need to stop at my room to grab some\n"
-	.string "things.$"
+	.string "I need to stop at my room to\n"
+	.string "grab some things.$"
 
 DormHallway_LeaveDorm_Text_1:
 # 15 "data/maps/DormHallway/scripts.pory"
@@ -278,8 +278,8 @@ DormHallway_LeaveDorm_Text_1:
 	.string "really have to be such a dick?\p"
 	.string "At least you're able to give him a run\n"
 	.string "for his money…\p"
-	.string "He does have a point though, we need to\n"
-	.string "get going!\p"
+	.string "He does have a point though,\n"
+	.string "we need to get going!\p"
 	.string "Follow me to my room!$"
 
 DormHallway_EnterRotcart_Text_0:

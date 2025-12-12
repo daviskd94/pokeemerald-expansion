@@ -183,7 +183,7 @@ NorthCampus_EnterWildArea::
 # 104 "data/maps/NorthCampus/scripts.pory"
 	waitmovement 0
 # 105 "data/maps/NorthCampus/scripts.pory"
-	playbgm MUS_ENCOUNTER_SUSPICIOUS, FALSE
+	playbgm CUS_DD_CROOG_THEME, FALSE
 # 106 "data/maps/NorthCampus/scripts.pory"
 	setspeaker SP_NAME_CYRUS
 # 107 "data/maps/NorthCampus/scripts.pory"
@@ -329,7 +329,7 @@ NorthCampus_EnterWildArea::
 # 177 "data/maps/NorthCampus/scripts.pory"
 	waitstate
 # 178 "data/maps/NorthCampus/scripts.pory"
-	playbgm MUS_ENCOUNTER_SUSPICIOUS, FALSE
+	playbgm CUS_DD_CROOG_THEME, FALSE
 # 179 "data/maps/NorthCampus/scripts.pory"
 	setspeaker SP_NAME_CYRUS
 # 180 "data/maps/NorthCampus/scripts.pory"
@@ -659,6 +659,22 @@ NorthCampus_PokemonResearchLabSign::
 # 358 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_PokemonResearchLabSign_Text_0
 # 359 "data/maps/NorthCampus/scripts.pory"
+	closemessage
+	return
+
+
+NorthCampus_FossilResearchLabSign::
+# 363 "data/maps/NorthCampus/scripts.pory"
+	msgbox NorthCampus_FossilResearchLabSign_Text_0
+# 364 "data/maps/NorthCampus/scripts.pory"
+	closemessage
+	return
+
+
+NorthCampus_PokeballResearchLab::
+# 368 "data/maps/NorthCampus/scripts.pory"
+	msgbox NorthCampus_PokeballResearchLab_Text_0
+# 369 "data/maps/NorthCampus/scripts.pory"
 	closemessage
 	return
 
@@ -1177,3 +1193,11 @@ NorthCampus_MahindraLibrarySign_Text_0:
 NorthCampus_PokemonResearchLabSign_Text_0:
 # 358 "data/maps/NorthCampus/scripts.pory"
 	.string "John Deere Pokémon Research Lab$"
+
+NorthCampus_FossilResearchLabSign_Text_0:
+# 363 "data/maps/NorthCampus/scripts.pory"
+	.string "Ford Fossil Research Lab$"
+
+NorthCampus_PokeballResearchLab_Text_0:
+# 368 "data/maps/NorthCampus/scripts.pory"
+	.string "Kubota Poké Ball Research Lab$"

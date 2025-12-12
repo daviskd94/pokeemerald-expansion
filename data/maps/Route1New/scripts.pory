@@ -155,7 +155,7 @@ script Route1_BoardingBoat {
     fadeoutbgm(0)
     addobject(LOCALID_ROUTE_1_CYRUS)
     delay(180)
-    playbgm(MUS_ENCOUNTER_SUSPICIOUS, FALSE)
+    playbgm(CUS_DD_CROOG_THEME, FALSE)
     applymovement(LOCALID_ROUTE_1_CYRUS, moves(walk_fast_right*5))
     waitmovement(0)
     delay(20)

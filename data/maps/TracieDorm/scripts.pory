@@ -22,10 +22,10 @@ script TracieDorm_Enter {
     msgbox(format("Here {PLAYER}, I actually have a second one.\pI'd like you to have it!"))
     closemessage
     playfanfare(MUS_OBTAIN_ITEM)
-    msgbox(format("{PLAYER} obtained a {COLOR BLUE}Quest Log{COLOR DARK_GRAY} from Tracie!"))
+    msgbox(format("{PLAYER} obtained a {COLOR BLUE}Quest Log{COLOR DARK_GRAY}\nfrom Tracie!"))
     waitfanfare
     setspeaker(SP_NAME_TRACIE)
-    msgbox(format("You can keep track of anything you've been asked to do!\pJust press {START_BUTTON} and select {COLOR BLUE}Quest Log {COLOR DARK_GRAY}\nto view your requests!\pYou can press {R_BUTTON} to filter them too.\pWhy don't we test it out and add one for orientation!"))
+    msgbox(format("You can keep track of anything you've been asked to do!\pJust press {START_BUTTON} and select {COLOR BLUE}Quest Log {COLOR DARK_GRAY}\nto view your requests!\pYou can press {R_BUTTON} to filter them too.\pWhy don't we test it out and\nadd one for orientation!"))
     closemessage
     setflag (FLAG_SYS_QUEST_MENU_GET) 
     questmenu(QUEST_MENU_SET_ACTIVE, QUEST_ORIENTATION)
@@ -34,7 +34,7 @@ script TracieDorm_Enter {
     waitse
     openquestmenu_active
     setspeaker(SP_NAME_TRACIE)
-    msgbox(format("Easy! Right?\pAnyways, we can't lag too far behind Rotcart.\pOrientation is starting soon, after all.\p Lead the way!\nI'll follow."))
+    msgbox(format("Easy! Right?\pAnyways, we can't lag too far behind Rotcart.\p{COLOR GREEN}Orientation{COLOR DARK_GRAY} is starting soon,\nafter all.\p Lead the way!\nI'll follow."))
     closemessage
     setfollowernpc(LOCALID_TRACIE, FNPC_ALL, TracieDorm_TracieFollowDialogue, 0)
     setflag(FLAG_HIDE_TRACIE)

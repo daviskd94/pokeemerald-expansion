@@ -1226,7 +1226,7 @@ NorthCampus_LectureHall_TalkToTracie::
 # 631 "data/maps/NorthCampus_LectureHall/scripts.pory"
 	waitse
 # 632 "data/maps/NorthCampus_LectureHall/scripts.pory"
-	playbgm MUS_RG_ENCOUNTER_RIVAL, FALSE
+	playbgm CUS_ENCOUNTER_ROTCART, FALSE
 # 633 "data/maps/NorthCampus_LectureHall/scripts.pory"
 	showobjectat LOCALID_ROTCART_LECTURE_HALL_2, MAP_NORTH_CAMPUS_LECTURE_HALL
 # 634 "data/maps/NorthCampus_LectureHall/scripts.pory"
@@ -2645,7 +2645,7 @@ NorthCampus_LectureHall_TalkToTracie_Movement_14:
 NorthCampus_LectureHall_Maple_Text_0:
 # 32 "data/maps/NorthCampus_LectureHall/scripts.pory"
 	.string "Don't underestimate President Mario!\n"
-	.string "He's an {COLOR GREEN}Elite Four member for a reason!{COLOR DARK_GRAY}\p"
+	.string "He's an {COLOR GREEN}Elite Four{COLOR DARK_GRAY} member for a reason!\p"
 	.string "Give it your all in the battle!$"
 
 NorthCampus_LectureHall_Maple_Text_1:
@@ -2941,7 +2941,7 @@ NorthCampus_LectureHall_TalkToTracie_Text_2:
 	.string "your final, big assignment.\p"
 	.string "To provide details, I’m happy to\n"
 	.string "introduce to you our own {COLOR GREEN}President {COLOR DARK_GRAY}and\l"
-	.string "{COLOR GREEN}Elite Four member{COLOR DARK_GRAY}, President Mario!$"
+	.string "{COLOR GREEN}Elite Four{COLOR DARK_GRAY} member, President Mario!$"
 
 NorthCampus_LectureHall_TalkToTracie_Text_3:
 # 493 "data/maps/NorthCampus_LectureHall/scripts.pory"
@@ -3011,8 +3011,8 @@ NorthCampus_LectureHall_TalkToTracie_Text_12:
 	.string "But, I can assure you that this\n"
 	.string "challenge will test the limits of what\l"
 	.string "you can do as a Pokémon Trainer.\p"
-	.string "To help prepare, we’ve arranged three\n"
-	.string "review sessions for you to complete.\p"
+	.string "To help prepare, we’ve arranged {COLOR GREEN}three\n"
+	.string "review sessions {COLOR DARK_GRAY}for you to complete.\p"
 	.string "These sessions will cover everything\n"
 	.string "you’ve learned so far and help you get\l"
 	.string "ready for what’s to come.\p"
@@ -3045,7 +3045,7 @@ NorthCampus_LectureHall_TalkToTracie_Text_16:
 	.string "This is what we came to {COLOR GREEN}Tractor\n"
 	.string "University {COLOR DARK_GRAY}for!\p"
 	.string "C'mon, let's go see Professor Maple\n"
-	.string "and get our PokéDex!$"
+	.string "and get our {COLOR GREEN}PokéDex{COLOR DARK_GRAY}!$"
 
 NorthCampus_LectureHall_TalkToTracie_Text_17:
 # 603 "data/maps/NorthCampus_LectureHall/scripts.pory"

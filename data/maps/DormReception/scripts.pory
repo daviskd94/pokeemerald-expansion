@@ -81,7 +81,7 @@ script DormReception_Lady {
 script DormReception_Picnicker {
     lock
     faceplayer
-    msgbox(format("You should check out the South Campus Poké Mart sometime!\pThey have some useful medicine for sale."))
+    msgbox(format("You should check out the {COLOR GREEN}South Campus {COLOR DARK_GRAY}Poké Mart sometime!\pThey have some useful medicine for sale."))
     closemessage
     release
     end

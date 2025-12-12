@@ -173,7 +173,7 @@ NorthCampus_Gymnasium_Enter::
 # 88 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	waitse
 # 89 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	playbgm MUS_RG_ENCOUNTER_RIVAL, FALSE
+	playbgm CUS_ENCOUNTER_ROTCART, FALSE
 # 90 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	applymovement LOCALID_GYMNASIUM_ROTCART, NorthCampus_Gymnasium_Enter_Movement_13
 # 91 "data/maps/NorthCampus_Gymnasium/scripts.pory"
@@ -259,7 +259,7 @@ NorthCampus_Gymnasium_Enter_1:
 # 138 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	trainerbattle_no_intro TRAINER_ROTCART_1, NorthCampus_Gymnasium_Enter_Text_19
 # 139 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	playbgm MUS_RG_ENCOUNTER_RIVAL, FALSE
+	playbgm CUS_ENCOUNTER_ROTCART, FALSE
 # 140 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	clearflag FLAG_WHITEOUT_CONTINUE
 # 141 "data/maps/NorthCampus_Gymnasium/scripts.pory"

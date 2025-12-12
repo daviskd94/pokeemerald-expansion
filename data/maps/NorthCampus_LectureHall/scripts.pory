@@ -29,7 +29,7 @@ script NorthCampus_LectureHall_Maple {
         lock
         faceplayer
         setspeaker(SP_NAME_MAPLE)
-        msgbox(format("Don't underestimate President Mario!\nHe's an {COLOR GREEN}Elite Four member for a reason!{COLOR DARK_GRAY}\pGive it your all in the battle!"))
+        msgbox(format("Don't underestimate President Mario!\nHe's an {COLOR GREEN}Elite Four{COLOR DARK_GRAY} member for a reason!\pGive it your all in the battle!"))
         closemessage
         release
         end
@@ -483,7 +483,7 @@ script NorthCampus_LectureHall_TalkToTracie {
     playbgm(CUS_ANCIENT_PONI_PATH, TRUE)
     delay(30)
     setspeaker(SP_NAME_MAPLE)
-    msgbox(format("Welcome back, students.\nAnd of course, congratulations!\pYou’ve all made it to your fourth and final year here at {COLOR GREEN}Tractor University{COLOR DARK_GRAY}.\pYou’ve all earned it,\nevery one of you!\pThose sleepless nights, boring lectures for {COLOR RED}Rock-type {COLOR DARK_GRAY}Appreciation 101…\pAll of it has led up to this final year where everything comes together!\pYou’ve all grown in not only skill,\nbut character as well.\pAs head of the Pokémon Research department, I’m very proud of you all.\pWith that being said, it’s time to go over your final, big assignment.\pTo provide details, I’m happy to introduce to you our own {COLOR GREEN}President {COLOR DARK_GRAY}and {COLOR GREEN}Elite Four member{COLOR DARK_GRAY}, President Mario!"))
+    msgbox(format("Welcome back, students.\nAnd of course, congratulations!\pYou’ve all made it to your fourth and final year here at {COLOR GREEN}Tractor University{COLOR DARK_GRAY}.\pYou’ve all earned it,\nevery one of you!\pThose sleepless nights, boring lectures for {COLOR RED}Rock-type {COLOR DARK_GRAY}Appreciation 101…\pAll of it has led up to this final year where everything comes together!\pYou’ve all grown in not only skill,\nbut character as well.\pAs head of the Pokémon Research department, I’m very proud of you all.\pWith that being said, it’s time to go over your final, big assignment.\pTo provide details, I’m happy to introduce to you our own {COLOR GREEN}President {COLOR DARK_GRAY}and {COLOR GREEN}Elite Four{COLOR DARK_GRAY} member, President Mario!"))
     closemessage
     applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(walk_right, face_left))
     waitmovement
@@ -564,7 +564,7 @@ script NorthCampus_LectureHall_TalkToTracie {
     applymovement(7, moves(face_up))
     setspeaker(SP_NAME_MARIO)
     playbgm(MUS_OCEANIC_MUSEUM, TRUE)
-    msgbox(format("Some of you may think that this challenge will be a walk in the park.\pBut, I can assure you that this challenge will test the limits of what you can do as a Pokémon Trainer.\pTo help prepare, we’ve arranged three review sessions for you to complete.\pThese sessions will cover everything you’ve learned so far and help you get ready for what’s to come.\pBut before we begin, please meet with Professor Maple to receive your very own {COLOR GREEN}PokéDex{COLOR DARK_GRAY}!"))
+    msgbox(format("Some of you may think that this challenge will be a walk in the park.\pBut, I can assure you that this challenge will test the limits of what you can do as a Pokémon Trainer.\pTo help prepare, we’ve arranged {COLOR GREEN}three review sessions {COLOR DARK_GRAY}for you to complete.\pThese sessions will cover everything you’ve learned so far and help you get ready for what’s to come.\pBut before we begin, please meet with Professor Maple to receive your very own {COLOR GREEN}PokéDex{COLOR DARK_GRAY}!"))
     closemessage
     applymovement(LOCALID_MARIO_LECTURE_HALL, moves(face_right))
     applymovement(LOCALID_MAPLE_LECTURE_HALL, moves(face_left))
@@ -593,7 +593,7 @@ script NorthCampus_LectureHall_TalkToTracie {
     setobjectxyperm(6, 12, 5)
     setobjectmovementtype(6, MOVEMENT_TYPE_FACE_RIGHT)
     setspeaker(SP_NAME_TRACIE)
-    msgbox(format("Wow… That was… a lot to take in.\pBut also kinda exciting, right?\pWe get to challenge the {COLOR GREEN}Tractoria League{COLOR DARK_GRAY}!\pThis is what we came to {COLOR GREEN}Tractor University {COLOR DARK_GRAY}for!\pC'mon, let's go see Professor Maple\nand get our PokéDex!"))
+    msgbox(format("Wow… That was… a lot to take in.\pBut also kinda exciting, right?\pWe get to challenge the {COLOR GREEN}Tractoria League{COLOR DARK_GRAY}!\pThis is what we came to {COLOR GREEN}Tractor University {COLOR DARK_GRAY}for!\pC'mon, let's go see Professor Maple\nand get our {COLOR GREEN}PokéDex{COLOR DARK_GRAY}!"))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right*7, walk_up*3, walk_right*3, walk_up*4, walk_left, walk_down*2, walk_left*9, walk_up))
     applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(walk_up, walk_right*8, walk_up*3, walk_right*3, walk_up*4, walk_left, walk_down*2, walk_left*8, walk_up))
@@ -629,7 +629,7 @@ script NorthCampus_LectureHall_TalkToTracie {
     applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL, moves(face_right, emote_exclamation_mark))
     playse(SE_PIN)
     waitse
-    playbgm (MUS_RG_ENCOUNTER_RIVAL, FALSE)
+    playbgm (CUS_ENCOUNTER_ROTCART, FALSE)
     showobjectat(LOCALID_ROTCART_LECTURE_HALL_2, MAP_NORTH_CAMPUS_LECTURE_HALL)
     applymovement(LOCALID_ROTCART_LECTURE_HALL_2, moves(walk_left*8))
     waitmovement(0)

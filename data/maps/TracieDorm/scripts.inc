@@ -138,8 +138,8 @@ TracieDorm_Enter_Text_2:
 
 TracieDorm_Enter_Text_3:
 # 25 "data/maps/TracieDorm/scripts.pory"
-	.string "{PLAYER} obtained a {COLOR BLUE}Quest Log{COLOR DARK_GRAY} from\n"
-	.string "Tracie!$"
+	.string "{PLAYER} obtained a {COLOR BLUE}Quest Log{COLOR DARK_GRAY}\n"
+	.string "from Tracie!$"
 
 TracieDorm_Enter_Text_4:
 # 28 "data/maps/TracieDorm/scripts.pory"
@@ -148,8 +148,8 @@ TracieDorm_Enter_Text_4:
 	.string "Just press {START_BUTTON} and select {COLOR BLUE}Quest Log {COLOR DARK_GRAY}\n"
 	.string "to view your requests!\p"
 	.string "You can press {R_BUTTON} to filter them too.\p"
-	.string "Why don't we test it out and add one for\n"
-	.string "orientation!$"
+	.string "Why don't we test it out and\n"
+	.string "add one for orientation!$"
 
 TracieDorm_Enter_Text_5:
 # 33 "data/maps/TracieDorm/scripts.pory"
@@ -161,7 +161,8 @@ TracieDorm_Enter_Text_6:
 	.string "Easy! Right?\p"
 	.string "Anyways, we can't lag too far behind\n"
 	.string "Rotcart.\p"
-	.string "Orientation is starting soon, after all.\p"
+	.string "{COLOR GREEN}Orientation{COLOR DARK_GRAY} is starting soon,\n"
+	.string "after all.\p"
 	.string "Lead the way!\n"
 	.string "I'll follow.$"
 

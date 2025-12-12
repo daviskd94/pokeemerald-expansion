@@ -102,7 +102,7 @@ script NorthCampus_EnterWildArea {
     delay(30)
     applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_down))
     waitmovement(0)
-    playbgm(MUS_ENCOUNTER_SUSPICIOUS, FALSE)
+    playbgm(CUS_DD_CROOG_THEME, FALSE)
     setspeaker(SP_NAME_CYRUS)
     msgbox(format("Greetings, students!\nMy name is Cyrus."))
     closemessage
@@ -175,7 +175,7 @@ script NorthCampus_EnterWildArea {
     closemessage
     special(StartWallyTutorialBattle)
 	waitstate
-    playbgm(MUS_ENCOUNTER_SUSPICIOUS, FALSE)
+    playbgm(CUS_DD_CROOG_THEME, FALSE)
     setspeaker(SP_NAME_CYRUS)
     msgbox(format("Not another one…\pThese poor miscolored Pokémon…\nThey're so sick."))
     closemessage
@@ -356,5 +356,15 @@ script NorthCampus_MahindraLibrarySign {
 
 script NorthCampus_PokemonResearchLabSign {
     msgbox("John Deere Pokémon Research Lab" MSGBOX_SIGN)
+    closemessage
+}
+
+script NorthCampus_FossilResearchLabSign {
+    msgbox("Ford Fossil Research Lab" MSGBOX_SIGN)
+    closemessage
+}
+
+script NorthCampus_PokeballResearchLab {
+    msgbox("Kubota Poké Ball Research Lab" MSGBOX_SIGN)
     closemessage
 }

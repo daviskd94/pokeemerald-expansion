@@ -6270,7 +6270,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_TRACIE:
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ROTCART:
-            return CUS_VS_TRAINER;
+            return CUS_VS_ROTCART;
         case TRAINER_CLASS_GENESIS:
             return CUS_VS_TEAM_GENESIS;
         case TRAINER_CLASS_SALON_MAIDEN:

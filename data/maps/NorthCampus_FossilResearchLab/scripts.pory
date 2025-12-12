@@ -1,1 +1,113 @@
 mapscripts NorthCampus_FossilResearchLab_MapScripts {}
+
+script NorthCampus_FossilResearchLab_AurorusFossil {
+    msgbox(format("Aurorus, the Tundra Pokémon.\pIt's said to create freezing air by spraying particles from the crystals on its body."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearchLab_TyrantrumFossil {
+    msgbox(format("Tyrantrum, the Despot Pokémon.\pTyrantrum's massive jaws can crush anything.\nIt lived in mountainous regions where it ruled as king."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearchLab_ArmaldoFossil {
+    msgbox(format("Armaldo, the Plate Pokémon.\pArmaldo uses its powerful claws to catch prey.\nIt lived in warm seas during the prehistoric era."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_ShieldonFossil {
+    msgbox(format("Shieldon, the Shield Pokémon.\pShieldon's sturdy head can withstand any attack.\nIt lived in arid regions during the prehistoric era."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_CradilyFossil {
+    msgbox(format("Cradily, the Barnacle Pokémon.\pCradily uses its tentacle-like arms to ensnare prey.\nIt lived in warm seas during the prehistoric era."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_CarracostaFossil {
+    msgbox(format("Carracosta, the Prototurtle Pokémon.\pCarracosta's shell is extremely hard.\nIt lived in arid regions during the prehistoric era."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_RelicanthFossil {
+    msgbox(format("Relicanth, the Longevity Pokémon.\pRelicanth has remained unchanged for hundreds of millions of years.\nIt is said to be a living fossil."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_BastiodonFossil {
+    msgbox(format("Bastiodon, the Shield Pokémon.\pBastiodon's face is almost entirely covered by its shield-like head.\nIt lived in arid regions during the prehistoric era."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_AerodactylFossil {
+    msgbox(format("Aerodactyl, the Fossil Pokémon.\nIn its Mega form.\pAerodactyl was resurrected from a fossilized egg.\nIt is said to have flown in the skies of the prehistoric era."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_OldAmber {
+    msgbox(format("Old Amber.\pThis is a rare fossil that contains the preserved remains of a prehistoric Pokémon."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_Ribs {
+    msgbox(format("Fossilized Ribs.\pThese are the ribs of a prehistoric Pokémon."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_HelixFossils {
+    msgbox(format("A collection of Helix Fossils.\pThese fossils are said to contain the remains of ancient Pokémon that lived long ago."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_DomeFossils {
+    msgbox(format("A collection of Dome Fossils.\pThese fossils are said to contain the remains of ancient Pokémon that lived long ago."))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_Youngster {
+    lock
+    faceplayer
+    msgbox(format("They say that praying upon the Helix Fossil brings good fortune!\pPraise Helix!"))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_SuperNerd {
+    lock
+    faceplayer
+    msgbox(format("Fossils are really interesting!\pI heard that the scientists here are working on reviving ancient Pokémon from them!"))
+    closemessage
+    end
+}
+
+script NorthCampus_FossilResearch_Professor {
+    lock
+    faceplayer
+    msgbox(format("Ah, hello there, {PLAYER}.\nFeel free to take a look around!\pJust be careful not to touch anything fragile!"))
+    closemessage
+    release
+    end
+}
+
+script NorthCampus_FossilResearch_Hiker {
+    lock
+    faceplayer
+    msgbox(format("I love exploring caves and discovering new things!\pFossils are some of the most fascinating finds of all!"))
+    closemessage
+    release
+    end
+}

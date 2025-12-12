@@ -61,7 +61,7 @@ script Player_Dorm_Enter_Tracie {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     setspeaker(SP_NAME_TRACIE)
-    msgbox(format("You're sleeping right now?\nToday of all days?\pCome on! You didn't actually forget,\ndid you?\pOur senior orientation is today!\nI can't believe you!\pWe've been dreaming of this day since we were kids!"))
+    msgbox(format("You're sleeping right now?\nToday of all days?\pCome on! You didn't actually forget,\ndid you?\pOur {COLOR GREEN}senior orientation{COLOR DARK_GRAY} is today!\nI can't believe you!\pWe've been dreaming of this day since we were kids!"))
     closemessage
     applymovement(LOCALID_TRACIE, moves(walk_right*2))
     waitmovement(0)
@@ -132,7 +132,7 @@ script Player_Dorm_EventScript_CheckPlayersPC {
 
 script Player_Dorm_Trigger_CantLeave {
     lock
-    msgbox("You can't leave without Eevee.")
+    msgbox("You can't leave without {COLOR GREEN}Eevee {COLOR DARK_GRAY}.")
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
     waitmovement(0)

@@ -395,7 +395,7 @@ Player_Dorm_Enter_Tracie_Text_1:
 	.string "Today of all days?\p"
 	.string "Come on! You didn't actually forget,\n"
 	.string "did you?\p"
-	.string "Our senior orientation is today!\n"
+	.string "Our {COLOR GREEN}senior orientation{COLOR DARK_GRAY} is today!\n"
 	.string "I can't believe you!\p"
 	.string "We've been dreaming of this day since\n"
 	.string "we were kids!$"
@@ -427,7 +427,7 @@ Player_Dorm_EventScript_CheckPlayersPC_Text_0:
 
 Player_Dorm_Trigger_CantLeave_Text_0:
 # 135 "data/maps/PlayerDorm/scripts.pory"
-	.string "You can't leave without Eevee.$"
+	.string "You can't leave without {COLOR GREEN}Eevee {COLOR DARK_GRAY}.$"
 
 Player_Dorm_NintendoSwitch_Text_0:
 # 144 "data/maps/PlayerDorm/scripts.pory"
