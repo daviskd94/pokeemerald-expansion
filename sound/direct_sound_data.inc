@@ -6463,3 +6463,7 @@ DirectSoundWaveData_sc88pro_orch_hit::
 	.align 2
 DirectSoundWaveData_qy70_sawtooth_wave::
 	.incbin "sound/direct_sound_samples/qy70_sawtooth_wave.bin"
+
+	.align 2
+DirectSoundWaveData_dd_trumpet_ensemble::
+	.incbin "sound/direct_sound_samples/dd_trumpet_ensemble.bin"
