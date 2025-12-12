@@ -48,3 +48,7 @@ const u32 gBattleEnvironmentAnimTilemap_Building[] = INCBIN_U32("graphics/battle
 
 const u32 gBattleEnvironmentAnimTiles_Rayquaza[] = INCBIN_U32("graphics/battle_environment/sky/anim_tiles.4bpp.smol");
 const u32 gBattleEnvironmentAnimTilemap_Rayquaza[] = INCBIN_U32("graphics/battle_environment/sky/anim_map.bin.smolTM");
+
+const u32 gBattleEnvironmentTiles_Gymnasium[] = INCBIN_U32("graphics/battle_environment/gymnasium/tiles.4bpp.smol");
+const u32 gBattleEnvironmentTilemap_Gymnasium[] = INCBIN_U32("graphics/battle_environment/gymnasium/map.bin.smolTM");
+const u16 gBattleEnvironmentPalette_Gymnasium[] = INCBIN_U16("graphics/battle_environment/gymnasium/palette.gbapal");

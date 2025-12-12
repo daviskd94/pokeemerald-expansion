@@ -385,6 +385,7 @@ const u8 gBattleBackgroundNames[][30] =
     [MAP_BATTLE_SCENE_GROUDON]  = _("GROUDON                 "),
     [MAP_BATTLE_SCENE_KYOGRE]   = _("KYOGRE                  "),
     [MAP_BATTLE_SCENE_RAYQUAZA] = _("RAYQUAZA                "),
+    [MAP_BATTLE_SCENE_GYMNASIUM]= _("GYMNASIUM               "),
 };
 
 const u8 gBattleBackgroundTerrainNames[][26] =
@@ -999,6 +1000,11 @@ static void LoadBattleBg(u8 battleBgType, enum BattleEnvironments battleEnvironm
         DecompressDataWithHeaderVram(gBattleEnvironmentTiles_Rayquaza, (void*)(BG_CHAR_ADDR(2)));
         DecompressDataWithHeaderVram(gBattleEnvironmentTilemap_Rayquaza, (void*)(BG_SCREEN_ADDR(26)));
         LoadPalette(gBattleEnvironmentPalette_Rayquaza, 0x20, 0x60);
+        break;
+    case MAP_BATTLE_SCENE_GYMNASIUM:
+        DecompressDataWithHeaderVram(gBattleEnvironmentTiles_Gymnasium, (void*)(BG_CHAR_ADDR(2)));
+        DecompressDataWithHeaderVram(gBattleEnvironmentTilemap_Gymnasium, (void*)(BG_SCREEN_ADDR(26)));
+        LoadPalette(gBattleEnvironmentPalette_Gymnasium, 0x20, 0x60);
         break;
     }
 }

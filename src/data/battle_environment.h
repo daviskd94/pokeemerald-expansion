@@ -324,6 +324,18 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         },
     },
 
+    [BATTLE_ENVIRONMENT_GYMNASIUM] =
+    {
+        .background =
+        {
+            .tileset = gBattleEnvironmentTiles_Gymnasium,
+            .tilemap = gBattleEnvironmentTilemap_Gymnasium,
+            .entryTileset = gBattleEnvironmentAnimTiles_Building,
+            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
+            .palette = gBattleEnvironmentPalette_Gymnasium,
+        },
+    },
+
     [BATTLE_ENVIRONMENT_GROUDON] =
     {
         .background =
@@ -462,7 +474,8 @@ static const struct {
     {MAP_BATTLE_SCENE_PHOEBE,   BATTLE_ENVIRONMENT_PHOEBE},
     {MAP_BATTLE_SCENE_GLACIA,   BATTLE_ENVIRONMENT_GLACIA},
     {MAP_BATTLE_SCENE_DRAKE,    BATTLE_ENVIRONMENT_DRAKE},
-    {MAP_BATTLE_SCENE_FRONTIER, BATTLE_ENVIRONMENT_FRONTIER}
+    {MAP_BATTLE_SCENE_FRONTIER, BATTLE_ENVIRONMENT_FRONTIER},
+    {MAP_BATTLE_SCENE_GYMNASIUM, BATTLE_ENVIRONMENT_GYMNASIUM}
 };
 
 #endif // GUARD_DATA_BATTLE_ENVIRONMENT_H
