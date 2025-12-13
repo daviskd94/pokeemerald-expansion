@@ -135,31 +135,47 @@ NorthCampus_PokeballResearchLab_PokeBall_Text_0:
 
 NorthCampus_PokeballResearchLab_GreatBall_Text_0:
 # 10 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
-	.string "An educational model of a Great Ball.\pIt's 1.5x more effective than a Poké Ball.$"
+	.string "An educational model of a Great Ball.\p"
+	.string "It's 1.5x more effective than a Poké\n"
+	.string "Ball.$"
 
 NorthCampus_PokeballResearchLab_UltraBall_Text_0:
 # 16 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
-	.string "An educational model of an Ultra Ball.\pIt's 2x more effective than a Poké Ball.$"
+	.string "An educational model of an Ultra Ball.\p"
+	.string "It's 2x more effective than a Poké Ball.$"
 
 NorthCampus_PokeballResearchLab_NetBall_Text_0:
 # 22 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
-	.string "An educational model of a Net Ball.\pIt's 2x more effective than a Poké Ball on {COLOR RED}Water- {COLOR DARK_GRAY}and {COLOR RED}Bug-type {COLOR DARK_GRAY}Pokémon.$"
+	.string "An educational model of a Net Ball.\p"
+	.string "It's 2x more effective than a Poké Ball\n"
+	.string "on {COLOR RED}Water- {COLOR DARK_GRAY}and {COLOR RED}Bug-type {COLOR DARK_GRAY}Pokémon.$"
 
 NorthCampus_PokeballResearchLab_QuickBall_Text_0:
 # 28 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
-	.string "An educational model of a Quick Ball.\pIt's 5x more effective than a Poké Ball when used at the start of a wild encounter.$"
+	.string "An educational model of a Quick Ball.\p"
+	.string "It's 5x more effective than a Poké Ball\n"
+	.string "when used at the start of a wild\l"
+	.string "encounter.$"
 
 NorthCampus_PokeballResearchLab_DuskBall_Text_0:
 # 34 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
-	.string "An educational model of a Dusk Ball.\pIt's 3.5x more effective than a Poké Ball when used in dark places like caves or at night.$"
+	.string "An educational model of a Dusk Ball.\p"
+	.string "It's 3.5x more effective than a Poké\n"
+	.string "Ball when used in dark places like caves\l"
+	.string "or at night.$"
 
 NorthCampus_PokeballResearchLab_TimerBall_Text_0:
 # 40 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
-	.string "An educational model of a Timer Ball.\pIts effectiveness increases the longer the battle goes on, up to 4x.$"
+	.string "An educational model of a Timer Ball.\p"
+	.string "Its effectiveness increases the longer\n"
+	.string "the battle goes on, up to 4x.$"
 
 NorthCampus_PokeballResearchLab_DiveaBall_Text_0:
 # 46 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"
-	.string "An educational model of a Dive Ball.\pIt's 2x more effective than a Poké Ball when used on Pokémon encountered while fishing or surfing.$"
+	.string "An educational model of a Dive Ball.\p"
+	.string "It's 2x more effective than a Poké Ball\n"
+	.string "when used on Pokémon encountered while\l"
+	.string "fishing or surfing.$"
 
 NorthCampus_PokeballResearchLab_Laptops_Text_0:
 # 52 "data/maps/NorthCampus_PokeballResearchLab/scripts.pory"

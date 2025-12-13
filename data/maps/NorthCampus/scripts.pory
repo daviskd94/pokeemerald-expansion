@@ -50,7 +50,7 @@ script NorthCampus_WalkNextToTracie6 {
 script NorthCampus_TalkToTracie {
     fadeoutbgm(0)
     setspeaker(SP_NAME_TRACIE)
-    msgbox(format("…\pTake a good look, {PLAYER}…\p{COLOR GREEN}Main Hall{COLOR DARK_GRAY} sure does hit different when you know it's your final year.\p We've had a lot of great memories in here.\pAnd… okay, maybe a few\ncatastrophes too.\pWe never did find out what happened to the guy with the Mareep and the lotion…"))
+    msgbox(format("…\pTake a good look, {PLAYER}…\pMain Hall sure does hit different when you know it's your final year.\p We've had a lot of great memories in here.\pAnd… okay, maybe a few\ncatastrophes too.\pWe never did find out what happened to the guy with the Mareep and the lotion…"))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     applymovement(LOCALID_TRACIE_ENTERING_MAIN_HALL, moves(face_right))
@@ -102,7 +102,7 @@ script NorthCampus_EnterWildArea {
     delay(30)
     applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_down))
     waitmovement(0)
-    playbgm(CUS_DD_CROOG_THEME, FALSE)
+    playbgm(CUS_DD_CROOG_THEME, TRUE)
     setspeaker(SP_NAME_CYRUS)
     msgbox(format("Greetings, students!\nMy name is Cyrus."))
     closemessage
@@ -175,7 +175,6 @@ script NorthCampus_EnterWildArea {
     closemessage
     special(StartWallyTutorialBattle)
 	waitstate
-    playbgm(CUS_DD_CROOG_THEME, FALSE)
     setspeaker(SP_NAME_CYRUS)
     msgbox(format("Not another one…\pThese poor miscolored Pokémon…\nThey're so sick."))
     closemessage
@@ -216,10 +215,8 @@ script NorthCampus_EnterWildArea {
     waitmovement(0)
     applymovement(LOCALID_CYRUS_NORTH_CAMPUS, moves(walk_fast_right*3))
     waitmovement(0)
-    delay(40)
-    fadeoutbgm(0)
-    delay(5)
-    playbgm(MUS_LILYCOVE_MUSEUM, TRUE)
+    savebgm(MUS_DUMMY)
+	fadedefaultbgm
     setspeaker(SP_NAME_UNKNOWN)
     msgbox(format("Sigh… guess I'm calling security."))
     closemessage
@@ -260,7 +257,7 @@ script NorthCampus_EnterWildArea {
     setspeaker(SP_NAME_INTERCOM)
     msgbox(format("Attention seniors.\pPlease report to {COLOR GREEN}Mahindra Library{COLOR DARK_GRAY} for your next assignment."))
     closemessage
-    playbgm(MUS_ENCOUNTER_MAY, FALSE)
+    playbgm(CUS_ENCOUNTER_TRACIE, FALSE)
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("There's our cue!\pI'll meet up with your later, {PLAYER}.\pI've got Pokémon to catch!"))
     closemessage
@@ -343,7 +340,7 @@ script NorthCampus_NPC5 {
 script NorthCampus_NPC6 {
     lock
 	faceplayer
-	msgbox(format("Watch out for the Pidgey that hangs out by the statue.\pThey've gotten bold.\nLike, 'steal your lunch' bold."))
+	msgbox(format("Watch out for the Wattrel that hangs out by the statue.\pThey've gotten bold.\nLike, 'steal your lunch' bold."))
 	closemessage
 	release
 	end

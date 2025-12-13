@@ -304,12 +304,12 @@ Player_Dorm_EventScript_RotcartSign_Text_0:
 
 Player_Dorm_EventScript_BuckSign_Text_0:
 # 85 "data/maps/DormHallway/scripts.pory"
-	.string "Buck's room$"
+	.string "Celeste, Marcie, and Lyssa's room$"
 
 Player_Dorm_EventScript_ColtonSign_Text_0:
 # 92 "data/maps/DormHallway/scripts.pory"
-	.string "Colton's room$"
+	.string "Bertie, Colton, and Buck's room$"
 
 Player_Dorm_EventScript_CelesteGabeSign_Text_0:
 # 99 "data/maps/DormHallway/scripts.pory"
-	.string "Celeste & Gabe's room$"
+	.string "Gabe and Orthoc's room$"

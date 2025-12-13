@@ -123,7 +123,7 @@ script NorthCampus_LectureHall_Mario {
             msgbox(format("Wait!\nWe're taking a boat!?"))
             closemessage
             setspeaker(SP_NAME_MARIO)
-            msgbox(format("Yes!\nIt's a boat the University owns.\nThe {COLOR GREEN}S.S. Tractoria{COLOR DARK_GRAY}!\pIt'll take you directly across the sea to {COLOR GREEN}Route 2{COLOR DARK_GRAY} and back."))
+            msgbox(format("Yes!\nIt's a boat the University owns.\nThe {COLOR GREEN}S.S. Tractoria{COLOR DARK_GRAY}!\pIt'll take you directly across the sea and back."))
             closemessage
             applymovement(LOCALID_TRACIE_NORTH_CAMPUS_LECTURE_HALL_2, moves(jump_in_place_left))
             playse(SE_LEDGE)
@@ -697,7 +697,7 @@ script NorthCampus_LectureHall_TalkToTracie {
     questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_ORIENTATION)
     questmenu(QUEST_MENU_SET_ACTIVE, QUEST_POKEMON_BATTLES_101)
     playse(SE_DEX_SEARCH)
-    msgbox(format("{COLOR BLUE}Pokémon Battles 101{COLOR DARK_GRAY} has been added to your {COLOR BLUE}Quest Log{COLOR DARK_GRAY}."))
+    msgbox(format("{COLOR BLUE}Battling 101{COLOR DARK_GRAY} has been added to your {COLOR BLUE}Quest Log{COLOR DARK_GRAY}."))
     waitse
     openquestmenu_active
     releaseall

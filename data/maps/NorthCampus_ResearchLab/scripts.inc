@@ -169,8 +169,9 @@ NorthCampus_ResearchLab_Scientist3_Text_0:
 	.string "Records from Ancient Sinnoh show that\n"
 	.string "{COLOR GREEN}Voltorb{COLOR DARK_GRAY} once had a different\l"
 	.string "appearance.\p"
-	.string "They appeared more like wood, which was\n"
-	.string "the design of {COLOR GREEN}Poké Balls {COLOR DARK_GRAY}at the time.\p"
+	.string "They appeared more like wood, which\n"
+	.string "resembled the design of {COLOR GREEN}Poké Balls {COLOR DARK_GRAY}at\l"
+	.string "the time.\p"
 	.string "This further supports our theories.$"
 
 NorthCampus_ResearchLab_Scientist4_Text_0:
@@ -223,7 +224,7 @@ NorthCampus_ResearchLab_Sink_Text_0:
 
 NorthCampus_ResearchLab_Voltorb_Text_0:
 # 80 "data/maps/NorthCampus_ResearchLab/scripts.pory"
-	.string "Bzzzzt! Bzzzzt$"
+	.string "Bzzzzt! Bzzzzt!$"
 
 NorthCampus_ResearchLab_Porygon_Text_0:
 # 91 "data/maps/NorthCampus_ResearchLab/scripts.pory"

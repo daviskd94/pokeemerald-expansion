@@ -187,8 +187,6 @@ NorthCampus_MainHall_FrontDeskLady::
 	lock
 # 97 "data/maps/NorthCampus_MainHall/scripts.pory"
 	faceplayer
-# 98 "data/maps/NorthCampus_MainHall/scripts.pory"
-	setspeaker SP_NAME_RECEPTIONIST
 # 99 "data/maps/NorthCampus_MainHall/scripts.pory"
 	msgbox NorthCampus_MainHall_FrontDeskLady_Text_0
 # 100 "data/maps/NorthCampus_MainHall/scripts.pory"
@@ -409,11 +407,9 @@ NorthCampus_MainHall_Registration_Text_9:
 # 71 "data/maps/NorthCampus_MainHall/scripts.pory"
 	.string "Okay, thanks for waiting!\p"
 	.string "You're both all checked in.\p"
-	.string "Orientation starts in the lecture hall\n"
-	.string "behind me.\p"
+	.string "Orientation starts in the {COLOR GREEN}Lecture Hall{COLOR DARK_GRAY}.\p"
 	.string "Just head through either of these\n"
-	.string "doors.\n"
-	.string "We're starting soon!$"
+	.string "doors. We're starting soon!$"
 
 NorthCampus_MainHall_Registration_Text_10:
 # 74 "data/maps/NorthCampus_MainHall/scripts.pory"

@@ -30,6 +30,22 @@ NorthCampus_Classroom2_NPC2::
 	end
 
 
+NorthCampus_Classroom2_Chalkboard_EVs::
+# 22 "data/maps/NorthCampus_Classroom2/scripts.pory"
+	msgbox NorthCampus_Classroom2_Chalkboard_EVs_Text_0
+# 23 "data/maps/NorthCampus_Classroom2/scripts.pory"
+	closemessage
+	end
+
+
+NorthCampus_Classroom_Skeleton::
+# 28 "data/maps/NorthCampus_Classroom2/scripts.pory"
+	msgbox NorthCampus_Classroom_Skeleton_Text_0
+# 29 "data/maps/NorthCampus_Classroom2/scripts.pory"
+	closemessage
+	end
+
+
 NorthCampus_Classroom2_NPC1_Text_0:
 # 6 "data/maps/NorthCampus_Classroom2/scripts.pory"
 	.string "There was a time when {COLOR RED}Psychic-type\n"
@@ -42,3 +58,21 @@ NorthCampus_Classroom2_NPC2_Text_0:
 	.string "I have Professor Maple for Berry\n"
 	.string "Blending 101.\p"
 	.string "She's super nice!$"
+
+NorthCampus_Classroom2_Chalkboard_EVs_Text_0:
+# 22 "data/maps/NorthCampus_Classroom2/scripts.pory"
+	.string "Some leftover lecture notes on the\n"
+	.string "chalkboard.\p"
+	.string "'{COLOR GREEN}Effort Values{COLOR DARK_GRAY}, or {COLOR GREEN}EVs{COLOR DARK_GRAY}, are stats that\n"
+	.string "influence a Pokemon's growth.\p"
+	.string "By battling certain Pokémon, your\n"
+	.string "Pokémon can gain EVs in specific stats.\p"
+	.string "These values can be viewed in your\n"
+	.string "Pokémon's {COLOR GREEN}Summary Screen{COLOR DARK_GRAY}.'$"
+
+NorthCampus_Classroom_Skeleton_Text_0:
+# 28 "data/maps/NorthCampus_Classroom2/scripts.pory"
+	.string "A human skeleton model used for\n"
+	.string "educational purposes.\p"
+	.string "Humans and Pokémon share many similar\n"
+	.string "bone structures.$"

@@ -1325,7 +1325,7 @@ const u8 gText_QuestActive[] =_("active");
 
 //names
 const u8 gText_SideQuestName_1[] = _("Senior Year");
-const u8 gText_SideQuestName_2[] = _("Pokémon Battles 101");
+const u8 gText_SideQuestName_2[] = _("Battling 101");
 const u8 gText_SideQuestName_3[] = _("Ready, Set, Throw!");
 const u8 gText_SideQuestName_4[] = _("Subterranean Hunt");
 const u8 gText_SideQuestName_5[] = _("Back to the Lab, Again");

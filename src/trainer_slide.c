@@ -65,6 +65,12 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Fuck 'em up, Gible.{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("Get your shit together, Gible!{PAUSE_UNTIL_PRESS}"), 
+        },
+        [TRAINER_MARIO_1] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Alright, {PLAYER}!\nShow me what you got!{PAUSE_UNTIL_PRESS}"), 
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Very good!\nLet's keep it up!{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("There you go, {PLAYER}!\nHit where it hurts!{PAUSE_UNTIL_PRESS}"),
         }
     },
 };

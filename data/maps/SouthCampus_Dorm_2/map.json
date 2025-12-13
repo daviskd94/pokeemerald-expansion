@@ -17,7 +17,7 @@
   "warp_events": [
     {
       "x": 7,
-      "y": 10,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_DORM_HALLWAY",
       "dest_warp_id": "5"

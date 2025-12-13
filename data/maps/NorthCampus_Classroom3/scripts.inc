@@ -30,6 +30,14 @@ NorthCampus_Classroom3_NPC2::
 	end
 
 
+NorthCampus_Classroom3_Chalkboard_Natures::
+# 22 "data/maps/NorthCampus_Classroom3/scripts.pory"
+	msgbox NorthCampus_Classroom3_Chalkboard_Natures_Text_0
+# 23 "data/maps/NorthCampus_Classroom3/scripts.pory"
+	closemessage
+	end
+
+
 NorthCampus_Classroom3_NPC1_Text_0:
 # 6 "data/maps/NorthCampus_Classroom3/scripts.pory"
 	.string "Ugh, this class is hard.\n"
@@ -37,8 +45,21 @@ NorthCampus_Classroom3_NPC1_Text_0:
 
 NorthCampus_Classroom3_NPC2_Text_0:
 # 15 "data/maps/NorthCampus_Classroom3/scripts.pory"
-	.string "DHave you taken Water Pokémon Habits\n"
+	.string "Have you taken Water Pokémon Habits\n"
 	.string "and Habitats?\p"
 	.string "It's my favorite class so far!\p"
 	.string "Next to Famous Fishing Folk Fables,\n"
 	.string "that is.$"
+
+NorthCampus_Classroom3_Chalkboard_Natures_Text_0:
+# 22 "data/maps/NorthCampus_Classroom3/scripts.pory"
+	.string "Some leftover lecture notes on the\n"
+	.string "chalkboard.\p"
+	.string "'{COLOR GREEN}Natures{COLOR DARK_GRAY} affect how a Pokémon's stats\n"
+	.string "grow.\p"
+	.string "Each Nature increases one stat by 10%\n"
+	.string "and decreases another by 10%.\p"
+	.string "These effects can be viewed in your\n"
+	.string "Pokémon's {COLOR GREEN}Summary Screen{COLOR DARK_GRAY}, where the\l"
+	.string "increased stat is {COLOR RED}red{COLOR DARK_GRAY} and the\l"
+	.string "decreased stat is {COLOR BLUE}blue{COLOR DARK_GRAY}.'$"

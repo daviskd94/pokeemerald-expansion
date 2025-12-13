@@ -7,49 +7,49 @@ script NorthCampus_FossilResearchLab_AurorusFossil {
 }
 
 script NorthCampus_FossilResearchLab_TyrantrumFossil {
-    msgbox(format("Tyrantrum, the Despot Pokémon.\pTyrantrum's massive jaws can crush anything.\nIt lived in mountainous regions where it ruled as king."))
+    msgbox(format("Tyrantrum, the Despot Pokémon.\pTyrantrum's massive jaws can crush anything.\pIt lived in mountainous regions where it ruled as king."))
     closemessage
     end
 }
 
 script NorthCampus_FossilResearchLab_ArmaldoFossil {
-    msgbox(format("Armaldo, the Plate Pokémon.\pArmaldo uses its powerful claws to catch prey.\nIt lived in warm seas during the prehistoric era."))
+    msgbox(format("Armaldo, the Plate Pokémon.\pArmaldo uses its powerful claws to catch prey.\pIt lived in warm seas during the prehistoric era."))
     closemessage
     end
 }
 
 script NorthCampus_FossilResearch_ShieldonFossil {
-    msgbox(format("Shieldon, the Shield Pokémon.\pShieldon's sturdy head can withstand any attack.\nIt lived in arid regions during the prehistoric era."))
+    msgbox(format("Shieldon, the Shield Pokémon.\pShieldon's sturdy head can withstand any attack.\pIt lived in arid regions during the prehistoric era."))
     closemessage
     end
 }
 
 script NorthCampus_FossilResearch_CradilyFossil {
-    msgbox(format("Cradily, the Barnacle Pokémon.\pCradily uses its tentacle-like arms to ensnare prey.\nIt lived in warm seas during the prehistoric era."))
+    msgbox(format("Cradily, the Barnacle Pokémon.\pCradily uses its tentacle-like arms to ensnare prey.\pIt lived in warm seas during the prehistoric era."))
     closemessage
     end
 }
 
 script NorthCampus_FossilResearch_CarracostaFossil {
-    msgbox(format("Carracosta, the Prototurtle Pokémon.\pCarracosta's shell is extremely hard.\nIt lived in arid regions during the prehistoric era."))
+    msgbox(format("Carracosta, the Prototurtle Pokémon.\pCarracosta's shell is extremely hard.\pIt lived in arid regions during the prehistoric era."))
     closemessage
     end
 }
 
 script NorthCampus_FossilResearch_RelicanthFossil {
-    msgbox(format("Relicanth, the Longevity Pokémon.\pRelicanth has remained unchanged for hundreds of millions of years.\nIt is said to be a living fossil."))
+    msgbox(format("Relicanth, the Longevity Pokémon.\pRelicanth has remained unchanged for hundreds of millions of years.\pIt is said to be a living fossil."))
     closemessage
     end
 }
 
 script NorthCampus_FossilResearch_BastiodonFossil {
-    msgbox(format("Bastiodon, the Shield Pokémon.\pBastiodon's face is almost entirely covered by its shield-like head.\nIt lived in arid regions during the prehistoric era."))
+    msgbox(format("Bastiodon, the Shield Pokémon.\pBastiodon's face is almost entirely covered by its shield-like head.\pIt lived in arid regions during the prehistoric era."))
     closemessage
     end
 }
 
 script NorthCampus_FossilResearch_AerodactylFossil {
-    msgbox(format("Aerodactyl, the Fossil Pokémon.\nIn its Mega form.\pAerodactyl was resurrected from a fossilized egg.\nIt is said to have flown in the skies of the prehistoric era."))
+    msgbox(format("Aerodactyl, the Fossil Pokémon.\nIn its Mega form.\pAerodactyl was resurrected from a fossilized egg.\pIt is said to have flown in the skies of the prehistoric era."))
     closemessage
     end
 }

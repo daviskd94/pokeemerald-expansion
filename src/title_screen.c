@@ -499,7 +499,7 @@ static void SpriteCB_PokemonLogoShine(struct Sprite *sprite)
              || sprite->x == DISPLAY_WIDTH / 2 + (4 * SHINE_SPEED)
              || sprite->x == DISPLAY_WIDTH / 2 + (5 * SHINE_SPEED)
              || sprite->x == DISPLAY_WIDTH / 2 + (6 * SHINE_SPEED))
-                gPlttBufferFaded[0] = RGB(24, 31, 12);
+                gPlttBufferFaded[0] = RGB(27, 16, 20); // UPDATED TO FLASH PINK INSTEAD OF GREEN
             else
                 gPlttBufferFaded[0] = backgroundColor;
         }

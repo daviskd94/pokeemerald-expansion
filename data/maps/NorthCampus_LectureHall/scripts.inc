@@ -2737,7 +2737,7 @@ NorthCampus_LectureHall_Mario_Text_12:
 	.string "It's a boat the University owns.\n"
 	.string "The {COLOR GREEN}S.S. Tractoria{COLOR DARK_GRAY}!\p"
 	.string "It'll take you directly across the sea\n"
-	.string "to {COLOR GREEN}Route 2{COLOR DARK_GRAY} and back.$"
+	.string "and back.$"
 
 NorthCampus_LectureHall_Mario_Text_13:
 # 135 "data/maps/NorthCampus_LectureHall/scripts.pory"
@@ -3145,5 +3145,5 @@ NorthCampus_LectureHall_TalkToTracie_Text_33:
 
 NorthCampus_LectureHall_TalkToTracie_Text_34:
 # 700 "data/maps/NorthCampus_LectureHall/scripts.pory"
-	.string "{COLOR BLUE}Pokémon Battles 101{COLOR DARK_GRAY} has been added to\n"
-	.string "your {COLOR BLUE}Quest Log{COLOR DARK_GRAY}.$"
+	.string "{COLOR BLUE}Battling 101{COLOR DARK_GRAY} has been added to your\n"
+	.string "{COLOR BLUE}Quest Log{COLOR DARK_GRAY}.$"

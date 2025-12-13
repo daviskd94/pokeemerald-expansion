@@ -136,6 +136,6 @@
 
 // Remainder are unused
 
-#define BERRY_TREES_COUNT 128
+#define BERRY_TREES_COUNT 90
 
 #endif // GUARD_CONSTANTS_BERRY_H

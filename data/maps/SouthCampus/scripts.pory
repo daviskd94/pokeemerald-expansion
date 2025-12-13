@@ -228,7 +228,7 @@ script SouthCampus_MeowthBattle {
 	closemessage
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(face_left))
-	playbgm(MUS_ENCOUNTER_MAY, FALSE)
+	playbgm(CUS_ENCOUNTER_TRACIE, TRUE)
 	setspeaker(SP_NAME_TRACIE)
 	msgbox(format("Hey!\nLet's have a battle!\pIt'll be the first battle of our final year of school, and I can't think of anyone better to have it with!"))
 	closemessage
@@ -242,7 +242,6 @@ script SouthCampus_MeowthBattle {
 	setflag(FLAG_HIDE_SOUTH_CAMPUS_TRAINERS)
 	setflag(FLAG_WHITEOUT_CONTINUE)
 	trainerbattle_no_intro(TRAINER_TRACIE_SOUTH_CAMPUS, format("Looks like I still have some\ncatching up to do!"))
-	playbgm(MUS_ENCOUNTER_MAY, FALSE)
 	clearflag(FLAG_WHITEOUT_CONTINUE)
 	special(RemoveCameraObject)
 	removeobject(LOCALID_CAMERA)
@@ -282,6 +281,7 @@ script SouthCampus_TraciePostBattle {
 	destroyfollowernpc
 	setvar(VAR_SOUTH_CAMPUS_STATE, 1)
 	setrespawn(HEAL_LOCATION_SOUTH_CAMPUS)
+	savebgm(MUS_DUMMY)
 	fadedefaultbgm
 	release
 	end

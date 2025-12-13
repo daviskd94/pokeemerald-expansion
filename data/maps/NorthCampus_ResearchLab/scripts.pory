@@ -19,7 +19,7 @@ script NorthCampus_ResearchLab_Scientist2 {
 
 script NorthCampus_ResearchLab_Scientist3 {
     faceplayer
-    msgbox(format("Records from Ancient Sinnoh show that {COLOR GREEN}Voltorb{COLOR DARK_GRAY} once had a different appearance.\pThey appeared more like wood, which was the design of {COLOR GREEN}Poké Balls {COLOR DARK_GRAY}at the time.\pThis further supports our theories."))
+    msgbox(format("Records from Ancient Sinnoh show that {COLOR GREEN}Voltorb{COLOR DARK_GRAY} once had a different appearance.\pThey appeared more like wood, which resembled the design of {COLOR GREEN}Poké Balls {COLOR DARK_GRAY}at the time.\pThis further supports our theories."))
     closemessage
     release
     end
@@ -77,7 +77,7 @@ script NorthCampus_ResearchLab_Voltorb {
     faceplayer
     setspeaker(SP_NAME_VOLTORB)
     playmoncry(SPECIES_VOLTORB, 0)
-    msgbox("Bzzzzt! Bzzzzt", MSGBOX_DEFAULT)
+    msgbox("Bzzzzt! Bzzzzt!", MSGBOX_DEFAULT)
     waitmoncry
     closemessage
     release

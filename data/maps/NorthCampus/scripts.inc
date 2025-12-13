@@ -183,7 +183,7 @@ NorthCampus_EnterWildArea::
 # 104 "data/maps/NorthCampus/scripts.pory"
 	waitmovement 0
 # 105 "data/maps/NorthCampus/scripts.pory"
-	playbgm CUS_DD_CROOG_THEME, FALSE
+	playbgm CUS_DD_CROOG_THEME, TRUE
 # 106 "data/maps/NorthCampus/scripts.pory"
 	setspeaker SP_NAME_CYRUS
 # 107 "data/maps/NorthCampus/scripts.pory"
@@ -329,352 +329,346 @@ NorthCampus_EnterWildArea::
 # 177 "data/maps/NorthCampus/scripts.pory"
 	waitstate
 # 178 "data/maps/NorthCampus/scripts.pory"
-	playbgm CUS_DD_CROOG_THEME, FALSE
+	setspeaker SP_NAME_CYRUS
 # 179 "data/maps/NorthCampus/scripts.pory"
-	setspeaker SP_NAME_CYRUS
-# 180 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_EnterWildArea_Text_19
+# 180 "data/maps/NorthCampus/scripts.pory"
+	closemessage
 # 181 "data/maps/NorthCampus/scripts.pory"
-	closemessage
-# 182 "data/maps/NorthCampus/scripts.pory"
 	applymovement LOCALID_CYRUS_NORTH_CAMPUS, NorthCampus_EnterWildArea_Movement_1
+# 182 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
 # 183 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
+	delay 20
 # 184 "data/maps/NorthCampus/scripts.pory"
-	delay 20
-# 185 "data/maps/NorthCampus/scripts.pory"
 	setspeaker SP_NAME_CYRUS
-# 186 "data/maps/NorthCampus/scripts.pory"
+# 185 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_EnterWildArea_Text_20
+# 186 "data/maps/NorthCampus/scripts.pory"
+	closemessage
 # 187 "data/maps/NorthCampus/scripts.pory"
-	closemessage
+	delay 20
 # 188 "data/maps/NorthCampus/scripts.pory"
-	delay 20
+	setspeaker SP_NAME_TRACIE
 # 189 "data/maps/NorthCampus/scripts.pory"
-	setspeaker SP_NAME_TRACIE
-# 190 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_EnterWildArea_Text_21
+# 190 "data/maps/NorthCampus/scripts.pory"
+	closemessage
 # 191 "data/maps/NorthCampus/scripts.pory"
-	closemessage
-# 192 "data/maps/NorthCampus/scripts.pory"
 	clearflag FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR
-# 193 "data/maps/NorthCampus/scripts.pory"
+# 192 "data/maps/NorthCampus/scripts.pory"
 	addobject LOCALID_PROFESSOR_ASPEN
+# 193 "data/maps/NorthCampus/scripts.pory"
+	setspeaker SP_NAME_UNKNOWN
 # 194 "data/maps/NorthCampus/scripts.pory"
-	setspeaker SP_NAME_UNKNOWN
-# 195 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_EnterWildArea_Text_22
+# 195 "data/maps/NorthCampus/scripts.pory"
+	closemessage
 # 196 "data/maps/NorthCampus/scripts.pory"
-	closemessage
-# 197 "data/maps/NorthCampus/scripts.pory"
 	applymovement LOCALID_CYRUS_NORTH_CAMPUS, NorthCampus_EnterWildArea_Movement_7
-# 198 "data/maps/NorthCampus/scripts.pory"
+# 197 "data/maps/NorthCampus/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_EnterWildArea_Movement_8
-# 199 "data/maps/NorthCampus/scripts.pory"
+# 198 "data/maps/NorthCampus/scripts.pory"
 	applymovement LOCALID_TRACIE_CATCHING_TUTORIAL, NorthCampus_EnterWildArea_Movement_8
+# 199 "data/maps/NorthCampus/scripts.pory"
+	playse SE_PIN
 # 200 "data/maps/NorthCampus/scripts.pory"
-	playse SE_PIN
+	waitse
 # 201 "data/maps/NorthCampus/scripts.pory"
-	waitse
-# 202 "data/maps/NorthCampus/scripts.pory"
 	applymovement LOCALID_PROFESSOR_ASPEN, NorthCampus_EnterWildArea_Movement_9
+# 202 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
 # 203 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
-# 204 "data/maps/NorthCampus/scripts.pory"
 	delay 20
-# 205 "data/maps/NorthCampus/scripts.pory"
+# 204 "data/maps/NorthCampus/scripts.pory"
 	applymovement LOCALID_PROFESSOR_ASPEN, NorthCampus_EnterWildArea_Movement_3
-# 206 "data/maps/NorthCampus/scripts.pory"
+# 205 "data/maps/NorthCampus/scripts.pory"
 	playse SE_PIN
-# 207 "data/maps/NorthCampus/scripts.pory"
+# 206 "data/maps/NorthCampus/scripts.pory"
 	waitse
+# 207 "data/maps/NorthCampus/scripts.pory"
+	setspeaker SP_NAME_UNKNOWN
 # 208 "data/maps/NorthCampus/scripts.pory"
-	setspeaker SP_NAME_UNKNOWN
-# 209 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_EnterWildArea_Text_23
+# 209 "data/maps/NorthCampus/scripts.pory"
+	closemessage
 # 210 "data/maps/NorthCampus/scripts.pory"
-	closemessage
-# 211 "data/maps/NorthCampus/scripts.pory"
 	playbgm MUS_HELP, FALSE
+# 211 "data/maps/NorthCampus/scripts.pory"
+	applymovement LOCALID_CYRUS_NORTH_CAMPUS, NorthCampus_EnterWildArea_Movement_10
 # 212 "data/maps/NorthCampus/scripts.pory"
-	applymovement LOCALID_CYRUS_NORTH_CAMPUS, NorthCampus_EnterWildArea_Movement_10
+	waitmovement 0
 # 213 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
-# 214 "data/maps/NorthCampus/scripts.pory"
 	applymovement LOCALID_CYRUS_NORTH_CAMPUS, NorthCampus_EnterWildArea_Movement_11
-# 215 "data/maps/NorthCampus/scripts.pory"
+# 214 "data/maps/NorthCampus/scripts.pory"
 	playse SE_LEDGE
+# 215 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
 # 216 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
-# 217 "data/maps/NorthCampus/scripts.pory"
 	applymovement LOCALID_CYRUS_NORTH_CAMPUS, NorthCampus_EnterWildArea_Movement_10
+# 217 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
 # 218 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
+	savebgm MUS_DUMMY
 # 219 "data/maps/NorthCampus/scripts.pory"
-	delay 40
+	fadedefaultbgm
 # 220 "data/maps/NorthCampus/scripts.pory"
-	fadeoutbgm 0
-# 221 "data/maps/NorthCampus/scripts.pory"
-	delay 5
-# 222 "data/maps/NorthCampus/scripts.pory"
-	playbgm MUS_LILYCOVE_MUSEUM, TRUE
-# 223 "data/maps/NorthCampus/scripts.pory"
 	setspeaker SP_NAME_UNKNOWN
-# 224 "data/maps/NorthCampus/scripts.pory"
+# 221 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_EnterWildArea_Text_24
-# 225 "data/maps/NorthCampus/scripts.pory"
+# 222 "data/maps/NorthCampus/scripts.pory"
 	closemessage
-# 226 "data/maps/NorthCampus/scripts.pory"
+# 223 "data/maps/NorthCampus/scripts.pory"
 	applymovement LOCALID_PROFESSOR_ASPEN, NorthCampus_TalkToTracie_Movement_0
-# 227 "data/maps/NorthCampus/scripts.pory"
+# 224 "data/maps/NorthCampus/scripts.pory"
 	waitmovement 0
-# 228 "data/maps/NorthCampus/scripts.pory"
+# 225 "data/maps/NorthCampus/scripts.pory"
 	setspeaker SP_NAME_TRACIE
-# 229 "data/maps/NorthCampus/scripts.pory"
+# 226 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_EnterWildArea_Text_25
+# 227 "data/maps/NorthCampus/scripts.pory"
+	closemessage
+# 228 "data/maps/NorthCampus/scripts.pory"
+	setspeaker SP_NAME_ASPEN
+# 229 "data/maps/NorthCampus/scripts.pory"
+	msgbox NorthCampus_EnterWildArea_Text_26
 # 230 "data/maps/NorthCampus/scripts.pory"
 	closemessage
 # 231 "data/maps/NorthCampus/scripts.pory"
-	setspeaker SP_NAME_ASPEN
+	setspeaker SP_NAME_TRACIE
 # 232 "data/maps/NorthCampus/scripts.pory"
-	msgbox NorthCampus_EnterWildArea_Text_26
+	msgbox NorthCampus_EnterWildArea_Text_27
 # 233 "data/maps/NorthCampus/scripts.pory"
 	closemessage
 # 234 "data/maps/NorthCampus/scripts.pory"
-	setspeaker SP_NAME_TRACIE
+	setspeaker SP_NAME_ASPEN
 # 235 "data/maps/NorthCampus/scripts.pory"
-	msgbox NorthCampus_EnterWildArea_Text_27
+	msgbox NorthCampus_EnterWildArea_Text_28
 # 236 "data/maps/NorthCampus/scripts.pory"
 	closemessage
 # 237 "data/maps/NorthCampus/scripts.pory"
-	setspeaker SP_NAME_ASPEN
+	giveitem ITEM_POKE_BALL, 10
 # 238 "data/maps/NorthCampus/scripts.pory"
-	msgbox NorthCampus_EnterWildArea_Text_28
+	waitfanfare
 # 239 "data/maps/NorthCampus/scripts.pory"
 	closemessage
 # 240 "data/maps/NorthCampus/scripts.pory"
-	giveitem ITEM_POKE_BALL, 10
+	setspeaker SP_NAME_TRACIE
 # 241 "data/maps/NorthCampus/scripts.pory"
-	waitfanfare
+	msgbox NorthCampus_EnterWildArea_Text_29
 # 242 "data/maps/NorthCampus/scripts.pory"
 	closemessage
 # 243 "data/maps/NorthCampus/scripts.pory"
-	setspeaker SP_NAME_TRACIE
+	setspeaker SP_NAME_ASPEN
 # 244 "data/maps/NorthCampus/scripts.pory"
-	msgbox NorthCampus_EnterWildArea_Text_29
+	msgbox NorthCampus_EnterWildArea_Text_30
 # 245 "data/maps/NorthCampus/scripts.pory"
 	closemessage
 # 246 "data/maps/NorthCampus/scripts.pory"
-	setspeaker SP_NAME_ASPEN
-# 247 "data/maps/NorthCampus/scripts.pory"
-	msgbox NorthCampus_EnterWildArea_Text_30
-# 248 "data/maps/NorthCampus/scripts.pory"
-	closemessage
-# 249 "data/maps/NorthCampus/scripts.pory"
 	applymovement LOCALID_PROFESSOR_ASPEN, NorthCampus_EnterWildArea_Movement_12
+# 247 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
+# 248 "data/maps/NorthCampus/scripts.pory"
+	removeobject LOCALID_PROFESSOR_ASPEN
+# 249 "data/maps/NorthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_TalkToTracie_Movement_0
 # 250 "data/maps/NorthCampus/scripts.pory"
 	waitmovement 0
 # 251 "data/maps/NorthCampus/scripts.pory"
-	removeobject LOCALID_PROFESSOR_ASPEN
+	setspeaker SP_NAME_TRACIE
 # 252 "data/maps/NorthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_TalkToTracie_Movement_0
-# 253 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
-# 254 "data/maps/NorthCampus/scripts.pory"
-	setspeaker SP_NAME_TRACIE
-# 255 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_EnterWildArea_Text_31
-# 256 "data/maps/NorthCampus/scripts.pory"
+# 253 "data/maps/NorthCampus/scripts.pory"
 	closemessage
-# 257 "data/maps/NorthCampus/scripts.pory"
+# 254 "data/maps/NorthCampus/scripts.pory"
 	playse SE_DING_DONG
-# 258 "data/maps/NorthCampus/scripts.pory"
+# 255 "data/maps/NorthCampus/scripts.pory"
 	waitse
-# 259 "data/maps/NorthCampus/scripts.pory"
+# 256 "data/maps/NorthCampus/scripts.pory"
 	delay 40
-# 260 "data/maps/NorthCampus/scripts.pory"
+# 257 "data/maps/NorthCampus/scripts.pory"
 	setspeaker SP_NAME_INTERCOM
-# 261 "data/maps/NorthCampus/scripts.pory"
+# 258 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_EnterWildArea_Text_32
-# 262 "data/maps/NorthCampus/scripts.pory"
+# 259 "data/maps/NorthCampus/scripts.pory"
 	closemessage
-# 263 "data/maps/NorthCampus/scripts.pory"
-	playbgm MUS_ENCOUNTER_MAY, FALSE
-# 264 "data/maps/NorthCampus/scripts.pory"
+# 260 "data/maps/NorthCampus/scripts.pory"
+	playbgm CUS_ENCOUNTER_TRACIE, FALSE
+# 261 "data/maps/NorthCampus/scripts.pory"
 	setspeaker SP_NAME_TRACIE
-# 265 "data/maps/NorthCampus/scripts.pory"
+# 262 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_EnterWildArea_Text_33
-# 266 "data/maps/NorthCampus/scripts.pory"
+# 263 "data/maps/NorthCampus/scripts.pory"
 	closemessage
-# 267 "data/maps/NorthCampus/scripts.pory"
+# 264 "data/maps/NorthCampus/scripts.pory"
 	applymovement LOCALID_TRACIE_CATCHING_TUTORIAL, NorthCampus_EnterWildArea_Movement_13
+# 265 "data/maps/NorthCampus/scripts.pory"
+	waitmovement 0
+# 266 "data/maps/NorthCampus/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_TalkToTracie_Movement_1
+# 267 "data/maps/NorthCampus/scripts.pory"
+	applymovement LOCALID_TRACIE_CATCHING_TUTORIAL, NorthCampus_EnterWildArea_Movement_12
 # 268 "data/maps/NorthCampus/scripts.pory"
 	waitmovement 0
 # 269 "data/maps/NorthCampus/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, NorthCampus_TalkToTracie_Movement_1
-# 270 "data/maps/NorthCampus/scripts.pory"
-	applymovement LOCALID_TRACIE_CATCHING_TUTORIAL, NorthCampus_EnterWildArea_Movement_12
-# 271 "data/maps/NorthCampus/scripts.pory"
-	waitmovement 0
-# 272 "data/maps/NorthCampus/scripts.pory"
 	removeobject LOCALID_CYRUS_NORTH_CAMPUS
-# 273 "data/maps/NorthCampus/scripts.pory"
+# 270 "data/maps/NorthCampus/scripts.pory"
 	removeobject LOCALID_TRACIE_CATCHING_TUTORIAL
-# 274 "data/maps/NorthCampus/scripts.pory"
+# 271 "data/maps/NorthCampus/scripts.pory"
 	setflag FLAG_HIDE_TRACIE_CYRUS
-# 275 "data/maps/NorthCampus/scripts.pory"
+# 272 "data/maps/NorthCampus/scripts.pory"
 	setflag FLAG_NORTH_CAMPUS_CATCHING_PROFESSOR
-# 276 "data/maps/NorthCampus/scripts.pory"
+# 273 "data/maps/NorthCampus/scripts.pory"
 	setflag FLAG_POKEBALLS_UNLOCKED
-# 277 "data/maps/NorthCampus/scripts.pory"
+# 274 "data/maps/NorthCampus/scripts.pory"
 	clearflag FLAG_HIDE_PROFESSOR_HANZNEESTOZ
-# 278 "data/maps/NorthCampus/scripts.pory"
+# 275 "data/maps/NorthCampus/scripts.pory"
 	setvar VAR_NORTH_CAMPUS_STATE, 5
-# 279 "data/maps/NorthCampus/scripts.pory"
+# 276 "data/maps/NorthCampus/scripts.pory"
 	fadedefaultbgm
-# 280 "data/maps/NorthCampus/scripts.pory"
+# 277 "data/maps/NorthCampus/scripts.pory"
 	special LoadPlayerParty
-# 281 "data/maps/NorthCampus/scripts.pory"
+# 278 "data/maps/NorthCampus/scripts.pory"
 	callnative UpdateFollowingPokemon
-# 282 "data/maps/NorthCampus/scripts.pory"
+# 279 "data/maps/NorthCampus/scripts.pory"
 	releaseall
 	end
 
 
 NorthCampus_TractorStatue::
-# 287 "data/maps/NorthCampus/scripts.pory"
+# 284 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_TractorStatue_Text_0, MSGBOX_SIGN
-# 288 "data/maps/NorthCampus/scripts.pory"
+# 285 "data/maps/NorthCampus/scripts.pory"
 	closemessage
 	return
 
 
 NorthCampus_Cave_Guard::
-# 291 "data/maps/NorthCampus/scripts.pory"
+# 288 "data/maps/NorthCampus/scripts.pory"
 	lock
-# 292 "data/maps/NorthCampus/scripts.pory"
+# 289 "data/maps/NorthCampus/scripts.pory"
 	faceplayer
-# 293 "data/maps/NorthCampus/scripts.pory"
+# 290 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_Cave_Guard_Text_0
-# 294 "data/maps/NorthCampus/scripts.pory"
+# 291 "data/maps/NorthCampus/scripts.pory"
 	closemessage
-# 295 "data/maps/NorthCampus/scripts.pory"
+# 292 "data/maps/NorthCampus/scripts.pory"
 	release
 	end
 
 
 NorthCampus_NPC1::
-# 299 "data/maps/NorthCampus/scripts.pory"
+# 296 "data/maps/NorthCampus/scripts.pory"
 	lock
-# 300 "data/maps/NorthCampus/scripts.pory"
+# 297 "data/maps/NorthCampus/scripts.pory"
 	faceplayer
-# 301 "data/maps/NorthCampus/scripts.pory"
+# 298 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_NPC1_Text_0
-# 302 "data/maps/NorthCampus/scripts.pory"
+# 299 "data/maps/NorthCampus/scripts.pory"
 	closemessage
-# 303 "data/maps/NorthCampus/scripts.pory"
+# 300 "data/maps/NorthCampus/scripts.pory"
 	release
 	end
 
 
 NorthCampus_NPC2::
-# 308 "data/maps/NorthCampus/scripts.pory"
+# 305 "data/maps/NorthCampus/scripts.pory"
 	lock
-# 309 "data/maps/NorthCampus/scripts.pory"
+# 306 "data/maps/NorthCampus/scripts.pory"
 	faceplayer
-# 310 "data/maps/NorthCampus/scripts.pory"
+# 307 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_NPC2_Text_0
-# 311 "data/maps/NorthCampus/scripts.pory"
+# 308 "data/maps/NorthCampus/scripts.pory"
 	closemessage
-# 312 "data/maps/NorthCampus/scripts.pory"
+# 309 "data/maps/NorthCampus/scripts.pory"
 	release
 	end
 
 
 NorthCampus_NPC3::
-# 317 "data/maps/NorthCampus/scripts.pory"
+# 314 "data/maps/NorthCampus/scripts.pory"
 	lock
-# 318 "data/maps/NorthCampus/scripts.pory"
+# 315 "data/maps/NorthCampus/scripts.pory"
 	faceplayer
-# 319 "data/maps/NorthCampus/scripts.pory"
+# 316 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_NPC3_Text_0
-# 320 "data/maps/NorthCampus/scripts.pory"
+# 317 "data/maps/NorthCampus/scripts.pory"
 	closemessage
-# 321 "data/maps/NorthCampus/scripts.pory"
+# 318 "data/maps/NorthCampus/scripts.pory"
 	release
 	end
 
 
 NorthCampus_NPC4::
-# 326 "data/maps/NorthCampus/scripts.pory"
+# 323 "data/maps/NorthCampus/scripts.pory"
 	lock
-# 327 "data/maps/NorthCampus/scripts.pory"
+# 324 "data/maps/NorthCampus/scripts.pory"
 	faceplayer
-# 328 "data/maps/NorthCampus/scripts.pory"
+# 325 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_NPC4_Text_0
-# 329 "data/maps/NorthCampus/scripts.pory"
+# 326 "data/maps/NorthCampus/scripts.pory"
 	closemessage
-# 330 "data/maps/NorthCampus/scripts.pory"
+# 327 "data/maps/NorthCampus/scripts.pory"
 	release
 	end
 
 
 NorthCampus_NPC5::
-# 335 "data/maps/NorthCampus/scripts.pory"
+# 332 "data/maps/NorthCampus/scripts.pory"
 	lock
-# 336 "data/maps/NorthCampus/scripts.pory"
+# 333 "data/maps/NorthCampus/scripts.pory"
 	faceplayer
-# 337 "data/maps/NorthCampus/scripts.pory"
+# 334 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_NPC5_Text_0
-# 338 "data/maps/NorthCampus/scripts.pory"
+# 335 "data/maps/NorthCampus/scripts.pory"
 	closemessage
-# 339 "data/maps/NorthCampus/scripts.pory"
+# 336 "data/maps/NorthCampus/scripts.pory"
 	release
 	end
 
 
 NorthCampus_NPC6::
-# 344 "data/maps/NorthCampus/scripts.pory"
+# 341 "data/maps/NorthCampus/scripts.pory"
 	lock
-# 345 "data/maps/NorthCampus/scripts.pory"
+# 342 "data/maps/NorthCampus/scripts.pory"
 	faceplayer
-# 346 "data/maps/NorthCampus/scripts.pory"
+# 343 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_NPC6_Text_0
-# 347 "data/maps/NorthCampus/scripts.pory"
+# 344 "data/maps/NorthCampus/scripts.pory"
 	closemessage
-# 348 "data/maps/NorthCampus/scripts.pory"
+# 345 "data/maps/NorthCampus/scripts.pory"
 	release
 	end
 
 
 NorthCampus_MahindraLibrarySign::
-# 353 "data/maps/NorthCampus/scripts.pory"
+# 350 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_MahindraLibrarySign_Text_0
-# 354 "data/maps/NorthCampus/scripts.pory"
+# 351 "data/maps/NorthCampus/scripts.pory"
 	closemessage
 	return
 
 
 NorthCampus_PokemonResearchLabSign::
-# 358 "data/maps/NorthCampus/scripts.pory"
+# 355 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_PokemonResearchLabSign_Text_0
-# 359 "data/maps/NorthCampus/scripts.pory"
+# 356 "data/maps/NorthCampus/scripts.pory"
 	closemessage
 	return
 
 
 NorthCampus_FossilResearchLabSign::
-# 363 "data/maps/NorthCampus/scripts.pory"
+# 360 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_FossilResearchLabSign_Text_0
-# 364 "data/maps/NorthCampus/scripts.pory"
+# 361 "data/maps/NorthCampus/scripts.pory"
 	closemessage
 	return
 
 
 NorthCampus_PokeballResearchLab::
-# 368 "data/maps/NorthCampus/scripts.pory"
+# 365 "data/maps/NorthCampus/scripts.pory"
 	msgbox NorthCampus_PokeballResearchLab_Text_0
-# 369 "data/maps/NorthCampus/scripts.pory"
+# 366 "data/maps/NorthCampus/scripts.pory"
 	closemessage
 	return
 
@@ -837,89 +831,89 @@ NorthCampus_EnterWildArea_Movement_6:
 	face_left
 	step_end
 
-# 197 "data/maps/NorthCampus/scripts.pory"
+# 196 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_EnterWildArea_Movement_7:
-# 197 "data/maps/NorthCampus/scripts.pory"
+# 196 "data/maps/NorthCampus/scripts.pory"
 	face_down
+# 196 "data/maps/NorthCampus/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
+# 197 "data/maps/NorthCampus/scripts.pory"
+NorthCampus_EnterWildArea_Movement_8:
+# 197 "data/maps/NorthCampus/scripts.pory"
+	face_right
 # 197 "data/maps/NorthCampus/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 198 "data/maps/NorthCampus/scripts.pory"
-NorthCampus_EnterWildArea_Movement_8:
-# 198 "data/maps/NorthCampus/scripts.pory"
-	face_right
-# 198 "data/maps/NorthCampus/scripts.pory"
-	emote_exclamation_mark
-	step_end
-
-# 202 "data/maps/NorthCampus/scripts.pory"
+# 201 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_EnterWildArea_Movement_9:
-# 202 "data/maps/NorthCampus/scripts.pory"
+# 201 "data/maps/NorthCampus/scripts.pory"
 	walk_left
-# 202 "data/maps/NorthCampus/scripts.pory"
+# 201 "data/maps/NorthCampus/scripts.pory"
 	walk_left
-# 202 "data/maps/NorthCampus/scripts.pory"
+# 201 "data/maps/NorthCampus/scripts.pory"
 	walk_left
-# 202 "data/maps/NorthCampus/scripts.pory"
+# 201 "data/maps/NorthCampus/scripts.pory"
 	walk_left
-# 202 "data/maps/NorthCampus/scripts.pory"
+# 201 "data/maps/NorthCampus/scripts.pory"
 	walk_left
-# 202 "data/maps/NorthCampus/scripts.pory"
+# 201 "data/maps/NorthCampus/scripts.pory"
 	walk_left
-# 202 "data/maps/NorthCampus/scripts.pory"
+# 201 "data/maps/NorthCampus/scripts.pory"
 	walk_left
-# 202 "data/maps/NorthCampus/scripts.pory"
+# 201 "data/maps/NorthCampus/scripts.pory"
 	walk_left
-# 202 "data/maps/NorthCampus/scripts.pory"
+# 201 "data/maps/NorthCampus/scripts.pory"
 	face_up
 	step_end
 
-# 212 "data/maps/NorthCampus/scripts.pory"
+# 211 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_EnterWildArea_Movement_10:
-# 212 "data/maps/NorthCampus/scripts.pory"
+# 211 "data/maps/NorthCampus/scripts.pory"
 	walk_fast_right
-# 212 "data/maps/NorthCampus/scripts.pory"
+# 211 "data/maps/NorthCampus/scripts.pory"
 	walk_fast_right
-# 212 "data/maps/NorthCampus/scripts.pory"
+# 211 "data/maps/NorthCampus/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 214 "data/maps/NorthCampus/scripts.pory"
+# 213 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_EnterWildArea_Movement_11:
-# 214 "data/maps/NorthCampus/scripts.pory"
+# 213 "data/maps/NorthCampus/scripts.pory"
 	jump_2_right
 	step_end
 
-# 249 "data/maps/NorthCampus/scripts.pory"
+# 246 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_EnterWildArea_Movement_12:
-# 249 "data/maps/NorthCampus/scripts.pory"
+# 246 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 249 "data/maps/NorthCampus/scripts.pory"
+# 246 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 249 "data/maps/NorthCampus/scripts.pory"
+# 246 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 249 "data/maps/NorthCampus/scripts.pory"
+# 246 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 249 "data/maps/NorthCampus/scripts.pory"
+# 246 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 249 "data/maps/NorthCampus/scripts.pory"
+# 246 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 249 "data/maps/NorthCampus/scripts.pory"
+# 246 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 249 "data/maps/NorthCampus/scripts.pory"
+# 246 "data/maps/NorthCampus/scripts.pory"
 	walk_right
 	step_end
 
-# 267 "data/maps/NorthCampus/scripts.pory"
+# 264 "data/maps/NorthCampus/scripts.pory"
 NorthCampus_EnterWildArea_Movement_13:
-# 267 "data/maps/NorthCampus/scripts.pory"
+# 264 "data/maps/NorthCampus/scripts.pory"
 	walk_up
-# 267 "data/maps/NorthCampus/scripts.pory"
+# 264 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 267 "data/maps/NorthCampus/scripts.pory"
+# 264 "data/maps/NorthCampus/scripts.pory"
 	walk_right
-# 267 "data/maps/NorthCampus/scripts.pory"
+# 264 "data/maps/NorthCampus/scripts.pory"
 	walk_down
 	step_end
 
@@ -927,7 +921,7 @@ NorthCampus_TalkToTracie_Text_0:
 # 53 "data/maps/NorthCampus/scripts.pory"
 	.string "…\p"
 	.string "Take a good look, {PLAYER}…\p"
-	.string "{COLOR GREEN}Main Hall{COLOR DARK_GRAY} sure does hit different when\n"
+	.string "Main Hall sure does hit different when\n"
 	.string "you know it's your final year.\p"
 	.string "We've had a lot of great memories in\n"
 	.string "here.\p"
@@ -1047,43 +1041,43 @@ NorthCampus_EnterWildArea_Text_18:
 	.string "Woah!$"
 
 NorthCampus_EnterWildArea_Text_19:
-# 180 "data/maps/NorthCampus/scripts.pory"
+# 179 "data/maps/NorthCampus/scripts.pory"
 	.string "Not another one…\p"
 	.string "These poor miscolored Pokémon…\n"
 	.string "They're so sick.$"
 
 NorthCampus_EnterWildArea_Text_20:
-# 186 "data/maps/NorthCampus/scripts.pory"
+# 185 "data/maps/NorthCampus/scripts.pory"
 	.string "It rests upon my shoulders\n"
 	.string "to save them all!$"
 
 NorthCampus_EnterWildArea_Text_21:
-# 190 "data/maps/NorthCampus/scripts.pory"
+# 189 "data/maps/NorthCampus/scripts.pory"
 	.string "Umm…\n"
 	.string "Cyrus?\p"
 	.string "That Pokémon isn't sick, it's…$"
 
 NorthCampus_EnterWildArea_Text_22:
-# 195 "data/maps/NorthCampus/scripts.pory"
+# 194 "data/maps/NorthCampus/scripts.pory"
 	.string "Sorry I'm late!$"
 
 NorthCampus_EnterWildArea_Text_23:
-# 209 "data/maps/NorthCampus/scripts.pory"
+# 208 "data/maps/NorthCampus/scripts.pory"
 	.string "Hey!\n"
 	.string "Who the hell are you!?$"
 
 NorthCampus_EnterWildArea_Text_24:
-# 224 "data/maps/NorthCampus/scripts.pory"
+# 221 "data/maps/NorthCampus/scripts.pory"
 	.string "Sigh… guess I'm calling security.$"
 
 NorthCampus_EnterWildArea_Text_25:
-# 229 "data/maps/NorthCampus/scripts.pory"
+# 226 "data/maps/NorthCampus/scripts.pory"
 	.string "Professor Aspen!\p"
 	.string "Were you supposed to be giving this\n"
 	.string "lesson?$"
 
 NorthCampus_EnterWildArea_Text_26:
-# 232 "data/maps/NorthCampus/scripts.pory"
+# 229 "data/maps/NorthCampus/scripts.pory"
 	.string "Hey there, Tracie.\n"
 	.string "Yes, I was.\p"
 	.string "Apologies for my tardiness.\p"
@@ -1091,13 +1085,13 @@ NorthCampus_EnterWildArea_Text_26:
 	.string "already covered the basics?$"
 
 NorthCampus_EnterWildArea_Text_27:
-# 235 "data/maps/NorthCampus/scripts.pory"
+# 232 "data/maps/NorthCampus/scripts.pory"
 	.string "Uhh… yeah.\n"
 	.string "I think I got the gist of it.\p"
 	.string "Cyrus was… interesting.$"
 
 NorthCampus_EnterWildArea_Text_28:
-# 238 "data/maps/NorthCampus/scripts.pory"
+# 235 "data/maps/NorthCampus/scripts.pory"
 	.string "Cyrus was his name?\p"
 	.string "I think I've heard that name before.\p"
 	.string "Well, in any case, I'm glad you\n"
@@ -1108,55 +1102,55 @@ NorthCampus_EnterWildArea_Text_28:
 	.string "so feel free to buy more if you'd like.$"
 
 NorthCampus_EnterWildArea_Text_29:
-# 244 "data/maps/NorthCampus/scripts.pory"
+# 241 "data/maps/NorthCampus/scripts.pory"
 	.string "Thank you, Professor Aspen!\p"
 	.string "I'll be sure to put these to good use!$"
 
 NorthCampus_EnterWildArea_Text_30:
-# 247 "data/maps/NorthCampus/scripts.pory"
+# 244 "data/maps/NorthCampus/scripts.pory"
 	.string "You're welcome, Tracie.\p"
 	.string "Now, if you'll excuse me, I have to go\n"
 	.string "file a police report.$"
 
 NorthCampus_EnterWildArea_Text_31:
-# 255 "data/maps/NorthCampus/scripts.pory"
+# 252 "data/maps/NorthCampus/scripts.pory"
 	.string "Well, that was… something.$"
 
 NorthCampus_EnterWildArea_Text_32:
-# 261 "data/maps/NorthCampus/scripts.pory"
+# 258 "data/maps/NorthCampus/scripts.pory"
 	.string "Attention seniors.\p"
 	.string "Please report to {COLOR GREEN}Mahindra Library{COLOR DARK_GRAY} for\n"
 	.string "your next assignment.$"
 
 NorthCampus_EnterWildArea_Text_33:
-# 265 "data/maps/NorthCampus/scripts.pory"
+# 262 "data/maps/NorthCampus/scripts.pory"
 	.string "There's our cue!\p"
 	.string "I'll meet up with your later, {PLAYER}.\p"
 	.string "I've got Pokémon to catch!$"
 
 NorthCampus_TractorStatue_Text_0:
-# 287 "data/maps/NorthCampus/scripts.pory"
+# 284 "data/maps/NorthCampus/scripts.pory"
 	.string "Tractor University\n'Your Tractor in Your Field'$"
 
 NorthCampus_Cave_Guard_Text_0:
-# 293 "data/maps/NorthCampus/scripts.pory"
+# 290 "data/maps/NorthCampus/scripts.pory"
 	.string "{COLOR GREEN}Fieldstone Cavern{COLOR DARK_GRAY} is currently off\n"
 	.string "limits during orientation.\p"
 	.string "Please come back later.$"
 
 NorthCampus_NPC1_Text_0:
-# 301 "data/maps/NorthCampus/scripts.pory"
+# 298 "data/maps/NorthCampus/scripts.pory"
 	.string "I love Dunsparce!\n"
 	.string "Though, I wish it had an evolution…$"
 
 NorthCampus_NPC2_Text_0:
-# 310 "data/maps/NorthCampus/scripts.pory"
+# 307 "data/maps/NorthCampus/scripts.pory"
 	.string "My dad carved the tractor statue.\p"
 	.string "What an incredible display of both\n"
 	.string "architecture and agriculture!$"
 
 NorthCampus_NPC3_Text_0:
-# 319 "data/maps/NorthCampus/scripts.pory"
+# 316 "data/maps/NorthCampus/scripts.pory"
 	.string "Hey, {PLAYER}.\n"
 	.string "Rotcart came through not that long\l"
 	.string "ago.\p"
@@ -1164,14 +1158,14 @@ NorthCampus_NPC3_Text_0:
 	.string "intolerable asshole this year?$"
 
 NorthCampus_NPC4_Text_0:
-# 328 "data/maps/NorthCampus/scripts.pory"
+# 325 "data/maps/NorthCampus/scripts.pory"
 	.string "Your Eevee is soooo cute!\p"
 	.string "Have you decided which evolution\n"
 	.string "you'll choose?\p"
 	.string "My favorite Eeveelution is Espeon!$"
 
 NorthCampus_NPC5_Text_0:
-# 337 "data/maps/NorthCampus/scripts.pory"
+# 334 "data/maps/NorthCampus/scripts.pory"
 	.string "I read that {COLOR GREEN}Main Hall{COLOR DARK_GRAY} was built almost a\n"
 	.string "century ago!\p"
 	.string "It's amazing that it's still standing\n"
@@ -1180,24 +1174,24 @@ NorthCampus_NPC5_Text_0:
 	.string "years!$"
 
 NorthCampus_NPC6_Text_0:
-# 346 "data/maps/NorthCampus/scripts.pory"
-	.string "Watch out for the Pidgey that hangs\n"
+# 343 "data/maps/NorthCampus/scripts.pory"
+	.string "Watch out for the Wattrel that hangs\n"
 	.string "out by the statue.\p"
 	.string "They've gotten bold.\n"
 	.string "Like, 'steal your lunch' bold.$"
 
 NorthCampus_MahindraLibrarySign_Text_0:
-# 353 "data/maps/NorthCampus/scripts.pory"
+# 350 "data/maps/NorthCampus/scripts.pory"
 	.string "Mahindra Library$"
 
 NorthCampus_PokemonResearchLabSign_Text_0:
-# 358 "data/maps/NorthCampus/scripts.pory"
+# 355 "data/maps/NorthCampus/scripts.pory"
 	.string "John Deere Pokémon Research Lab$"
 
 NorthCampus_FossilResearchLabSign_Text_0:
-# 363 "data/maps/NorthCampus/scripts.pory"
+# 360 "data/maps/NorthCampus/scripts.pory"
 	.string "Ford Fossil Research Lab$"
 
 NorthCampus_PokeballResearchLab_Text_0:
-# 368 "data/maps/NorthCampus/scripts.pory"
+# 365 "data/maps/NorthCampus/scripts.pory"
 	.string "Kubota Poké Ball Research Lab$"

@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE1NEW",
   "name": "Route1New",
   "layout": "LAYOUT_ROUTE1",
-  "music": "MUS_RG_ROUTE1",
+  "music": "CUS_HM_SPRING_DS",
   "region_map_section": "MAPSEC_ROUTE_1",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

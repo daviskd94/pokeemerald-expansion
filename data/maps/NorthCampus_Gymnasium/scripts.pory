@@ -86,7 +86,7 @@ script NorthCampus_Gymnasium_Enter {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down, emote_exclamation_mark))
     playse(SE_PIN)
     waitse
-    playbgm(CUS_ENCOUNTER_ROTCART, FALSE)
+    playbgm(CUS_ENCOUNTER_ROTCART, TRUE)
     applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_up*6))
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
@@ -136,7 +136,6 @@ script NorthCampus_Gymnasium_Enter {
     special(HealPlayerParty)
     setflag(FLAG_WHITEOUT_CONTINUE)
     trainerbattle_no_intro(TRAINER_ROTCART_1, format("Tch…\nEnjoy that while you still can."))
-    playbgm(CUS_ENCOUNTER_ROTCART, FALSE) 
     clearflag(FLAG_WHITEOUT_CONTINUE)
 	special(RemoveCameraObject)
 	removeobject(LOCALID_CAMERA)
@@ -153,7 +152,8 @@ script NorthCampus_Gymnasium_Enter {
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_down, walk_right*4, walk_down*6))
         waitmovement(0)
-        fadedefaultbgm
+        savebgm(MUS_DUMMY)
+	    fadedefaultbgm
         applymovement(LOCALID_GYMNASIUM_COACH_CEDAR, moves(walk_left*8))
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
@@ -174,7 +174,8 @@ script NorthCampus_Gymnasium_Enter {
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         applymovement(LOCALID_GYMNASIUM_ROTCART, moves(walk_down, walk_right*4, walk_down*6))
         waitmovement(0)
-        fadedefaultbgm
+        savebgm(MUS_DUMMY)
+	    fadedefaultbgm
         applymovement(LOCALID_GYMNASIUM_COACH_CEDAR, moves(walk_left*8))
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
@@ -193,7 +194,7 @@ script NorthCampus_Gymnasium_Enter {
     setspeaker(SP_NAME_INTERCOM)
     msgbox(format("Attention seniors.\pPlease report to the {COLOR GREEN}Wild Area{COLOR DARK_GRAY} for a review on catching Pokémon.\pThank you."))
     closemessage
-    playbgm(MUS_ENCOUNTER_MAY, FALSE)
+    playbgm(CUS_ENCOUNTER_TRACIE, FALSE)
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("Time for the next review!\pC'mon, {PLAYER},\nI'll meet you there!"))
     closemessage

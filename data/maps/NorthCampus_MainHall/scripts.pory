@@ -68,7 +68,7 @@ script NorthCampus_MainHall_Registration {
     msgbox(format("{PLAYER} and Tracie both receive\ntheir student IDs back."))
     closemessage
     setspeaker(SP_NAME_RECEPTIONIST)
-    msgbox(format("Okay, thanks for waiting!\pYou're both all checked in.\pOrientation starts in the lecture hall behind me.\pJust head through either of these doors.\nWe're starting soon!"))
+    msgbox(format("Okay, thanks for waiting!\pYou're both all checked in.\pOrientation starts in the {COLOR GREEN}Lecture Hall{COLOR DARK_GRAY}.\pJust head through either of these doors. We're starting soon!"))
     closemessage
     setspeaker(SP_NAME_TRACIE)
     msgbox(format("Thank you so much!"))
@@ -95,7 +95,7 @@ script NorthCampus_MainHall_Registration {
 script NorthCampus_MainHall_FrontDeskLady {
     lock
     faceplayer
-    setspeaker(SP_NAME_RECEPTIONIST)
+    //setspeaker(SP_NAME_RECEPTIONIST)
     msgbox(format("Hi, {PLAYER}!\nGood luck with your studies!"))
     closemessage
     release

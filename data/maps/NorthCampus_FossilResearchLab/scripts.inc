@@ -169,54 +169,54 @@ NorthCampus_FossilResearchLab_TyrantrumFossil_Text_0:
 # 10 "data/maps/NorthCampus_FossilResearchLab/scripts.pory"
 	.string "Tyrantrum, the Despot Pokémon.\p"
 	.string "Tyrantrum's massive jaws can crush\n"
-	.string "anything.\n"
-	.string "It lived in mountainous regions where it\l"
+	.string "anything.\p"
+	.string "It lived in mountainous regions where it\n"
 	.string "ruled as king.$"
 
 NorthCampus_FossilResearchLab_ArmaldoFossil_Text_0:
 # 16 "data/maps/NorthCampus_FossilResearchLab/scripts.pory"
 	.string "Armaldo, the Plate Pokémon.\p"
 	.string "Armaldo uses its powerful claws to\n"
-	.string "catch prey.\n"
-	.string "It lived in warm seas during the\l"
+	.string "catch prey.\p"
+	.string "It lived in warm seas during the\n"
 	.string "prehistoric era.$"
 
 NorthCampus_FossilResearch_ShieldonFossil_Text_0:
 # 22 "data/maps/NorthCampus_FossilResearchLab/scripts.pory"
 	.string "Shieldon, the Shield Pokémon.\p"
 	.string "Shieldon's sturdy head can withstand\n"
-	.string "any attack.\n"
-	.string "It lived in arid regions during the\l"
+	.string "any attack.\p"
+	.string "It lived in arid regions during the\n"
 	.string "prehistoric era.$"
 
 NorthCampus_FossilResearch_CradilyFossil_Text_0:
 # 28 "data/maps/NorthCampus_FossilResearchLab/scripts.pory"
 	.string "Cradily, the Barnacle Pokémon.\p"
 	.string "Cradily uses its tentacle-like arms to\n"
-	.string "ensnare prey.\n"
-	.string "It lived in warm seas during the\l"
+	.string "ensnare prey.\p"
+	.string "It lived in warm seas during the\n"
 	.string "prehistoric era.$"
 
 NorthCampus_FossilResearch_CarracostaFossil_Text_0:
 # 34 "data/maps/NorthCampus_FossilResearchLab/scripts.pory"
 	.string "Carracosta, the Prototurtle Pokémon.\p"
-	.string "Carracosta's shell is extremely hard.\n"
-	.string "It lived in arid regions during the\l"
+	.string "Carracosta's shell is extremely hard.\p"
+	.string "It lived in arid regions during the\n"
 	.string "prehistoric era.$"
 
 NorthCampus_FossilResearch_RelicanthFossil_Text_0:
 # 40 "data/maps/NorthCampus_FossilResearchLab/scripts.pory"
 	.string "Relicanth, the Longevity Pokémon.\p"
 	.string "Relicanth has remained unchanged for\n"
-	.string "hundreds of millions of years.\n"
+	.string "hundreds of millions of years.\p"
 	.string "It is said to be a living fossil.$"
 
 NorthCampus_FossilResearch_BastiodonFossil_Text_0:
 # 46 "data/maps/NorthCampus_FossilResearchLab/scripts.pory"
 	.string "Bastiodon, the Shield Pokémon.\p"
 	.string "Bastiodon's face is almost entirely\n"
-	.string "covered by its shield-like head.\n"
-	.string "It lived in arid regions during the\l"
+	.string "covered by its shield-like head.\p"
+	.string "It lived in arid regions during the\n"
 	.string "prehistoric era.$"
 
 NorthCampus_FossilResearch_AerodactylFossil_Text_0:
@@ -224,8 +224,8 @@ NorthCampus_FossilResearch_AerodactylFossil_Text_0:
 	.string "Aerodactyl, the Fossil Pokémon.\n"
 	.string "In its Mega form.\p"
 	.string "Aerodactyl was resurrected from a\n"
-	.string "fossilized egg.\n"
-	.string "It is said to have flown in the skies of\l"
+	.string "fossilized egg.\p"
+	.string "It is said to have flown in the skies of\n"
 	.string "the prehistoric era.$"
 
 NorthCampus_FossilResearch_OldAmber_Text_0:

@@ -82,21 +82,21 @@ script Player_Dorm_EventScript_RotcartSign {
 
 script Player_Dorm_EventScript_BuckSign {
     lock
-    msgbox("Buck's room" MSGBOX_SIGN) 
+    msgbox("Celeste, Marcie, and Lyssa's room" MSGBOX_SIGN) 
     release
     end
 }
 
 script Player_Dorm_EventScript_ColtonSign {
     lock
-    msgbox("Colton's room" MSGBOX_SIGN) 
+    msgbox("Bertie, Colton, and Buck's room" MSGBOX_SIGN) 
     release
     end
 }
 
 script Player_Dorm_EventScript_CelesteGabeSign {
     lock
-    msgbox("Celeste & Gabe's room" MSGBOX_SIGN) 
+    msgbox("Gabe and Orthoc's room" MSGBOX_SIGN) 
     release
     end
 }
