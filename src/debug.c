@@ -3609,14 +3609,18 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(CUS_VS_GYM_LEADER)            \
     X(CUS_VS_TEAM_GENESIS)          \
     X(CUS_VS_ROTCART)               \
+    X(CUS_VS_TRACIE)                \
     X(CUS_ENCOUNTER_ROTCART)        \
+    X(CUS_ENCOUNTER_TRACIE)         \
     X(CUS_ANCIENT_PONI_PATH)        \
     X(CUS_KALOS_POWERPLANT)         \
     X(CUS_DD_PINE_LANDING)          \
     X(CUS_DD_METAL_CITY)            \
     X(CUS_DD_JILL_VS_CROOG)         \
     X(CUS_DD_CROOG_THEME)           \
-    X(CUS_SN_PEACEFUL_TIME)         
+    X(CUS_SN_PEACEFUL_TIME)         \
+    X(CUS_AW_SONJAS_THEME)          \
+    X(CUS_HM_SPRING_DS)             
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \

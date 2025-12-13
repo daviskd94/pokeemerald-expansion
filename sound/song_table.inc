@@ -616,7 +616,9 @@ gSongTable::
 	song cus_vs_gym_leader, 0, 0
 	song cus_vs_team_genesis, 0, 0
 	song cus_vs_rotcart, 0, 0
+	song cus_vs_tracie, 0, 0
 	song cus_encounter_rotcart, 0, 0
+	song cus_encounter_tracie, 0, 0
 	song cus_ancient_poni_path, 0, 0
 	song cus_kalos_powerplant, 0, 0
 	song cus_dd_pine_landing, 0, 0
@@ -624,6 +626,8 @@ gSongTable::
 	song cus_dd_jill_vs_croog, 0, 0
 	song cus_dd_croog_theme, 0, 0
 	song cus_sn_peaceful_time, 0, 0
+	song cus_aw_sonjas_theme, 0, 0
+	song cus_hm_spring_ds, 0, 0
 
 	.align 2
 dummy_song_header:

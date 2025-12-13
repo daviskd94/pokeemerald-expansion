@@ -495,16 +495,20 @@
 #define CUS_VS_GYM_LEADER           612 // CUSTOM VS TRAINER (Tractor Trainer Battle Theme)
 #define CUS_VS_TEAM_GENESIS         613 // CUSTOM VS EVIL TEAM (Tractors Team Genesis Battle Theme)
 #define CUS_VS_ROTCART              614 // CUSTOM VS RIVAL (Rotcart Battle Theme)
-#define CUS_ENCOUNTER_ROTCART       615 // ROTCART ENCOUNTER THEME
-#define CUS_ANCIENT_PONI_PATH       616 // ANCIENT PONI PATH (Gen 3 Arrangement)
-#define CUS_KALOS_POWERPLANT        617 // KALOS POWERPLANT (Gen 3 Arrangement)
-#define CUS_DD_PINE_LANDING         618
-#define CUS_DD_METAL_CITY           619
-#define CUS_DD_JILL_VS_CROOG        620
-#define CUS_DD_CROOG_THEME          621
-#define CUS_SN_PEACEFUL_TIME        622
+#define CUS_VS_TRACIE               615 // CUSTOM VS FRIEND (Tracie Battle Theme)
+#define CUS_ENCOUNTER_ROTCART       616 // ROTCART ENCOUNTER THEME
+#define CUS_ENCOUNTER_TRACIE        617 // TRACIE  ENCOUNTER THEME
+#define CUS_ANCIENT_PONI_PATH       618 // ANCIENT PONI PATH (Gen 3 Arrangement)
+#define CUS_KALOS_POWERPLANT        619 // KALOS POWERPLANT (Gen 3 Arrangement)
+#define CUS_DD_PINE_LANDING         620
+#define CUS_DD_METAL_CITY           621
+#define CUS_DD_JILL_VS_CROOG        622
+#define CUS_DD_CROOG_THEME          623
+#define CUS_SN_PEACEFUL_TIME        624
+#define CUS_AW_SONJAS_THEME         625 // SHIP THEME
+#define CUS_HM_SPRING_DS            626 // FIRST ROUTE THEME
 
-#define END_MUS                     CUS_SN_PEACEFUL_TIME
+#define END_MUS                     CUS_HM_SPRING_DS
 
 // These PH_* constants are phoneme sounds used by the "bard" NPC (see src/bard_music.c and src/mauville_old_man.c).
 // Each comes in a triplet of PH_*_BLEND, PH_*_HELD, and PH_*_SOLO, and the name of each triplet incorporates the English phonetic sound it represents.

@@ -208,3 +208,5 @@
 .include "sound/voicegroups/voicegroup192.inc"
 .include "sound/voicegroups/voicegroup193.inc"
 .include "sound/voicegroups/encounter_croog.inc"
+.include "sound/voicegroups/mimi_voicegroup.inc"
+.include "sound/voicegroups/mimi_voicegroup_drums.inc"

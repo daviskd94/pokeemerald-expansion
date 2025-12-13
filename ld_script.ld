@@ -1194,7 +1194,9 @@ SECTIONS {
         sound/songs/midi/cus_vs_gym_leader.o(.rodata);
         sound/songs/midi/cus_vs_team_genesis.o(.rodata);
         sound/songs/midi/cus_vs_rotcart.o(.rodata);
+        sound/songs/midi/cus_vs_tracie.o(.rodata);
         sound/songs/midi/cus_encounter_rotcart.o(.rodata);
+        sound/songs/midi/cus_encounter_tracie.o(.rodata);
         sound/songs/midi/cus_ancient_poni_path.o(.rodata);
         sound/songs/midi/cus_kalos_powerplant.o(.rodata);
         sound/songs/midi/cus_dd_pine_landing.o(.rodata);
@@ -1202,6 +1204,8 @@ SECTIONS {
         sound/songs/midi/cus_dd_jill_vs_croog.o(.rodata);
         sound/songs/midi/cus_dd_croog_theme.o(.rodata);
         sound/songs/midi/cus_sn_peaceful_time.o(.rodata);
+        sound/songs/midi/cus_aw_sonjas_theme.o(.rodata);
+        sound/songs/midi/cus_hm_spring_ds.o(.rodata);
         sound/songs/midi/ph_trap_blend.o(.rodata);
         sound/songs/midi/ph_trap_held.o(.rodata);
         sound/songs/midi/ph_trap_solo.o(.rodata);
