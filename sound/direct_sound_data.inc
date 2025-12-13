@@ -6467,3 +6467,23 @@ DirectSoundWaveData_qy70_sawtooth_wave::
 	.align 2
 DirectSoundWaveData_dd_trumpet_ensemble::
 	.incbin "sound/direct_sound_samples/dd_trumpet_ensemble.bin"
+
+	.align 2
+DirectSoundWaveData_dd_hard_kick::
+	.incbin "sound/direct_sound_samples/dd_hard_kick.bin"
+
+	.align 2
+DirectSoundWaveData_dd_bubbles::
+	.incbin "sound/direct_sound_samples/dd_bubbles.bin"
+
+	.align 2
+DirectSoundWaveData_dd_orchestra_hit::
+	.incbin "sound/direct_sound_samples/dd_orchestra_hit.bin"
+
+	.align 2
+DirectSoundWaveData_dd_techno_snare::
+	.incbin "sound/direct_sound_samples/dd_techno_snare.bin"
+
+	.align 2
+DirectSoundWaveData_dd_trumpet_ensemble::
+	.incbin "sound/direct_sound_samples/dd_trumpet_ensemble.bin"
