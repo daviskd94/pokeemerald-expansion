@@ -6483,7 +6483,3 @@ DirectSoundWaveData_dd_orchestra_hit::
 	.align 2
 DirectSoundWaveData_dd_techno_snare::
 	.incbin "sound/direct_sound_samples/dd_techno_snare.bin"
-
-	.align 2
-DirectSoundWaveData_dd_trumpet_ensemble::
-	.incbin "sound/direct_sound_samples/dd_trumpet_ensemble.bin"
