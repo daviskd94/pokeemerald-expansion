@@ -1,8 +1,9 @@
 mapscripts Route1New_MapScripts {}
 
 script SignScript_Route1 {
-    msgbox("Tractor University\nNorth Campus {UP_ARROW} South Campus {DOWN_ARROW}" MSGBOX_SIGN)
+    msgbox("Tractor University\nNorth Campus {UP_ARROW} South Campus {DOWN_ARROW}", MSGBOX_SIGN)
     closemessage
+    end
 }
 
 script Route1_WalkUpToBoat1 {
@@ -120,19 +121,15 @@ script Route1_Captain {
         setspeaker(SP_NAME_ACRE)
         msgbox(format("Watch your step."))
         closemessage
-        call (Route1_BoardingBoat)
+        goto (Route1_BoardingBoat)
     } else {
         closemessage
         setspeaker(SP_NAME_ACRE)
         msgbox(format("Please board once you're ready."))
+        closemessage
+        release
+        end
     }   
-    fadeoutbgm(0)
-    playse(SE_RG_SS_ANNE_HORN)
-    applymovement(LOCALID_ROUTE_1_BOAT_BACK, moves(walk_slow_right*12))
-    applymovement(LOCALID_ROUTE_1_BOAT_FRONT, moves(walk_slow_right*11))
-    waitmovement(0)
-    release
-    end
 }
 
 script Route1_BoardingBoat {

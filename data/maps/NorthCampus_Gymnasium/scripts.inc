@@ -468,68 +468,70 @@ NorthCampus_Gymnasium_Coach_Cedar::
 	msgbox NorthCampus_Gymnasium_Coach_Cedar_Text_0
 # 241 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	closemessage
+# 242 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	release
 	end
 
 
 NorthCampus_Gymnasium_Orthoc::
-# 246 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	faceplayer
 # 247 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	setspeaker SP_NAME_ORTHOC
+	faceplayer
 # 248 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	setspeaker SP_NAME_ORTHOC
+# 249 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ORTHOC_MAIN_HALL, NorthCampus_Gymnasium_Orthoc_1
-# 256 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	msgbox NorthCampus_Gymnasium_Orthoc_Text_1, MSGBOX_YESNO
 # 257 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	msgbox NorthCampus_Gymnasium_Orthoc_Text_1, MSGBOX_YESNO
+# 258 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NorthCampus_Gymnasium_Orthoc_5
-# 267 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	closemessage
 # 268 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	setspeaker SP_NAME_ORTHOC
-# 269 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	msgbox NorthCampus_Gymnasium_Orthoc_Text_4
-# 271 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	closemessage
+# 269 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	setspeaker SP_NAME_ORTHOC
+# 270 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	msgbox NorthCampus_Gymnasium_Orthoc_Text_4
 # 272 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	closemessage
+# 273 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	release
 	end
 
 NorthCampus_Gymnasium_Orthoc_1:
-# 250 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	msgbox NorthCampus_Gymnasium_Orthoc_Text_0
 # 251 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	closemessage
+	msgbox NorthCampus_Gymnasium_Orthoc_Text_0
 # 252 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	closemessage
+# 253 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	release
 	end
 
 NorthCampus_Gymnasium_Orthoc_5:
-# 258 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	closemessage
 # 259 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	setspeaker SP_NAME_ORTHOC
+	closemessage
 # 260 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	msgbox NorthCampus_Gymnasium_Orthoc_Text_2
+	setspeaker SP_NAME_ORTHOC
 # 261 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	trainerbattle_no_intro TRAINER_MAIN_HALL_ORTHOC, NorthCampus_Gymnasium_Orthoc_Text_3
+	msgbox NorthCampus_Gymnasium_Orthoc_Text_2
 # 262 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	setflag FLAG_DEFEATED_ORTHOC_MAIN_HALL
+	trainerbattle_no_intro TRAINER_MAIN_HALL_ORTHOC, NorthCampus_Gymnasium_Orthoc_Text_3
 # 263 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	setflag FLAG_DEFEATED_ORTHOC_MAIN_HALL
+# 264 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	release
 	end
 
 
 NorthCampus_Gymnasium_NPC1::
-# 278 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	lock
 # 279 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	faceplayer
+	lock
 # 280 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	msgbox NorthCampus_Gymnasium_NPC1_Text_0
+	faceplayer
 # 281 "data/maps/NorthCampus_Gymnasium/scripts.pory"
-	closemessage
+	msgbox NorthCampus_Gymnasium_NPC1_Text_0
 # 282 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+	closemessage
+# 283 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	release
 	end
 
@@ -1197,30 +1199,30 @@ NorthCampus_Gymnasium_Coach_Cedar_Text_0:
 	.string "trust in you.$"
 
 NorthCampus_Gymnasium_Orthoc_Text_0:
-# 250 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+# 251 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	.string "Thank you for providing me a good\n"
 	.string "challenge.$"
 
 NorthCampus_Gymnasium_Orthoc_Text_1:
-# 256 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+# 257 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	.string "Greetings.\pI am looking for someone to do\nbattle with.\pWould you like to have a\nmatch with me?$"
 
 NorthCampus_Gymnasium_Orthoc_Text_2:
-# 260 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+# 261 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	.string "Excellent.\n"
 	.string "Let us begin.$"
 
 NorthCampus_Gymnasium_Orthoc_Text_3:
-# 261 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+# 262 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	.string "It seems I have more work to do.$"
 
 NorthCampus_Gymnasium_Orthoc_Text_4:
-# 269 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+# 270 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	.string "No?\n"
 	.string "Then leave me to my training.$"
 
 NorthCampus_Gymnasium_NPC1_Text_0:
-# 280 "data/maps/NorthCampus_Gymnasium/scripts.pory"
+# 281 "data/maps/NorthCampus_Gymnasium/scripts.pory"
 	.string "I heard that Coach Cedar was a\n"
 	.string "world-class Pokémon Trainer before\l"
 	.string "becoming a teacher.\p"

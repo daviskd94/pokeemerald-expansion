@@ -102,7 +102,7 @@ script NorthCampus_Library_NPC3 {
     faceplayer
     msgbox("Would you like to hear about\nthe book I'm reading?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
-        msgbox(format("It's called 'Twilight Tractors'.\pIt's about these two tractors who fall in love…\pExcept, one of them is a vampire tractor who wants to drink the other's oil!\pThey spend all this time trying to figure out how to make their relationship work.\pThere's also all these other evil vampire tractors who want to keep them apart.\pAll they want is to plow fields together forever!\pAlso, the vampire tractor is afraid to turn the other tractor into a vampire because she might regret becoming a super-powered undead tractor who will never rust.\pAt the end, she nearly dies giving birth to his baby tractor, and he has to turn into into a vampire tractor to save her life…\pIt's really quite the love story!"))
+        msgbox(format("It's called 'Twilight Tractors'.\pIt's about these two tractors who fall in love…\pExcept, one of them is a vampire tractor who wants to drink the other's oil!\pThey spend all this time trying to figure out how to make their relationship work.\pThere's also all these other evil vampire tractors who want to keep them apart.\pAll they want is to plow fields together forever!\pAlso, the vampire tractor is afraid to turn the other tractor into a vampire because she might regret becoming a super-powered undead tractor who will never rust.\pAt the end, she nearly dies giving birth to his baby tractor, and he has to turn her into a vampire tractor to save her life…\pIt's really quite the love story!"))
     } else {
         msgbox(format("Oh, okay. Maybe next time!"))
     }

@@ -485,7 +485,7 @@ NorthCampus_Library_NPC3_Text_1:
 	.string "never rust.\p"
 	.string "At the end, she nearly dies giving birth\n"
 	.string "to his baby tractor, and he has to turn\l"
-	.string "into into a vampire tractor to save her\l"
+	.string "her into a vampire tractor to save her\l"
 	.string "life…\p"
 	.string "It's really quite the love story!$"
 
