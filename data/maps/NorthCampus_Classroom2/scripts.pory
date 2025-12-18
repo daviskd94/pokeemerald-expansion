@@ -19,7 +19,7 @@ script NorthCampus_Classroom2_NPC2 {
 }
 
 script NorthCampus_Classroom2_Chalkboard_EVs {
-    msgbox(format("Some leftover lecture notes on the chalkboard.\p'{COLOR GREEN}Effort Values{COLOR DARK_GRAY}, or {COLOR GREEN}EVs{COLOR DARK_GRAY}, are stats that influence a Pokemon's growth.\pBy battling certain Pokémon, your Pokémon can gain EVs in specific stats.\pThese values can be viewed in your Pokémon's {COLOR GREEN}Summary Screen{COLOR DARK_GRAY}.'"))
+    msgbox(format("Some leftover lecture notes on the chalkboard.\p“{COLOR GREEN}Effort Values{COLOR DARK_GRAY}, or {COLOR GREEN}EVs{COLOR DARK_GRAY}, are stats that influence a Pokemon's growth.\pBy battling certain Pokémon, your Pokémon can gain EVs in specific stats.\pThese values can be viewed in your Pokémon's {COLOR GREEN}Summary Screen{COLOR DARK_GRAY}.”"))
     closemessage
     end
 }

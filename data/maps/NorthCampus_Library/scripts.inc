@@ -376,10 +376,11 @@ NorthCampus_Library_Intercom::
 
 NorthCampus_Library_Book1_Text_0:
 # 4 "data/maps/NorthCampus_Library/scripts.pory"
-	.string "‘The History of Tractor University:\p"
+	.string "“The History of Tractor University:\p"
 	.string "Founded in 1910, Tractor University has\n"
 	.string "a long and proud tradition of academic\l"
-	.string "excellence, research, and farm handling.’$"
+	.string "excellence, research, and farm\l"
+	.string "handling.”$"
 
 NorthCampus_Library_Book2_Text_0:
 # 9 "data/maps/NorthCampus_Library/scripts.pory"
@@ -464,7 +465,7 @@ NorthCampus_Library_NPC3_Text_0:
 
 NorthCampus_Library_NPC3_Text_1:
 # 105 "data/maps/NorthCampus_Library/scripts.pory"
-	.string "It's called 'Twilight Tractors'.\p"
+	.string "It's called “Twilight Tractors”.\p"
 	.string "It's about these two tractors who fall\n"
 	.string "in love…\p"
 	.string "Except, one of them is a vampire\n"
@@ -570,7 +571,7 @@ NorthCampus_Library_ProfessorHanzneestoz_Text_6:
 
 NorthCampus_Library_ProfessorHanzneestoz_Text_7:
 # 176 "data/maps/NorthCampus_Library/scripts.pory"
-	.string "Herr {PLAYER}, have you found ze item\n"
+	.string "Herr {PLAYER}, have you found ze rope\n"
 	.string "I asked for?\p"
 	.string "Nein!?\p"
 	.string "You must go to Fieldstone Cavern und\n"
@@ -578,7 +579,7 @@ NorthCampus_Library_ProfessorHanzneestoz_Text_7:
 
 NorthCampus_Library_ProfessorHanzneestoz_Text_8:
 # 178 "data/maps/NorthCampus_Library/scripts.pory"
-	.string "Frau {PLAYER}, have you found ze item\n"
+	.string "Frau {PLAYER}, have you found ze rope\n"
 	.string "I asked for?\p"
 	.string "Nein!?\p"
 	.string "You must go to Fieldstone Cavern und\n"
@@ -594,13 +595,13 @@ NorthCampus_Library_ProfessorHanzneestoz_Text_9:
 	.string "I am specialist in subterranenan\n"
 	.string "studies, expert in fossil research, and\l"
 	.string "part-time enthusiast of yelling\l"
-	.string "'AH-HAH!' vhen I make a discovery!\p"
+	.string "“AH-HAH!” vhen I make a discovery!\p"
 	.string "Zis ist completely normal scientific\n"
 	.string "behavior, ja?\p"
 	.string "Now, today's review ist simple.\p"
 	.string "You vill be exploring der little cave to\n"
 	.string "the vest of Main Hall.\p"
-	.string "Inside, you vill retrieve an item I have\n"
+	.string "Inside, you vill retrieve a rope I have\n"
 	.string "hidden!\p"
 	.string "Now, be very, very careful, Herr\n"
 	.string "{PLAYER}, as falling into holes ist\l"
@@ -608,7 +609,7 @@ NorthCampus_Library_ProfessorHanzneestoz_Text_9:
 	.string "Ve had an incident last year zat\n"
 	.string "resulted in a student losing his\l"
 	.string "eyebrows!\p"
-	.string "Your mission ist to retrieve ze item and\n"
+	.string "Your mission ist to retrieve ze rope and\n"
 	.string "show me here in ze Library!\p"
 	.string "Got it?\n"
 	.string "Vunderbar!\p"
@@ -624,13 +625,13 @@ NorthCampus_Library_ProfessorHanzneestoz_Text_10:
 	.string "I am specialist in subterranenan\n"
 	.string "studies, expert in fossil research, and\l"
 	.string "part-time enthusiast of yelling\l"
-	.string "'AH-HAH!' vhen I make a discovery!\p"
+	.string "“AH-HAH!” vhen I make a discovery!\p"
 	.string "Zis ist completely normal scientific\n"
 	.string "behavior, ja?\p"
 	.string "Now, today's review ist simple.\p"
 	.string "You vill be exploring der little cave to\n"
 	.string "the vest of Main Hall.\p"
-	.string "Inside, you vill retrieve an item I have\n"
+	.string "Inside, you vill retrieve a rope I have\n"
 	.string "hidden!\p"
 	.string "Now, be very, very careful, Frau\n"
 	.string "{PLAYER}, as falling into holes ist\l"
@@ -638,7 +639,7 @@ NorthCampus_Library_ProfessorHanzneestoz_Text_10:
 	.string "Ve had an incident last year zat\n"
 	.string "resulted in a student losing his\l"
 	.string "eyebrows!\p"
-	.string "Your mission ist to retrieve ze item and\n"
+	.string "Your mission ist to retrieve ze rope and\n"
 	.string "show me here in ze Library!\p"
 	.string "Got it?\n"
 	.string "Vunderbar!\p"
@@ -652,5 +653,5 @@ NorthCampus_Library_ProfessorHanzneestoz_Text_11:
 NorthCampus_Library_Intercom_Text_0:
 # 209 "data/maps/NorthCampus_Library/scripts.pory"
 	.string "Attention seniors.\p"
-	.string "Please report back to Main Hall to\n"
+	.string "Please report back to {COLOR GREEN}Main Hall{COLOR DARK_GRAY} to\n"
 	.string "complete your review.$"

@@ -55,6 +55,7 @@ script NorthCampus_TalkToTracie {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     applymovement(LOCALID_TRACIE_ENTERING_MAIN_HALL, moves(face_right))
     waitmovement(0)
+    setspeaker(SP_NAME_TRACIE)
     msgbox(format("But, enough about that.\nC'mon, {PLAYER}.\pLet's head inside before I start getting all mushy."))
     closemessage
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
@@ -281,7 +282,7 @@ script NorthCampus_EnterWildArea {
 }
 
 script NorthCampus_TractorStatue {
-    msgbox("Tractor University\n'Your Tractor in Your Field'", MSGBOX_SIGN)
+    msgbox("Tractor University\n“Your Tractor in Your Field”", MSGBOX_SIGN)
     closemessage
 }
 script NorthCampus_Cave_Guard {
@@ -340,7 +341,7 @@ script NorthCampus_NPC5 {
 script NorthCampus_NPC6 {
     lock
 	faceplayer
-	msgbox(format("Watch out for the Wattrel that hangs out by the statue.\pThey've gotten bold.\nLike, 'steal your lunch' bold."))
+	msgbox(format("Watch out for the Wattrel that hangs out by the statue.\pThey've gotten bold.\nLike, “steal your lunch” bold."))
 	closemessage
 	release
 	end

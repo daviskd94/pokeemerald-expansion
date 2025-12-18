@@ -215,12 +215,12 @@ NorthCampus_ResearchLab_Laptop_Text_0:
 NorthCampus_ResearchLab_Drawer_Text_0:
 # 67 "data/maps/NorthCampus_ResearchLab/scripts.pory"
 	.string "The drawers are filled with tools and\n"
-	.string "various research supplies$"
+	.string "various research supplies.$"
 
 NorthCampus_ResearchLab_Sink_Text_0:
 # 72 "data/maps/NorthCampus_ResearchLab/scripts.pory"
 	.string "There's a sign above the sink that says,\n"
-	.string "'Do not dump chemicals down the drain.'$"
+	.string "“Do not dump chemicals down the drain.”$"
 
 NorthCampus_ResearchLab_Voltorb_Text_0:
 # 80 "data/maps/NorthCampus_ResearchLab/scripts.pory"

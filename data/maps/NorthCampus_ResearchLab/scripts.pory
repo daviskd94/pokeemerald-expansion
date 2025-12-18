@@ -64,12 +64,12 @@ script NorthCampus_ResearchLab_Laptop {
 }
 
 script NorthCampus_ResearchLab_Drawer {
-    msgbox(format("The drawers are filled with tools and various research supplies"))
+    msgbox(format("The drawers are filled with tools and various research supplies."))
     closemessage
 }
 
 script NorthCampus_ResearchLab_Sink {
-    msgbox(format("There's a sign above the sink that says,\n'Do not dump chemicals down the drain.'"))
+    msgbox(format("There's a sign above the sink that says,\n“Do not dump chemicals down the drain.”"))
     closemessage
 }
 

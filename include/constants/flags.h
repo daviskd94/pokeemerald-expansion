@@ -1053,7 +1053,7 @@
 #define FLAG_ITEM_ROUTE_1_POTION                                    0x3E8
 #define FLAG_ITEM_FIELDSTONE_CAVERN_ESCAPE_ROPE                     0x3E9
 #define FLAG_ITEM_NORTH_CAMPUS_RESEARCH_LAB_REPEL                   0x3EA
-#define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
+#define FLAG_ITEM_FIELDSTONE_CAVERN_CHESTO_BERRY                       0x3EB
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
 #define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE

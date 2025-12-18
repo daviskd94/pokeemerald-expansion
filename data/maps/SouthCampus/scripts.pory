@@ -307,7 +307,7 @@ script SouthCampus_NPC1 {
 script SouthCampus_NPC2 {
 	lock
 	faceplayer
-	msgbox(format("Hey! Have you heard about 'trsfu'?\pIt's the new thing!\nIt means, 'I'm ready to go!'"))
+	msgbox(format("Hey! Have you heard about “trsfu”?\pIt's the new thing!\nIt means, “I'm ready to go!”"))
 	closemessage
 	release
 	end

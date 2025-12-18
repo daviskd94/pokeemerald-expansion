@@ -1468,6 +1468,7 @@ void LoadWallyZigzagoon(void)
     SetMonData(&gPlayerParty[0], MON_DATA_MOVE2, &monData);
     monData = MOVE_SPITE;
     SetMonData(&gPlayerParty[0], MON_DATA_MOVE3, &monData);
+    monData = MOVE_KNOCK_OFF;
     SetMonData(&gPlayerParty[0], MON_DATA_MOVE4, &monData);
 }
 

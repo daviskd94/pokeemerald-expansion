@@ -91,6 +91,19 @@
       "trainer_sight_or_berry_tree_id": "2",
       "script": "FieldstoneCavern_EventScript_PokemonBreederCeleste",
       "flag": "FLAG_HIDE_MARIO_MAPLE_LECTURE_HALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 45,
+      "y": 35,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_CHESTO_BERRY",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_FIELDSTONE_CAVERN_CHESTO_BERRY"
     }
   ],
   "warp_events": [

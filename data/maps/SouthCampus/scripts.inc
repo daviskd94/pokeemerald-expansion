@@ -1861,9 +1861,9 @@ SouthCampus_NPC1_Text_0:
 
 SouthCampus_NPC2_Text_0:
 # 310 "data/maps/SouthCampus/scripts.pory"
-	.string "Hey! Have you heard about 'trsfu'?\p"
+	.string "Hey! Have you heard about “trsfu”?\p"
 	.string "It's the new thing!\n"
-	.string "It means, 'I'm ready to go!'$"
+	.string "It means, “I'm ready to go!”$"
 
 SouthCampus_NPC3_Text_0:
 # 319 "data/maps/SouthCampus/scripts.pory"

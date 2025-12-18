@@ -63,12 +63,12 @@ NorthCampus_Classroom2_Chalkboard_EVs_Text_0:
 # 22 "data/maps/NorthCampus_Classroom2/scripts.pory"
 	.string "Some leftover lecture notes on the\n"
 	.string "chalkboard.\p"
-	.string "'{COLOR GREEN}Effort Values{COLOR DARK_GRAY}, or {COLOR GREEN}EVs{COLOR DARK_GRAY}, are stats that\n"
+	.string "“{COLOR GREEN}Effort Values{COLOR DARK_GRAY}, or {COLOR GREEN}EVs{COLOR DARK_GRAY}, are stats that\n"
 	.string "influence a Pokemon's growth.\p"
 	.string "By battling certain Pokémon, your\n"
 	.string "Pokémon can gain EVs in specific stats.\p"
 	.string "These values can be viewed in your\n"
-	.string "Pokémon's {COLOR GREEN}Summary Screen{COLOR DARK_GRAY}.'$"
+	.string "Pokémon's {COLOR GREEN}Summary Screen{COLOR DARK_GRAY}.”$"
 
 NorthCampus_Classroom_Skeleton_Text_0:
 # 28 "data/maps/NorthCampus_Classroom2/scripts.pory"

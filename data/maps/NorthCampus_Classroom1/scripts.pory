@@ -10,7 +10,7 @@ script NorthCampus_Classroom1_NPC1 {
 }
 
 script NorthCampus_Classroom1_Chalkboard_IVs {
-    msgbox(format("Some leftover lecture notes on the chalkboard.\p'{COLOR GREEN}Individual Values{COLOR DARK_GRAY}, or {COLOR GREEN}IVs{COLOR DARK_GRAY}, are normally hidden stats that influence a Pokémon's growth.\pEach Pokémon has its own unique set of IVs that determine how strong it can become in each stat.\pThese values can be viewed in your Pokémon's {COLOR GREEN}Summary Screen{COLOR DARK_GRAY}.\pIn addition, IVs can be increased through a method known as {COLOR GREEN}Hyper Training{COLOR DARK_GRAY}.'"))
+    msgbox(format("Some leftover lecture notes on the chalkboard.\p“{COLOR GREEN}Individual Values{COLOR DARK_GRAY}, or {COLOR GREEN}IVs{COLOR DARK_GRAY}, are normally hidden stats that influence a Pokémon's growth.\pEach Pokémon has its own unique set of IVs that determine how strong it can become in each stat.\pThese values can be viewed in your Pokémon's {COLOR GREEN}Summary Screen{COLOR DARK_GRAY}.\pIn addition, IVs can be increased through a method known as {COLOR GREEN}Hyper Training{COLOR DARK_GRAY}.”"))
     closemessage
     end
 }
