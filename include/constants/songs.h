@@ -492,12 +492,12 @@
 #define MUS_RG_TEACHY_TV_MENU       558 // MUS_RG_TVNOIZE
 #define CUS_VS_WILD                 610 // CUSTOM VS WILD (Tractors Wild Battle Theme)
 #define CUS_VS_TRAINER              611 // CUSTOM VS TRAINER (Tractor Trainer Battle Theme)
-#define CUS_VS_GYM_LEADER           612 // CUSTOM VS TRAINER (Tractor Trainer Battle Theme)
+#define CUS_VS_GYM_LEADER           612 // CUSTOM VS GYM LEADER (Tractor Gym Leader Battle Theme)
 #define CUS_VS_TEAM_GENESIS         613 // CUSTOM VS EVIL TEAM (Tractors Team Genesis Battle Theme)
 #define CUS_VS_ROTCART              614 // CUSTOM VS RIVAL (Rotcart Battle Theme)
 #define CUS_VS_TRACIE               615 // CUSTOM VS FRIEND (Tracie Battle Theme)
 #define CUS_ENCOUNTER_ROTCART       616 // ROTCART ENCOUNTER THEME
-#define CUS_ENCOUNTER_TRACIE        617 // TRACIE  ENCOUNTER THEME
+#define CUS_ENCOUNTER_TRACIE        617 // TRACIE ENCOUNTER THEME
 #define CUS_ANCIENT_PONI_PATH       618 // ANCIENT PONI PATH (Gen 3 Arrangement)
 #define CUS_KALOS_POWERPLANT        619 // KALOS POWERPLANT (Gen 3 Arrangement)
 #define CUS_DD_PINE_LANDING         620
@@ -507,8 +507,10 @@
 #define CUS_SN_PEACEFUL_TIME        624
 #define CUS_AW_SONJAS_THEME         625 // SHIP THEME
 #define CUS_HM_SPRING_DS            626 // FIRST ROUTE THEME
+#define CUS_VS_GYM_LEADER_FINALE    627 // BW GYM LEADER LAST POKEMON (Gen 3 Arrangement)
+#define CUS_SP_ALWAYS_WITH_ME       628 // SPIRITED AWAY CREDITS THEME (Town Theme)
 
-#define END_MUS                     CUS_HM_SPRING_DS
+#define END_MUS                     CUS_SP_ALWAYS_WITH_ME
 
 // These PH_* constants are phoneme sounds used by the "bard" NPC (see src/bard_music.c and src/mauville_old_man.c).
 // Each comes in a triplet of PH_*_BLEND, PH_*_HELD, and PH_*_SOLO, and the name of each triplet incorporates the English phonetic sound it represents.
