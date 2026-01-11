@@ -63,7 +63,7 @@ voicegroup094_piano::
 	voice_keysplit voicegroup_french_horn_keysplit, keysplit_french_horn @ 60
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_trumpet_84, 255, 0, 246, 188 @ 63
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_french_horn_72, 128, 0, 255, 239  @ 64
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
