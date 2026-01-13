@@ -4440,6 +4440,12 @@ static void PlayMonCry(void)
     struct PokeSummary *summary = &sMonSummaryScreen->summary;
     if (!summary->isEgg)
     {
+#if P_USE_EXTRA_MEGA_CRY
+        // Play mega evolution cries with high pitch mode to match the battle animation
+        if (gSpeciesInfo[summary->species2].isMegaEvolution)
+            PlayCry_ByMode(summary->species2, 0, CRY_MODE_HIGH_PITCH);
+        else
+#endif
         if (ShouldPlayNormalMonCry(&sMonSummaryScreen->currentMon) == TRUE)
             PlayCry_ByMode(summary->species2, 0, CRY_MODE_NORMAL);
         else

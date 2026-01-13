@@ -389,6 +389,14 @@ void PlayCryInternal(u16 species, s8 pan, s8 volume, u8 priority, u8 mode)
     pitch = 15360;
     chorus = 0;
 
+    // If we're not using extra mega cries, we need to modify the cry mode for mega evolutions.
+    #if !P_USE_EXTRA_MEGA_CRY
+    if (gSpeciesInfo[species].isMegaEvolution)
+    {
+        mode = CRY_MODE_MEGA;
+    }
+    #endif //P_USE_EXTRA_MEGA_CRY
+
     switch (mode)
     {
     case CRY_MODE_NORMAL:
@@ -461,6 +469,13 @@ void PlayCryInternal(u16 species, s8 pan, s8 volume, u8 priority, u8 mode)
         release = 255;
         pitch = 12150;
         chorus = 200;
+        break;
+    case CRY_MODE_MEGA:
+        length = 255;
+        release = 255;
+        pitch = 15800;
+        chorus = 192;
+        volume = 90;
         break;
     }
 
