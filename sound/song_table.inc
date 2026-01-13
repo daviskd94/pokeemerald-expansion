@@ -628,6 +628,8 @@ gSongTable::
 	song cus_sn_peaceful_time, 0, 0
 	song cus_aw_sonjas_theme, 0, 0
 	song cus_hm_spring_ds, 0, 0
+	song cus_vs_gym_leader_finale, 0, 0
+	song cus_sp_always_with_me, 0, 0
 
 	.align 2
 dummy_song_header:

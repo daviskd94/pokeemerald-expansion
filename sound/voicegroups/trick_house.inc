@@ -25,7 +25,7 @@ voicegroup094_piano::
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_accordion, 61, 252, 184, 210 @ 22
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_accordion, 64, 235, 200, 204 @ 23
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_nylon_str_guitar, 128, 249, 25, 76 @ 24
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_nylon_str_guitar, 255, 249, 25, 224 @ 25
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_harp, 255, 239, 19, 246 @ 28
@@ -34,7 +34,7 @@ voicegroup094_piano::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_fretless_bass, 255, 253, 0, 149 @ 32
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_fingered_bass, 255, 253, 0, 149 @ 33
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_fingered_bass, 255, 253, 175, 149 @ 34
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_fretless_bass, 255, 253, 0, 188 @ 35
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -42,7 +42,7 @@ voicegroup094_piano::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_string_ensemble_60, 255, 254, 175, 204  @ 40
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_string_ensemble_60, 255, 253, 23, 232  @ 41
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_string_ensemble_60, 255, 240, 230, 204  @ 42
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_string_ensemble_60, 192, 250, 206, 165  @ 44
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_pizzicato_strings, 255, 236, 0, 38  @ 45
@@ -59,11 +59,11 @@ voicegroup094_piano::
 	voice_keysplit voicegroup_trumpet_keysplit, keysplit_trumpet @ 56
 	voice_keysplit voicegroup094_trumpet, keysplit_trumpet @ 57
 	voice_keysplit voicegroup_tuba_keysplit, keysplit_tuba  @ 58
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_trumpet_72, 255, 0, 246, 188 @ 59
 	voice_keysplit voicegroup_french_horn_keysplit, keysplit_french_horn @ 60
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_trumpet_84, 255, 0, 246, 188 @ 63
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_french_horn_72, 128, 0, 255, 239  @ 64
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -72,7 +72,7 @@ voicegroup094_piano::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1_alt 60, 0, 0, 1, 1, 2, 5, 1 @ 70
 	voice_square_2_alt 60, 0, 1, 1, 2, 5, 1  @ 71
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_flute, 255, 246, 200, 196 @ 72
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_flute, 255, 0, 255, 165 @ 73
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1_alt 60, 0, 0, 3, 2, 2, 5, 1 @ 75

@@ -3620,7 +3620,9 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(CUS_DD_CROOG_THEME)           \
     X(CUS_SN_PEACEFUL_TIME)         \
     X(CUS_AW_SONJAS_THEME)          \
-    X(CUS_HM_SPRING_DS)             
+    X(CUS_HM_SPRING_DS)             \
+    X(CUS_VS_GYM_LEADER_FINALE)     \
+    X(CUS_SP_ALWAYS_WITH_ME)         
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \

@@ -415,7 +415,7 @@ Player_Dorm_Enter_Tracie_Text_3:
 
 Player_Dorm_Take_Eevee_Text_0:
 # 104 "data/maps/PlayerDorm/scripts.pory"
-	.string "{PLAYER} picked up their\npartner, {COLOR GREEN}Eevee{COLOR DARK_GRAY}!$"
+	.string "{PLAYER} picked up their\npartner, Eevee!$"
 
 Player_Dorm_Nickname_Eevee_Text_0:
 # 114 "data/maps/PlayerDorm/scripts.pory"
