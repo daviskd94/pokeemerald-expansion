@@ -4690,6 +4690,16 @@
       "secondary_tileset": "gTileset_FossilLab",
       "border_filepath": "data/layouts/NorthCampus_FossilResearchLab/border.bin",
       "blockdata_filepath": "data/layouts/NorthCampus_FossilResearchLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_SS_TRACTORIA_1F_CORRIDOR",
+      "name": "SS_Tractoria_1F_Corridor_Layout",
+      "width": 45,
+      "height": 27,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SS_Tractoria",
+      "border_filepath": "data/layouts/SS_Tractoria_1F_Corridor/border.bin",
+      "blockdata_filepath": "data/layouts/SS_Tractoria_1F_Corridor/map.bin"
     }
   ]
 }

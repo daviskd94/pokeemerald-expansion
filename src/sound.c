@@ -474,7 +474,7 @@ void PlayCryInternal(u16 species, s8 pan, s8 volume, u8 priority, u8 mode)
         length = 255;
         release = 255;
         pitch = 15800;
-        chorus = 192;
+        chorus = 200;
         volume = 90;
         break;
     }

@@ -243,3 +243,6 @@ const u16 gMetatileAttributes_Laboratory[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_FossilLab[] = INCBIN_U16("data/tilesets/secondary/fossil_lab/metatiles.bin");
 const u16 gMetatileAttributes_FossilLab[] = INCBIN_U16("data/tilesets/secondary/fossil_lab/metatile_attributes.bin");
+
+const u16 gMetatiles_SS_Tractoria[] = INCBIN_U16("data/tilesets/secondary/ss_tractoria/metatiles.bin");
+const u16 gMetatileAttributes_SS_Tractoria[] = INCBIN_U16("data/tilesets/secondary/ss_tractoria/metatile_attributes.bin");

@@ -1,0 +1,112 @@
+{
+  "id": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+  "name": "SS_Tractoria_1F_Corridor",
+  "layout": "LAYOUT_SS_TRACTORIA_1F_CORRIDOR",
+  "music": "CUS_AW_SONJAS_THEME",
+  "region_map_section": "MAPSEC_SS_TRACTORIA",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 22,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 34,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 40,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 34,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_SS_TRACTORIA_1F_CORRIDOR",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -1257,6 +1257,22 @@
       "y": 0,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_SS_TRACTORIA",
+      "name": "S.S. Tractoria",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_NEW_TRACTORLAND",
+      "name": "New Tractorland",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     }
   ]
 }

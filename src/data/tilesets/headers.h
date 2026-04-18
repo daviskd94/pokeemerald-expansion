@@ -962,3 +962,14 @@ const struct Tileset gTileset_FossilLab =
     .metatileAttributes = gMetatileAttributes_FossilLab,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_SS_Tractoria =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SS_Tractoria,
+    .palettes = gTilesetPalettes_SS_Tractoria,
+    .metatiles = gMetatiles_SS_Tractoria,
+    .metatileAttributes = gMetatileAttributes_SS_Tractoria,
+    .callback = NULL,
+};

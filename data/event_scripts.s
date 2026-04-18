@@ -1218,3 +1218,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NorthCampus_PokeballResearchLab/scripts.inc"
 
 	.include "data/maps/NorthCampus_FossilResearchLab/scripts.inc"
+
+	.include "data/maps/SS_Tractoria_1F_Corridor/scripts.inc"
