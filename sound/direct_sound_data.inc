@@ -6483,3 +6483,7 @@ DirectSoundWaveData_dd_orchestra_hit::
 	.align 2
 DirectSoundWaveData_dd_techno_snare::
 	.incbin "sound/direct_sound_samples/dd_techno_snare.bin"
+
+DirectSoundWaveData_sc88pro_room_snare::
+	.incbin "sound/direct_sound_samples/sc88pro_room_snare.bin"
+

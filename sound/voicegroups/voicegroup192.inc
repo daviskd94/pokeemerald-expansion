@@ -11,9 +11,9 @@ voicegroup192::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_glockenspiel, 255, 242, 51, 249
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_xylophone, 255, 235, 0, 204
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_tubular_bell, 255, 165, 90, 216
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_organ2, 51, 0, 203, 127
@@ -81,8 +81,8 @@ voicegroup192::
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_whistle, 255, 0, 255, 127
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_1, 0, 2, 15, 0                                          @Wave ??
-	voice_square_1_alt 60, 0, 0, 3, 0, 1, 10, 1                                                                     @Square1 75%
-	voice_square_1_alt 60, 0, 0, 1, 0, 2, 7, 2                                                                      @Square1 25%
+        voice_square_1_alt 60, 0, 0, 0, 0, 2, 7, 2                                                                      @Square1 75%
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_7, 0, 0, 15, 0                                          @Wave 7
 	voice_square_1_alt 60, 0, 0, 3, 0, 2, 7, 2                                                                      @Square1 75%
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_2, 0, 7, 15, 1                                          @Wave ??
 	voice_square_2_alt 60, 0, 0, 0, 2, 7, 2                                                                         @Square2 12.5%
