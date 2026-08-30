@@ -16,6 +16,8 @@ struct Fanfare
     u16 duration;
 };
 
+extern u8 gDisableMapMusicChangeOnMapLoad;
+
 EWRAM_DATA struct MusicPlayerInfo *gMPlay_PokemonCry = NULL;
 EWRAM_DATA u8 gPokemonCryBGMDuckingCounter = 0;
 
@@ -34,6 +36,7 @@ static void Task_Fanfare(u8 taskId);
 static void CreateFanfareTask(void);
 static void RestoreBGMVolumeAfterPokemonCry(void);
 
+// The 1st argument in the table is the length of the fanfare, measured in frames. This is calculated by taking the duration of the midi file, multiplying by 59.72750056960583, and rounding up to the next nearest integer.
 static const struct Fanfare sFanfares[] = {
     [FANFARE_LEVEL_UP]            = { MUS_LEVEL_UP,             80 },
     [FANFARE_OBTAIN_ITEM]         = { MUS_OBTAIN_ITEM,         160 },
@@ -573,7 +576,8 @@ void PlayBGM(u16 songNum)
 
 void PlaySE(u16 songNum)
 {
-    m4aSongNumStart(songNum);
+    if (gDisableMapMusicChangeOnMapLoad == 0)
+        m4aSongNumStart(songNum);
 }
 
 void PlaySE12WithPanning(u16 songNum, s8 pan)

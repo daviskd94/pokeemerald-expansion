@@ -82,9 +82,10 @@ void TrySpawnNamebox(u32 tileNum)
         colors[2] = 0;
     }
 
-    SaveTextColors(&bakColors[0], &bakColors[1], &bakColors[2]);
+    // SaveTextColors(&bakColors[0], &bakColors[1], &bakColors[2]);
+    SaveTextColors();
     AddTextPrinterParameterized3(sNameboxWindowId, fontId, strX, 0, colors, 0, strbuf);
-    RestoreTextColors(&bakColors[0], &bakColors[1], &bakColors[2]);
+    // RestoreTextColors(&bakColors[0], &bakColors[1], &bakColors[2]);
     PutWindowTilemap(sNameboxWindowId);
     Free(strbuf);
 }
