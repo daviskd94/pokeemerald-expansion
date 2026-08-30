@@ -12,6 +12,12 @@ struct BattleBackground
     const void *palette_night;     // Night variant of the palette
 };
 
+struct BattleBackgroundEntry
+{
+    const void *tileset;
+    const void *tilemap;
+};
+
 void BattleInitBgsAndWindows(void);
 void InitBattleBgsVideo(void);
 void LoadBattleMenuWindowGfx(void);
